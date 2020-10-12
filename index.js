@@ -62,7 +62,7 @@ exports.assetAmountInEth = (amount, asset = 'ETH') => {
 
   else decimals = exports.getAssetInfo(asset).decimals;
 
-  return new Dec(amount?.toString() || 0).div(10 ** decimals).toString();
+  return new Dec(amount && amount.toString() || 0).div(10 ** decimals).toString();
 };
 
 /**
@@ -73,7 +73,7 @@ exports.assetAmountInEth = (amount, asset = 'ETH') => {
 exports.assetAmountInWei = (amount, asset) => {
   const {decimals} = exports.getAssetInfo(asset);
 
-  return new Dec(amount?.toString() || 0).mul(10 ** decimals).floor().toString();
+  return new Dec(amount && amount.toString() || 0).mul(10 ** decimals).floor().toString();
 };
 
 exports.assets = assets;
