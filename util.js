@@ -10,5 +10,4 @@ exports.stringToBytes = (str) => {
   return `0x${n}`;
 }
 
-
-exports.ilkToAsset = ilk => (ilk.substr(0, 2) === '0x' ? exports.bytesToString(ilk) : ilk).replace(/-.*/, '');
+exports.compare = (a = '', b = '') => a.toLowerCase() === b.toLowerCase();
