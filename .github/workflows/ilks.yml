@@ -13,10 +13,11 @@ jobs:
       run: npm i
     - name: Fetch latest data
       run: npm run update-ilks
-    - name: Version bump if changes exist
+    - name: Add credentials
       uses: oleksiyrudenko/gha-git-credentials@v1
       with:
         token: '${{ secrets.GITHUB_TOKEN }}'
+    - name: Version bump if changes exist
       run: if [[ `git status --porcelain` ]]; then npm run version-bump; fi
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
