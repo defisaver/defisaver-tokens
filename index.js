@@ -1,19 +1,26 @@
 const Dec = require('decimal.js');
-const {assetProto, assets, ilkLabelToJoinMap, flippers} = require('./assets');
-const {stringToBytes, bytesToString, compare} = require('./util');
 
+const {assetProto, assets} = require('./assets');
 exports.assets = assets;
-exports.ilkLabelToJoinMap = ilkLabelToJoinMap;
-exports.flippers = flippers;
 
-exports.ilkToJoinMap = {};
-Object.keys(exports.ilkLabelToJoinMap).forEach((ilkLabel) => { exports.ilkToJoinMap[stringToBytes(ilkLabel)] = exports.ilkLabelToJoinMap[ilkLabel]; });
+const {ilks} = require('./ilks');
+exports.ilks = ilks;
+
+const utils = require('./util');
+exports.utils = utils;
+
+const {stringToBytes, bytesToString, compare} = utils;
 
 /**
  * @param symbol
  * @return {{symbol: string, address: string, decimals: number, name: string, icon: function, underlyingAsset: string, ilk: string|null, exchange: boolean, mcdCollateral: boolean, compoundCollateral: boolean, aaveCollateral: boolean}}
  */
 exports.getAssetInfo = (symbol = '') => assets.find(t => t.symbol.toLowerCase() === symbol.toLowerCase()) || console.error(`Asset "${symbol}" not found `) || {...assetProto};
+
+exports.getIlkInfo = (ilk = '') => {
+  const _ilk = (ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : ilk).toUpperCase();
+  return ilks.find(i => i.ilk === _ilk) || console.error(`Ilk "${ilk}" not found `) || { ilk, asset: exports.ilkToAsset(ilk) };
+}
 
 exports.getAssetInfoByAddress = (address = '') => assets.find(t => t.address.toLowerCase() === address.toLowerCase()) || console.error(`Asset with addess "${address}" not found `) || {...assetProto};
 
@@ -39,8 +46,8 @@ exports.aaveCollateralAssets = assets.filter(t => t.aaveCollateral);
 exports.getCompoundAssetInfoFromUnderlying = (_underlyingAsset) => exports.compoundCollateralAssets.find(({ underlyingAsset }) => underlyingAsset === _underlyingAsset);
 
 exports.tokenFromJoin = (join) => {
-  for (const [key, value] of Object.entries(exports.ilkToJoinMap)) {
-    if (compare(value, join)) return exports.ilkToAsset(key);
+  for (const ilkInfo of ilks) {
+    if (compare(ilkInfo.join, join)) return ilkInfo.asset;
   }
   if (compare('0x448a5065aebb8e423f0896e6c5d525c040f59af3', join)) return 'ETH'; // SCD ETH
   return '';
@@ -75,5 +82,3 @@ exports.assetAmountInWei = (amount, asset) => {
 
   return new Dec(amount && amount.toString() || 0).mul(10 ** decimals).floor().toString();
 };
-
-exports.assets = assets;
