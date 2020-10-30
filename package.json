@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "version-bump": "git commit -am \"Version bump to $(npm version patch | cut -c 2-)\"",
+    "version-bump": "git commit -am \"Version bump to $(npm version patch --no-git-tag-version | cut -c 2-)\"",
     "update-ilks": "node scripts/updateIlksInfo"
   },
   "author": "",
