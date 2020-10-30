@@ -58,6 +58,10 @@ const PAXUSDAddress = "0x8e870d67f660d95d5be530380d0ec0bd388289e1";
 const DPIAddress = "0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b";
 const UNIAddress = "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984";
 const LRCAddress = "0xBBbbCA6A901c926F240b89EacB641d8Aec7AEafD";
+const cCOMPAddress = "0x70e36f6bf80a52b3b46b3af8e106cc0ed743e8e4";
+const AAVEAddress = "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9";
+const aUNIAddress = "0xb124541127a0a657f056d9dd06188c4f1b0e5aab";
+const aAaveAddress = "0xba3D9687Cf50fE253cd2e1cFeEdE1d6787344Ed5";
 
 const importJsx = require('import-jsx');
 const ZrxIcon = importJsx('./TokenIcons/ZrxIcon.jsx');
@@ -91,16 +95,15 @@ const LrcIcon = importJsx('./TokenIcons/LrcIcon.jsx');
 
 const assetProto = module.exports.assetProto = {
   symbol: '?',
-  underlyingAsset: '',
   name: 'Unknown',
+  address: '0x0',
   decimals: 18,
+  icon: () => '',
+  underlyingAsset: '',
   exchange: false,
   mcdCollateral: false,
   compoundCollateral: false,
   aaveCollateral: false,
-  address: '0x0',
-  ilk: null,
-  icon: () => '',
 };
 
 exports.assets = [
@@ -128,7 +131,7 @@ exports.assets = [
     symbol: 'cETH',
     underlyingAsset: 'ETH',
     name: 'Ether',
-    decimals: 18,
+    decimals: 8,
     exchange: false,
     mcdCollateral: false,
     compoundCollateral: true,
@@ -194,7 +197,7 @@ exports.assets = [
     symbol: 'cBAT',
     underlyingAsset: 'BAT',
     name: 'Basic Attention Token',
-    decimals: 18,
+    decimals: 8,
     exchange: false,
     mcdCollateral: false,
     compoundCollateral: true,
@@ -228,7 +231,7 @@ exports.assets = [
     symbol: 'cZRX',
     underlyingAsset: 'ZRX',
     name: '0x',
-    decimals: 18,
+    decimals: 8,
     exchange: false,
     compoundCollateral: true,
     address: cZRXAddress,
@@ -259,7 +262,7 @@ exports.assets = [
     symbol: 'cREP',
     underlyingAsset: 'REP',
     name: 'Augur',
-    decimals: 18,
+    decimals: 8,
     exchange: false,
     mcdCollateral: false,
     compoundCollateral: true,
@@ -282,7 +285,7 @@ exports.assets = [
     symbol: 'cUSDC',
     underlyingAsset: 'USDC',
     name: 'USD Coin',
-    decimals: 6,
+    decimals: 8,
     exchange: false,
     mcdCollateral: false,
     compoundCollateral: true,
@@ -691,7 +694,7 @@ exports.assets = [
   {
     ...assetProto,
     symbol: 'cUNI',
-    decimals: 18,
+    decimals: 8,
     compoundCollateral: true,
     address: cUNIAddress,
     underlyingAsset: 'UNI',
@@ -706,21 +709,41 @@ exports.assets = [
     address: LRCAddress,
     icon: LrcIcon,
   },
+  {
+    ...assetProto,
+    symbol: "cCOMP",
+    name: "Compound Token",
+    address: cCOMPAddress,
+    underlyingAsset: "COMP",
+    decimals: 8,
+    icon: CompIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'aUNI',
+    name: 'Uniswap',
+    address: aUNIAddress,
+    underlyingAsset: 'UNI',
+    decimals: 18,
+    aaveCollateral: true,
+    icon: UniIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'AAVE',
+    name: 'Aave',
+    address: AAVEAddress,
+    decimals: 18,
+    // icon: AaveIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'aAave',
+    name: 'Aave',
+    address: aAaveAddress,
+    decimals: 18,
+    underlyingAsset: 'AAVE',
+    aaveCollateral: true,
+    // icon: AaveIcon,
+  }
 ];
-
-exports.ilkLabelToJoinMap = {
-  "ETH-A": "0x2f0b23f53734252bda2277357e97e1517d6b042a",
-  "BAT-A": "0x3d0b1912b66114d4096f48a8cee3a56c231772ca",
-  "WBTC-A": "0xBF72Da2Bd84c5170618Fbe5914B0ECA9638d5eb5",
-  "USDC-A": "0xA191e578a6736167326d05c119CE0c90849E84B7",
-  "USDC-B": "0x2600004fd1585f7270756DDc88aD9cfA10dD0428",
-  "ZRX-A": "0xc7e8Cd72BDEe38865b4F5615956eF47ce1a7e5D0",
-  "KNC-A": "0x475F1a89C1ED844A08E8f6C50A00228b5E59E4A9",
-  "MANA-A": "0xA6EA3b9C04b8a38Ff5e224E7c3D6937ca44C0ef9",
-  "PAXUSD-A": "0x7e62B7E279DFC78DEB656E34D6a435cC08a44666",
-  "USDT-A": "0x0Ac6A1D74E84C2dF9063bDDc31699FF2a2BB22A2",
-  "COMP-A": "0xBEa7cDfB4b49EC154Ae1c0D731E4DC773A3265aA",
-  "LRC-A": "0x6C186404A7A238D3d6027C0299D1822c1cf5d8f1",
-  "LINK-A": "0xdFccAf8fDbD2F4805C174f856a317765B49E4a50",
-  "DAI": "0x9759a6ac90977b93b58547b4a71c78317f391a28"
-}
