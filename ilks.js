@@ -112,5 +112,13 @@ exports.ilks = [
         "join": "0x6C186404A7A238D3d6027C0299D1822c1cf5d8f1",
         "flip": "0x7FdDc36dcdC435D8F54FDCB3748adcbBF70f3dAC",
         "pip": "0x9eb923339c24c40Bef2f4AF4961742AA7C23EF3a"
+    },
+    {
+        "asset": "LINK",
+        "ilkLabel": "LINK-A",
+        "ilkBytes": "0x4c494e4b2d410000000000000000000000000000000000000000000000000000",
+        "join": "0xdFccAf8fDbD2F4805C174f856a317765B49E4a50",
+        "flip": "0xB907EEdD63a30A3381E6D898e5815Ee8c9fd2c85",
+        "pip": "0x9B0C694C6939b5EA9584e9b61C7815E8d97D9cC7"
     }
 ]
