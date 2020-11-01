@@ -19,7 +19,7 @@ exports.getAssetInfo = (symbol = '') => assets.find(t => t.symbol.toLowerCase() 
 
 exports.getIlkInfo = (ilk = '') => {
   const _ilk = (ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : ilk).toUpperCase();
-  return ilks.find(i => i.ilk === _ilk) || console.error(`Ilk "${ilk}" not found `) || { ilk, asset: exports.ilkToAsset(ilk) };
+  return ilks.find(i => i.ilkLabel === _ilk) || console.error(`Ilk "${ilk}" not found `) || { ilk, asset: exports.ilkToAsset(ilk) };
 }
 
 exports.getAssetInfoByAddress = (address = '') => assets.find(t => t.address.toLowerCase() === address.toLowerCase()) || console.error(`Asset with addess "${address}" not found `) || {...assetProto};
