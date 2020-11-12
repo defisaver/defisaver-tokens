@@ -62,6 +62,7 @@ const cCOMPAddress = "0x70e36f6bf80a52b3b46b3af8e106cc0ed743e8e4";
 const AAVEAddress = "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9";
 const aUNIAddress = "0xb124541127a0a657f056d9dd06188c4f1b0e5aab";
 const aAaveAddress = "0xba3D9687Cf50fE253cd2e1cFeEdE1d6787344Ed5";
+const BALAddress = "0xba100000625a3754423978a60c9317c58a424e3D";
 
 const importJsx = require('import-jsx');
 const ZrxIcon = importJsx('./TokenIcons/ZrxIcon.jsx');
@@ -92,6 +93,7 @@ const PaxusdIcon = importJsx('./TokenIcons/PaxusdIcon.jsx');
 const DpiIcon = importJsx('./TokenIcons/DpiIcon.jsx');
 const UniIcon = importJsx('./TokenIcons/UniIcon.jsx');
 const LrcIcon = importJsx('./TokenIcons/LrcIcon.jsx');
+const BalIcon = importJsx('./TokenIcons/BalIcon.jsx');
 
 const assetProto = module.exports.assetProto = {
   symbol: '?',
@@ -745,5 +747,13 @@ exports.assets = [
     underlyingAsset: 'AAVE',
     aaveCollateral: true,
     // icon: AaveIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'BAL',
+    name: 'Balancer',
+    address: BALAddress,
+    decimals: 18,
+    icon: BalIcon,
   }
 ];
