@@ -120,5 +120,21 @@ exports.ilks = [
         "join": "0xdFccAf8fDbD2F4805C174f856a317765B49E4a50",
         "flip": "0xB907EEdD63a30A3381E6D898e5815Ee8c9fd2c85",
         "pip": "0x9B0C694C6939b5EA9584e9b61C7815E8d97D9cC7"
+    },
+    {
+        "asset": "BAL",
+        "ilkLabel": "BAL-A",
+        "ilkBytes": "0x42414c2d41000000000000000000000000000000000000000000000000000000",
+        "join": "0x4a03Aa7fb3973d8f0221B466EefB53D0aC195f55",
+        "flip": "0xb2b9bd446eE5e58036D2876fce62b7Ab7334583e",
+        "pip": "0x3ff860c0F28D69F392543A16A397D0dAe85D16dE"
+    },
+    {
+        "asset": "YFI",
+        "ilkLabel": "YFI-A",
+        "ilkBytes": "0x5946492d41000000000000000000000000000000000000000000000000000000",
+        "join": "0x3ff33d9162aD47660083D7DC4bC02Fb231c81677",
+        "flip": "0xEe4C9C36257afB8098059a4763A374a4ECFE28A7",
+        "pip": "0x5F122465bCf86F45922036970Be6DD7F58820214"
     }
 ]
