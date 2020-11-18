@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("React"), require("decimal.js"));
+		module.exports = factory(require("decimal.js"), require("react"));
 	else if(typeof define === 'function' && define.amd)
-		define(["React", "decimal.js"], factory);
+		define(["decimal.js", "react"], factory);
 	else if(typeof exports === 'object')
-		exports["defisaver-tokens"] = factory(require("React"), require("decimal.js"));
+		exports["defisaver-tokens"] = factory(require("decimal.js"), require("react"));
 	else
-		root["defisaver-tokens"] = factory(root["React"], root["decimal.js"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE__4__, __WEBPACK_EXTERNAL_MODULE__1__) {
+		root["defisaver-tokens"] = factory(root["decimal.js"], root["react"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE__1__, __WEBPACK_EXTERNAL_MODULE__4__) {
 return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ([
 /* 0 */

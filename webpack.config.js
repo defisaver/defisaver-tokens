@@ -21,7 +21,7 @@ module.exports = {
     ]
   },
   externals: {
-    "react": "React",
+    "react": "react",
     "decimal.js": "decimal.js"
   },
 };
