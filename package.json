@@ -1,20 +1,26 @@
 {
   "name": "defisaver-tokens",
-  "version": "1.1.3",
+  "version": "1.2.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/main.js",
+  "module": "dist/main.js",
   "scripts": {
     "version-bump": "git commit -am \"Version bump to $(npm version patch --no-git-tag-version | cut -c 2-)\"",
-    "update-ilks": "node scripts/updateIlksInfo"
+    "update-ilks": "node scripts/updateIlksInfo",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "decimal.js": "^10.2.1",
-    "import-jsx": "^4.0.0",
     "react": "^16.13.1"
   },
   "devDependencies": {
-    "axios": "^0.21.0"
+    "@babel/core": "^7.12.3",
+    "@babel/preset-react": "^7.12.5",
+    "axios": "^0.21.0",
+    "babel-loader": "^8.2.1",
+    "webpack": "^5.5.1",
+    "webpack-cli": "^4.2.0"
   }
 }
