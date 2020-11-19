@@ -30,7 +30,7 @@ const {stringToBytes, bytesToString, compare} = utils;
  * @param symbol
  * @return {{symbol: string, address: string, decimals: number, name: string, icon: function, underlyingAsset: string, ilk: string|null, exchange: boolean, mcdCollateral: boolean, compoundCollateral: boolean, aaveCollateral: boolean}}
  */
-exports.getAssetInfo = (symbol = '') => assets.find(t => t.symbol.toLowerCase() === symbol.toLowerCase()) || console.error(`Asset "${symbol}" not found `) || {...assetProto};
+exports.getAssetInfo = (symbol = '') => assets.find(t => compare(t.symbol, symbol)) || console.error(`Asset "${symbol}" not found `) || {...assetProto};
 
 /**
  * @param ilk {string} Ilk encoded as string or as hex
@@ -52,6 +52,9 @@ exports.ilkToAsset = ilk => (ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : il
 
 exports.exchangeAssets = assets.filter(t => t.exchange);
 
+/**
+ * @type {{symbol: string, address: string, decimals: number, name: string, icon: function, ilkLabel: string, ilkBytes: string}}
+ */
 exports.mcdCollateralAssets = ilks.map((ilk) => {
   const { ilkBytes, ilkLabel, asset } = ilk;
   const assetData = assets.getAssetInfo(asset);
@@ -68,6 +71,10 @@ exports.compoundAsset = (underlyingAsset) => `c${underlyingAsset.toUpperCase()}`
 exports.aaveCollateralAssets = assets.filter(t => t.aaveCollateral);
 exports.aaveAsset = (underlyingAsset) => `a${underlyingAsset.toUpperCase()}`;
 
+/**
+ * @param join {string} Maker ilk join
+ * @returns {string} Token symbol
+ */
 exports.tokenFromJoin = (join) => {
   for (const ilkInfo of ilks) {
     if (compare(ilkInfo.join, join)) return ilkInfo.asset;
@@ -77,8 +84,8 @@ exports.tokenFromJoin = (join) => {
 }
 
 /**
- * @param amount {Number, String, Object}
- * @param asset {String} Symbol or `MCD-${symbol}` for
+ * @param amount {Number|String|Object} Amount in wei
+ * @param asset {String} Asset symbol (or `MCD-${symbol}` for maker asset - always 18dec)
  * @return {String}
  */
 exports.assetAmountInEth = (amount, asset = 'ETH') => {
@@ -96,8 +103,8 @@ exports.assetAmountInEth = (amount, asset = 'ETH') => {
 };
 
 /**
- * @param amount {Number, String, Object}
- * @param asset {String}
+ * @param amount {Number|String|Object} Amount in eth
+ * @param asset {String} Asset symbol
  * @return {String}
  */
 exports.assetAmountInWei = (amount, asset) => {
