@@ -1,29 +1,44 @@
 const Dec = require('decimal.js');
 
 const {assetProto, assets} = require('./assets');
+const {ilks} = require('./ilks');
+const utils = require('./util');
+
+/**
+ * @type {Array<{symbol: string, address: string, decimals: number, name: string, icon: function, underlyingAsset: string, exchange: boolean, compoundCollateral: boolean, aaveCollateral: boolean}>}
+ */
 exports.assets = assets;
 
-const {ilks} = require('./ilks');
+/**
+ * @type {Array<{ilkLabel: (string), pip: (string), join: (string), asset: (string), flip: (string), ilkBytes: (string)}>}
+ */
 exports.ilks = ilks;
 
-const utils = require('./util');
 exports.utils = utils;
 
 const {stringToBytes, bytesToString, compare} = utils;
 
 /**
+ * Returns asset info
+ *
  * @param symbol
  * @return {{symbol: string, address: string, decimals: number, name: string, icon: function, underlyingAsset: string, ilk: string|null, exchange: boolean, mcdCollateral: boolean, compoundCollateral: boolean, aaveCollateral: boolean}}
  */
 exports.getAssetInfo = (symbol = '') => assets.find(t => compare(t.symbol, symbol)) || console.error(`Asset "${symbol}" not found `) || {...assetProto};
 
 /**
+ * Returns ilk info, and asset info in `assetData`
+ *
  * @param ilk {string} Ilk encoded as string or as hex
  * @returns {{ilkLabel: (string), pip: (string), join: (string), asset: (string), flip: (string), ilkBytes: (string), assetData: {symbol: string, address: string, decimals: number, name: string, icon: Function, underlyingAsset: string, exchange: boolean, compoundCollateral: boolean, aaveCollateral: boolean}}}
  */
 exports.getIlkInfo = (ilk = '') => {
   const _ilk = (ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : ilk).toUpperCase();
-  const ilkData = ilks.find(i => i.ilkLabel === _ilk) || console.error(`Ilk "${ilk}" not found `) || { ilkLabel: _ilk, ilkBytes: stringToBytes(_ilk), asset: exports.ilkToAsset(ilk) };
+  const ilkData = ilks.find(i => i.ilkLabel === _ilk) || console.error(`Ilk "${ilk}" not found `) || {
+    ilkLabel: _ilk,
+    ilkBytes: stringToBytes(_ilk),
+    asset: exports.ilkToAsset(ilk)
+  };
   const assetData = assets.getAssetInfo(ilkData.asset);
   return {
     ...ilkData,
@@ -36,19 +51,6 @@ exports.getAssetInfoByAddress = (address = '') => assets.find(t => t.address.toL
 exports.ilkToAsset = ilk => (ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : ilk).replace(/-.*/, '');
 
 exports.exchangeAssets = assets.filter(t => t.exchange);
-
-/**
- * @type {{symbol: string, address: string, decimals: number, name: string, icon: function, ilkLabel: string, ilkBytes: string}}
- */
-exports.mcdCollateralAssets = ilks.map((ilk) => {
-  const { ilkBytes, ilkLabel, asset } = ilk;
-  const assetData = assets.getAssetInfo(asset);
-  return {
-    ...assetData,
-    ilkBytes,
-    ilkLabel,
-  };
-});
 
 exports.compoundCollateralAssets = assets.filter(t => t.compoundCollateral);
 exports.compoundAsset = (underlyingAsset) => `c${underlyingAsset.toUpperCase()}`;
