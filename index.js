@@ -17,9 +17,18 @@ const {stringToBytes, bytesToString, compare} = utils;
  */
 exports.getAssetInfo = (symbol = '') => assets.find(t => t.symbol.toLowerCase() === symbol.toLowerCase()) || console.error(`Asset "${symbol}" not found `) || {...assetProto};
 
+/**
+ * @param ilk {string} Ilk encoded as string or as hex
+ * @returns {{ilkLabel: (string), pip: (string), join: (string), asset: (string), flip: (string), ilkBytes: (string), assetData: {symbol: string, address: string, decimals: number, name: string, icon: Function, underlyingAsset: string, exchange: boolean, compoundCollateral: boolean, aaveCollateral: boolean}}}
+ */
 exports.getIlkInfo = (ilk = '') => {
   const _ilk = (ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : ilk).toUpperCase();
-  return ilks.find(i => i.ilkLabel === _ilk) || console.error(`Ilk "${ilk}" not found `) || { ilk, asset: exports.ilkToAsset(ilk) };
+  const ilkData = ilks.find(i => i.ilkLabel === _ilk) || console.error(`Ilk "${ilk}" not found `) || { ilkLabel: _ilk, ilkBytes: stringToBytes(_ilk), asset: exports.ilkToAsset(ilk) };
+  const assetData = assets.getAssetInfo(ilkData.asset);
+  return {
+    ...ilkData,
+    assetData,
+  }
 }
 
 exports.getAssetInfoByAddress = (address = '') => assets.find(t => t.address.toLowerCase() === address.toLowerCase()) || console.error(`Asset with addess "${address}" not found `) || {...assetProto};
@@ -28,22 +37,21 @@ exports.ilkToAsset = ilk => (ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : il
 
 exports.exchangeAssets = assets.filter(t => t.exchange);
 
-exports.mcdCollateralTypes = ['ETH-A', 'BAT-A', 'USDC-A', 'USDC-B', 'WBTC-A', 'ZRX-A', 'KNC-A', 'MANA-A', 'PAXUSD-A', 'COMP-A', 'LRC-A', 'LINK-A']; // 'USDT-A'
-
-exports.mcdCollateralAssets = exports.mcdCollateralTypes.map((ilkLabel) => {
-  const ilk = stringToBytes(ilkLabel);
-  const asset = assets.find(a => a.symbol === exports.ilkToAsset(ilk));
+exports.mcdCollateralAssets = ilks.map((ilk) => {
+  const { ilkBytes, ilkLabel, asset } = ilk;
+  const assetData = assets.getAssetInfo(asset);
   return {
-    ...asset,
-    ilk,
+    ...assetData,
+    ilkBytes,
     ilkLabel,
   };
 });
 
 exports.compoundCollateralAssets = assets.filter(t => t.compoundCollateral);
-exports.aaveCollateralAssets = assets.filter(t => t.aaveCollateral);
+exports.compoundAsset = (underlyingAsset) => `c${underlyingAsset.toUpperCase()}`;
 
-exports.getCompoundAssetInfoFromUnderlying = (_underlyingAsset) => exports.compoundCollateralAssets.find(({ underlyingAsset }) => underlyingAsset === _underlyingAsset);
+exports.aaveCollateralAssets = assets.filter(t => t.aaveCollateral);
+exports.aaveAsset = (underlyingAsset) => `a${underlyingAsset.toUpperCase()}`;
 
 exports.tokenFromJoin = (join) => {
   for (const ilkInfo of ilks) {
