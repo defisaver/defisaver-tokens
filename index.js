@@ -39,7 +39,7 @@ exports.getIlkInfo = (ilk = '') => {
     ilkBytes: stringToBytes(_ilk),
     asset: exports.ilkToAsset(ilk)
   };
-  const assetData = assets.getAssetInfo(ilkData.asset);
+  const assetData = exports.getAssetInfo(ilkData.asset);
   return {
     ...ilkData,
     assetData,
