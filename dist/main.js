@@ -16,8 +16,8 @@ return /******/ (() => { // webpackBootstrap
 const Dec = __webpack_require__(1);
 
 const {assetProto, assets} = __webpack_require__(2);
-const {ilks} = __webpack_require__(33);
-const utils = __webpack_require__(34);
+const {ilks} = __webpack_require__(34);
+const utils = __webpack_require__(35);
 
 /**
  * @type {Array<{symbol: string, address: string, decimals: number, name: string, icon: function, underlyingAsset: string, exchange: boolean, compoundCollateral: boolean, aaveCollateral: boolean}>}
@@ -192,6 +192,7 @@ const AAVEAddress = "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9";
 const aUNIAddress = "0xb124541127a0a657f056d9dd06188c4f1b0e5aab";
 const aAaveAddress = "0xba3D9687Cf50fE253cd2e1cFeEdE1d6787344Ed5";
 const BALAddress = "0xba100000625a3754423978a60c9317c58a424e3D";
+const GUSDAddress = "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd";
 
 const ZrxIcon = __webpack_require__(3);
 const UsdcIcon = __webpack_require__(5);
@@ -222,6 +223,7 @@ const DpiIcon = __webpack_require__(29);
 const UniIcon = __webpack_require__(30);
 const LrcIcon = __webpack_require__(31);
 const BalIcon = __webpack_require__(32);
+const GusdIcon = __webpack_require__(33);
 
 const assetProto = module.exports.assetProto = {
   symbol: '?',
@@ -874,7 +876,15 @@ exports.assets = [
     address: BALAddress,
     decimals: 18,
     icon: BalIcon,
-  }
+  },
+  {
+    ...assetProto,
+    symbol: 'GUSD',
+    name: 'Gemini Dollar',
+    address: GUSDAddress,
+    decimals: 2,
+    icon: GusdIcon,
+  },
 ];
 
 
@@ -2176,6 +2186,44 @@ module.exports = BalIcon;
 
 /***/ }),
 /* 33 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+const React = __webpack_require__(4);
+
+const GusdIcon = props => /*#__PURE__*/React.createElement("svg", _extends({
+  width: "193",
+  height: "193",
+  viewBox: "0 0 193 193",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg"
+}, props), /*#__PURE__*/React.createElement("circle", {
+  cx: "96.5",
+  cy: "96.5",
+  r: "96.5",
+  fill: "url(#gusd_paint0_linear)"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M110.819 52C94.9873 52 81.5405 64.1745 79.8509 79.8468C64.1705 81.5405 52 94.9873 52 110.815C52.0043 119.084 55.2907 127.013 61.1372 132.86C66.9837 138.707 74.9122 141.995 83.1809 142C99.0127 142 112.513 129.825 114.149 114.153C129.825 112.46 142 99.0127 142 83.185C141.996 74.9163 138.709 66.9874 132.863 61.1401C127.016 55.2928 119.088 52.0054 110.819 52V52ZM134.694 86.6745C133.915 91.7884 131.522 96.5196 127.865 100.177C124.207 103.835 119.476 106.228 114.362 107.006V86.6745H134.694V86.6745ZM59.3064 107.325C60.0744 102.202 62.4626 97.4588 66.1212 93.7906C69.7798 90.1225 74.5166 87.7219 79.6382 86.9405V107.272H59.3064V107.325V107.325ZM107.06 114.362C106.215 120.09 103.338 125.323 98.9534 129.104C94.5693 132.886 88.9708 134.965 83.1809 134.96C77.3921 134.965 71.7947 132.887 67.4112 129.106C63.0278 125.325 60.151 120.093 59.3064 114.366H107.06V114.362ZM107.325 86.6745V107.272H86.6745V86.6745H107.325ZM134.694 79.6382H86.9405C87.7851 73.9102 90.6624 68.6773 95.0466 64.8955C99.4307 61.1137 105.029 59.0355 110.819 59.0405C116.608 59.0355 122.205 61.1133 126.589 64.8943C130.972 68.6754 133.849 73.9072 134.694 79.6341V79.6382Z",
+  fill: "white"
+}), /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("linearGradient", {
+  id: "gusd_paint0_linear",
+  x1: "96.5",
+  y1: "0",
+  x2: "96.5",
+  y2: "193",
+  gradientUnits: "userSpaceOnUse"
+}, /*#__PURE__*/React.createElement("stop", {
+  stopColor: "#00DCFA"
+}), /*#__PURE__*/React.createElement("stop", {
+  offset: "1",
+  stopColor: "#0096B4"
+}))));
+
+module.exports = GusdIcon;
+
+/***/ }),
+/* 34 */
 /***/ ((__unused_webpack_module, exports) => {
 
 /** AUTOMATICALLY GENERATED FILE **/
@@ -2316,11 +2364,19 @@ exports.ilks = [
         "join": "0x3ff33d9162aD47660083D7DC4bC02Fb231c81677",
         "flip": "0xEe4C9C36257afB8098059a4763A374a4ECFE28A7",
         "pip": "0x5F122465bCf86F45922036970Be6DD7F58820214"
+    },
+    {
+        "asset": "GUSD",
+        "ilkLabel": "GUSD-A",
+        "ilkBytes": "0x475553442d410000000000000000000000000000000000000000000000000000",
+        "join": "0xe29A14bcDeA40d83675aa43B72dF07f649738C8b",
+        "flip": "0xCAa8D152A8b98229fB77A213BE16b234cA4f612f",
+        "pip": "0xf45Ae69CcA1b9B043dAE2C83A5B65Bc605BEc5F5"
     }
 ]
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ ((__unused_webpack_module, exports) => {
 
 /**
