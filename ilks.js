@@ -136,5 +136,13 @@ exports.ilks = [
         "join": "0x3ff33d9162aD47660083D7DC4bC02Fb231c81677",
         "flip": "0xEe4C9C36257afB8098059a4763A374a4ECFE28A7",
         "pip": "0x5F122465bCf86F45922036970Be6DD7F58820214"
+    },
+    {
+        "asset": "GUSD",
+        "ilkLabel": "GUSD-A",
+        "ilkBytes": "0x475553442d410000000000000000000000000000000000000000000000000000",
+        "join": "0xe29A14bcDeA40d83675aa43B72dF07f649738C8b",
+        "flip": "0xCAa8D152A8b98229fB77A213BE16b234cA4f612f",
+        "pip": "0xf45Ae69CcA1b9B043dAE2C83A5B65Bc605BEc5F5"
     }
 ]

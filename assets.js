@@ -63,6 +63,7 @@ const AAVEAddress = "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9";
 const aUNIAddress = "0xb124541127a0a657f056d9dd06188c4f1b0e5aab";
 const aAaveAddress = "0xba3D9687Cf50fE253cd2e1cFeEdE1d6787344Ed5";
 const BALAddress = "0xba100000625a3754423978a60c9317c58a424e3D";
+const GUSDAddress = "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd";
 
 const ZrxIcon = require('./TokenIcons/ZrxIcon.jsx');
 const UsdcIcon = require('./TokenIcons/UsdcIcon.jsx');
@@ -93,6 +94,7 @@ const DpiIcon = require('./TokenIcons/DpiIcon.jsx');
 const UniIcon = require('./TokenIcons/UniIcon.jsx');
 const LrcIcon = require('./TokenIcons/LrcIcon.jsx');
 const BalIcon = require('./TokenIcons/BalIcon.jsx');
+const GusdIcon = require("./TokenIcons/GusdIcon.jsx");
 
 const assetProto = module.exports.assetProto = {
   symbol: '?',
@@ -745,5 +747,13 @@ exports.assets = [
     address: BALAddress,
     decimals: 18,
     icon: BalIcon,
-  }
+  },
+  {
+    ...assetProto,
+    symbol: 'GUSD',
+    name: 'Gemini Dollar',
+    address: GUSDAddress,
+    decimals: 2,
+    icon: GusdIcon,
+  },
 ];
