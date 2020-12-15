@@ -144,5 +144,21 @@ exports.ilks = [
         "join": "0xe29A14bcDeA40d83675aa43B72dF07f649738C8b",
         "flip": "0xCAa8D152A8b98229fB77A213BE16b234cA4f612f",
         "pip": "0xf45Ae69CcA1b9B043dAE2C83A5B65Bc605BEc5F5"
+    },
+    {
+        "asset": "UNI",
+        "ilkLabel": "UNI-A",
+        "ilkBytes": "0x554e492d41000000000000000000000000000000000000000000000000000000",
+        "join": "0x3BC3A58b4FC1CbE7e98bB4aB7c99535e8bA9b8F1",
+        "flip": "0xF5b8cD9dB5a0EC031304A7B815010aa7761BD426",
+        "pip": "0xf363c7e351C96b910b92b45d34190650df4aE8e7"
+    },
+    {
+        "asset": "RENBTC",
+        "ilkLabel": "RENBTC-A",
+        "ilkBytes": "0x52454e4254432d41000000000000000000000000000000000000000000000000",
+        "join": "0xFD5608515A47C37afbA68960c1916b79af9491D0",
+        "flip": "0x30BC6eBC27372e50606880a36B279240c0bA0758",
+        "pip": "0xf185d0682d50819263941e5f4EacC763CC5C6C42"
     }
 ]
