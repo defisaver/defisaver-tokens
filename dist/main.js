@@ -193,6 +193,7 @@ const aUNIAddress = "0xb124541127a0a657f056d9dd06188c4f1b0e5aab";
 const aAaveAddress = "0xba3D9687Cf50fE253cd2e1cFeEdE1d6787344Ed5";
 const BALAddress = "0xba100000625a3754423978a60c9317c58a424e3D";
 const GUSDAddress = "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd";
+const RENBTCAddress = "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D";
 
 const ZrxIcon = __webpack_require__(3);
 const UsdcIcon = __webpack_require__(5);
@@ -884,6 +885,13 @@ exports.assets = [
     address: GUSDAddress,
     decimals: 2,
     icon: GusdIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'RENBTC',
+    name: 'renBTC',
+    address: RENBTCAddress,
+    decimals: 8,
   },
 ];
 
@@ -2372,6 +2380,22 @@ exports.ilks = [
         "join": "0xe29A14bcDeA40d83675aa43B72dF07f649738C8b",
         "flip": "0xCAa8D152A8b98229fB77A213BE16b234cA4f612f",
         "pip": "0xf45Ae69CcA1b9B043dAE2C83A5B65Bc605BEc5F5"
+    },
+    {
+        "asset": "UNI",
+        "ilkLabel": "UNI-A",
+        "ilkBytes": "0x554e492d41000000000000000000000000000000000000000000000000000000",
+        "join": "0x3BC3A58b4FC1CbE7e98bB4aB7c99535e8bA9b8F1",
+        "flip": "0xF5b8cD9dB5a0EC031304A7B815010aa7761BD426",
+        "pip": "0xf363c7e351C96b910b92b45d34190650df4aE8e7"
+    },
+    {
+        "asset": "RENBTC",
+        "ilkLabel": "RENBTC-A",
+        "ilkBytes": "0x52454e4254432d41000000000000000000000000000000000000000000000000",
+        "join": "0xFD5608515A47C37afbA68960c1916b79af9491D0",
+        "flip": "0x30BC6eBC27372e50606880a36B279240c0bA0758",
+        "pip": "0xf185d0682d50819263941e5f4EacC763CC5C6C42"
     }
 ]
 

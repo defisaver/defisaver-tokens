@@ -64,6 +64,7 @@ const aUNIAddress = "0xb124541127a0a657f056d9dd06188c4f1b0e5aab";
 const aAaveAddress = "0xba3D9687Cf50fE253cd2e1cFeEdE1d6787344Ed5";
 const BALAddress = "0xba100000625a3754423978a60c9317c58a424e3D";
 const GUSDAddress = "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd";
+const RENBTCAddress = "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D";
 
 const ZrxIcon = require('./TokenIcons/ZrxIcon.jsx');
 const UsdcIcon = require('./TokenIcons/UsdcIcon.jsx');
@@ -755,5 +756,12 @@ exports.assets = [
     address: GUSDAddress,
     decimals: 2,
     icon: GusdIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'RENBTC',
+    name: 'renBTC',
+    address: RENBTCAddress,
+    decimals: 8,
   },
 ];
