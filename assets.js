@@ -65,6 +65,7 @@ const aAaveAddress = "0xba3D9687Cf50fE253cd2e1cFeEdE1d6787344Ed5";
 const BALAddress = "0xba100000625a3754423978a60c9317c58a424e3D";
 const GUSDAddress = "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd";
 const RENBTCAddress = "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D";
+const UNIV2DAIETHAddress = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11";
 
 const ZrxIcon = require('./TokenIcons/ZrxIcon.jsx');
 const UsdcIcon = require('./TokenIcons/UsdcIcon.jsx');
@@ -96,6 +97,9 @@ const UniIcon = require('./TokenIcons/UniIcon.jsx');
 const LrcIcon = require('./TokenIcons/LrcIcon.jsx');
 const BalIcon = require('./TokenIcons/BalIcon.jsx');
 const GusdIcon = require("./TokenIcons/GusdIcon.jsx");
+const AaveIcon = require("./TokenIcons/AaveIcon.jsx");
+const UniV2DaiEthIcon = require("./TokenIcons/UniV2DaiEthIcon.jsx");
+const RenBtcIcon = require("./TokenIcons/RenBtcIcon.jsx");
 
 const assetProto = module.exports.assetProto = {
   symbol: '?',
@@ -729,7 +733,7 @@ exports.assets = [
     name: 'Aave',
     address: AAVEAddress,
     decimals: 18,
-    // icon: AaveIcon,
+    icon: AaveIcon,
   },
   {
     ...assetProto,
@@ -739,7 +743,7 @@ exports.assets = [
     decimals: 18,
     underlyingAsset: 'AAVE',
     aaveCollateral: true,
-    // icon: AaveIcon,
+    icon: AaveIcon,
   },
   {
     ...assetProto,
@@ -763,5 +767,14 @@ exports.assets = [
     name: 'renBTC',
     address: RENBTCAddress,
     decimals: 8,
+    icon: RenBtcIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'UNIV2DAIETH',
+    name: 'Uniswap V2: DAI/ETH ',
+    address: UNIV2DAIETHAddress,
+    decimals: 18,
+    icon: UniV2DaiEthIcon,
   },
 ];

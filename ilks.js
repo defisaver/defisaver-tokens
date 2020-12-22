@@ -160,5 +160,21 @@ exports.ilks = [
         "join": "0xFD5608515A47C37afbA68960c1916b79af9491D0",
         "flip": "0x30BC6eBC27372e50606880a36B279240c0bA0758",
         "pip": "0xf185d0682d50819263941e5f4EacC763CC5C6C42"
+    },
+    {
+        "asset": "AAVE",
+        "ilkLabel": "AAVE-A",
+        "ilkBytes": "0x414156452d410000000000000000000000000000000000000000000000000000",
+        "join": "0x24e459F61cEAa7b1cE70Dbaea938940A7c5aD46e",
+        "flip": "0x16e1b844094c885a37509a8f76c533B5fbFED13a",
+        "pip": "0x8Df8f06DC2dE0434db40dcBb32a82A104218754c"
+    },
+    {
+        "asset": "UNIV2DAIETH",
+        "ilkLabel": "UNIV2DAIETH-A",
+        "ilkBytes": "0x554e4956324441494554482d4100000000000000000000000000000000000000",
+        "join": "0x2502F65D77cA13f183850b5f9272270454094A08",
+        "flip": "0x57dfd99f45747DD55C1c432Db4aEa07FBd5d2B5c",
+        "pip": "0x87ecBd742cEB40928E6cDE77B2f0b5CFa3342A09"
     }
 ]
