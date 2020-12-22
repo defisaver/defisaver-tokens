@@ -8,8 +8,8 @@ const BalIcon = props => (
         <path d="M96.5 85C82.9723 85 72 80.5143 72 75C72 69.4857 82.9723 65 96.5 65C110.028 65 121 69.4857 121 75C121 80.5143 110.028 85 96.5 85Z" fill="white"/>
         <defs>
             <linearGradient id="bal_paint0_linear" x1="96.5" y1="0" x2="96.5" y2="193" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#414141"/>
-                <stop offset="1" stop-color="#1E1E1E"/>
+                <stop stopColor="#414141"/>
+                <stop offset="1" stopColor="#1E1E1E"/>
             </linearGradient>
         </defs>
     </svg>
