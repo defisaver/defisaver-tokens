@@ -19,6 +19,12 @@ const {assetProto, assets} = __webpack_require__(2);
 const {ilks} = __webpack_require__(37);
 const utils = __webpack_require__(38);
 
+Dec.set({
+  rounding: Dec.ROUND_DOWN,
+  toExpPos: 9e15,
+  toExpNeg: -9e15,
+});
+
 /**
  * @type {Array<{symbol: string, address: string, decimals: number, name: string, icon: function, underlyingAsset: string, exchange: boolean, compoundCollateral: boolean, aaveCollateral: boolean}>}
  */

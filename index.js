@@ -4,6 +4,12 @@ const {assetProto, assets} = require('./assets');
 const {ilks} = require('./ilks');
 const utils = require('./util');
 
+Dec.set({
+  rounding: Dec.ROUND_DOWN,
+  toExpPos: 9e15,
+  toExpNeg: -9e15,
+});
+
 /**
  * @type {Array<{symbol: string, address: string, decimals: number, name: string, icon: function, underlyingAsset: string, exchange: boolean, compoundCollateral: boolean, aaveCollateral: boolean}>}
  */
