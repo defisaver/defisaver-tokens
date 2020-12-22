@@ -1,4 +1,4 @@
-import React from 'react';
+const React = require('react');
 
 module.exports = function RenBtcIcon(props) {
   return (

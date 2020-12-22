@@ -1,4 +1,4 @@
-import React from 'react';
+const React = require('react');
 
 module.exports = function AaveIcon(props) {
   return (
@@ -12,6 +12,5 @@ module.exports = function AaveIcon(props) {
         </linearGradient>
       </defs>
     </svg>
-
   );
 }

@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default function OmgIcon(props) {
+module.exports = function OmgIcon(props) {
   return (
     <svg width={43} height={43} viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
       <circle cx="21.5" cy="21.5" r="21.5" fill="url(#paint0_linear_omg_icon)" fillOpacity="0.6" />
