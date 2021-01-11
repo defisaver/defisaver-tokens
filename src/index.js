@@ -25,6 +25,7 @@ const {stringToBytes, bytesToString, compare} = utils;
 
 /**
  * Returns asset info
+ * Warning: Will not throw if ilk not found. Instead, will return a placeholder object.
  *
  * @param symbol
  * @return {{symbol: string, address: string, decimals: number, name: string, icon: function, underlyingAsset: string, ilk: string|null, exchange: boolean, mcdCollateral: boolean, compoundCollateral: boolean, aaveCollateral: boolean}}
@@ -33,6 +34,7 @@ export const getAssetInfo = (symbol = '') => assets.find(t => compare(t.symbol, 
 
 /**
  * Returns ilk info, and asset info in `assetData`
+ * Warning: Will not throw if asset not found. Instead, will return a placeholder object.
  *
  * @param ilk {string} Ilk encoded as string or as hex
  * @returns {{ilkLabel: (string), pip: (string), join: (string), asset: (string), flip: (string), ilkBytes: (string), assetData: {symbol: string, address: string, decimals: number, name: string, icon: Function, underlyingAsset: string, exchange: boolean, compoundCollateral: boolean, aaveCollateral: boolean}}}

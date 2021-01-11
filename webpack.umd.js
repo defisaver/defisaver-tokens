@@ -7,7 +7,8 @@ module.exports = {
     library: 'defisaver-tokens',
     libraryTarget: 'umd',
     path: path.resolve(__dirname, 'umd'),
-    filename: 'index.js'
+    filename: 'index.js',
+    globalObject: 'this'
   },
   module: {
     rules: [
