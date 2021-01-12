@@ -4,8 +4,8 @@
  */
 export const bytesToString = (hex) => {
   return Buffer.from(hex.replace(/^0x/, ''), 'hex')
-      .toString()
-      .replace(/\x00/g, '');
+    .toString()
+    .replace(/\x00/g, '');
 };
 
 /**

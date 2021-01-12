@@ -1,12 +1,13 @@
 import Dec from 'decimal.js';
+import {assetProto, assets as _assets} from './assets.js';
+import {ilks as _ilks} from './ilks.js';
+import * as _utils from './utils.js';
+
 Dec.set({
   rounding: Dec.ROUND_DOWN,
   toExpPos: 9e15,
   toExpNeg: -9e15,
 });
-import { assets as _assets, assetProto } from './assets.js';
-import { ilks as _ilks } from './ilks.js';
-import * as _utils from './utils.js';
 
 /**
  * @type {Array<{ilkLabel: (string), pip: (string), join: (string), asset: (string), flip: (string), ilkBytes: (string)}>}

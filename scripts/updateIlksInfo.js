@@ -1,6 +1,6 @@
 const axios = require('axios');
 const fs = require('fs').promises;
-const {stringToBytes} = require('../util');
+const {utils: {stringToBytes}} = require('../umd');
 
 (async () => {
   const {data} = await axios('https://changelog.makerdao.com/releases/mainnet/active/contracts.json');
@@ -19,9 +19,9 @@ const {stringToBytes} = require('../util');
     }));
 
   let fileData = '/** AUTOMATICALLY GENERATED FILE **/\n\n';
-  fileData += 'exports.ilks = ' + JSON.stringify(ilkInfo, null, 4);
+  fileData += 'export const ilks = ' + JSON.stringify(ilkInfo, null, 2) + ';\n';
 
-  const f = await fs.open(__dirname + '/../ilks.js', 'w');
+  const f = await fs.open(__dirname + '/../src/ilks.js', 'w');
   await f.write(fileData);
   await f.close();
 })();
