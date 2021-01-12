@@ -9,7 +9,7 @@
     "update-ilks": "node scripts/updateIlksInfo",
     "document": "jsdoc2md --param-list-format list --files src/index.js src/utils.js > README.md",
     "build:umd": "rm -rf umd && webpack --config=webpack.umd.js",
-    "build:esm": "rm -rf esm && babel src --out-dir esm",
+    "build:esm": "rm -rf esm && babel src --out-dir esm --presets @babel/react",
     "build": "npm run build:umd && npm run build:esm"
   },
   "author": "",
