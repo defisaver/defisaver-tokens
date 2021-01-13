@@ -11,7 +11,6 @@ const ZRXAddress = "0xe41d2489571d322189246dafa5ebde1f4699f498";
 const KNCAddress = "0xdd974D5C2e2928deA5F71b9825b8b646686BD200";
 const USDCAddress = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48";
 const WBTCAddress = "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599";
-const DGDAddress = "0xe0b7927c4af23765cb51314a0e0521a9645f0e2a";
 const MKRAddress = "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2";
 const COMPAddress = "0xc00e94cb662c3520282e6f5717214004a7f26888";
 const cDAIAddress = "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643";
@@ -64,10 +63,12 @@ const cCOMPAddress = "0x70e36f6bf80a52b3b46b3af8e106cc0ed743e8e4";
 const AAVEAddress = "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9";
 const aUNIAddress = "0xb124541127a0a657f056d9dd06188c4f1b0e5aab";
 const aAaveAddress = "0xba3D9687Cf50fE253cd2e1cFeEdE1d6787344Ed5";
+const stkAAVEAddress = "0x4da27a545c0c5B758a6BA100e3a049001de870f5";
 const BALAddress = "0xba100000625a3754423978a60c9317c58a424e3D";
 const GUSDAddress = "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd";
 const RENBTCAddress = "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D";
 const UNIV2DAIETHAddress = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11";
+const aWETHAddress = "0x030bA81f1c18d280636F32af80b9AAd02Cf0854e";
 
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
 import UsdcIcon from './TokenIcons/UsdcIcon.js';
@@ -102,6 +103,7 @@ import GusdIcon from './TokenIcons/GusdIcon.js';
 import AaveIcon from './TokenIcons/AaveIcon.js';
 import UniV2DaiEthIcon from './TokenIcons/UniV2DaiEthIcon.js';
 import RenBtcIcon from './TokenIcons/RenBtcIcon.js';
+import StkAaveIcon from './TokenIcons/StkAaveIcon.js';
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -312,16 +314,6 @@ export const assets: AssetData[] = [
   },
   {
     ...assetProto,
-    symbol: 'DGD',
-    name: 'DigixDAO',
-    decimals: 9,
-    exchange: true,
-    compoundCollateral: false,
-    address: DGDAddress,
-    icon: DgdIcon,
-  },
-  {
-    ...assetProto,
     symbol: 'USDT',
     name: 'Tether',
     decimals: 6,
@@ -381,7 +373,7 @@ export const assets: AssetData[] = [
     symbol: 'aUSDC',
     underlyingAsset: 'USDC',
     name: 'USDC',
-    decimals: 18,
+    decimals: 6,
     aaveCollateral: true,
     address: aUSDCAddress,
     icon: UsdcIcon,
@@ -429,7 +421,7 @@ export const assets: AssetData[] = [
     symbol: 'aUSDT',
     underlyingAsset: 'USDT',
     name: 'Tether',
-    decimals: 18,
+    decimals: 6,
     aaveCollateral: true,
     address: aUSDTAddress,
     icon: UsdtIcon,
@@ -574,7 +566,7 @@ export const assets: AssetData[] = [
     symbol: 'aWBTC',
     underlyingAsset: 'WBTC',
     name: 'WBTC',
-    decimals: 18,
+    decimals: 8,
     aaveCollateral: true,
     address: aWBTCAddress,
     icon: WbtcIcon,
@@ -727,13 +719,22 @@ export const assets: AssetData[] = [
   },
   {
     ...assetProto,
-    symbol: 'aAave',
+    symbol: 'aAAVE',
     name: 'Aave',
     address: aAaveAddress,
     decimals: 18,
     underlyingAsset: 'AAVE',
     aaveCollateral: true,
     icon: AaveIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'stkAAVE',
+    // underlyingAsset: 'AAVE',
+    name: 'AAVE',
+    decimals: 18,
+    address: stkAAVEAddress,
+    icon: StkAaveIcon,
   },
   {
     ...assetProto,
@@ -767,4 +768,13 @@ export const assets: AssetData[] = [
     decimals: 18,
     icon: UniV2DaiEthIcon,
   },
+  {
+    ...assetProto,
+    symbol: 'aWETH',
+    underlyingAsset: 'WETH',
+    name: 'WETH',
+    decimals: 18,
+    address: aWETHAddress,
+    icon: EthIcon,
+  }
 ];
