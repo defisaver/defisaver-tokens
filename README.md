@@ -1,101 +1,233 @@
-## Constants
+# @defisaver/tokens
 
-<dl>
-<dt><a href="#ilks">ilks</a> : <code>Array.&lt;{ilkLabel: (string), pip: (string), join: (string), asset: (string), flip: (string), ilkBytes: (string)}&gt;</code></dt>
-<dd></dd>
-<dt><a href="#assets">assets</a> : <code>Array.&lt;{symbol: string, address: string, decimals: number, name: string, icon: function(), underlyingAsset: string, exchange: boolean, compoundCollateral: boolean, aaveCollateral: boolean}&gt;</code></dt>
-<dd></dd>
-<dt><a href="#getAssetInfo">getAssetInfo</a> ⇒ <code>Object</code></dt>
-<dd><p>Returns asset info
-Warning: Will not throw if ilk not found. Instead, will return a placeholder object.</p>
-</dd>
-<dt><a href="#getIlkInfo">getIlkInfo</a> ⇒ <code>Object</code></dt>
-<dd><p>Returns ilk info, and asset info in <code>assetData</code>
-Warning: Will not throw if asset not found. Instead, will return a placeholder object.</p>
-</dd>
-<dt><a href="#tokenFromJoin">tokenFromJoin</a> ⇒ <code>string</code></dt>
-<dd></dd>
-<dt><a href="#assetAmountInEth">assetAmountInEth</a> ⇒ <code>String</code></dt>
-<dd></dd>
-<dt><a href="#assetAmountInWei">assetAmountInWei</a> ⇒ <code>String</code></dt>
-<dd></dd>
-<dt><a href="#bytesToString">bytesToString</a> ⇒ <code>string</code></dt>
-<dd></dd>
-<dt><a href="#stringToBytes">stringToBytes</a> ⇒ <code>string</code></dt>
-<dd></dd>
-</dl>
+## Table of contents
 
-<a name="ilks"></a>
+### Type aliases
 
-## ilks : <code>Array.&lt;{ilkLabel: (string), pip: (string), join: (string), asset: (string), flip: (string), ilkBytes: (string)}&gt;</code>
-**Kind**: global constant  
-<a name="assets"></a>
+- [AssetData](README.md#assetdata)
+- [ExtendedIlkData](README.md#extendedilkdata)
+- [IlkData](README.md#ilkdata)
 
-## assets : <code>Array.&lt;{symbol: string, address: string, decimals: number, name: string, icon: function(), underlyingAsset: string, exchange: boolean, compoundCollateral: boolean, aaveCollateral: boolean}&gt;</code>
-**Kind**: global constant  
-<a name="getAssetInfo"></a>
+### Variables
 
-## getAssetInfo ⇒ <code>Object</code>
-Returns asset info
-Warning: Will not throw if ilk not found. Instead, will return a placeholder object.
+- [assets](README.md#assets)
+- [ilks](README.md#ilks)
+- [utils](README.md#utils)
 
-**Kind**: global constant  
-**Params**
+### Functions
 
-- symbol
+- [assetAmountInEth](README.md#assetamountineth)
+- [assetAmountInWei](README.md#assetamountinwei)
+- [getAssetInfo](README.md#getassetinfo)
+- [getAssetInfoByAddress](README.md#getassetinfobyaddress)
+- [getIlkInfo](README.md#getilkinfo)
+- [ilkToAsset](README.md#ilktoasset)
+- [tokenFromJoin](README.md#tokenfromjoin)
 
-<a name="getIlkInfo"></a>
+## Type aliases
 
-## getIlkInfo ⇒ <code>Object</code>
-Returns ilk info, and asset info in `assetData`
-Warning: Will not throw if asset not found. Instead, will return a placeholder object.
+### AssetData
 
-**Kind**: global constant  
-**Params**
+Ƭ **AssetData**: { `aaveCollateral`: *boolean* ; `address`: *string* ; `compoundCollateral`: *boolean* ; `decimals`: *number* ; `exchange`: *boolean* ; `icon`: Function ; `name`: *string* ; `symbol`: *string* ; `underlyingAsset`: *string*  }
 
-- ilk <code>string</code> - Ilk encoded as string or as hex
+Asset info type
 
-<a name="tokenFromJoin"></a>
+#### Type declaration:
 
-## tokenFromJoin ⇒ <code>string</code>
-**Kind**: global constant  
-**Returns**: <code>string</code> - Token symbol  
-**Params**
+Name | Type |
+------ | ------ |
+`aaveCollateral` | *boolean* |
+`address` | *string* |
+`compoundCollateral` | *boolean* |
+`decimals` | *number* |
+`exchange` | *boolean* |
+`icon` | Function |
+`name` | *string* |
+`symbol` | *string* |
+`underlyingAsset` | *string* |
 
-- join <code>string</code> - Maker ilk join
+Defined in: [types.ts:4](https://github.com/DecenterApps/defisaver-tokens/blob/504ff2c/src/types.ts#L4)
 
-<a name="assetAmountInEth"></a>
+___
 
-## assetAmountInEth ⇒ <code>String</code>
-**Kind**: global constant  
-**Params**
+### ExtendedIlkData
 
-- amount <code>Number</code> | <code>String</code> | <code>Object</code> - Amount in wei
-- asset <code>String</code> - Asset symbol (or `MCD-${symbol}` for maker asset - always 18dec)
+Ƭ **ExtendedIlkData**: [*IlkData*](README.md#ilkdata) \| { `assetData`: [*AssetData*](README.md#assetdata)  }
 
-<a name="assetAmountInWei"></a>
+Defined in: [types.ts:29](https://github.com/DecenterApps/defisaver-tokens/blob/504ff2c/src/types.ts#L29)
 
-## assetAmountInWei ⇒ <code>String</code>
-**Kind**: global constant  
-**Params**
+___
 
-- amount <code>Number</code> | <code>String</code> | <code>Object</code> - Amount in eth
-- asset <code>String</code> - Asset symbol
+### IlkData
 
-<a name="bytesToString"></a>
+Ƭ **IlkData**: { `asset`: *string* ; `flip`: *string* ; `ilkBytes`: *string* ; `ilkLabel`: *string* ; `isLP`: *boolean* ; `join`: *string* ; `pip`: *string*  }
 
-## bytesToString ⇒ <code>string</code>
-**Kind**: global constant  
-**Params**
+Maker ilk info type
 
-- hex <code>string</code>
+#### Type declaration:
 
-<a name="stringToBytes"></a>
+Name | Type |
+------ | ------ |
+`asset` | *string* |
+`flip` | *string* |
+`ilkBytes` | *string* |
+`ilkLabel` | *string* |
+`isLP` | *boolean* |
+`join` | *string* |
+`pip` | *string* |
 
-## stringToBytes ⇒ <code>string</code>
-**Kind**: global constant  
-**Returns**: <code>string</code> - input encoded to hex, padded to 32 bytes  
-**Params**
+Defined in: [types.ts:19](https://github.com/DecenterApps/defisaver-tokens/blob/504ff2c/src/types.ts#L19)
 
-- str <code>string</code>
+## Variables
 
+### assets
+
+• `Const` **assets**: [*AssetData*](README.md#assetdata)[]
+
+Defined in: [assets.ts:118](https://github.com/DecenterApps/defisaver-tokens/blob/504ff2c/src/assets.ts#L118)
+
+___
+
+### ilks
+
+• `Const` **ilks**: [*IlkData*](README.md#ilkdata)[]
+
+Defined in: [ilks.ts:5](https://github.com/DecenterApps/defisaver-tokens/blob/504ff2c/src/ilks.ts#L5)
+
+___
+
+### utils
+
+• `Const` **utils**: *object*
+
+#### Type declaration:
+
+Name | Type | Value |
+------ | ------ | ------ |
+`bytesToString` | *function* | (`hex`: *string*) => *string* |
+`compare` | *function* | (`a`: *string*, `b`: *string*) => *boolean* |
+`stringToBytes` | *function* | (`str`: *string*) => *string* |
+
+Defined in: [index.ts:9](https://github.com/DecenterApps/defisaver-tokens/blob/504ff2c/src/index.ts#L9)
+
+## Functions
+
+### assetAmountInEth
+
+▸ `Const`**assetAmountInEth**(`amount`: *string* \| *number* \| *object*, `asset?`: *string*): *string*
+
+#### Parameters:
+
+Name | Type | Default value | Description |
+------ | ------ | ------ | ------ |
+`amount` | *string* \| *number* \| *object* | - | Amount in wei   |
+`asset` | *string* | 'ETH' | Asset symbol (or `MCD-${symbol}` for maker asset - always 18dec)   |
+
+**Returns:** *string*
+
+Defined in: [index.ts:79](https://github.com/DecenterApps/defisaver-tokens/blob/504ff2c/src/index.ts#L79)
+
+___
+
+### assetAmountInWei
+
+▸ `Const`**assetAmountInWei**(`amount`: *string* \| *number* \| *object*, `asset`: *string*): *string*
+
+#### Parameters:
+
+Name | Type | Description |
+------ | ------ | ------ |
+`amount` | *string* \| *number* \| *object* | Amount in eth   |
+`asset` | *string* | Asset symbol   |
+
+**Returns:** *string*
+
+Defined in: [index.ts:98](https://github.com/DecenterApps/defisaver-tokens/blob/504ff2c/src/index.ts#L98)
+
+___
+
+### getAssetInfo
+
+▸ `Const`**getAssetInfo**(`symbol?`: *string*): [*AssetData*](README.md#assetdata)
+
+Returns asset info.
+Warning: will not throw if asset not found. Instead, will return a placeholder object.
+
+#### Parameters:
+
+Name | Type | Default value |
+------ | ------ | ------ |
+`symbol` | *string* | '' |
+
+**Returns:** [*AssetData*](README.md#assetdata)
+
+Defined in: [index.ts:24](https://github.com/DecenterApps/defisaver-tokens/blob/504ff2c/src/index.ts#L24)
+
+___
+
+### getAssetInfoByAddress
+
+▸ `Const`**getAssetInfoByAddress**(`address?`: *string*): [*AssetData*](README.md#assetdata)
+
+#### Parameters:
+
+Name | Type | Default value |
+------ | ------ | ------ |
+`address` | *string* | '' |
+
+**Returns:** [*AssetData*](README.md#assetdata)
+
+Defined in: [index.ts:47](https://github.com/DecenterApps/defisaver-tokens/blob/504ff2c/src/index.ts#L47)
+
+___
+
+### getIlkInfo
+
+▸ `Const`**getIlkInfo**(`ilk?`: *string*): [*ExtendedIlkData*](README.md#extendedilkdata)
+
+Returns Maker ilk info, and asset info as `assetData` attribute.
+Warning: will not throw if ilk not found. Instead, will return a placeholder object.
+
+#### Parameters:
+
+Name | Type | Default value | Description |
+------ | ------ | ------ | ------ |
+`ilk` | *string* | '' | Ilk encoded as string or as hex   |
+
+**Returns:** [*ExtendedIlkData*](README.md#extendedilkdata)
+
+Defined in: [index.ts:33](https://github.com/DecenterApps/defisaver-tokens/blob/504ff2c/src/index.ts#L33)
+
+___
+
+### ilkToAsset
+
+▸ `Const`**ilkToAsset**(`ilk`: *string*): *string*
+
+#### Parameters:
+
+Name | Type |
+------ | ------ |
+`ilk` | *string* |
+
+**Returns:** *string*
+
+Defined in: [index.ts:49](https://github.com/DecenterApps/defisaver-tokens/blob/504ff2c/src/index.ts#L49)
+
+___
+
+### tokenFromJoin
+
+▸ `Const`**tokenFromJoin**(`join`: *string*): *string*
+
+#### Parameters:
+
+Name | Type | Description |
+------ | ------ | ------ |
+`join` | *string* | Maker ilk join   |
+
+**Returns:** *string*
+
+Token symbol
+
+Defined in: [index.ts:66](https://github.com/DecenterApps/defisaver-tokens/blob/504ff2c/src/index.ts#L66)
