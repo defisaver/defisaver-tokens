@@ -1,3 +1,5 @@
+import { AssetData } from './types';
+
 const ETHAddress = "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
 const DAIAddress = "0x6b175474e89094c44da98b954eedeac495271d0f";
 const SAIAddress = "0x89d24A6b4CcB1B6fAA2625fE562bDD9a23260359";
@@ -101,7 +103,7 @@ import AaveIcon from './TokenIcons/AaveIcon.js';
 import UniV2DaiEthIcon from './TokenIcons/UniV2DaiEthIcon.js';
 import RenBtcIcon from './TokenIcons/RenBtcIcon.js';
 
-export const assetProto = {
+export const assetProto: AssetData = {
   symbol: '?',
   name: 'Unknown',
   address: '0x0',
@@ -113,14 +115,13 @@ export const assetProto = {
   aaveCollateral: false,
 };
 
-export const assets = [
+export const assets: AssetData[] = [
   {
     ...assetProto,
     symbol: 'ETH',
     name: 'Ether',
     decimals: 18,
     exchange: true,
-    mcdCollateral: true,
     compoundCollateral: false,
     address: ETHAddress,
     icon: EthIcon,
@@ -190,7 +191,6 @@ export const assets = [
     name: 'Basic Attention Token',
     decimals: 18,
     exchange: true,
-    mcdCollateral: true,
     compoundCollateral: false,
     address: BATAddress,
     icon: BatIcon,
@@ -213,7 +213,6 @@ export const assets = [
     decimals: 18,
     exchange: true,
     compoundCollateral: false,
-    mcdCollateral: true,
     address: ZRXAddress,
     icon: ZrxIcon,
   },
@@ -224,7 +223,6 @@ export const assets = [
     decimals: 18,
     exchange: true,
     compoundCollateral: false,
-    mcdCollateral: true,
     address: KNCAddress,
     icon: KncIcon,
   },
@@ -276,7 +274,6 @@ export const assets = [
     name: 'USD Coin',
     decimals: 6,
     exchange: true,
-    mcdCollateral: true,
     compoundCollateral: false,
     address: USDCAddress,
     icon: UsdcIcon,
@@ -298,7 +295,6 @@ export const assets = [
     name: 'Wrapped Bitcoin',
     decimals: 8,
     exchange: true,
-    mcdCollateral: true,
     compoundCollateral: false,
     address: WBTCAddress,
     icon: WbtcIcon,
@@ -331,7 +327,6 @@ export const assets = [
     decimals: 6,
     exchange: true,
     address: USDTAddress,
-    // mcdCollateral: true, // Contracts not yet ready
     icon: UsdtIcon,
   },
   {
@@ -359,7 +354,6 @@ export const assets = [
     decimals: 18,
     address: COMPAddress,
     exchange: true,
-    mcdCollateral: true,
     icon: CompIcon,
   },
   {
@@ -514,7 +508,6 @@ export const assets = [
     name: 'ChainLink',
     decimals: 18,
     exchange: true,
-    mcdCollateral: true,
     address: LINKAddress,
     icon: LinkIcon,
   },
@@ -534,7 +527,6 @@ export const assets = [
     name: 'Decentraland',
     decimals: 18,
     exchange: true,
-    mcdCollateral: true,
     address: MANAAddress,
     icon: ManaIcon,
   },
@@ -668,7 +660,6 @@ export const assets = [
     name: 'Paxos Standard',
     decimals: 18,
     exchange: true,
-    mcdCollateral: true,
     address: PAXUSDAddress,
     icon: PaxusdIcon,
   },
@@ -704,7 +695,6 @@ export const assets = [
     name: 'Loopring Coin V2',
     decimals: 18,
     exchange: true,
-    mcdCollateral: true,
     address: LRCAddress,
     icon: LrcIcon,
   },

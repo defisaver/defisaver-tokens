@@ -1,6 +1,8 @@
 /** AUTOMATICALLY GENERATED FILE **/
 
-export const ilks = [
+import { IlkData } from './types';
+
+export const ilks:IlkData[] = [
   {
     "asset": "ETH",
     "ilkLabel": "ETH-A",

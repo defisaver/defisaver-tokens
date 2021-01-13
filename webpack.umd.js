@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: "none",
-  entry: './src/index.js',
+  entry: './src/index.ts',
   output: {
     library: 'defisaver-tokens',
     libraryTarget: 'umd',
@@ -13,21 +13,22 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.[tj]s$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
           options: {
             presets: [
               '@babel/preset-react',
+              '@babel/preset-typescript',
               [
                 "@babel/preset-env",
                 {
                   "targets": {
                     "esmodules": true
                   }
-                }
-              ]
+                },
+              ],
             ]
           }
         }
@@ -35,4 +36,7 @@ module.exports = {
     ]
   },
   externals: ["react", "decimal.js"],
+  resolve: {
+    extensions: ['.ts', '.js'],
+  },
 };
