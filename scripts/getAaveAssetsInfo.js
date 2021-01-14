@@ -3,7 +3,7 @@ const {getAssetInfo, getAssetInfoByAddress, utils: {compare}} = require('../umd'
 
 (async () => {
   const {data} = await axios.post("https://api.thegraph.com/subgraphs/name/aave/protocol-multy-raw", {
-    query: "{\n  atokens (where: { pool: \"0x24a42fd28c976a61df5d00d0599c34c4f90748c8\" }) {\n    id\n    underlyingAssetAddress\n  }\n}",
+    query: "{\n  atokens (where: { pool: \"0x24a42fd28c976a61df5d00d0599c34c4f90748c8\" }) {\n    id\n    underlyingAssetAddress\n    underlyingAssetDecimals\n  }\n}",
     variables: null
   });
 
@@ -17,13 +17,14 @@ const {getAssetInfo, getAssetInfoByAddress, utils: {compare}} = require('../umd'
         name: assetInfo.name,
         address: t.id,
         underlyingAsset: assetInfo.symbol,
-        decimals: 18,
+        decimals: t.underlyingAssetDecimals,
         aaveCollateral: true,
       }
     })
 
   tokensInfo.forEach(t => {
     const assetInfo = getAssetInfo(t.symbol);
+    if (!assetInfo.aaveCollateral) console.log(`${t.symbol} missing aaveCollateral attr`)
     if (assetInfo.symbol === '?' || assetInfo.decimals !== t.decimals || !compare(assetInfo.address, t.address)) console.log(t)
   });
 })();

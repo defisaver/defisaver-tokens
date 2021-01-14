@@ -17,6 +17,7 @@ const {getAssetInfo, utils: {compare}} = require('../umd');
 
   tokensInfo.forEach(t => {
     const assetInfo = getAssetInfo(t.symbol);
+    if (!assetInfo.compoundCollateral) console.log(`${t.symbol} missing compoundCollateral attr`)
     if (assetInfo.symbol === '?' || assetInfo.decimals !== t.decimals || !compare(assetInfo.address, t.address)) console.log(t)
   });
 })();

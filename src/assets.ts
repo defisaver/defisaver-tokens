@@ -697,6 +697,7 @@ export const assets: AssetData[] = [
     address: cCOMPAddress,
     underlyingAsset: "COMP",
     decimals: 8,
+    compoundCollateral: true,
     icon: CompIcon,
   },
   {
