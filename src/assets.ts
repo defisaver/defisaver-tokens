@@ -70,6 +70,7 @@ const RENBTCAddress = "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D";
 const UNIV2DAIETHAddress = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11";
 const aWETHAddress = "0x030bA81f1c18d280636F32af80b9AAd02Cf0854e";
 
+import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
 import UsdcIcon from './TokenIcons/UsdcIcon.js';
 import BatIcon from './TokenIcons/BatIcon.js';
@@ -110,7 +111,7 @@ export const assetProto: AssetData = {
   name: 'Unknown',
   address: '0x0',
   decimals: 18,
-  icon: () => '',
+  icon: BlankIcon,
   underlyingAsset: '',
   exchange: false,
   compoundCollateral: false,
