@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { v4 as uuid } from 'uuid';
 
 export default function StkAaveIcon(props) {
-  const id1 = `stkaave_icon_${uuid()}_1`;
-  const id2 = `stkaave_icon_${uuid()}_2`;
+  const memoizedUuid = useMemo(() => uuid(), []);
+  const id1 = `stkaave_icon_${memoizedUuid}_1`;
+  const id2 = `stkaave_icon_${memoizedUuid}_2`;
   const fill = (id) => `url(#${id})`;
   return (
     <svg width="193" height="193" viewBox="0 0 193 193" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>

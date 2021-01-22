@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { v4 as uuid } from 'uuid';
 
 export default function CompIcon(props) {
-  const id = `comp_icon_${uuid()}`;
+  const memoizedUuid = useMemo(() => uuid(), []);
+  const id = `comp_icon_${memoizedUuid}`;
   const fill = `url(#${id})`;
   return (
     <svg width="194" height="193" viewBox="0 0 194 193" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>

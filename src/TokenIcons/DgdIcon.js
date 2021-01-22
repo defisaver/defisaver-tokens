@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { v4 as uuid } from 'uuid';
 
 export default function DgdIcon(props) {
-  const id = `dgd_icon_${uuid()}`;
+  const memoizedUuid = useMemo(() => uuid(), []);
+  const id = `dgd_icon_${memoizedUuid}`;
   const fill = `url(#${id})`;
   return (
     <svg width={43} height={43} viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
