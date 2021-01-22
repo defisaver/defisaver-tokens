@@ -1,9 +1,8 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { v4 as uuid } from 'uuid';
 
 export default function UniV2DaiEthIcon(props) {
-  const memoizedUuid = useMemo(() => uuid(), []);
-  const id = `univ2_icon_${memoizedUuid}`;
+  const id = `univ2_icon_${uuid()}`;
   const fill = `url(#${id})`;
   return (
     <svg width="193" height="194" viewBox="0 0 193 194" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
