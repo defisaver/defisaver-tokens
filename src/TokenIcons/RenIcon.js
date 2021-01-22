@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useMemo } from 'react';
+import { v4 as uuid } from 'uuid';
 
 export default function RenIcon(props) {
+  const memoizedUuid = useMemo(() => uuid(), []);
+  const id = `ren_icon_${memoizedUuid}`;
+  const fill = `url(#${id})`;
   return (
     <svg width="193" height="193" viewBox="0 0 193 193" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path d="M96.5 193C149.795 193 193 149.795 193 96.5C193 43.2045 149.795 0 96.5 0C43.2045 0 0 43.2045 0 96.5C0 149.795 43.2045 193 96.5 193Z" fill="url(#ren_iconpaint0_linear)" />
+      <path d="M96.5 193C149.795 193 193 149.795 193 96.5C193 43.2045 149.795 0 96.5 0C43.2045 0 0 43.2045 0 96.5C0 149.795 43.2045 193 96.5 193Z" fill={fill} />
       <path d="M63.0147 64.5922L71.0939 59.9493L72.1777 61.8246L101.949 44.6444L99.7734 43.3932L97.5884 42.1245L96.5046 41.4991L48.0015 69.5171V70.7684L61.9309 62.7157L63.0147 64.5922Z" fill="white" />
       <path d="M63.0147 82.2312L86.3477 68.7505L87.4405 70.6446L117.212 53.4638L115.036 52.1951L112.851 50.9438L111.758 50.3185L48.0015 87.1296V88.3808L61.9309 80.3275L63.0147 82.2312Z" fill="white" />
       <path d="M63.0147 91.0501L93.9781 73.1645L95.071 75.0398L124.843 57.8389L122.658 56.6142L120.482 55.3364L119.386 54.715L48.0015 95.9317V97.2094L61.9309 89.1561L63.0147 91.0501Z" fill="white" />
@@ -18,7 +22,7 @@ export default function RenIcon(props) {
       <path d="M92.1436 151.016L100.073 146.408L101.164 148.313L109.235 143.626L110.328 145.529L144.998 125.519V119.227L91.0508 150.39L92.1436 151.016Z" fill="white" />
       <path d="M109.58 49.0512L107.403 47.7999L105.218 46.55L104.134 45.8969L48.0015 78.3114V79.5626L61.9309 71.5358L63.0147 73.4111L78.7244 64.3451L79.8347 66.2482L109.58 49.0512Z" fill="white" />
       <defs>
-        <linearGradient id="ren_iconpaint0_linear" x1="96.5" y1="0" x2="96.5" y2="193" gradientUnits="userSpaceOnUse">
+        <linearGradient id={id} x1="96.5" y1="0" x2="96.5" y2="193" gradientUnits="userSpaceOnUse">
           <stop stopColor="#0E3158" />
           <stop offset="1" stopColor="#001D44" />
         </linearGradient>

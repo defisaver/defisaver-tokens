@@ -70,6 +70,7 @@ const RENBTCAddress = "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D";
 const UNIV2DAIETHAddress = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11";
 const aWETHAddress = "0x030bA81f1c18d280636F32af80b9AAd02Cf0854e";
 
+import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
 import UsdcIcon from './TokenIcons/UsdcIcon.js';
 import BatIcon from './TokenIcons/BatIcon.js';
@@ -110,11 +111,12 @@ export const assetProto: AssetData = {
   name: 'Unknown',
   address: '0x0',
   decimals: 18,
-  icon: () => '',
+  icon: BlankIcon,
   underlyingAsset: '',
   exchange: false,
   compoundCollateral: false,
   aaveCollateral: false,
+  isStable: false,
 };
 
 export const assets: AssetData[] = [
@@ -155,6 +157,7 @@ export const assets: AssetData[] = [
     exchange: true,
     compoundCollateral: false,
     address: DAIAddress,
+    isStable: true,
     icon: DaiIcon,
   },
   {
@@ -278,6 +281,7 @@ export const assets: AssetData[] = [
     exchange: true,
     compoundCollateral: false,
     address: USDCAddress,
+    isStable: true,
     icon: UsdcIcon,
   },
   {
@@ -319,6 +323,7 @@ export const assets: AssetData[] = [
     decimals: 6,
     exchange: true,
     address: USDTAddress,
+    isStable: true,
     icon: UsdtIcon,
   },
   {
@@ -395,6 +400,7 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: SUSDAddress,
+    isStable: true,
     icon: SusdIcon,
   },
   {
@@ -414,6 +420,7 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: TUSDAddress,
+    isStable: true,
     icon: TusdIcon,
   },
   {
@@ -443,6 +450,7 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: BUSDAddress,
+    isStable: true,
     icon: BusdIcon,
   },
   {
@@ -653,6 +661,7 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: PAXUSDAddress,
+    isStable: true,
     icon: PaxusdIcon,
   },
   {
@@ -751,6 +760,7 @@ export const assets: AssetData[] = [
     name: 'Gemini Dollar',
     address: GUSDAddress,
     decimals: 2,
+    isStable: true,
     icon: GusdIcon,
   },
   {
