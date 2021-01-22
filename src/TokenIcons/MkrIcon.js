@@ -1,9 +1,8 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { v4 as uuid } from 'uuid';
 
 export default function MkrIcon(props) {
-  const memoizedUuid = useMemo(() => uuid(), []);
-  const id = `mkr_icon_${memoizedUuid}`;
+  const id = `mkr_icon_${uuid()}`;
   const fill = `url(#${id})`;
   return (
     <svg width="194" height="194" viewBox="0 0 194 194" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
