@@ -69,6 +69,8 @@ const GUSDAddress = "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd";
 const RENBTCAddress = "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D";
 const UNIV2DAIETHAddress = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11";
 const aWETHAddress = "0x030bA81f1c18d280636F32af80b9AAd02Cf0854e";
+const UNIV2WBTCETHAddress = "0xBb2b8038a1640196FbE3e38816F3e67Cba72D940";
+const UNIV2USDCETHAddress = "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -78,7 +80,6 @@ import RepIcon from './TokenIcons/RepIcon.js';
 import EthIcon from './TokenIcons/EthIcon.js';
 import WbtcIcon from './TokenIcons/WbtcIcon.js';
 import DaiIcon from './TokenIcons/DaiIcon.js';
-import DgdIcon from './TokenIcons/DgdIcon.js';
 import MkrIcon from './TokenIcons/MkrIcon.js';
 import UsdtIcon from './TokenIcons/UsdtIcon.js';
 import KncIcon from './TokenIcons/KncIcon.js';
@@ -105,6 +106,8 @@ import AaveIcon from './TokenIcons/AaveIcon.js';
 import UniV2DaiEthIcon from './TokenIcons/UniV2DaiEthIcon.js';
 import RenBtcIcon from './TokenIcons/RenBtcIcon.js';
 import StkAaveIcon from './TokenIcons/StkAaveIcon.js';
+import UniV2WbtcEthIcon from './TokenIcons/UniV2WbtcEthIcon.js';
+import UniV2UsdcEthIcon from './TokenIcons/UniV2UsdcEthIcon.js';
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -787,5 +790,21 @@ export const assets: AssetData[] = [
     decimals: 18,
     address: aWETHAddress,
     icon: EthIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'UNIV2WBTCETH',
+    name: 'Uniswap V2: WBTC/ETH ',
+    address: UNIV2WBTCETHAddress,
+    decimals: 18,
+    icon: UniV2WbtcEthIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'UNIV2USDCETH',
+    name: 'Uniswap V2: USDC/ETH ',
+    address: UNIV2USDCETHAddress,
+    decimals: 18,
+    icon: UniV2UsdcEthIcon,
   }
 ];

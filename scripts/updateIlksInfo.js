@@ -19,9 +19,10 @@ const {utils: {stringToBytes}} = require('../umd');
     }));
 
   let fileData = '/** AUTOMATICALLY GENERATED FILE **/\n\n';
-  fileData += 'export const ilks = ' + JSON.stringify(ilkInfo, null, 2) + ';\n';
+  fileData += 'import { IlkData } from \'./types\';\n\nexport const ilks:IlkData[] = ';
+  fileData += JSON.stringify(ilkInfo, null, 2) + ';\n';
 
-  const f = await fs.open(__dirname + '/../src/ilks.js', 'w');
+  const f = await fs.open(__dirname + '/../src/ilks.ts', 'w');
   await f.write(fileData);
   await f.close();
 })();
