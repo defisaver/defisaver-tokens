@@ -10,6 +10,7 @@
 
 ### Variables
 
+- [MAXUINT](README.md#maxuint)
 - [assets](README.md#assets)
 - [ilks](README.md#ilks)
 - [utils](README.md#utils)
@@ -47,7 +48,7 @@ Name | Type |
 `symbol` | *string* |
 `underlyingAsset` | *string* |
 
-Defined in: [types.ts:4](https://github.com/DecenterApps/defisaver-tokens/blob/a2cd24a/src/types.ts#L4)
+Defined in: [types.ts:4](https://github.com/DecenterApps/defisaver-tokens/blob/1db9f60/src/types.ts#L4)
 
 ___
 
@@ -55,7 +56,7 @@ ___
 
 Ƭ **ExtendedIlkData**: [*IlkData*](README.md#ilkdata) \| { `assetData`: [*AssetData*](README.md#assetdata)  }
 
-Defined in: [types.ts:30](https://github.com/DecenterApps/defisaver-tokens/blob/a2cd24a/src/types.ts#L30)
+Defined in: [types.ts:30](https://github.com/DecenterApps/defisaver-tokens/blob/1db9f60/src/types.ts#L30)
 
 ___
 
@@ -77,15 +78,23 @@ Name | Type |
 `join` | *string* |
 `pip` | *string* |
 
-Defined in: [types.ts:20](https://github.com/DecenterApps/defisaver-tokens/blob/a2cd24a/src/types.ts#L20)
+Defined in: [types.ts:20](https://github.com/DecenterApps/defisaver-tokens/blob/1db9f60/src/types.ts#L20)
 
 ## Variables
+
+### MAXUINT
+
+• `Const` **MAXUINT**: *string*= '115792089237316195423570985008687907853269984665640564039457584007913129639935'
+
+Defined in: [index.ts:11](https://github.com/DecenterApps/defisaver-tokens/blob/1db9f60/src/index.ts#L11)
+
+___
 
 ### assets
 
 • `Const` **assets**: [*AssetData*](README.md#assetdata)[]
 
-Defined in: [assets.ts:125](https://github.com/DecenterApps/defisaver-tokens/blob/a2cd24a/src/assets.ts#L125)
+Defined in: [assets.ts:125](https://github.com/DecenterApps/defisaver-tokens/blob/1db9f60/src/assets.ts#L125)
 
 ___
 
@@ -93,7 +102,7 @@ ___
 
 • `Const` **ilks**: [*IlkData*](README.md#ilkdata)[]
 
-Defined in: [ilks.ts:5](https://github.com/DecenterApps/defisaver-tokens/blob/a2cd24a/src/ilks.ts#L5)
+Defined in: [ilks.ts:5](https://github.com/DecenterApps/defisaver-tokens/blob/1db9f60/src/ilks.ts#L5)
 
 ___
 
@@ -109,7 +118,7 @@ Name | Type | Value |
 `compare` | *function* | (`a`: *string*, `b`: *string*) => *boolean* |
 `stringToBytes` | *function* | (`str`: *string*) => *string* |
 
-Defined in: [index.ts:9](https://github.com/DecenterApps/defisaver-tokens/blob/a2cd24a/src/index.ts#L9)
+Defined in: [index.ts:9](https://github.com/DecenterApps/defisaver-tokens/blob/1db9f60/src/index.ts#L9)
 
 ## Functions
 
@@ -126,7 +135,7 @@ Name | Type | Default value | Description |
 
 **Returns:** *string*
 
-Defined in: [index.ts:79](https://github.com/DecenterApps/defisaver-tokens/blob/a2cd24a/src/index.ts#L79)
+Defined in: [index.ts:81](https://github.com/DecenterApps/defisaver-tokens/blob/1db9f60/src/index.ts#L81)
 
 ___
 
@@ -143,7 +152,7 @@ Name | Type | Description |
 
 **Returns:** *string*
 
-Defined in: [index.ts:98](https://github.com/DecenterApps/defisaver-tokens/blob/a2cd24a/src/index.ts#L98)
+Defined in: [index.ts:102](https://github.com/DecenterApps/defisaver-tokens/blob/1db9f60/src/index.ts#L102)
 
 ___
 
@@ -162,7 +171,7 @@ Name | Type | Default value |
 
 **Returns:** [*AssetData*](README.md#assetdata)
 
-Defined in: [index.ts:24](https://github.com/DecenterApps/defisaver-tokens/blob/a2cd24a/src/index.ts#L24)
+Defined in: [index.ts:26](https://github.com/DecenterApps/defisaver-tokens/blob/1db9f60/src/index.ts#L26)
 
 ___
 
@@ -178,7 +187,7 @@ Name | Type | Default value |
 
 **Returns:** [*AssetData*](README.md#assetdata)
 
-Defined in: [index.ts:47](https://github.com/DecenterApps/defisaver-tokens/blob/a2cd24a/src/index.ts#L47)
+Defined in: [index.ts:49](https://github.com/DecenterApps/defisaver-tokens/blob/1db9f60/src/index.ts#L49)
 
 ___
 
@@ -197,23 +206,23 @@ Name | Type | Default value | Description |
 
 **Returns:** [*ExtendedIlkData*](README.md#extendedilkdata)
 
-Defined in: [index.ts:33](https://github.com/DecenterApps/defisaver-tokens/blob/a2cd24a/src/index.ts#L33)
+Defined in: [index.ts:35](https://github.com/DecenterApps/defisaver-tokens/blob/1db9f60/src/index.ts#L35)
 
 ___
 
 ### ilkToAsset
 
-▸ `Const`**ilkToAsset**(`ilk`: *string*): *string*
+▸ `Const`**ilkToAsset**(`ilk?`: *string*): *string*
 
 #### Parameters:
 
-Name | Type |
------- | ------ |
-`ilk` | *string* |
+Name | Type | Default value |
+------ | ------ | ------ |
+`ilk` | *string* | '' |
 
 **Returns:** *string*
 
-Defined in: [index.ts:49](https://github.com/DecenterApps/defisaver-tokens/blob/a2cd24a/src/index.ts#L49)
+Defined in: [index.ts:51](https://github.com/DecenterApps/defisaver-tokens/blob/1db9f60/src/index.ts#L51)
 
 ___
 
@@ -231,4 +240,4 @@ Name | Type | Description |
 
 Token symbol
 
-Defined in: [index.ts:66](https://github.com/DecenterApps/defisaver-tokens/blob/a2cd24a/src/index.ts#L66)
+Defined in: [index.ts:68](https://github.com/DecenterApps/defisaver-tokens/blob/1db9f60/src/index.ts#L68)

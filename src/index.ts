@@ -8,6 +8,8 @@ export type {AssetData, ExtendedIlkData, IlkData};
 import {stringToBytes, bytesToString, compare} from './utils';
 export const utils = {stringToBytes, bytesToString, compare};
 
+export const MAXUINT:string = '115792089237316195423570985008687907853269984665640564039457584007913129639935';
+
 Dec.set({
   rounding: Dec.ROUND_DOWN,
   toExpPos: 9e15,
@@ -44,9 +46,9 @@ export const getIlkInfo = (ilk:string = ''):ExtendedIlkData => {
   }
 };
 
-export const getAssetInfoByAddress = (address = ''):AssetData => assets.find(t => t.address.toLowerCase() === address.toLowerCase()) || console.error(`Asset with addess "${address}" not found `) || {...assetProto};
+export const getAssetInfoByAddress = (address: string = ''):AssetData => assets.find(t => t.address.toLowerCase() === address.toLowerCase()) || console.error(`Asset with addess "${address}" not found `) || {...assetProto};
 
-export const ilkToAsset = (ilk: string):string => (ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : ilk).replace(/-.*/, '');
+export const ilkToAsset = (ilk: string = ''):string => (ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : ilk).replace(/-.*/, '');
 
 /** @private **/
 export const compoundCollateralAssets:AssetData[] = assets.filter(t => t.compoundCollateral);
@@ -77,6 +79,8 @@ export const tokenFromJoin = (join: string): string => {
  * @return {String}
  */
 export const assetAmountInEth = (amount: number | string | object, asset: string = 'ETH'): string => {
+  if (amount?.toString() === 'Infinity') return MAXUINT;
+
   let decimals;
 
   // USDC/WBTC have 6/8 decimals but Vat is storing it in 18 decimal precision
@@ -96,6 +100,8 @@ export const assetAmountInEth = (amount: number | string | object, asset: string
  * @return {String}
  */
 export const assetAmountInWei = (amount: number | string | object, asset: string): string => {
+  if (amount?.toString() === 'Infinity') return MAXUINT;
+
   const {decimals} = getAssetInfo(asset);
 
   return new Dec(amount && amount.toString() || 0).mul(10 ** decimals).floor().toString();
