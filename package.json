@@ -1,9 +1,10 @@
 {
   "name": "@defisaver/tokens",
-  "version": "1.3.20",
+  "version": "1.3.21",
   "description": "Centralized asset data & utility functions\n",
   "main": "umd/index.js",
   "module": "esm/index.js",
+  "types": "esm/index.d.ts",
   "scripts": {
     "version-bump": "git commit -am \"Version bump to $(npm version patch --no-git-tag-version | cut -c 2-)\"",
     "update-ilks": "node scripts/updateIlksInfo",
