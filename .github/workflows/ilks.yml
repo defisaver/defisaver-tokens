@@ -10,7 +10,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
     - name: Setup
-      run: npm i
+      run: npm ci
     - name: Build package
       run: npm run build:umd
     - name: Fetch latest data
