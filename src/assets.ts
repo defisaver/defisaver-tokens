@@ -71,6 +71,7 @@ const UNIV2DAIETHAddress = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11";
 const aWETHAddress = "0x030bA81f1c18d280636F32af80b9AAd02Cf0854e";
 const UNIV2WBTCETHAddress = "0xBb2b8038a1640196FbE3e38816F3e67Cba72D940";
 const UNIV2USDCETHAddress = "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc";
+const xSUSHIAddress = "0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -108,6 +109,7 @@ import RenBtcIcon from './TokenIcons/RenBtcIcon.js';
 import StkAaveIcon from './TokenIcons/StkAaveIcon.js';
 import UniV2WbtcEthIcon from './TokenIcons/UniV2WbtcEthIcon.js';
 import UniV2UsdcEthIcon from './TokenIcons/UniV2UsdcEthIcon.js';
+import SushiIcon from './TokenIcons/SushiIcon.js';
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -692,6 +694,7 @@ export const assets: AssetData[] = [
     compoundCollateral: true,
     address: cUNIAddress,
     underlyingAsset: 'UNI',
+    icon: UniIcon,
   },
   {
     ...assetProto,
@@ -806,5 +809,13 @@ export const assets: AssetData[] = [
     address: UNIV2USDCETHAddress,
     decimals: 18,
     icon: UniV2UsdcEthIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'xSUSHI',
+    name: 'Sushi Bar',
+    address: xSUSHIAddress,
+    decimals: 18,
+    icon: SushiIcon,
   }
 ];
