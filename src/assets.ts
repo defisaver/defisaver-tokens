@@ -74,6 +74,8 @@ const UNIV2USDCETHAddress = "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc";
 const xSUSHIAddress = "0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272";
 const UNIV2DAIUSDCAddress = "0xAE461cA67B15dc8dc81CE7615e0320dA1A9aB8D5";
 const UNIV2ETHUSDTAddress = "0x0d4a11d5EEaaC28EC3F61d100daF4d40471f1852";
+const UNIV2LINKETHAddress = "0xa2107FA5B38d9bbd2C461D6EDf11B11A50F6b974";
+const UNIV2UNIETHAddress = "0xd3d2E2692501A5c9Ca623199D38826e513033a17";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -830,8 +832,22 @@ export const assets: AssetData[] = [
   {
     ...assetProto,
     symbol: 'UNIV2ETHUSDT',
-    name: 'Uniswap V2: ETH/USDT ',
+    name: 'Uniswap V2: ETH/USDT',
     address: UNIV2ETHUSDTAddress,
+    decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: 'UNIV2LINKETH',
+    name: 'Uniswap V2: LINK/ETH',
+    address: UNIV2LINKETHAddress,
+    decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: 'UNIV2UNIETH',
+    name: 'Uniswap V2: UNI/ETH',
+    address: UNIV2UNIETHAddress,
     decimals: 18,
   },
 ];
