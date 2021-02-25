@@ -76,6 +76,7 @@ const UNIV2DAIUSDCAddress = "0xAE461cA67B15dc8dc81CE7615e0320dA1A9aB8D5";
 const UNIV2ETHUSDTAddress = "0x0d4a11d5EEaaC28EC3F61d100daF4d40471f1852";
 const UNIV2LINKETHAddress = "0xa2107FA5B38d9bbd2C461D6EDf11B11A50F6b974";
 const UNIV2UNIETHAddress = "0xd3d2E2692501A5c9Ca623199D38826e513033a17";
+const RAIAddress = "0x03ab458634910aad20ef5f1c8ee96f1d6ac54919";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -848,6 +849,13 @@ export const assets: AssetData[] = [
     symbol: 'UNIV2UNIETH',
     name: 'Uniswap V2: UNI/ETH',
     address: UNIV2UNIETHAddress,
+    decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: 'RAI',
+    name: 'Rai Reflex Index',
+    address: RAIAddress,
     decimals: 18,
   },
 ];
