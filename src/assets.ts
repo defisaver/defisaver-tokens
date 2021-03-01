@@ -77,6 +77,19 @@ const UNIV2ETHUSDTAddress = "0x0d4a11d5EEaaC28EC3F61d100daF4d40471f1852";
 const UNIV2LINKETHAddress = "0xa2107FA5B38d9bbd2C461D6EDf11B11A50F6b974";
 const UNIV2UNIETHAddress = "0xd3d2E2692501A5c9Ca623199D38826e513033a17";
 const RAIAddress = "0x03ab458634910aad20ef5f1c8ee96f1d6ac54919";
+const ONEINCHAddress = "0x111111111117dC0aa78b770fA6A738034120C302";
+const BadgerAddress = "0x3472A5A71965499acd81997a54BBA8D852C6E53d";
+const BntAddress = "0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C";
+const CoverAddress = "0x4688a8b1f292fdab17e9a90c8bc379dc1dbd8713";
+const CreamAddress = "0x2ba592F78dB6436527729929AAf6c908497cB200";
+const SushiAddress = "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2";
+const DiggAddress = "0x798d1be841a82a273720ce31c822c61a67a601c3";
+const MirAddress = "0x09a3ecafa817268f77be1283176b946c4ff2e608";
+const RplAddress = "0xb4efd85c19999d84251304bda99e90b92300bd93";
+const SntAddress = "0x744d70fdbe2ba4cf95131626614a1763df805b9e";
+const TornAddress = "0x77777feddddffc19ff86db637967013e6c6a116c";
+const UmaAddress = "0x04fa0d235c4abf4bcf4787af4cf447de572ef828";
+
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -115,6 +128,17 @@ import StkAaveIcon from './TokenIcons/StkAaveIcon.js';
 import UniV2WbtcEthIcon from './TokenIcons/UniV2WbtcEthIcon.js';
 import UniV2UsdcEthIcon from './TokenIcons/UniV2UsdcEthIcon.js';
 import SushiIcon from './TokenIcons/SushiIcon.js';
+import OneInchIcon from './TokenIcons/OneInchIcon';
+import BadgerIcon from './TokenIcons/BadgerIcon';
+import BntIcon from './TokenIcons/BntIcon';
+import CoverIcon from './TokenIcons/CoverIcon';
+import CreamIcon from './TokenIcons/CreamIcon';
+import DiggIcon from './TokenIcons/DiggIcon';
+import MirIcon from './TokenIcons/MirIcon';
+import RplIcon from './TokenIcons/RplIcon';
+import SntIcon from './TokenIcons/SntIcon';
+import TornIcon from './TokenIcons/TornIcon';
+import UmaIcon from './TokenIcons/UmaIcon';
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -498,7 +522,6 @@ export const assets: AssetData[] = [
     symbol: 'LEND',
     name: 'Aave ETHLend',
     decimals: 18,
-    exchange: true,
     address: LENDAddress,
     icon: LendIcon,
   },
@@ -736,6 +759,7 @@ export const assets: AssetData[] = [
     name: 'Aave',
     address: AAVEAddress,
     decimals: 18,
+    exchange: true,
     icon: AaveIcon,
   },
   {
@@ -762,6 +786,7 @@ export const assets: AssetData[] = [
     symbol: 'BAL',
     name: 'Balancer',
     address: BALAddress,
+    exchange: true,
     decimals: 18,
     icon: BalIcon,
   },
@@ -772,6 +797,7 @@ export const assets: AssetData[] = [
     address: GUSDAddress,
     decimals: 2,
     isStable: true,
+    exchange: true,
     icon: GusdIcon,
   },
   {
@@ -779,6 +805,7 @@ export const assets: AssetData[] = [
     symbol: 'RENBTC',
     name: 'renBTC',
     address: RENBTCAddress,
+    exchange: true,
     decimals: 8,
     icon: RenBtcIcon,
   },
@@ -857,5 +884,113 @@ export const assets: AssetData[] = [
     name: 'Rai Reflex Index',
     address: RAIAddress,
     decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: '1INCH',
+    name: '1INCH Token',
+    address: ONEINCHAddress,
+    exchange: true,
+    decimals: 18,
+    icon: OneInchIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'BADGER',
+    name: 'BadgerDAO',
+    address: BadgerAddress,
+    exchange: true,
+    decimals: 18,
+    icon: BadgerIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'DIGG',
+    name: 'DIGG',
+    address: DiggAddress,
+    exchange: true,
+    decimals: 9,
+    icon: DiggIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'MIR',
+    name: 'Mirror Protocol',
+    address: MirAddress,
+    exchange: true,
+    decimals: 18,
+    icon: MirIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'SUSHI',
+    name: 'Sushi Token',
+    address: SushiAddress,
+    exchange: true,
+    decimals: 18,
+    icon: SushiIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'CREAM',
+    name: 'C.R.E.A.M.',
+    address: CreamAddress,
+    exchange: true,
+    decimals: 18,
+    icon: CreamIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'COVER',
+    name: 'Cover Protocol',
+    address: CoverAddress,
+    exchange: true,
+    decimals: 18,
+    icon: CoverIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'UMA',
+    name: 'UMA Voting Token V1',
+    address: UmaAddress,
+    exchange: true,
+    decimals: 18,
+    icon: UmaIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'SNT',
+    name: 'Status Network',
+    address: SntAddress,
+    exchange: true,
+    decimals: 18,
+    icon: SntIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'RPL',
+    name: 'Rocket Pool',
+    address: RplAddress,
+    exchange: true,
+    decimals: 18,
+    icon: RplIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'TORN',
+    name: 'Tornado Cash',
+    address: TornAddress,
+    exchange: true,
+    decimals: 18,
+    icon: TornIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'BNT',
+    name: 'Bancor Network Token',
+    address: BntAddress,
+    exchange: true,
+    decimals: 18,
+    icon: BntIcon,
   },
 ];
