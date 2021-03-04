@@ -824,8 +824,6 @@ export const assets: AssetData[] = [
     address: UNIV2DAIETHAddress,
     decimals: 18,
     icon: UniV2DaiEthIcon,
-    exchange: true,
-
   },
   {
     ...assetProto,
@@ -843,8 +841,6 @@ export const assets: AssetData[] = [
     address: UNIV2WBTCETHAddress,
     decimals: 18,
     icon: UniV2WbtcEthIcon,
-    exchange: true,
-
   },
   {
     ...assetProto,
@@ -853,8 +849,6 @@ export const assets: AssetData[] = [
     address: UNIV2USDCETHAddress,
     decimals: 18,
     icon: UniV2UsdcEthIcon,
-    exchange: true,
-
   },
   {
     ...assetProto,
@@ -871,8 +865,6 @@ export const assets: AssetData[] = [
     address: UNIV2DAIUSDCAddress,
     decimals: 18,
     icon: UniV2DaiUsdcIcon,
-    exchange: true,
-
   },
   {
     ...assetProto,
@@ -881,8 +873,6 @@ export const assets: AssetData[] = [
     address: UNIV2ETHUSDTAddress,
     decimals: 18,
     icon: UniV2EthUsdtIcon,
-    exchange: true,
-
   },
   {
     ...assetProto,
@@ -891,7 +881,6 @@ export const assets: AssetData[] = [
     address: UNIV2LINKETHAddress,
     decimals: 18,
     icon: UniV2LinkEthIcon,
-    exchange: true,
   },
   {
     ...assetProto,
@@ -900,7 +889,6 @@ export const assets: AssetData[] = [
     address: UNIV2UNIETHAddress,
     decimals: 18,
     icon: UniV2UniEthIcon,
-    exchange: true,
   },
   {
     ...assetProto,
@@ -1026,7 +1014,6 @@ export const assets: AssetData[] = [
     address: UNIV2AAVEETHAddress,
     decimals: 18,
     icon: UniV2AaveEthIcon,
-    exchange: true,
   },
   {
     ...assetProto,
@@ -1035,6 +1022,5 @@ export const assets: AssetData[] = [
     address: UNIV2WBTCDAIAddress,
     decimals: 18,
     icon: UniV2WbtcDaiIcon,
-    exchange: true,
   },
 ];
