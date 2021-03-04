@@ -89,7 +89,8 @@ const RplAddress = "0xb4efd85c19999d84251304bda99e90b92300bd93";
 const SntAddress = "0x744d70fdbe2ba4cf95131626614a1763df805b9e";
 const TornAddress = "0x77777feddddffc19ff86db637967013e6c6a116c";
 const UmaAddress = "0x04fa0d235c4abf4bcf4787af4cf447de572ef828";
-
+const UNIV2AAVEETHAddress = "0xDFC14d2Af169B0D36C4EFF567Ada9b2E0CAE044f";
+const UNIV2WBTCDAIAddress = "0x231B7589426Ffe1b75405526fC32aC09D44364c4";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -122,11 +123,8 @@ import LrcIcon from './TokenIcons/LrcIcon.js';
 import BalIcon from './TokenIcons/BalIcon.js';
 import GusdIcon from './TokenIcons/GusdIcon.js';
 import AaveIcon from './TokenIcons/AaveIcon.js';
-import UniV2DaiEthIcon from './TokenIcons/UniV2DaiEthIcon.js';
 import RenBtcIcon from './TokenIcons/RenBtcIcon.js';
 import StkAaveIcon from './TokenIcons/StkAaveIcon.js';
-import UniV2WbtcEthIcon from './TokenIcons/UniV2WbtcEthIcon.js';
-import UniV2UsdcEthIcon from './TokenIcons/UniV2UsdcEthIcon.js';
 import SushiIcon from './TokenIcons/SushiIcon.js';
 import OneInchIcon from './TokenIcons/OneInchIcon';
 import BadgerIcon from './TokenIcons/BadgerIcon';
@@ -139,6 +137,16 @@ import RplIcon from './TokenIcons/RplIcon';
 import SntIcon from './TokenIcons/SntIcon';
 import TornIcon from './TokenIcons/TornIcon';
 import UmaIcon from './TokenIcons/UmaIcon';
+import RaiIcon from './TokenIcons/RaiIcon';
+import UniV2DaiEthIcon from './TokenIcons/UniV2DaiEthIcon.js';
+import UniV2WbtcEthIcon from './TokenIcons/UniV2WbtcEthIcon.js';
+import UniV2UsdcEthIcon from './TokenIcons/UniV2UsdcEthIcon.js';
+import UniV2DaiUsdcIcon from './TokenIcons/UniV2DaiUsdcIcon';
+import UniV2EthUsdtIcon from './TokenIcons/UniV2EthUsdtIcon';
+import UniV2LinkEthIcon from './TokenIcons/UniV2LinkEthIcon';
+import UniV2UniEthIcon from './TokenIcons/UniV2UniEthIcon';
+import UniV2AaveEthIcon from './TokenIcons/UniV2AaveEthIcon';
+import UniV2WbtcDaiIcon from './TokenIcons/UniV2WbtcDaiIcon';
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -816,6 +824,8 @@ export const assets: AssetData[] = [
     address: UNIV2DAIETHAddress,
     decimals: 18,
     icon: UniV2DaiEthIcon,
+    exchange: true,
+
   },
   {
     ...assetProto,
@@ -833,6 +843,8 @@ export const assets: AssetData[] = [
     address: UNIV2WBTCETHAddress,
     decimals: 18,
     icon: UniV2WbtcEthIcon,
+    exchange: true,
+
   },
   {
     ...assetProto,
@@ -841,6 +853,8 @@ export const assets: AssetData[] = [
     address: UNIV2USDCETHAddress,
     decimals: 18,
     icon: UniV2UsdcEthIcon,
+    exchange: true,
+
   },
   {
     ...assetProto,
@@ -856,6 +870,9 @@ export const assets: AssetData[] = [
     name: 'Uniswap V2: DAI/USDC',
     address: UNIV2DAIUSDCAddress,
     decimals: 18,
+    icon: UniV2DaiUsdcIcon,
+    exchange: true,
+
   },
   {
     ...assetProto,
@@ -863,6 +880,9 @@ export const assets: AssetData[] = [
     name: 'Uniswap V2: ETH/USDT',
     address: UNIV2ETHUSDTAddress,
     decimals: 18,
+    icon: UniV2EthUsdtIcon,
+    exchange: true,
+
   },
   {
     ...assetProto,
@@ -870,6 +890,8 @@ export const assets: AssetData[] = [
     name: 'Uniswap V2: LINK/ETH',
     address: UNIV2LINKETHAddress,
     decimals: 18,
+    icon: UniV2LinkEthIcon,
+    exchange: true,
   },
   {
     ...assetProto,
@@ -877,6 +899,8 @@ export const assets: AssetData[] = [
     name: 'Uniswap V2: UNI/ETH',
     address: UNIV2UNIETHAddress,
     decimals: 18,
+    icon: UniV2UniEthIcon,
+    exchange: true,
   },
   {
     ...assetProto,
@@ -884,6 +908,8 @@ export const assets: AssetData[] = [
     name: 'Rai Reflex Index',
     address: RAIAddress,
     decimals: 18,
+    icon: RaiIcon,
+    exchange: true,
   },
   {
     ...assetProto,
@@ -992,5 +1018,23 @@ export const assets: AssetData[] = [
     exchange: true,
     decimals: 18,
     icon: BntIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'UNIV2AAVEETH',
+    name: 'Uniswap V2: AAVE/ETH',
+    address: UNIV2AAVEETHAddress,
+    decimals: 18,
+    icon: UniV2AaveEthIcon,
+    exchange: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'UNIV2WBTCDAI',
+    name: 'Uniswap V2: WBTC/DAI',
+    address: UNIV2WBTCDAIAddress,
+    decimals: 18,
+    icon: UniV2WbtcDaiIcon,
+    exchange: true,
   },
 ];
