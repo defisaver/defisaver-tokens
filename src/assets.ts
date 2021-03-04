@@ -91,6 +91,7 @@ const TornAddress = "0x77777feddddffc19ff86db637967013e6c6a116c";
 const UmaAddress = "0x04fa0d235c4abf4bcf4787af4cf447de572ef828";
 const UNIV2AAVEETHAddress = "0xDFC14d2Af169B0D36C4EFF567Ada9b2E0CAE044f";
 const UNIV2WBTCDAIAddress = "0x231B7589426Ffe1b75405526fC32aC09D44364c4";
+const UNIV2DAIUSDTAddress = "0xB20bd5D04BE54f870D5C0d3cA85d82b34B836405";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -1022,5 +1023,12 @@ export const assets: AssetData[] = [
     address: UNIV2WBTCDAIAddress,
     decimals: 18,
     icon: UniV2WbtcDaiIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'UNIV2DAIUSDT',
+    name: 'Uniswap V2: DAI/USDT',
+    address: UNIV2DAIUSDTAddress,
+    decimals: 18,
   },
 ];

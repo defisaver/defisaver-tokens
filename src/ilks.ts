@@ -272,5 +272,14 @@ export const ilks:IlkData[] = [
     "flip": "0x20D298ca96bf8c2000203B911908DbDc1a8Bac58",
     "pip": "0x8D34DC2c33A6386E96cA562D8478Eaf82305b81a",
     "isLP": true
+  },
+  {
+    "asset": "UNIV2DAIUSDT",
+    "ilkLabel": "UNIV2DAIUSDT-A",
+    "ilkBytes": "0x554e495632444149555344542d41000000000000000000000000000000000000",
+    "join": "0xAf034D882169328CAf43b823a4083dABC7EEE0F4",
+    "flip": "0xD32f8B8aDbE331eC0CfADa9cfDbc537619622cFe",
+    "pip": "0x69562A7812830E6854Ffc50b992c2AA861D5C2d3",
+    "isLP": true
   }
 ];
