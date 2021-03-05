@@ -12,7 +12,7 @@
 
 - [MAXUINT](README.md#maxuint)
 - [assets](README.md#assets)
-- [ilks](README.md#ilks)
+- [reflexerCollTypes](README.md#reflexercolltypes)
 - [utils](README.md#utils)
 
 ### Functions
@@ -48,7 +48,7 @@ Name | Type |
 `symbol` | *string* |
 `underlyingAsset` | *string* |
 
-Defined in: [types.ts:4](https://github.com/DecenterApps/defisaver-tokens/blob/67290de/src/types.ts#L4)
+Defined in: [types.ts:4](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/types.ts#L4)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 Ƭ **ExtendedIlkData**: [*IlkData*](README.md#ilkdata) \| { `assetData`: [*AssetData*](README.md#assetdata)  }
 
-Defined in: [types.ts:30](https://github.com/DecenterApps/defisaver-tokens/blob/67290de/src/types.ts#L30)
+Defined in: [types.ts:30](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/types.ts#L30)
 
 ___
 
@@ -78,7 +78,7 @@ Name | Type |
 `join` | *string* |
 `pip` | *string* |
 
-Defined in: [types.ts:20](https://github.com/DecenterApps/defisaver-tokens/blob/67290de/src/types.ts#L20)
+Defined in: [types.ts:20](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/types.ts#L20)
 
 ## Variables
 
@@ -86,7 +86,7 @@ Defined in: [types.ts:20](https://github.com/DecenterApps/defisaver-tokens/blob/
 
 • `Const` **MAXUINT**: *string*= '115792089237316195423570985008687907853269984665640564039457584007913129639935'
 
-Defined in: [index.ts:11](https://github.com/DecenterApps/defisaver-tokens/blob/67290de/src/index.ts#L11)
+Defined in: [index.ts:12](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L12)
 
 ___
 
@@ -94,15 +94,15 @@ ___
 
 • `Const` **assets**: [*AssetData*](README.md#assetdata)[]
 
-Defined in: [assets.ts:164](https://github.com/DecenterApps/defisaver-tokens/blob/67290de/src/assets.ts#L164)
+Defined in: [assets.ts:166](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/assets.ts#L166)
 
 ___
 
-### ilks
+### reflexerCollTypes
 
-• `Const` **ilks**: [*IlkData*](README.md#ilkdata)[]
+• `Const` **reflexerCollTypes**: [*IlkData*](README.md#ilkdata)[]
 
-Defined in: [ilks.ts:5](https://github.com/DecenterApps/defisaver-tokens/blob/67290de/src/ilks.ts#L5)
+Defined in: [reflexerCollTypes.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/reflexerCollTypes.ts#L3)
 
 ___
 
@@ -112,13 +112,13 @@ ___
 
 #### Type declaration:
 
-Name | Type |
------- | ------ |
-`bytesToString` | (`hex`: *string*) => *string* |
-`compare` | (`a`: *string*, `b`: *string*) => *boolean* |
-`stringToBytes` | (`str`: *string*) => *string* |
+Name | Type | Value |
+------ | ------ | ------ |
+`bytesToString` | *function* | (`hex`: *string*) => *string* |
+`compare` | *function* | (`a`: *string*, `b`: *string*) => *boolean* |
+`stringToBytes` | *function* | (`str`: *string*) => *string* |
 
-Defined in: [index.ts:9](https://github.com/DecenterApps/defisaver-tokens/blob/67290de/src/index.ts#L9)
+Defined in: [index.ts:10](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L10)
 
 ## Functions
 
@@ -135,7 +135,7 @@ Name | Type | Default value | Description |
 
 **Returns:** *string*
 
-Defined in: [index.ts:81](https://github.com/DecenterApps/defisaver-tokens/blob/67290de/src/index.ts#L81)
+Defined in: [index.ts:82](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L82)
 
 ___
 
@@ -152,7 +152,7 @@ Name | Type | Description |
 
 **Returns:** *string*
 
-Defined in: [index.ts:102](https://github.com/DecenterApps/defisaver-tokens/blob/67290de/src/index.ts#L102)
+Defined in: [index.ts:103](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L103)
 
 ___
 
@@ -171,7 +171,7 @@ Name | Type | Default value |
 
 **Returns:** [*AssetData*](README.md#assetdata)
 
-Defined in: [index.ts:26](https://github.com/DecenterApps/defisaver-tokens/blob/67290de/src/index.ts#L26)
+Defined in: [index.ts:27](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L27)
 
 ___
 
@@ -187,7 +187,7 @@ Name | Type | Default value |
 
 **Returns:** [*AssetData*](README.md#assetdata)
 
-Defined in: [index.ts:49](https://github.com/DecenterApps/defisaver-tokens/blob/67290de/src/index.ts#L49)
+Defined in: [index.ts:50](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L50)
 
 ___
 
@@ -206,7 +206,7 @@ Name | Type | Default value | Description |
 
 **Returns:** [*ExtendedIlkData*](README.md#extendedilkdata)
 
-Defined in: [index.ts:35](https://github.com/DecenterApps/defisaver-tokens/blob/67290de/src/index.ts#L35)
+Defined in: [index.ts:36](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L36)
 
 ___
 
@@ -222,7 +222,7 @@ Name | Type | Default value |
 
 **Returns:** *string*
 
-Defined in: [index.ts:51](https://github.com/DecenterApps/defisaver-tokens/blob/67290de/src/index.ts#L51)
+Defined in: [index.ts:52](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L52)
 
 ___
 
@@ -240,4 +240,4 @@ Name | Type | Description |
 
 Token symbol
 
-Defined in: [index.ts:68](https://github.com/DecenterApps/defisaver-tokens/blob/67290de/src/index.ts#L68)
+Defined in: [index.ts:69](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L69)

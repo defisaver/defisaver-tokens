@@ -2,7 +2,8 @@ import Dec from 'decimal.js';
 import {assetProto, assets} from './assets';
 export {assets}
 import {ilks} from './ilks';
-export {ilks}
+import {reflexerCollTypes} from './reflexerCollTypes';
+export {reflexerCollTypes}
 import type {AssetData, ExtendedIlkData, IlkData} from './types';
 export type {AssetData, ExtendedIlkData, IlkData};
 import {stringToBytes, bytesToString, compare} from './utils';
