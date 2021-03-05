@@ -27,7 +27,7 @@ Dec.set({
 export const getAssetInfo = (symbol:string = ''):AssetData => assets.find(t => compare(t.symbol, symbol)) || console.error(`Asset "${symbol}" not found `) || {...assetProto};
 
 /**
- * Returns Maker ilk info, and asset info as `assetData` attribute.
+ * Returns Maker or Reflexer ilk info, and asset info as `assetData` attribute.
  * Warning: will not throw if ilk not found. Instead, will return a placeholder object.
  *
  * @param ilk {string} Ilk encoded as string or as hex
@@ -35,11 +35,19 @@ export const getAssetInfo = (symbol:string = ''):AssetData => assets.find(t => c
  */
 export const getIlkInfo = (ilk:string = ''):ExtendedIlkData => {
   const _ilk = (ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : ilk).toUpperCase();
-  const ilkData = ilks.find(i => i.ilkLabel === _ilk) || console.error(`Ilk "${ilk}" not found `) || {
-    ilkLabel: _ilk,
-    ilkBytes: stringToBytes(_ilk),
-    asset: ilkToAsset(ilk)
-  };
+  const ilkData = ilks.find(i => i.ilkLabel === _ilk) || reflexerCollTypes.find(i => i.ilkLabel === _ilk);
+  if (!ilkData) {
+    console.error(`Ilk "${ilk}" not found `);
+    return {
+      ilkLabel: _ilk,
+      ilkBytes: stringToBytes(_ilk),
+      asset: ilkToAsset(ilk),
+      pip: '',
+      join: '',
+      flip: '',
+      isLP: false,
+    };
+  }
   const assetData = getAssetInfo(ilkData.asset);
   return {
     ...ilkData,
@@ -63,16 +71,29 @@ export const compoundAsset = (underlyingAsset: string):string => `c${underlyingA
 export const aaveAsset = (underlyingAsset: string):string => `a${underlyingAsset.toUpperCase()}`;
 
 /**
- * @param join {string} Maker ilk join
+ * @param join {string} Maker or Reflexer ilk join
+ * @param fromIlks {IlkData[]}
  * @returns {string} Token symbol
  */
-export const tokenFromJoin = (join: string): string => {
-  for (const ilkInfo of ilks) {
+export const tokenFromJoin = (join: string, fromIlks: IlkData[] = ilks): string => {
+  for (const ilkInfo of fromIlks) {
     if (compare(ilkInfo.join, join)) return ilkInfo.asset;
   }
   if (compare('0x448a5065aebb8e423f0896e6c5d525c040f59af3', join)) return 'ETH'; // SCD ETH
   return '';
 };
+
+/**
+ * @param join {string} Maker ilk join
+ * @returns {string} Token symbol
+ */
+export const tokenFromMakerJoin = (join: string): string => tokenFromJoin(join, ilks);
+
+/**
+ * @param join {string} Reflexer ilk join
+ * @returns {string} Token symbol
+ */
+export const tokenFromReflexerJoin = (join: string): string => tokenFromJoin(join, reflexerCollTypes);
 
 /**
  * @param amount {Number|String|Object} Amount in wei

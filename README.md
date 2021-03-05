@@ -24,6 +24,8 @@
 - [getIlkInfo](README.md#getilkinfo)
 - [ilkToAsset](README.md#ilktoasset)
 - [tokenFromJoin](README.md#tokenfromjoin)
+- [tokenFromMakerJoin](README.md#tokenfrommakerjoin)
+- [tokenFromReflexerJoin](README.md#tokenfromreflexerjoin)
 
 ## Type aliases
 
@@ -48,7 +50,7 @@ Name | Type |
 `symbol` | *string* |
 `underlyingAsset` | *string* |
 
-Defined in: [types.ts:4](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/types.ts#L4)
+Defined in: [types.ts:4](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/types.ts#L4)
 
 ___
 
@@ -56,7 +58,7 @@ ___
 
 Ƭ **ExtendedIlkData**: [*IlkData*](README.md#ilkdata) \| { `assetData`: [*AssetData*](README.md#assetdata)  }
 
-Defined in: [types.ts:30](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/types.ts#L30)
+Defined in: [types.ts:30](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/types.ts#L30)
 
 ___
 
@@ -78,7 +80,7 @@ Name | Type |
 `join` | *string* |
 `pip` | *string* |
 
-Defined in: [types.ts:20](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/types.ts#L20)
+Defined in: [types.ts:20](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/types.ts#L20)
 
 ## Variables
 
@@ -86,7 +88,7 @@ Defined in: [types.ts:20](https://github.com/DecenterApps/defisaver-tokens/blob/
 
 • `Const` **MAXUINT**: *string*= '115792089237316195423570985008687907853269984665640564039457584007913129639935'
 
-Defined in: [index.ts:12](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L12)
+Defined in: [index.ts:12](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/index.ts#L12)
 
 ___
 
@@ -94,7 +96,7 @@ ___
 
 • `Const` **assets**: [*AssetData*](README.md#assetdata)[]
 
-Defined in: [assets.ts:166](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/assets.ts#L166)
+Defined in: [assets.ts:166](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/assets.ts#L166)
 
 ___
 
@@ -102,7 +104,7 @@ ___
 
 • `Const` **reflexerCollTypes**: [*IlkData*](README.md#ilkdata)[]
 
-Defined in: [reflexerCollTypes.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/reflexerCollTypes.ts#L3)
+Defined in: [reflexerCollTypes.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/reflexerCollTypes.ts#L3)
 
 ___
 
@@ -118,7 +120,7 @@ Name | Type | Value |
 `compare` | *function* | (`a`: *string*, `b`: *string*) => *boolean* |
 `stringToBytes` | *function* | (`str`: *string*) => *string* |
 
-Defined in: [index.ts:10](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L10)
+Defined in: [index.ts:10](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/index.ts#L10)
 
 ## Functions
 
@@ -135,7 +137,7 @@ Name | Type | Default value | Description |
 
 **Returns:** *string*
 
-Defined in: [index.ts:82](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L82)
+Defined in: [index.ts:103](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/index.ts#L103)
 
 ___
 
@@ -152,7 +154,7 @@ Name | Type | Description |
 
 **Returns:** *string*
 
-Defined in: [index.ts:103](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L103)
+Defined in: [index.ts:124](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/index.ts#L124)
 
 ___
 
@@ -171,7 +173,7 @@ Name | Type | Default value |
 
 **Returns:** [*AssetData*](README.md#assetdata)
 
-Defined in: [index.ts:27](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L27)
+Defined in: [index.ts:27](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/index.ts#L27)
 
 ___
 
@@ -187,7 +189,7 @@ Name | Type | Default value |
 
 **Returns:** [*AssetData*](README.md#assetdata)
 
-Defined in: [index.ts:50](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L50)
+Defined in: [index.ts:58](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/index.ts#L58)
 
 ___
 
@@ -195,7 +197,7 @@ ___
 
 ▸ `Const`**getIlkInfo**(`ilk?`: *string*): [*ExtendedIlkData*](README.md#extendedilkdata)
 
-Returns Maker ilk info, and asset info as `assetData` attribute.
+Returns Maker or Reflexer ilk info, and asset info as `assetData` attribute.
 Warning: will not throw if ilk not found. Instead, will return a placeholder object.
 
 #### Parameters:
@@ -206,7 +208,7 @@ Name | Type | Default value | Description |
 
 **Returns:** [*ExtendedIlkData*](README.md#extendedilkdata)
 
-Defined in: [index.ts:36](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L36)
+Defined in: [index.ts:36](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/index.ts#L36)
 
 ___
 
@@ -222,13 +224,32 @@ Name | Type | Default value |
 
 **Returns:** *string*
 
-Defined in: [index.ts:52](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L52)
+Defined in: [index.ts:60](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/index.ts#L60)
 
 ___
 
 ### tokenFromJoin
 
-▸ `Const`**tokenFromJoin**(`join`: *string*): *string*
+▸ `Const`**tokenFromJoin**(`join`: *string*, `fromIlks?`: [*IlkData*](README.md#ilkdata)[]): *string*
+
+#### Parameters:
+
+Name | Type | Default value | Description |
+------ | ------ | ------ | ------ |
+`join` | *string* | - | Maker or Reflexer ilk join   |
+`fromIlks` | [*IlkData*](README.md#ilkdata)[] | ... |  |
+
+**Returns:** *string*
+
+Token symbol
+
+Defined in: [index.ts:78](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/index.ts#L78)
+
+___
+
+### tokenFromMakerJoin
+
+▸ `Const`**tokenFromMakerJoin**(`join`: *string*): *string*
 
 #### Parameters:
 
@@ -240,4 +261,22 @@ Name | Type | Description |
 
 Token symbol
 
-Defined in: [index.ts:69](https://github.com/DecenterApps/defisaver-tokens/blob/1cc3210/src/index.ts#L69)
+Defined in: [index.ts:90](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/index.ts#L90)
+
+___
+
+### tokenFromReflexerJoin
+
+▸ `Const`**tokenFromReflexerJoin**(`join`: *string*): *string*
+
+#### Parameters:
+
+Name | Type | Description |
+------ | ------ | ------ |
+`join` | *string* | Reflexer ilk join   |
+
+**Returns:** *string*
+
+Token symbol
+
+Defined in: [index.ts:96](https://github.com/DecenterApps/defisaver-tokens/blob/0bdaf4a/src/index.ts#L96)
