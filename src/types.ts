@@ -27,10 +27,18 @@ type IlkData = {
   isLP: (boolean);
 };
 
+type AaveMarketData = {
+  name: (string);
+  lendingPool: (string);
+  lendingPoolAddressProvider: (string);
+  dataProvider: (string);
+};
+
 type ExtendedIlkData = IlkData | { assetData: AssetData }
 
 export {
   AssetData,
   IlkData,
   ExtendedIlkData,
+  AaveMarketData,
 }

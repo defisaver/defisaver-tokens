@@ -4,7 +4,9 @@ export {assets}
 import {ilks} from './ilks';
 import {reflexerCollTypes} from './reflexerCollTypes';
 export {reflexerCollTypes}
-import type {AssetData, ExtendedIlkData, IlkData} from './types';
+import {aaveV2Markets} from './aaveV2Markets';
+export {aaveV2Markets}
+import type {AaveMarketData, AssetData, ExtendedIlkData, IlkData} from './types';
 export type {AssetData, ExtendedIlkData, IlkData};
 import {stringToBytes, bytesToString, compare} from './utils';
 export const utils = {stringToBytes, bytesToString, compare};
@@ -37,7 +39,7 @@ export const getIlkInfo = (ilk:string = ''):ExtendedIlkData => {
   const _ilk = (ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : ilk).toUpperCase();
   const ilkData = ilks.find(i => i.ilkLabel === _ilk) || reflexerCollTypes.find(i => i.ilkLabel === _ilk);
   if (!ilkData) {
-    console.error(`Ilk "${ilk}" not found `);
+    console.error(`Ilk "${ilk}" not found`);
     return {
       ilkLabel: _ilk,
       ilkBytes: stringToBytes(_ilk),
@@ -94,6 +96,8 @@ export const tokenFromMakerJoin = (join: string): string => tokenFromJoin(join, 
  * @returns {string} Token symbol
  */
 export const tokenFromReflexerJoin = (join: string): string => tokenFromJoin(join, reflexerCollTypes);
+
+export const getAaveV2MarketInfo = (name:string = ''):(AaveMarketData|void) => aaveV2Markets.find(i => i.name === name);
 
 /**
  * @param amount {Number|String|Object} Amount in wei
