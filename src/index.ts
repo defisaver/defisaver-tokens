@@ -2,6 +2,7 @@ import Dec from 'decimal.js';
 import {assetProto, assets} from './assets';
 export {assets}
 import {ilks} from './ilks';
+export {ilks}
 import {reflexerCollTypes} from './reflexerCollTypes';
 export {reflexerCollTypes}
 import {aaveV2Markets} from './aaveV2Markets';
