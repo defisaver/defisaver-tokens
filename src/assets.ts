@@ -92,6 +92,7 @@ const UmaAddress = "0x04fa0d235c4abf4bcf4787af4cf447de572ef828";
 const UNIV2AAVEETHAddress = "0xDFC14d2Af169B0D36C4EFF567Ada9b2E0CAE044f";
 const UNIV2WBTCDAIAddress = "0x231B7589426Ffe1b75405526fC32aC09D44364c4";
 const UNIV2DAIUSDTAddress = "0xB20bd5D04BE54f870D5C0d3cA85d82b34B836405";
+const FliAddress = "0xaa6e8127831c9de45ae56bb1b0d4d4da6e5665bd";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -149,6 +150,7 @@ import UniV2UniEthIcon from './TokenIcons/UniV2UniEthIcon';
 import UniV2AaveEthIcon from './TokenIcons/UniV2AaveEthIcon';
 import UniV2WbtcDaiIcon from './TokenIcons/UniV2DaiUsdtIcon';
 import UniV2DaiUsdtIcon from "./TokenIcons/UniV2DaiUsdtIcon";
+import FliIcon from "./TokenIcons/FliIcon";
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -1032,5 +1034,14 @@ export const assets: AssetData[] = [
     address: UNIV2DAIUSDTAddress,
     decimals: 18,
     icon: UniV2DaiUsdtIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'ETH2x-FLI',
+    name: 'ETH 2x Flexible Leverage Index',
+    address: FliAddress,
+    exchange: true,
+    decimals: 18,
+    icon: FliIcon,
   },
 ];
