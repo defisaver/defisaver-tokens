@@ -21,13 +21,20 @@ Dec.set({
 });
 
 /**
+ *
+ * @param symbol {string}
+ * @return symbol {string}
+ */
+const handleWBTCLegacy = (symbol:string = ''):string => (symbol === 'WBTC Legacy' ? 'WBTC' : symbol);
+
+/**
  * Returns asset info.
  * Warning: will not throw if asset not found. Instead, will return a placeholder object.
  *
  * @param symbol {string}
  * @return {AssetData}
  */
-export const getAssetInfo = (symbol:string = ''):AssetData => assets.find(t => compare(t.symbol, symbol)) || console.error(`Asset "${symbol}" not found `) || {...assetProto};
+export const getAssetInfo = (symbol:string = ''):AssetData => assets.find(t => compare(t.symbol, handleWBTCLegacy(symbol))) || console.error(`Asset "${symbol}" not found `) || {...assetProto};
 
 /**
  * Returns Maker or Reflexer ilk info, and asset info as `assetData` attribute.
