@@ -356,7 +356,7 @@ export const assets: AssetData[] = [
     ...assetProto,
     symbol: 'cWBTC Legacy',
     underlyingAsset: 'WBTC',
-    name: 'Wrapped Bitcoin',
+    name: 'Wrapped Bitcoin (Legacy)',
     decimals: 8,
     exchange: false,
     compoundCollateral: true,
