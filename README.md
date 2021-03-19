@@ -53,7 +53,7 @@ Name | Type |
 `symbol` | *string* |
 `underlyingAsset` | *string* |
 
-Defined in: [types.ts:4](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/types.ts#L4)
+Defined in: [types.ts:4](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/types.ts#L4)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 Ƭ **ExtendedIlkData**: [*IlkData*](README.md#ilkdata) \| { `assetData`: [*AssetData*](README.md#assetdata)  }
 
-Defined in: [types.ts:37](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/types.ts#L37)
+Defined in: [types.ts:37](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/types.ts#L37)
 
 ___
 
@@ -83,7 +83,7 @@ Name | Type |
 `join` | *string* |
 `pip` | *string* |
 
-Defined in: [types.ts:20](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/types.ts#L20)
+Defined in: [types.ts:20](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/types.ts#L20)
 
 ## Variables
 
@@ -91,7 +91,7 @@ Defined in: [types.ts:20](https://github.com/DecenterApps/defisaver-tokens/blob/
 
 • `Const` **MAXUINT**: *string*= '115792089237316195423570985008687907853269984665640564039457584007913129639935'
 
-Defined in: [index.ts:15](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/index.ts#L15)
+Defined in: [index.ts:15](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/index.ts#L15)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 • `Const` **aaveV2Markets**: AaveMarketData[]
 
-Defined in: [aaveV2Markets.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/aaveV2Markets.ts#L3)
+Defined in: [aaveV2Markets.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/aaveV2Markets.ts#L3)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 • `Const` **assets**: [*AssetData*](README.md#assetdata)[]
 
-Defined in: [assets.ts:168](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/assets.ts#L168)
+Defined in: [assets.ts:169](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/assets.ts#L169)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 • `Const` **ilks**: [*IlkData*](README.md#ilkdata)[]
 
-Defined in: [ilks.ts:5](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/ilks.ts#L5)
+Defined in: [ilks.ts:5](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/ilks.ts#L5)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 • `Const` **reflexerCollTypes**: [*IlkData*](README.md#ilkdata)[]
 
-Defined in: [reflexerCollTypes.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/reflexerCollTypes.ts#L3)
+Defined in: [reflexerCollTypes.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/reflexerCollTypes.ts#L3)
 
 ___
 
@@ -139,7 +139,7 @@ Name | Type | Value |
 `compare` | *function* | (`a`: *string*, `b`: *string*) => *boolean* |
 `stringToBytes` | *function* | (`str`: *string*) => *string* |
 
-Defined in: [index.ts:13](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/index.ts#L13)
+Defined in: [index.ts:13](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/index.ts#L13)
 
 ## Functions
 
@@ -156,7 +156,7 @@ Name | Type | Default value | Description |
 
 **Returns:** *string*
 
-Defined in: [index.ts:108](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/index.ts#L108)
+Defined in: [index.ts:108](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/index.ts#L108)
 
 ___
 
@@ -173,7 +173,7 @@ Name | Type | Description |
 
 **Returns:** *string*
 
-Defined in: [index.ts:129](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/index.ts#L129)
+Defined in: [index.ts:129](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/index.ts#L129)
 
 ___
 
@@ -189,7 +189,7 @@ Name | Type | Default value |
 
 **Returns:** *void* \| AaveMarketData
 
-Defined in: [index.ts:101](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/index.ts#L101)
+Defined in: [index.ts:101](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/index.ts#L101)
 
 ___
 
@@ -208,7 +208,7 @@ Name | Type | Default value |
 
 **Returns:** [*AssetData*](README.md#assetdata)
 
-Defined in: [index.ts:30](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/index.ts#L30)
+Defined in: [index.ts:30](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/index.ts#L30)
 
 ___
 
@@ -224,7 +224,7 @@ Name | Type | Default value |
 
 **Returns:** [*AssetData*](README.md#assetdata)
 
-Defined in: [index.ts:61](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/index.ts#L61)
+Defined in: [index.ts:61](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/index.ts#L61)
 
 ___
 
@@ -243,7 +243,7 @@ Name | Type | Default value | Description |
 
 **Returns:** [*ExtendedIlkData*](README.md#extendedilkdata)
 
-Defined in: [index.ts:39](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/index.ts#L39)
+Defined in: [index.ts:39](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/index.ts#L39)
 
 ___
 
@@ -259,7 +259,7 @@ Name | Type | Default value |
 
 **Returns:** *string*
 
-Defined in: [index.ts:63](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/index.ts#L63)
+Defined in: [index.ts:63](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/index.ts#L63)
 
 ___
 
@@ -278,7 +278,7 @@ Name | Type | Default value | Description |
 
 Token symbol
 
-Defined in: [index.ts:81](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/index.ts#L81)
+Defined in: [index.ts:81](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/index.ts#L81)
 
 ___
 
@@ -296,7 +296,7 @@ Name | Type | Description |
 
 Token symbol
 
-Defined in: [index.ts:93](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/index.ts#L93)
+Defined in: [index.ts:93](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/index.ts#L93)
 
 ___
 
@@ -314,4 +314,4 @@ Name | Type | Description |
 
 Token symbol
 
-Defined in: [index.ts:99](https://github.com/DecenterApps/defisaver-tokens/blob/c67e4dd/src/index.ts#L99)
+Defined in: [index.ts:99](https://github.com/DecenterApps/defisaver-tokens/blob/8a6547c/src/index.ts#L99)
