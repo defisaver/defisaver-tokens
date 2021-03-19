@@ -19,7 +19,8 @@ const cREPAddress = "0x158079ee67fce2f58472a96584a73c7ab9ac95c1";
 const cZRXAddress = "0xb3319f5d18bc0d84dd1b4825dcde5d5f7266d407";
 const cUSDCAddress = "0x39aa39c021dfbae8fac545936693ac917d5e7563";
 const cETHAddress = "0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5";
-const cWBTCAddress = "0xc11b1268c1a384e55c48c2391d8d480264a3a7f4";
+const cWBTCAddressLegacy = "0xc11b1268c1a384e55c48c2391d8d480264a3a7f4";
+const cWBTCAddress = "0xccf4429db6322d5c611ee964527d42e5d685dd6a";
 const USDTAddress = "0xdac17f958d2ee523a2206206994597c13d831ec7";
 const cUSDTAddress = "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9";
 const cUNIAddress = "0x35a18000230da775cac24873d00ff85bccded550";
@@ -349,6 +350,17 @@ export const assets: AssetData[] = [
     exchange: true,
     compoundCollateral: false,
     address: WBTCAddress,
+    icon: WbtcIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'cWBTC Legacy',
+    underlyingAsset: 'WBTC',
+    name: 'Wrapped Bitcoin',
+    decimals: 8,
+    exchange: false,
+    compoundCollateral: true,
+    address: cWBTCAddressLegacy,
     icon: WbtcIcon,
   },
   {
