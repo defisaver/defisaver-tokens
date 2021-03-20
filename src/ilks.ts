@@ -22,6 +22,15 @@ export const ilks:IlkData[] = [
     "isLP": false
   },
   {
+    "asset": "ETH",
+    "ilkLabel": "ETH-C",
+    "ilkBytes": "0x4554482d43000000000000000000000000000000000000000000000000000000",
+    "join": "0xF04a5cC80B1E94C69B48f5ee68a08CD2F09A7c3E",
+    "flip": "0x7A67901A68243241EBf66beEB0e7b5395582BF17",
+    "pip": "0x81FE72B5A8d1A857d176C3E7d5Bd2679A9B85763",
+    "isLP": false
+  },
+  {
     "asset": "BAT",
     "ilkLabel": "BAT-A",
     "ilkBytes": "0x4241542d41000000000000000000000000000000000000000000000000000000",
@@ -281,5 +290,13 @@ export const ilks:IlkData[] = [
     "flip": "0xD32f8B8aDbE331eC0CfADa9cfDbc537619622cFe",
     "pip": "0x69562A7812830E6854Ffc50b992c2AA861D5C2d3",
     "isLP": true
+  },
+  {
+    "asset": "RWA001",
+    "ilkLabel": "RWA001-A",
+    "ilkBytes": "0x5257413030312d41000000000000000000000000000000000000000000000000",
+    "join": "0x476b81c12Dc71EDfad1F64B9E07CaA60F4b156E2",
+    "pip": "0x76A9f30B45F4ebFD60Ce8a1c6e963b1605f7cB6d",
+    "isLP": false
   }
 ];
