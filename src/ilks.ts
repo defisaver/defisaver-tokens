@@ -291,12 +291,4 @@ export const ilks:IlkData[] = [
     "pip": "0x69562A7812830E6854Ffc50b992c2AA861D5C2d3",
     "isLP": true
   },
-  {
-    "asset": "RWA001",
-    "ilkLabel": "RWA001-A",
-    "ilkBytes": "0x5257413030312d41000000000000000000000000000000000000000000000000",
-    "join": "0x476b81c12Dc71EDfad1F64B9E07CaA60F4b156E2",
-    "pip": "0x76A9f30B45F4ebFD60Ce8a1c6e963b1605f7cB6d",
-    "isLP": false
-  }
 ];

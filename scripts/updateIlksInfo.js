@@ -7,7 +7,7 @@ const {utils: {stringToBytes}} = require('../umd');
 
   const ilkInfo = Object.keys(data)
     .filter(k => k.substr(0, 8) === 'MCD_JOIN')
-    .map(k => k.substr(9)).filter(k => k !== 'DAI')
+    .map(k => k.substr(9)).filter(k => k !== 'DAI' && k !== 'RWA001')
     .map(ilk => ilk.toUpperCase().replace('-', '_')).map(ilk => ({
       asset: ilk.replace(/_.*/, ''),
       ilkLabel: ilk.replace('_', '-'),
