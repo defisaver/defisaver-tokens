@@ -149,7 +149,7 @@ import UniV2EthUsdtIcon from './TokenIcons/UniV2EthUsdtIcon';
 import UniV2LinkEthIcon from './TokenIcons/UniV2LinkEthIcon';
 import UniV2UniEthIcon from './TokenIcons/UniV2UniEthIcon';
 import UniV2AaveEthIcon from './TokenIcons/UniV2AaveEthIcon';
-import UniV2WbtcDaiIcon from './TokenIcons/UniV2DaiUsdtIcon';
+import UniV2WbtcDaiIcon from './TokenIcons/UniV2WbtcDaiIcon';
 import UniV2DaiUsdtIcon from "./TokenIcons/UniV2DaiUsdtIcon";
 import FliIcon from "./TokenIcons/FliIcon";
 
