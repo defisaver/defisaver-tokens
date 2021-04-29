@@ -8,7 +8,8 @@ const BATAddress = "0x0D8775F648430679A709E98d2b0Cb6250d2887EF";
 const REPAddress = "0x1985365e9f78359a9B6AD760e32412f4a445E862";
 const REPv2Address = "0x221657776846890989a759BA2973e427DfF5C9bB";
 const ZRXAddress = "0xe41d2489571d322189246dafa5ebde1f4699f498";
-const KNCAddress = "0xdd974D5C2e2928deA5F71b9825b8b646686BD200";
+const KNCLAddress = "0xdd974D5C2e2928deA5F71b9825b8b646686BD200";
+const KNCAddress = "0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202";
 const USDCAddress = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48";
 const WBTCAddress = "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599";
 const MKRAddress = "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2";
@@ -35,7 +36,7 @@ const aUSDTAddress = "0x71fc860F7D3A592A4a98740e39dB31d25db65ae8";
 const aBUSDAddress = "0x6Ee0f7BB50a54AB5253dA0667B0Dc2ee526C30a8";
 const BUSDAddress = "0x4fabb145d64652a948d72533023f6e7a623c7c53";
 const aBATAddress = "0xE1BA0FB44CCb0D11b80F92f4f8Ed94CA3fF51D00";
-const aKNCAddress = "0x9D91BE44C06d373a8a226E1f3b146956083803eB";
+const aKNCLAddress = "0x9D91BE44C06d373a8a226E1f3b146956083803eB";
 const aLENDAddress = "0x7D2D3688Df45Ce7C552E19c27e007673da9204B8";
 const LENDAddress = "0x80fB784B7eD66730e8b1DBd9820aFD29931aab03";
 const aLINKAddress = "0xA64BD6C70Cb9051F6A9ba1F163Fdc07E0DfB5F84";
@@ -106,6 +107,7 @@ import DaiIcon from './TokenIcons/DaiIcon.js';
 import MkrIcon from './TokenIcons/MkrIcon.js';
 import UsdtIcon from './TokenIcons/UsdtIcon.js';
 import KncIcon from './TokenIcons/KncIcon.js';
+import KnclIcon from './TokenIcons/KnclIcon.js';
 import CompIcon from './TokenIcons/CompIcon.js';
 import SusdIcon from './TokenIcons/SusdIcon.js';
 import TusdIcon from './TokenIcons/TusdIcon.js';
@@ -267,6 +269,16 @@ export const assets: AssetData[] = [
     compoundCollateral: false,
     address: ZRXAddress,
     icon: ZrxIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'KNCL',
+    name: 'Kyber Network Crystal Legacy',
+    decimals: 18,
+    exchange: true,
+    compoundCollateral: false,
+    address: KNCLAddress,
+    icon: KnclIcon,
   },
   {
     ...assetProto,
@@ -523,12 +535,12 @@ export const assets: AssetData[] = [
   },
   {
     ...assetProto,
-    symbol: 'aKNC',
-    underlyingAsset: 'KNC',
-    name: 'KNC',
+    symbol: 'aKNCL',
+    underlyingAsset: 'KNCL',
+    name: 'Kyber Network Crystal Legacy',
     decimals: 18,
     aaveCollateral: true,
-    address: aKNCAddress,
+    address: aKNCLAddress,
     icon: KncIcon,
   },
   {

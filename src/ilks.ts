@@ -85,8 +85,8 @@ export const ilks:IlkData[] = [
     "isLP": false
   },
   {
-    "asset": "KNC",
-    "ilkLabel": "KNC-A",
+    "asset": "KNCL",
+    "ilkLabel": "KNCL-A",
     "ilkBytes": "0x4b4e432d41000000000000000000000000000000000000000000000000000000",
     "join": "0x475F1a89C1ED844A08E8f6C50A00228b5E59E4A9",
     "flip": "0x57B01F1B3C59e2C0bdfF3EC9563B71EEc99a3f2f",
