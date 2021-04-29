@@ -67,7 +67,11 @@ export const getIlkInfo = (ilk:string = ''):ExtendedIlkData => {
 
 export const getAssetInfoByAddress = (address: string = ''):AssetData => assets.find(t => t.address.toLowerCase() === address.toLowerCase()) || console.error(`Asset with addess "${address}" not found `) || {...assetProto};
 
-export const ilkToAsset = (ilk: string = ''):string => (ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : ilk).replace(/-.*/, '');
+export const ilkToAsset = (ilk: string = ''):string => {
+  let ilkLabel = ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : ilk;
+  if (ilkLabel === 'KNC-A') return 'KNCL';
+  return ilkLabel.replace(/-.*/, '');
+}
 
 /** @private **/
 export const compoundCollateralAssets:AssetData[] = assets.filter(t => t.compoundCollateral);
