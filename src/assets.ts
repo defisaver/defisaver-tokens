@@ -95,6 +95,15 @@ const UNIV2AAVEETHAddress = "0xDFC14d2Af169B0D36C4EFF567Ada9b2E0CAE044f";
 const UNIV2WBTCDAIAddress = "0x231B7589426Ffe1b75405526fC32aC09D44364c4";
 const UNIV2DAIUSDTAddress = "0xB20bd5D04BE54f870D5C0d3cA85d82b34B836405";
 const FliAddress = "0xaa6e8127831c9de45ae56bb1b0d4d4da6e5665bd";
+const LqtyAddress = "0x6DEA81C8171D0bA574754EF6F8b412F2Ed88c54D";
+const LusdAddress = "0x5f98805A4E8be255a32880FDeC7F6728C6568bA0";
+const FlxAddress = "0x6243d8cea23066d098a15582d81a598b4e8391f4";
+const AlcxAddress = "0xdbdb4d16eda451d0503b854cf79d55697f90c8df";
+const EursAddress = "0xdb25f211ab05b1c97d595516f45794528a807ad8";
+const GrtAddress = "0xc944e90c64b2c07662a292be6244bdf05cda44a7";
+const PoolAddress = "0x0cec1a9154ff802e7934fc916ed7ca50bde6844e";
+const LdoAddress = "0x5a98fcbea516cf06857215779fd812ca3bef1b32";
+const StethAddress = "0xae7ab96520de3a18e5e111b5eaab095312d7fe84";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -152,8 +161,18 @@ import UniV2LinkEthIcon from './TokenIcons/UniV2LinkEthIcon';
 import UniV2UniEthIcon from './TokenIcons/UniV2UniEthIcon';
 import UniV2AaveEthIcon from './TokenIcons/UniV2AaveEthIcon';
 import UniV2WbtcDaiIcon from './TokenIcons/UniV2WbtcDaiIcon';
-import UniV2DaiUsdtIcon from "./TokenIcons/UniV2DaiUsdtIcon";
-import FliIcon from "./TokenIcons/FliIcon";
+import UniV2DaiUsdtIcon from './TokenIcons/UniV2DaiUsdtIcon';
+import FliIcon from './TokenIcons/FliIcon';
+import LqtyIcon from './TokenIcons/LqtyIcon';
+import LusdIcon from './TokenIcons/LusdIcon';
+import FlxIcon from './TokenIcons/FlxIcon';
+import AlcxIcon from './TokenIcons/AlcxIcon';
+import EursIcon from './TokenIcons/EursIcon';
+import GrtIcon from './TokenIcons/GrtIcon';
+import PoolIcon from './TokenIcons/PoolIcon';
+import LdoIcon from './TokenIcons/LdoIcon';
+import StethIcon from './TokenIcons/StethIcon';
+
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -1067,5 +1086,86 @@ export const assets: AssetData[] = [
     exchange: true,
     decimals: 18,
     icon: FliIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'LQTY',
+    name: 'Liquity',
+    address: LqtyAddress,
+    exchange: true,
+    decimals: 18,
+    icon: LqtyIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'LUSD',
+    name: 'Liquity USD',
+    address: LusdAddress,
+    exchange: true,
+    decimals: 18,
+    icon: LusdIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'FLX',
+    name: 'Reflexer Ungovernance Token',
+    address: FlxAddress,
+    exchange: true,
+    decimals: 18,
+    icon: FlxIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'ALCX',
+    name: 'Alchemix',
+    address: AlcxAddress,
+    exchange: true,
+    decimals: 18,
+    icon: AlcxIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'EURS',
+    name: 'Stasis Euro',
+    address: EursAddress,
+    exchange: true,
+    decimals: 2,
+    icon: EursIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'GRT',
+    name: 'The Graph',
+    address: GrtAddress,
+    exchange: true,
+    decimals: 18,
+    icon: GrtIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'POOL',
+    name: 'PoolTogether',
+    address: PoolAddress,
+    exchange: true,
+    decimals: 18,
+    icon: PoolIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'LDO',
+    name: 'Lido DAO',
+    address: LdoAddress,
+    exchange: true,
+    decimals: 18,
+    icon: LdoIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'stETH',
+    name: 'Lido Staked Ether',
+    address: StethAddress,
+    exchange: true,
+    decimals: 18,
+    icon: StethIcon,
   },
 ];
