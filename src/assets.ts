@@ -15,6 +15,7 @@ const WBTCAddress = "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599";
 const MKRAddress = "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2";
 const COMPAddress = "0xc00e94cb662c3520282e6f5717214004a7f26888";
 const cDAIAddress = "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643";
+const cLINKAddress = "0xface851a4921ce59e912d19329929ce6da6eb0c7";
 const cBATAddress = "0x6c8c6b02e7b2be14d4fa6022dfd6d75921d90e4e";
 const cREPAddress = "0x158079ee67fce2f58472a96584a73c7ab9ac95c1";
 const cZRXAddress = "0xb3319f5d18bc0d84dd1b4825dcde5d5f7266d407";
@@ -24,6 +25,7 @@ const cWBTCAddressLegacy = "0xc11b1268c1a384e55c48c2391d8d480264a3a7f4";
 const cWBTCAddress = "0xccf4429db6322d5c611ee964527d42e5d685dd6a";
 const USDTAddress = "0xdac17f958d2ee523a2206206994597c13d831ec7";
 const cUSDTAddress = "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9";
+const cTUSDAddress = "0x12392F67bdf24faE0AF363c24aC620a2f67DAd86";
 const cUNIAddress = "0x35a18000230da775cac24873d00ff85bccded550";
 const aETHAddress = "0x3a3A65aAb0dd2A17E3F1947bA16138cd37d08c04";
 const aDAIAddress = "0xfC1E690f61EFd961294b3e1Ce3313fBD8aa4f85d";
@@ -514,6 +516,17 @@ export const assets: AssetData[] = [
   },
   {
     ...assetProto,
+    symbol: 'cTUSD',
+    underlyingAsset: 'TUSD',
+    name: 'True USD',
+    decimals: 8,
+    exchange: false,
+    compoundCollateral: true,
+    address: cTUSDAddress,
+    icon: TusdIcon,
+  },
+  {
+    ...assetProto,
     symbol: 'aUSDT',
     underlyingAsset: 'USDT',
     name: 'Tether',
@@ -597,6 +610,17 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: LINKAddress,
+    icon: LinkIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'cLINK',
+    name: 'ChainLink',
+    underlyingAsset: 'LINK',
+    decimals: 8,
+    exchange: false,
+    compoundCollateral: true,
+    address: cLINKAddress,
     icon: LinkIcon,
   },
   {
