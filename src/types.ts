@@ -22,7 +22,9 @@ type IlkData = {
   pip: (string);
   join: (string);
   asset: (string);
-  flip: (string);
+  flip?: (string);
+  clip?: (string);
+  clipCalc?: (string);
   ilkBytes: (string);
   isLP: (boolean);
 };

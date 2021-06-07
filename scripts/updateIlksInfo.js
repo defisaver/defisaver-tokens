@@ -7,13 +7,16 @@ const {utils: {stringToBytes}} = require('../umd');
 
   const ilkInfo = Object.keys(data)
     .filter(k => k.substr(0, 8) === 'MCD_JOIN')
+    .filter(k => !k.includes('RWA'))
     .map(k => k.substr(9)).filter(k => k !== 'DAI' && k !== 'RWA001')
     .map(ilk => ilk.toUpperCase().replace('-', '_')).map(ilk => ({
-      asset: ilk.replace(/_.*/, ''),
+      asset: ilk.replace(/_.*/, '').replace(/^KNC$/, 'KNCL'),
       ilkLabel: ilk.replace('_', '-'),
       ilkBytes: stringToBytes(ilk.replace('_', '-')),
       join: data[`MCD_JOIN_${ilk}`],
       flip: data[`MCD_FLIP_${ilk}`],
+      clip: data[`MCD_CLIP_${ilk}`],
+      clipCalc: data[`MCD_CLIP_CALC_${ilk}`],
       pip: data[`PIP_${ilk.replace(/_.*/, '')}`],
       isLP: ilk.substr(0, 5) === 'UNIV2',
     }));
