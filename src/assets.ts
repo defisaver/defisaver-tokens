@@ -96,7 +96,7 @@ const UmaAddress = "0x04fa0d235c4abf4bcf4787af4cf447de572ef828";
 const UNIV2AAVEETHAddress = "0xDFC14d2Af169B0D36C4EFF567Ada9b2E0CAE044f";
 const UNIV2WBTCDAIAddress = "0x231B7589426Ffe1b75405526fC32aC09D44364c4";
 const UNIV2DAIUSDTAddress = "0xB20bd5D04BE54f870D5C0d3cA85d82b34B836405";
-const FliAddress = "0xaa6e8127831c9de45ae56bb1b0d4d4da6e5665bd";
+const EthfliAddress = "0xaa6e8127831c9de45ae56bb1b0d4d4da6e5665bd";
 const LqtyAddress = "0x6DEA81C8171D0bA574754EF6F8b412F2Ed88c54D";
 const LusdAddress = "0x5f98805A4E8be255a32880FDeC7F6728C6568bA0";
 const FlxAddress = "0x6243d8cea23066d098a15582d81a598b4e8391f4";
@@ -106,6 +106,15 @@ const GrtAddress = "0xc944e90c64b2c07662a292be6244bdf05cda44a7";
 const PoolAddress = "0x0cec1a9154ff802e7934fc916ed7ca50bde6844e";
 const LdoAddress = "0x5a98fcbea516cf06857215779fd812ca3bef1b32";
 const StethAddress = "0xae7ab96520de3a18e5e111b5eaab095312d7fe84";
+const AxsAddress = "0xbb0e17ef65f82ab018d8edd776e8dd940327b28b";
+const BtcfliAddress = "0x0b498ff89709d3838a063f1dfa463091f9801c2b";
+const FarmAddress = "0xa0246c9032bc3a600820415ae600c6388619a14d";
+const FeiAddress = "0x956f47f50a910163d8bf957cf5846d573e7f87ca";
+const GtcAddress = "0xde30da39c46104798bb5aa3fe8b9e0e1f348163f";
+const InstAddress = "0x6f40d4a6237c257fff2db00fa0510deeecd303eb";
+const MtaAddress = "0xa3bed4e1c75d00fa6f4e5e6922db7261b5e9acd2";
+const RuneAddress = "0x3155ba85d5f96b2d030a4966af206230e46849cb";
+const TribeAddress = "0xc7283b66eb1eb5fb86327f08e1b5816b0720212b";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -164,7 +173,7 @@ import UniV2UniEthIcon from './TokenIcons/UniV2UniEthIcon';
 import UniV2AaveEthIcon from './TokenIcons/UniV2AaveEthIcon';
 import UniV2WbtcDaiIcon from './TokenIcons/UniV2WbtcDaiIcon';
 import UniV2DaiUsdtIcon from './TokenIcons/UniV2DaiUsdtIcon';
-import FliIcon from './TokenIcons/FliIcon';
+import EthfliIcon from './TokenIcons/EthfliIcon';
 import LqtyIcon from './TokenIcons/LqtyIcon';
 import LusdIcon from './TokenIcons/LusdIcon';
 import FlxIcon from './TokenIcons/FlxIcon';
@@ -174,7 +183,15 @@ import GrtIcon from './TokenIcons/GrtIcon';
 import PoolIcon from './TokenIcons/PoolIcon';
 import LdoIcon from './TokenIcons/LdoIcon';
 import StethIcon from './TokenIcons/StethIcon';
-
+import AxsIcon from './TokenIcons/AxsIcon';
+import BtcfliIcon from './TokenIcons/BtcfliIcon';
+import FarmIcon from './TokenIcons/FarmIcon';
+import FeiIcon from './TokenIcons/FeiIcon';
+import GtcIcon from './TokenIcons/GtcIcon';
+import InstIcon from './TokenIcons/InstIcon';
+import MtaIcon from './TokenIcons/MtaIcon';
+import RuneIcon from './TokenIcons/RuneIcon';
+import TribeIcon from './TokenIcons/TribeIcon';
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -1106,10 +1123,10 @@ export const assets: AssetData[] = [
     ...assetProto,
     symbol: 'ETH2x-FLI',
     name: 'ETH 2x Flexible Leverage Index',
-    address: FliAddress,
+    address: EthfliAddress,
     exchange: true,
     decimals: 18,
-    icon: FliIcon,
+    icon: EthfliIcon,
   },
   {
     ...assetProto,
@@ -1191,5 +1208,86 @@ export const assets: AssetData[] = [
     exchange: true,
     decimals: 18,
     icon: StethIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'AXS',
+    name: 'Axie Infinity',
+    address: AxsAddress,
+    exchange: true,
+    decimals: 18,
+    icon: AxsIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'BTC2x-FLI',
+    name: 'BTC 2x Flexible Leverage Index',
+    address: BtcfliAddress,
+    exchange: true,
+    decimals: 18,
+    icon: BtcfliIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'FARM',
+    name: 'Harvest Finance',
+    address: FarmAddress,
+    exchange: true,
+    decimals: 18,
+    icon: FarmIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'FEI',
+    name: 'Fei Protocol',
+    address: FeiAddress,
+    exchange: true,
+    decimals: 18,
+    icon: FeiIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'GTC',
+    name: 'Gitcoin',
+    address: GtcAddress,
+    exchange: true,
+    decimals: 18,
+    icon: GtcIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'INST',
+    name: 'InstaDapp',
+    address: InstAddress,
+    exchange: true,
+    decimals: 18,
+    icon: InstIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'MTA',
+    name: 'mStable Governance Token: Meta',
+    address: MtaAddress,
+    exchange: true,
+    decimals: 18,
+    icon: MtaIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'RUNE',
+    name: 'THORChain ERC20',
+    address: RuneAddress,
+    exchange: true,
+    decimals: 18,
+    icon: RuneIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'TRIBE',
+    name: 'Tribe',
+    address: TribeAddress,
+    exchange: true,
+    decimals: 18,
+    icon: TribeIcon,
   },
 ];
