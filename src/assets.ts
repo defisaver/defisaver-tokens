@@ -116,7 +116,6 @@ const MtaAddress = "0xa3bed4e1c75d00fa6f4e5e6922db7261b5e9acd2";
 const RuneAddress = "0x3155ba85d5f96b2d030a4966af206230e46849cb";
 const TribeAddress = "0xc7283b66eb1eb5fb86327f08e1b5816b0720212b";
 const AmplAddress = "0xd46ba6d942050d489dbd938a2c909a5d5039a161";
-const aAmplAddress = "0x1E6bb68Acec8fefBD87D192bE09bb274170a0548";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -1299,16 +1298,6 @@ export const assets: AssetData[] = [
     name: 'Ampleforth',
     decimals: 9,
     address: AmplAddress,
-    icon: AmplIcon,
-  },
-  {
-    ...assetProto,
-    symbol: 'aAMPL',
-    underlyingAsset: 'AMPL',
-    name: 'Ampleforth',
-    decimals: 9,
-    aaveCollateral: true,
-    address: aAmplAddress,
     icon: AmplIcon,
   },
 ];
