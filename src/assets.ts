@@ -106,6 +106,8 @@ const GrtAddress = "0xc944e90c64b2c07662a292be6244bdf05cda44a7";
 const PoolAddress = "0x0cec1a9154ff802e7934fc916ed7ca50bde6844e";
 const LdoAddress = "0x5a98fcbea516cf06857215779fd812ca3bef1b32";
 const StethAddress = "0xae7ab96520de3a18e5e111b5eaab095312d7fe84";
+const AmplAddress = "0xd46ba6d942050d489dbd938a2c909a5d5039a161";
+const aAmplAddress = "0x1E6bb68Acec8fefBD87D192bE09bb274170a0548";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -174,7 +176,7 @@ import GrtIcon from './TokenIcons/GrtIcon';
 import PoolIcon from './TokenIcons/PoolIcon';
 import LdoIcon from './TokenIcons/LdoIcon';
 import StethIcon from './TokenIcons/StethIcon';
-
+import AmplIcon from './TokenIcons/AmplIcon';
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -1191,5 +1193,23 @@ export const assets: AssetData[] = [
     exchange: true,
     decimals: 18,
     icon: StethIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'AMPL',
+    name: 'Ampleforth',
+    decimals: 9,
+    address: AmplAddress,
+    icon: AmplIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'aAMPL',
+    underlyingAsset: 'AMPL',
+    name: 'Ampleforth',
+    decimals: 9,
+    aaveCollateral: true,
+    address: aAmplAddress,
+    icon: AmplIcon,
   },
 ];
