@@ -54,7 +54,6 @@ export const getIlkInfo = (ilk:string = ''):ExtendedIlkData => {
       asset: ilkToAsset(ilk),
       pip: '',
       join: '',
-      flip: '',
       isLP: false,
     };
   }
