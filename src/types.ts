@@ -11,6 +11,7 @@ type AssetData = {
   exchange: boolean;
   compoundCollateral: boolean;
   aaveCollateral: boolean;
+  yearnCollateral: boolean;
   isStable: boolean;
 };
 

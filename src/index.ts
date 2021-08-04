@@ -77,6 +77,8 @@ export const compoundCollateralAssets:AssetData[] = assets.filter(t => t.compoun
 /** @private **/
 export const aaveCollateralAssets:AssetData[] = assets.filter(t => t.aaveCollateral);
 /** @private **/
+export const yearnCollateralAssets:AssetData[] = assets.filter(t => t.yearnCollateral);
+/** @private **/
 export const exchangeAssets:AssetData[] = assets.filter(t => t.exchange);
 /** @private **/
 export const compoundAsset = (underlyingAsset: string):string => `c${underlyingAsset.toUpperCase()}`;

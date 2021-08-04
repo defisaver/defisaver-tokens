@@ -116,6 +116,52 @@ const MtaAddress = "0xa3bed4e1c75d00fa6f4e5e6922db7261b5e9acd2";
 const RuneAddress = "0x3155ba85d5f96b2d030a4966af206230e46849cb";
 const TribeAddress = "0xc7283b66eb1eb5fb86327f08e1b5816b0720212b";
 const AmplAddress = "0xd46ba6d942050d489dbd938a2c909a5d5039a161";
+const SteCrvAddress = "0x06325440D014e39736583c165C2963BA99fAf14E";
+const ECrvAddress = "0xA3D87FffcE63B53E0d54fAa1cc983B7eB0b74A9c";
+const HegicAddress = "0x584bC13c7D411c00c01A62e8019472dE68768430";
+const Ib3CRVAddress = "0x5282a4eF67D9C33135340fB3289cc1711c13638C";
+const HCRVAddress = "0xb19059ebb43466C323583928285a49f558E572Fd";
+const YveCRVDAOAddress = "0xc5bDdf9843308380375a611c18B50Fb9341f502A";
+const CrvRenWSBTCAddress = "0x075b1bb99792c9E1041bA13afEf80C91a1e70fB3";
+const CrvRenWBTCAddress = "0x49849C98ae39Fff122806C06791Fa73784FB3675";
+const SaCRVAddress = "0x02d341CcB60fAaf662bC0554d13778015d1b285C";
+const OBTCsbtcCRVAddress = "0x2fE94ea3d5d4a175184081439753DE15AeF9d614";
+const PBTCsbtcCRVAddress = "0xDE5331AC4B3630f94853Ff322B66407e0D6331E8";
+const LUSD3CRVfAddress = "0xEd279fDD11cA84bEef15AF5D39BB4d4bEE23F0cA";
+const BBTCsbtcCRVAddress = "0x410e3E86ef427e30B9235497143881f717d93c2A";
+const TBTCsbtcCRVAddress = "0x64eda51d3Ad40D56b9dFc5554E06F94e1Dd786Fd";
+const FRAX3CRVfAddress = "0xd632f22692FaC7611d2AA1C0D552930D43CAEd3B";
+const YDAIyUSDCyUSDTyBUSDAddress = "0x3B3Ac5386837Dc563660FB6a0937DFAa5924333B";
+const CDAIcUSDCAddress = "0x845838DF265Dcd2c412A1Dc9e959c7d08537f8a2";
+const Gusd3CRVAddress = "0xD2967f45c4f384DEEa880F807Be904762a3DeA07";
+const YDAIyUSDCyUSDTyTUSDAddress = "0xdF5e0e81Dff6FAF3A7e52BA697820c5e32D806A8";
+const CRV3Address = "0x6c3F90f043a72FA612cbac8115EE7e52BDe6E490";
+const TUSD3CRVfAddress = "0xEcd5e75AFb02eFa118AF914515D6521aaBd189F1";
+const BUSD3CRVfAddress = "0x4807862AA8b2bF68830e4C8dc86D0e9A998e085a";
+const Dusd3CRVAddress = "0x3a664Ab939FD8482048609f652f9a0B0677337B9";
+const Ust3CRVAddress = "0x94e131324b6054c0D789b190b2dAC504e4361b53";
+const Musd3CRVAddress = "0x1AEf73d49Dedc4b1778d0706583995958Dc862e6";
+const CrvPlain3andSUSDAddress = "0xC25a3A3b969415c80451098fa907EC722572917F";
+const LinkCRVAddress = "0xcee60cFa923170e4f8204AE08B4fA6A3F5656F3a";
+const Usdn3CRVAddress = "0x4f3E8F405CF5aFC05D68142F3783bDfE13811522";
+const Usdp3CRVAddress = "0x7Eb40E450b9655f4B3cC4259BCC731c63ff55ae6";
+const AlUSD3CRVfAddress = "0x43b4FdFD4Ff969587185cDB6f0BD875c5Fc83f8c";
+const RCRVAddress = "0x53a901d48795C58f485cBB38df08FA96a24669D5";
+const AnkrCRVAddress = "0xaA17A236F2bAdc98DDc0Cf999AbB47D47Fc0A6Cf";
+const A3CRVAddress = "0xFd2a8fA60Abd58Efe3EeE34dd494cD491dC14900";
+const Husd3CRVAddress = "0x5B5CFE992AdAC0C9D48E05854B2d91C73a003858";
+const EursCRVAddress = "0x194eBd173F6cDacE046C53eACcE9B953F28411d1";
+const CrvTricryptoAddress = "0xcA3d75aC011BF5aD07a98d02f18225F9bD9A6BDF";
+const YpaxCrvAddress = "0xD905e2eaeBe188fc92179b6350807D8bd91Db0D8";
+const CDAIcUSDCUSDTAddress = "0x9fC689CCaDa600B6DF723D9E47D84d76664a1F23";
+const Usdk3CRVAddress = "0x97E2768e8E73511cA874545DC5Ff8067eB19B787";
+const Rsv3CRVAddress = "0xC2Ee6b0334C261ED60C72f6054450b61B8f18E35";
+const Crv3cryptoAddress = "0xc4AD29ba4B3c580e6D59105FFf484999997675Ff";
+const cMKRAddress = "0x95b4eF2869eBD94BEb4eEE400a99824BF5DC325b";
+const cSUSHIAddress = "0x4B0181102A0112A2ef11AbEE5563bb4a3176c9d7";
+const cAAVEAddress = "0xe65cdB6479BaC1e22340E4E755fAE7E509EcD06c";
+const cYFIAddress = "0x80a2AE356fc9ef4305676f7a3E2Ed04e12C33946";
+
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -194,6 +240,43 @@ import MtaIcon from './TokenIcons/MtaIcon';
 import RuneIcon from './TokenIcons/RuneIcon';
 import TribeIcon from './TokenIcons/TribeIcon';
 import AmplIcon from './TokenIcons/AmplIcon';
+import Crv3CryptoIcon from './TokenIcons/Crv3crypto';
+import Crv3Icon from './TokenIcons/Crv3Icon';
+import CrvAethcIcon from './TokenIcons/Crv3Icon';
+import CrvAaveIcon from './TokenIcons/CrvAaveIcon';
+import CrvAlusdIcon from './TokenIcons/CrvAlusdIcon';
+import CrvBbtcIcon from './TokenIcons/CrvBbtcIcon';
+import CrvCompIcon from './TokenIcons/CrvCompIcon';
+import CrvDusdIcon from './TokenIcons/CrvDusdIcon';
+import CrvEursIcon from './TokenIcons/CrvEursIcon';
+import CrvFraxIcon from './TokenIcons/CrvFraxIcon';
+import CrvGusdIcon from './TokenIcons/CrvGusdIcon';
+import CrvHusdIcon from './TokenIcons/CrvHusdIcon';
+import CrvHbtcIcon from './TokenIcons/CrvHbtcIcon';
+import CrvMusdIcon from './TokenIcons/CrvMusdIcon';
+import CrvPaxIcon from './TokenIcons/CrvPaxIcon';
+import CrvRenbtcIcon from './TokenIcons/CrvRenbtcIcon';
+import CrvRsvIcon from './TokenIcons/CrvRsvIcon';
+import CrvSaaveIcon from './TokenIcons/CrvSaaveIcon';
+import CrvSethIcon from './TokenIcons/CrvSethIcon';
+import CrvStethIcon from './TokenIcons/CrvStethIcon';
+import CrvSusdIcon from './TokenIcons/CrvSusdIcon';
+import CrvTbtcIcon from './TokenIcons/CrvTbtcIcon';
+import CrvTricryptoIcon from './TokenIcons/CrvTricryptoIcon';
+import CrvTusdIcon from './TokenIcons/CrvTusdIcon';
+import CrvUsdnIcon from './TokenIcons/CrvUsdnIcon';
+import CrvUsdpIcon from './TokenIcons/CrvUsdpIcon';
+import CrvYbusdIcon from './TokenIcons/CrvYbusdIcon';
+import YCrvIcon from './TokenIcons/YCrvIcon';
+import CrvRethIcon from './TokenIcons/CrvRethIcon';
+import CrvUstIcon from './TokenIcons/CrvUstIcon';
+import HegicIcon from './TokenIcons/HegicIcon';
+import CrvLinkIcon from './TokenIcons/CrvLinkIcon';
+import CrvUsdtIcon from './TokenIcons/CrvUsdtIcon';
+import CrvLusdIcon from './TokenIcons/CrvLusdIcon';
+import YveCrvIcon from './TokenIcons/YveCrvIcon';
+import CrvIBIcon from './TokenIcons/CrvIBIcon';
+import CrvUsdkIcon from './TokenIcons/CrvUsdkIcon';
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -205,6 +288,7 @@ export const assetProto: AssetData = {
   exchange: false,
   compoundCollateral: false,
   aaveCollateral: false,
+  yearnCollateral: false,
   isStable: false,
 };
 
@@ -225,6 +309,7 @@ export const assets: AssetData[] = [
     name: 'WrappedEther',
     decimals: 18,
     address: WETHAddress,
+    yearnCollateral: true,
     icon: EthIcon,
   },
   {
@@ -245,6 +330,7 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     compoundCollateral: false,
+    yearnCollateral: true,
     address: DAIAddress,
     isStable: true,
     icon: DaiIcon,
@@ -379,6 +465,7 @@ export const assets: AssetData[] = [
     decimals: 6,
     exchange: true,
     compoundCollateral: false,
+    yearnCollateral: true,
     address: USDCAddress,
     isStable: true,
     icon: UsdcIcon,
@@ -401,6 +488,7 @@ export const assets: AssetData[] = [
     decimals: 8,
     exchange: true,
     compoundCollateral: false,
+    yearnCollateral: true,
     address: WBTCAddress,
     icon: WbtcIcon,
   },
@@ -432,6 +520,7 @@ export const assets: AssetData[] = [
     name: 'Tether',
     decimals: 6,
     exchange: true,
+    yearnCollateral: true,
     address: USDTAddress,
     isStable: true,
     icon: UsdtIcon,
@@ -509,6 +598,7 @@ export const assets: AssetData[] = [
     name: 'Synth sUSD',
     decimals: 18,
     exchange: true,
+    yearnCollateral: true,
     address: SUSDAddress,
     isStable: true,
     icon: SusdIcon,
@@ -628,6 +718,7 @@ export const assets: AssetData[] = [
     name: 'ChainLink',
     decimals: 18,
     exchange: true,
+    yearnCollateral: true,
     address: LINKAddress,
     icon: LinkIcon,
   },
@@ -697,6 +788,7 @@ export const assets: AssetData[] = [
     name: 'Synthetix Network',
     decimals: 18,
     exchange: true,
+    yearnCollateral: true,
     address: SNXAddress,
     icon: SnxIcon,
   },
@@ -773,6 +865,7 @@ export const assets: AssetData[] = [
     name: 'Yearn Finance',
     decimals: 18,
     exchange: true,
+    yearnCollateral: true,
     address: YFIAddress,
     icon: YfiIcon,
   },
@@ -810,6 +903,7 @@ export const assets: AssetData[] = [
     name: 'Uniswap',
     decimals: 18,
     exchange: true,
+    yearnCollateral: true,
     address: UNIAddress,
     icon: UniIcon,
   },
@@ -986,6 +1080,7 @@ export const assets: AssetData[] = [
     name: 'Rai Reflex Index',
     address: RAIAddress,
     decimals: 18,
+    yearnCollateral: true,
     icon: RaiIcon,
     exchange: true,
   },
@@ -994,6 +1089,7 @@ export const assets: AssetData[] = [
     symbol: '1INCH',
     name: '1INCH Token',
     address: ONEINCHAddress,
+    yearnCollateral: true,
     exchange: true,
     decimals: 18,
     icon: OneInchIcon,
@@ -1299,5 +1395,410 @@ export const assets: AssetData[] = [
     decimals: 9,
     address: AmplAddress,
     icon: AmplIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvSTETH',
+    name: 'Curve.fi ETH/stETH',
+    decimals: 18,
+    yearnCollateral: true,
+    address: SteCrvAddress,
+    icon: CrvStethIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvSETH',
+    name: 'Curve.fi ETH/sETH',
+    decimals: 18,
+    yearnCollateral: true,
+    address: ECrvAddress,
+    icon: CrvSethIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'HEGIC',
+    name: 'Hegic',
+    decimals: 18,
+    yearnCollateral: true,
+    address: HegicAddress,
+    icon: HegicIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvIB',
+    name: 'Curve.fi cyDAI/cyUSDC/cyUSDT',
+    decimals: 18,
+    yearnCollateral: true,
+    address: Ib3CRVAddress,
+    icon: CrvIBIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvHBTC',
+    name: 'Curve.fi hBTC/wBTC',
+    decimals: 18,
+    yearnCollateral: true,
+    address: HCRVAddress,
+    icon: CrvHbtcIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'yveCRV',
+    name: 'veCRV-DAO yVault',
+    decimals: 18,
+    yearnCollateral: true,
+    address: YveCRVDAOAddress,
+    icon: YveCrvIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvSBTC',
+    name: 'Curve.fi renBTC/wBTC/sBTC',
+    decimals: 18,
+    yearnCollateral: true,
+    address: CrvRenWSBTCAddress,
+    icon: CrvBbtcIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvRENBTC',
+    name: 'Curve.fi renBTC/wBTC',
+    decimals: 18,
+    yearnCollateral: true,
+    address: CrvRenWBTCAddress,
+    icon: CrvRenbtcIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvSAAVE',
+    name: 'Curve.fi aDAI/aSUSD',
+    decimals: 18,
+    yearnCollateral: true,
+    address: SaCRVAddress,
+    icon: CrvSaaveIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvOBTC',
+    name: 'Curve.fi oBTC/sbtcCRV',
+    decimals: 18,
+    yearnCollateral: true,
+    address: OBTCsbtcCRVAddress,
+    icon: CrvBbtcIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvPBTC',
+    name: 'Curve.fi pBTC/sbtcCRV',
+    decimals: 18,
+    yearnCollateral: true,
+    address: PBTCsbtcCRVAddress,
+    icon: CrvBbtcIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvLUSD',
+    name: 'Curve.fi Factory USD Metapool: Liquity',
+    decimals: 18,
+    yearnCollateral: true,
+    address: LUSD3CRVfAddress,
+    icon: CrvLusdIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvBBTC',
+    name: 'Curve.fi bBTC/sbtcCRV',
+    decimals: 18,
+    yearnCollateral: true,
+    address: BBTCsbtcCRVAddress,
+    icon: CrvBbtcIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvTBTC',
+    name: 'Curve.fi tBTC/sbtcCRV',
+    decimals: 18,
+    yearnCollateral: true,
+    address: TBTCsbtcCRVAddress,
+    icon: CrvTbtcIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvFRAX',
+    name: 'Curve.fi Factory USD Metapool: Frax',
+    decimals: 18,
+    yearnCollateral: true,
+    address: FRAX3CRVfAddress,
+    icon: CrvFraxIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvYBUSD',
+    name: 'yDAI+yUSDC+yUSDT+yBUSD',
+    decimals: 18,
+    yearnCollateral: true,
+    address: YDAIyUSDCyUSDTyBUSDAddress,
+    icon: CrvYbusdIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvCOMP',
+    name: 'cDAI+cUSDC',
+    decimals: 18,
+    yearnCollateral: true,
+    address: CDAIcUSDCAddress,
+    icon: CrvCompIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvGUSD',
+    name: 'Curve.fi GUSD/3Crv',
+    decimals: 18,
+    yearnCollateral: true,
+    address: Gusd3CRVAddress,
+    icon: CrvGusdIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'yCRV',
+    name: 'yDAI+yUSDC+yUSDT+yTUSD',
+    decimals: 18,
+    yearnCollateral: true,
+    address: YDAIyUSDCyUSDTyTUSDAddress,
+    icon: YCrvIcon,
+  },
+  {
+    ...assetProto,
+    symbol: '3Crv',
+    name: 'Curve.fi DAI/USDC/USDT',
+    decimals: 18,
+    yearnCollateral: true,
+    address: CRV3Address,
+    icon: Crv3Icon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvTUSD',
+    name: 'Curve.fi Factory USD Metapool: TrueUSD',
+    decimals: 18,
+    yearnCollateral: true,
+    address: TUSD3CRVfAddress,
+    icon: CrvTusdIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvBUSD',
+    name: 'Curve.fi Factory USD Metapool: Binance USD',
+    decimals: 18,
+    yearnCollateral: true,
+    address: BUSD3CRVfAddress,
+    icon: CrvYbusdIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvDUSD',
+    name: 'Curve.fi DUSD/3Crv',
+    decimals: 18,
+    yearnCollateral: true,
+    address: Dusd3CRVAddress,
+    icon: CrvDusdIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvUST',
+    name: 'Curve.fi UST/3Crv',
+    decimals: 18,
+    yearnCollateral: true,
+    address: Ust3CRVAddress,
+    icon: CrvUstIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvMUSD',
+    name: 'Curve.fi MUSD/3Crv',
+    decimals: 18,
+    yearnCollateral: true,
+    address: Musd3CRVAddress,
+    icon: CrvMusdIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvSUSD',
+    name: 'Curve.fi DAI/USDC/USDT/sUSD',
+    decimals: 18,
+    yearnCollateral: true,
+    address: CrvPlain3andSUSDAddress,
+    icon: CrvSusdIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvLINK',
+    name: 'Curve.fi LINK/sLINK',
+    decimals: 18,
+    yearnCollateral: true,
+    address: LinkCRVAddress,
+    icon: CrvLinkIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvUSDN',
+    name: 'Curve.fi USDN/3Crv',
+    decimals: 18,
+    yearnCollateral: true,
+    address: Usdn3CRVAddress,
+    icon: CrvUsdnIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvUSDP',
+    name: 'Curve.fi USDP/3Crv',
+    decimals: 18,
+    yearnCollateral: true,
+    address: Usdp3CRVAddress,
+    icon: CrvUsdpIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvALUSD',
+    name: 'Curve.fi Factory USD Metapool: Alchemix USD',
+    decimals: 18,
+    yearnCollateral: true,
+    address: AlUSD3CRVfAddress,
+    icon: CrvAlusdIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvRETH',
+    name: 'Curve.fi ETH/rETH',
+    decimals: 18,
+    yearnCollateral: true,
+    address: RCRVAddress,
+    icon: CrvRethIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvAETHc',
+    name: 'Curve.fi ETH/aETH',
+    decimals: 18,
+    yearnCollateral: true,
+    address: AnkrCRVAddress,
+    icon: CrvAethcIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvAAVE',
+    name: 'Curve.fi aDAI/aUSDC/aUSDT',
+    decimals: 18,
+    yearnCollateral: true,
+    address: A3CRVAddress,
+    icon: CrvAaveIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvHUSD',
+    name: 'Curve.fi HUSD/3Crv',
+    decimals: 18,
+    yearnCollateral: true,
+    address: Husd3CRVAddress,
+    icon: CrvHusdIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvEURS',
+    name: 'Curve.fi EURS/sEUR',
+    decimals: 18,
+    yearnCollateral: true,
+    address: EursCRVAddress,
+    icon: CrvEursIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvTricrypto',
+    name: 'Curve.fi USD-BTC-ETH',
+    decimals: 18,
+    yearnCollateral: true,
+    address: CrvTricryptoAddress,
+    icon: CrvTricryptoIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvPAX',
+    name: 'Curve.fi DAI/USDC/USDT/PAX',
+    decimals: 18,
+    yearnCollateral: true,
+    address: YpaxCrvAddress,
+    icon: CrvPaxIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvUSDT',
+    name: 'Curve.fi cDAI/cUSDC/USDT',
+    decimals: 18,
+    yearnCollateral: true,
+    address: CDAIcUSDCUSDTAddress,
+    icon: CrvUsdtIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvUSDK',
+    name: 'Curve.fi USDK/3Crv',
+    decimals: 18,
+    yearnCollateral: true,
+    address: Usdk3CRVAddress,
+    icon: CrvUsdkIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvRSV',
+    name: 'Curve.fi RSV/3Crv',
+    decimals: 18,
+    yearnCollateral: true,
+    address: Rsv3CRVAddress,
+    icon: CrvRsvIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crv3crypto',
+    name: 'Curve.fi USD-BTC-ETH',
+    decimals: 18,
+    yearnCollateral: true,
+    address: Crv3cryptoAddress,
+    icon: Crv3CryptoIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'cMKR',
+    decimals: 8,
+    compoundCollateral: true,
+    address: cMKRAddress,
+    underlyingAsset: 'MKR',
+    icon: MkrIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'cSUSHI',
+    decimals: 8,
+    compoundCollateral: true,
+    address: cSUSHIAddress,
+    underlyingAsset: 'SUSHI',
+    icon: SushiIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'cAAVE',
+    decimals: 8,
+    compoundCollateral: true,
+    address: cAAVEAddress,
+    underlyingAsset: 'AAVE',
+    icon: AaveIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'cYFI',
+    decimals: 8,
+    compoundCollateral: true,
+    address: cYFIAddress,
+    underlyingAsset: 'YFI',
+    icon: YfiIcon,
   },
 ];
