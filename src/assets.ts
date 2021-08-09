@@ -1763,7 +1763,7 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: Crv3cryptoAddress,
-    icon: Crv3CryptoIcon,
+    icon: CrvTricryptoIcon,
   },
   {
     ...assetProto,
