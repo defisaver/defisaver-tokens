@@ -162,6 +162,8 @@ const cSUSHIAddress = "0x4B0181102A0112A2ef11AbEE5563bb4a3176c9d7";
 const cAAVEAddress = "0xe65cdB6479BaC1e22340E4E755fAE7E509EcD06c";
 const cYFIAddress = "0x80a2AE356fc9ef4305676f7a3E2Ed04e12C33946";
 const RENFILAddress = "0xD5147bc8e386d91Cc5DBE72099DAC6C9b99276F5";
+const MATICAddress = "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0";
+
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -278,6 +280,7 @@ import YveCrvIcon from './TokenIcons/YveCrvIcon';
 import CrvIBIcon from './TokenIcons/CrvIBIcon';
 import CrvUsdkIcon from './TokenIcons/CrvUsdkIcon';
 import RenFilIcon from './TokenIcons/RenFilIcon';
+import MaticIcon from './TokenIcons/MaticIcon';
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -1810,5 +1813,14 @@ export const assets: AssetData[] = [
     exchange: true,
     address: RENFILAddress,
     icon: RenFilIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'MATIC',
+    name: 'Polygon (Matic)',
+    decimals: 18,
+    exchange: true,
+    address: MATICAddress,
+    icon: MaticIcon,
   },
 ];
