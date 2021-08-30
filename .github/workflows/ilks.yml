@@ -15,6 +15,7 @@ jobs:
       run: npm run build:umd
     - name: Fetch latest data
       run: npm run update-ilks
+      env: '${{ secrets.RPC }}'
     - name: Add credentials
       uses: oleksiyrudenko/gha-git-credentials@v2-latest
       with:

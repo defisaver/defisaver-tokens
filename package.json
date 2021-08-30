@@ -7,7 +7,7 @@
   "types": "esm/index.d.ts",
   "scripts": {
     "version-bump": "git commit -am \"Version bump to $(npm version patch --no-git-tag-version | cut -c 2-)\"",
-    "update-ilks": "node scripts/updateIlksInfo",
+    "update-ilks": "node scripts/updateIlksInfoOnChain",
     "document": "typedoc --plugin typedoc-plugin-markdown src/index.ts --readme none --hideBreadcrumbs --excludePrivate && mv docs/README.md . && rm -r docs",
     "build:umd": "rm -rf umd && webpack --config=webpack.umd.js",
     "build:esm": "rm -rf esm && tsc -b",
