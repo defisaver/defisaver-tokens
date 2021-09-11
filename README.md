@@ -136,11 +136,11 @@ ___
 
 #### Type declaration:
 
-Name | Type |
------- | ------ |
-`bytesToString` | (`hex`: *string*) => *string* |
-`compare` | (`a`: *string*, `b`: *string*) => *boolean* |
-`stringToBytes` | (`str`: *string*) => *string* |
+Name | Type | Value |
+------ | ------ | ------ |
+`bytesToString` | *function* | (`hex`: *string*) => *string* |
+`compare` | *function* | (`a`: *string*, `b`: *string*) => *boolean* |
+`stringToBytes` | *function* | (`str`: *string*) => *string* |
 
 Defined in: [index.ts:13](https://github.com/DecenterApps/defisaver-tokens/blob/8683652/src/index.ts#L13)
 
