@@ -163,7 +163,13 @@ const cAAVEAddress = "0xe65cdB6479BaC1e22340E4E755fAE7E509EcD06c";
 const cYFIAddress = "0x80a2AE356fc9ef4305676f7a3E2Ed04e12C33946";
 const RENFILAddress = "0xD5147bc8e386d91Cc5DBE72099DAC6C9b99276F5";
 const MATICAddress = "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0";
-
+const crvEURTAddress = "0xFD5dB7463a3aB53fD211b4af195c5BCCC1A03890";
+const crvMIMAddress = "0x5a6a4d54456819380173272a5e8e9b9904bdf41b";
+const DydxAddress = "0x92d6c1e31e14520e676a687f0a93788b716beff5";
+const PerpAddress = "0xbc396689893d065f41bc2c6ecbee5e0085233447";
+const TcapAddress = "0x16c52ceece2ed57dad87319d91b5e3637d50afa4";
+const CtxAddress = "0x321c2fe4446c7c963dc41dd58879af648838f98d";
+const RgtAddress = "0xd291e7a03283640fdc51b121ac401383a46cc623";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -281,6 +287,13 @@ import CrvIBIcon from './TokenIcons/CrvIBIcon';
 import CrvUsdkIcon from './TokenIcons/CrvUsdkIcon';
 import RenFilIcon from './TokenIcons/RenFilIcon';
 import MaticIcon from './TokenIcons/MaticIcon';
+import DydxIcon from './TokenIcons/DydxIcon';
+import PerpIcon from './TokenIcons/PerpIcon';
+import TcapIcon from './TokenIcons/TcapIcon';
+import CtxIcon from './TokenIcons/CtxIcon';
+import RgtIcon from './TokenIcons/RgtIcon';
+import CrvEurtIcon from './TokenIcons/CrvEurtIcon';
+import CrvMimIcon from './TokenIcons/CrvMimIcon';
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -1822,5 +1835,68 @@ export const assets: AssetData[] = [
     exchange: true,
     address: MATICAddress,
     icon: MaticIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvEURT',
+    name: 'Curve.fi Factory Plain Pool: Euro Tether',
+    decimals: 18,
+    yearnCollateral: true,
+    address: crvEURTAddress,
+    icon: CrvEurtIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'crvMIM',
+    name: 'Curve.fi Factory USD Metapool: Magic Internet Money Internet Magic 3Pool',
+    decimals: 18,
+    yearnCollateral: true,
+    address: crvMIMAddress,
+    icon: CrvMimIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'DYDX',
+    name: 'dYdX',
+    decimals: 18,
+    exchange: true,
+    address: DydxAddress,
+    icon: DydxIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'PERP',
+    name: 'Perpetual Protocol',
+    decimals: 18,
+    exchange: true,
+    address: PerpAddress,
+    icon: PerpIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'TCAP',
+    name: 'Total Crypto Market Cap',
+    decimals: 18,
+    exchange: true,
+    address: TcapAddress,
+    icon: TcapIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'CTX',
+    name: 'Cryptex Finance',
+    decimals: 18,
+    exchange: true,
+    address: CtxAddress,
+    icon: CtxIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'RGT',
+    name: 'Rari Governance Token',
+    decimals: 18,
+    exchange: true,
+    address: RgtAddress,
+    icon: RgtIcon,
   },
 ];
