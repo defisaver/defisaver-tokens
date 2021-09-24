@@ -170,6 +170,7 @@ const PerpAddress = "0xbc396689893d065f41bc2c6ecbee5e0085233447";
 const TcapAddress = "0x16c52ceece2ed57dad87319d91b5e3637d50afa4";
 const CtxAddress = "0x321c2fe4446c7c963dc41dd58879af648838f98d";
 const RgtAddress = "0xd291e7a03283640fdc51b121ac401383a46cc623";
+const DataAddress = "0x33d63Ba1E57E54779F7dDAeaA7109349344cf5F1";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -294,6 +295,7 @@ import CtxIcon from './TokenIcons/CtxIcon';
 import RgtIcon from './TokenIcons/RgtIcon';
 import CrvEurtIcon from './TokenIcons/CrvEurtIcon';
 import CrvMimIcon from './TokenIcons/CrvMimIcon';
+import DataIcon from './TokenIcons/DataIcon';
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -1898,5 +1900,14 @@ export const assets: AssetData[] = [
     exchange: true,
     address: RgtAddress,
     icon: RgtIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'DATA',
+    name: 'DATA Economy Index',
+    decimals: 18,
+    exchange: true,
+    address: DataAddress,
+    icon: DataIcon,
   },
 ];
