@@ -299,5 +299,14 @@ export const ilks:IlkData[] = [
     "clip": "0x29342F530ed6120BDB219D602DaFD584676293d1",
     "pip": "0x8874964279302e6d4e523Fb1789981C39a1034Ba",
     "isLP": false
+  },
+  {
+    "asset": "GUNIV3DAIUSDC1",
+    "ilkLabel": "GUNIV3DAIUSDC1-A",
+    "ilkBytes": "0x47554e49563344414955534443312d4100000000000000000000000000000000",
+    "join": "0xbFD445A97e7459b0eBb34cfbd3245750Dba4d7a4",
+    "clip": "0x5048c5Cd3102026472f8914557A1FD35c8Dc6c9e",
+    "pip": "0x7F6d78CC0040c87943a0e0c140De3F77a273bd58",
+    "isLP": false
   }
 ];
