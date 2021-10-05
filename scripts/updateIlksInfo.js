@@ -10,7 +10,7 @@ const {utils: {stringToBytes}} = require('../umd');
     .filter(k => !k.includes('RWA'))
     .map(k => k.substr(9)).filter(k => k !== 'DAI' && k !== 'RWA001')
     .map(ilk => ilk.toUpperCase().replace('-', '_')).map(ilk => ({
-      asset: ilk.replace(/_.*/, '').replace(/^KNC$/, 'KNCL'),
+      asset: ilk.replace(/_.*/, '').replace(/^KNC$/, 'KNCL').replace(/^PAXUSD$/, 'USDP'),
       ilkLabel: ilk.replace('_', '-'),
       ilkBytes: stringToBytes(ilk.replace('_', '-')),
       join: data[`MCD_JOIN_${ilk}`],

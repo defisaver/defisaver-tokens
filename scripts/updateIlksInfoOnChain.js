@@ -19,7 +19,7 @@ const ilkContract = new web3.eth.Contract(ilkContractAbi, ilkContractAddress);
     .filter(ilk => bytesToString(ilk.ilkBytes).replace(/-.*/, '') !== 'PSM')
     .map(ilk => {
       return {
-        asset: bytesToString(ilk.ilkBytes).replace(/-.*/, '').replace(/^KNC$/, 'KNCL'),
+        asset: bytesToString(ilk.ilkBytes).replace(/-.*/, '').replace(/^KNC$/, 'KNCL').replace(/^PAXUSD$/, 'USDP'),
         ilkLabel: bytesToString(ilk.ilkBytes),
         ilkBytes: ilk.ilkBytes,
         join: ilk.join,

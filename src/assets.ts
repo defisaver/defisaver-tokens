@@ -59,7 +59,7 @@ const YFIAddress = "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e";
 const aYFIAddress = "0x12e51E77DAAA58aA0E9247db7510Ea4B46F9bEAd";
 const CRVAddress = "0xD533a949740bb3306d119CC777fa900bA034cd52";
 const iDAIAddress = "0x493C57C4763932315A328269E1ADaD09653B9081";
-const PAXUSDAddress = "0x8e870d67f660d95d5be530380d0ec0bd388289e1";
+const USDPAddress = "0x8e870d67f660d95d5be530380d0ec0bd388289e1";
 const DPIAddress = "0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b";
 const UNIAddress = "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984";
 const LRCAddress = "0xBBbbCA6A901c926F240b89EacB641d8Aec7AEafD";
@@ -171,6 +171,7 @@ const TcapAddress = "0x16c52ceece2ed57dad87319d91b5e3637d50afa4";
 const CtxAddress = "0x321c2fe4446c7c963dc41dd58879af648838f98d";
 const RgtAddress = "0xd291e7a03283640fdc51b121ac401383a46cc623";
 const DataAddress = "0x33d63Ba1E57E54779F7dDAeaA7109349344cf5F1";
+const AmpAddress = "0xff20817765cb7f73d4bde2e66e067e58d11095c2";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -197,7 +198,7 @@ import RenIcon from './TokenIcons/RenIcon.js';
 import RepV2Icon from './TokenIcons/RepV2Icon.js';
 import CrvIcon from './TokenIcons/CrvIcon.js';
 import YfiIcon from './TokenIcons/YfiIcon.js';
-import PaxusdIcon from './TokenIcons/PaxusdIcon.js';
+import UsdpIcon from './TokenIcons/UsdpIcon.js';
 import DpiIcon from './TokenIcons/DpiIcon.js';
 import UniIcon from './TokenIcons/UniIcon.js';
 import LrcIcon from './TokenIcons/LrcIcon.js';
@@ -296,6 +297,7 @@ import RgtIcon from './TokenIcons/RgtIcon';
 import CrvEurtIcon from './TokenIcons/CrvEurtIcon';
 import CrvMimIcon from './TokenIcons/CrvMimIcon';
 import DataIcon from './TokenIcons/DataIcon';
+import AmpIcon from "./TokenIcons/AmpIcon";
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -899,13 +901,13 @@ export const assets: AssetData[] = [
   },
   {
     ...assetProto,
-    symbol: 'PAXUSD',
-    name: 'Paxos Standard',
+    symbol: 'USDP',
+    name: 'Pax Dollar',
     decimals: 18,
     exchange: true,
-    address: PAXUSDAddress,
+    address: USDPAddress,
     isStable: true,
-    icon: PaxusdIcon,
+    icon: UsdpIcon,
   },
   {
     ...assetProto,
@@ -1909,5 +1911,14 @@ export const assets: AssetData[] = [
     exchange: true,
     address: DataAddress,
     icon: DataIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'AMP',
+    name: 'Amp Token',
+    decimals: 18,
+    exchange: true,
+    address: AmpAddress,
+    icon: AmpIcon,
   },
 ];
