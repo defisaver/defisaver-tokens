@@ -15,7 +15,7 @@ const ilkContract = new web3.eth.Contract(ilkContractAbi, ilkContractAddress);
   const info = await Promise.all(ilks.map(ilk => (ilkContract.methods.info(ilk).call())));
   const ilkInfo = info
     .map((info, i) => ({...info, ilkBytes: ilks[i]}))
-    .filter(ilk => ilk.symbol.substr(0,3) !== 'RWA')
+    .filter(ilk => ilk.symbol.substr(0,3) !== 'RWA' && ilk.symbol.substr(0,5) !== 'G-UNI')
     .filter(ilk => bytesToString(ilk.ilkBytes).replace(/-.*/, '') !== 'PSM')
     .map(ilk => {
       return {

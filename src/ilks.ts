@@ -112,7 +112,7 @@ export const ilks:IlkData[] = [
     "isLP": false
   },
   {
-    "asset": "PAXUSD",
+    "asset": "USDP",
     "ilkLabel": "PAXUSD-A",
     "ilkBytes": "0x5041585553442d41000000000000000000000000000000000000000000000000",
     "join": "0x7e62B7E279DFC78DEB656E34D6a435cC08a44666",
