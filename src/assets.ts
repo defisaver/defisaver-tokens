@@ -173,6 +173,7 @@ const RgtAddress = "0xd291e7a03283640fdc51b121ac401383a46cc623";
 const DataAddress = "0x33d63Ba1E57E54779F7dDAeaA7109349344cf5F1";
 const AmpAddress = "0xff20817765cb7f73d4bde2e66e067e58d11095c2";
 const FraxAddress = "0x853d955acef822db058eb8505911ed77f175b99e";
+const wstETHAddress = "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -251,7 +252,6 @@ import MtaIcon from './TokenIcons/MtaIcon';
 import RuneIcon from './TokenIcons/RuneIcon';
 import TribeIcon from './TokenIcons/TribeIcon';
 import AmplIcon from './TokenIcons/AmplIcon';
-import Crv3CryptoIcon from './TokenIcons/Crv3crypto';
 import Crv3Icon from './TokenIcons/Crv3Icon';
 import CrvAethcIcon from './TokenIcons/Crv3Icon';
 import CrvAaveIcon from './TokenIcons/CrvAaveIcon';
@@ -300,6 +300,7 @@ import CrvMimIcon from './TokenIcons/CrvMimIcon';
 import DataIcon from './TokenIcons/DataIcon';
 import AmpIcon from "./TokenIcons/AmpIcon";
 import FraxIcon from "./TokenIcons/FraxIcon";
+import WstethIcon from "./TokenIcons/WstethIcon";
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -1931,5 +1932,14 @@ export const assets: AssetData[] = [
     exchange: true,
     address: FraxAddress,
     icon: FraxIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'wstETH',
+    name: 'Wrapped stETH',
+    decimals: 18,
+    exchange: true,
+    address: wstETHAddress,
+    icon: WstethIcon,
   },
 ];
