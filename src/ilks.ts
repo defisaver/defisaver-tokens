@@ -299,5 +299,14 @@ export const ilks:IlkData[] = [
     "clip": "0x29342F530ed6120BDB219D602DaFD584676293d1",
     "pip": "0x8874964279302e6d4e523Fb1789981C39a1034Ba",
     "isLP": false
+  },
+  {
+    "asset": "WSTETH",
+    "ilkLabel": "WSTETH-A",
+    "ilkBytes": "0x5753544554482d41000000000000000000000000000000000000000000000000",
+    "join": "0x10CD5fbe1b404B7E19Ef964B63939907bdaf42E2",
+    "clip": "0x49A33A28C4C7D9576ab28898F4C9ac7e52EA457A",
+    "pip": "0xFe7a2aC0B945f12089aEEB6eCebf4F384D9f043F",
+    "isLP": false
   }
 ];
