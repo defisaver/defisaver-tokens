@@ -70,6 +70,7 @@ export const ilkToAsset = (ilk: string = ''):string => {
   let ilkLabel = ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : ilk;
   if (ilkLabel === 'KNC-A') return 'KNCL';
   if (ilkLabel === 'PAXUSD-A') return 'USDP';
+  if (ilkLabel === 'WSTETH-A') return 'wstETH';
   return ilkLabel.replace(/-.*/, '');
 }
 
