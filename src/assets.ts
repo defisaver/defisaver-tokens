@@ -174,6 +174,35 @@ const DataAddress = "0x33d63Ba1E57E54779F7dDAeaA7109349344cf5F1";
 const AmpAddress = "0xff20817765cb7f73d4bde2e66e067e58d11095c2";
 const FraxAddress = "0x853d955acef822db058eb8505911ed77f175b99e";
 const wstETHAddress = "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0";
+const YfiiAddress = "0xa1d0e215a23d7030842fc67ce582a6afa3ccab83";
+const TendAddress = "0x1453dbb8a29551ade11d89825ca812e05317eaeb";
+const OmgAddress = "0xd26114cd6ee289accf82350c8d8487fedb8a0c07";
+const PickleAddress = "0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5";
+const RookAddress = "0xfa5047c9c78b8877af97bdcb85db743fd7313d4a";
+const IdleAddress = "0x875773784af8135ea0ef43b5a374aad105c5d39e";
+const TrbAddress = "0x88df592f8eb5d7bd38bfef7deb0fbc02cf3778a0";
+const YamAddress = "0x0aacfbec6a24756c20d41914f2caba817c0d8521";
+const SpankAddress = "0x42d6622dece394b54999fbd73d108123806f6a18";
+const CvxAddress = "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b";
+const ShibAddress = "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce";
+const MimAddress = "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3";
+const SpellAddress = "0x090185f2135308bad17527004364ebcc2d37e5f6";
+const RobotAddress = "0xfb5453340c03db5ade474b27e68b6a9c6b2823eb";
+const GelAddress = "0x15b7c0c907e4c6b9adaaaabc300c08991d6cea05";
+const GnoAddress = "0x6810e776880c02933d47db1b9fc05908e5386b96";
+const TracAddress = "0xaa7a9ca87d3694b5755f213b5d04094b8d0f0a6f";
+const FtmAddress = "0x4e15361fd6b4bb609fa63c81a2be19d873717870";
+const AudioAddress = "0x18aaa7115705e8be94bffebde57af9bfc265b998";
+const ThalesAddress = "0x03e173ad8d1581a4802d3b532ace27a62c5b81dc";
+const RariAddress = "0xfca59cd816ab1ead66534d82bc21e7515ce441cf";
+const FxsAddress = "0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0";
+const BedAddress = "0x2af1df3ab0ab157e1e2ad8f88a7d04fbea0c7dc6";
+const FoxAddress = "0xc770eefad204b5180df6a14ee197d99d808ee52d";
+const OhmAddress = "0x383518188c0c6d7730d91b2c03a03c837814a899";
+const SohmAddress = "0x04f2694c8fcee23e8fd0dfea1d4f5bb8c352111f";
+const AlusdAddress = "0xbc6da0fe9ad5f3b0d58160288917aa56653660e9";
+const AlethAddress = "0x0100546f2cd4c9d97f798ffc9755e47865ff7ee6";
+
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
 import ZrxIcon from './TokenIcons/ZrxIcon.js';
@@ -301,6 +330,33 @@ import DataIcon from './TokenIcons/DataIcon';
 import AmpIcon from "./TokenIcons/AmpIcon";
 import FraxIcon from "./TokenIcons/FraxIcon";
 import WstethIcon from "./TokenIcons/WstethIcon";
+import AlethIcon from "./TokenIcons/AlethIcon";
+import AlusdIcon from "./TokenIcons/AlusdIcon";
+import AudioIcon from "./TokenIcons/AudioIcon";
+import BedIcon from "./TokenIcons/BedIcon";
+import CvxIcon from "./TokenIcons/CvxIcon";
+import FoxIcon from "./TokenIcons/FoxIcon";
+import FtmIcon from "./TokenIcons/FtmIcon";
+import FxsIcon from "./TokenIcons/FxsIcon";
+import GelIcon from "./TokenIcons/GelIcon";
+import GnoIcon from "./TokenIcons/GnoIcon";
+import IdleIcon from "./TokenIcons/IdleIcon";
+import MimIcon from "./TokenIcons/MimIcon";
+import OhmIcon from "./TokenIcons/OhmIcon";
+import OmgIcon from "./TokenIcons/OmgIcon";
+import PickleIcon from "./TokenIcons/PickleIcon";
+import RariIcon from "./TokenIcons/RariIcon";
+import RobotIcon from "./TokenIcons/RobotIcon";
+import RookIcon from "./TokenIcons/RookIcon";
+import ShibIcon from "./TokenIcons/ShibIcon";
+import SpankIcon from "./TokenIcons/SpankIcon";
+import SpellIcon from "./TokenIcons/SpellIcon";
+import TendIcon from "./TokenIcons/TendIcon";
+import ThalesIcon from "./TokenIcons/ThalesIcon";
+import TracIcon from "./TokenIcons/TracIcon";
+import TrbIcon from "./TokenIcons/TrbIcon";
+import YamIcon from "./TokenIcons/YamIcon";
+import YfiiIcon from "./TokenIcons/YfiiIcon";
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -1941,5 +1997,255 @@ export const assets: AssetData[] = [
     exchange: true,
     address: wstETHAddress,
     icon: WstethIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'YFII',
+    name: 'YFII.finance',
+    decimals: 18,
+    exchange: true,
+    address: YfiiAddress,
+    icon: YfiiIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'TEND',
+    name: 'Tendies',
+    decimals: 18,
+    exchange: true,
+    address: TendAddress,
+    icon: TendIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'OMG',
+    name: 'OMG Network',
+    decimals: 18,
+    exchange: true,
+    address: OmgAddress,
+    icon: OmgIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'PICKLE',
+    name: 'Pickle Finance',
+    decimals: 18,
+    exchange: true,
+    address: PickleAddress,
+    icon: PickleIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'ROOK',
+    name: 'KeeperDAO',
+    decimals: 18,
+    exchange: true,
+    address: RookAddress,
+    icon: RookIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'IDLE',
+    name: 'IDLE.finance',
+    decimals: 18,
+    exchange: true,
+    address: IdleAddress,
+    icon: IdleIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'TRB',
+    name: 'Tellor',
+    decimals: 18,
+    exchange: true,
+    address: TrbAddress,
+    icon: TrbIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'YAM',
+    name: 'yam.finance',
+    decimals: 18,
+    exchange: true,
+    address: YamAddress,
+    icon: YamIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'SPANK',
+    name: 'SpankChain',
+    decimals: 18,
+    exchange: true,
+    address: SpankAddress,
+    icon: SpankIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'CVX',
+    name: 'Convex Finance',
+    decimals: 18,
+    exchange: true,
+    address: CvxAddress,
+    icon: CvxIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'SHIB',
+    name: 'Shiba Inu',
+    decimals: 18,
+    exchange: true,
+    address: ShibAddress,
+    icon: ShibIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'MIM',
+    name: 'Magic Internet Money',
+    decimals: 18,
+    exchange: true,
+    address: MimAddress,
+    icon: MimIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'SPELL',
+    name: 'Spell Token',
+    decimals: 18,
+    exchange: true,
+    address: SpellAddress,
+    icon: SpellIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'ROBOT',
+    name: 'Robot',
+    decimals: 18,
+    exchange: true,
+    address: RobotAddress,
+    icon: RobotIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'GEL',
+    name: 'Gelato',
+    decimals: 18,
+    exchange: true,
+    address: GelAddress,
+    icon: GelIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'GNO',
+    name: 'Gnosis',
+    decimals: 18,
+    exchange: true,
+    address: GnoAddress,
+    icon: GnoIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'TRAC',
+    name: 'OriginTrail',
+    decimals: 18,
+    exchange: true,
+    address: TracAddress,
+    icon: TracIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'FTM',
+    name: 'Fantom',
+    decimals: 18,
+    exchange: true,
+    address: FtmAddress,
+    icon: FtmIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'AUDIO',
+    name: 'Audius',
+    decimals: 18,
+    exchange: true,
+    address: AudioAddress,
+    icon: AudioIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'THALES',
+    name: 'Thales',
+    decimals: 18,
+    exchange: true,
+    address: ThalesAddress,
+    icon: ThalesIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'RARI',
+    name: 'Rarible',
+    decimals: 18,
+    exchange: true,
+    address: RariAddress,
+    icon: RariIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'FXS',
+    name: 'Frax Share',
+    decimals: 18,
+    exchange: true,
+    address: FxsAddress,
+    icon: FxsIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'BED',
+    name: 'Bankless BED Index',
+    decimals: 18,
+    exchange: true,
+    address: BedAddress,
+    icon: BedIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'FOX',
+    name: 'ShapeShift',
+    decimals: 18,
+    exchange: true,
+    address: FoxAddress,
+    icon: FoxIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'OHM',
+    name: 'Olympus',
+    decimals: 9,
+    exchange: true,
+    address: OhmAddress,
+    icon: OhmIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'SOHM',
+    name: 'Staked Olympus',
+    decimals: 9,
+    address: SohmAddress,
+    icon: OhmIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'ALUSD',
+    name: 'Alchemix USD',
+    decimals: 18,
+    exchange: true,
+    address: AlusdAddress,
+    icon: AlusdIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'ALETH',
+    name: 'Alchemix ETH',
+    decimals: 18,
+    address: AlethAddress,
+    icon: AlethIcon,
   },
 ];
