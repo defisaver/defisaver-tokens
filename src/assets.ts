@@ -202,6 +202,7 @@ const OhmAddress = "0x383518188c0c6d7730d91b2c03a03c837814a899";
 const SohmAddress = "0x04f2694c8fcee23e8fd0dfea1d4f5bb8c352111f";
 const AlusdAddress = "0xbc6da0fe9ad5f3b0d58160288917aa56653660e9";
 const AlethAddress = "0x0100546f2cd4c9d97f798ffc9755e47865ff7ee6";
+const EnsAddress = "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72";
 
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
@@ -357,6 +358,7 @@ import TracIcon from "./TokenIcons/TracIcon";
 import TrbIcon from "./TokenIcons/TrbIcon";
 import YamIcon from "./TokenIcons/YamIcon";
 import YfiiIcon from "./TokenIcons/YfiiIcon";
+import EnsIcon from "./TokenIcons/EnsIcon";
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -2247,5 +2249,14 @@ export const assets: AssetData[] = [
     decimals: 18,
     address: AlethAddress,
     icon: AlethIcon,
+  },
+  {
+    ...assetProto,
+    symbol: 'ENS',
+    name: 'Ethereum Name Service',
+    exchange: true,
+    decimals: 18,
+    address: EnsAddress,
+    icon: EnsIcon,
   },
 ];
