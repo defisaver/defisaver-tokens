@@ -301,21 +301,12 @@ export const ilks:IlkData[] = [
     "isLP": false
   },
   {
-    "asset": "WSTETH",
+    "asset": "wstETH",
     "ilkLabel": "WSTETH-A",
     "ilkBytes": "0x5753544554482d41000000000000000000000000000000000000000000000000",
     "join": "0x10CD5fbe1b404B7E19Ef964B63939907bdaf42E2",
     "clip": "0x49A33A28C4C7D9576ab28898F4C9ac7e52EA457A",
     "pip": "0xFe7a2aC0B945f12089aEEB6eCebf4F384D9f043F",
-    "isLP": false
-  },
-  {
-    "asset": "DIRECT",
-    "ilkLabel": "DIRECT-AAVEV2-DAI",
-    "ilkBytes": "0x4449524543542d4141564556322d444149000000000000000000000000000000",
-    "join": "0xa13C0c8eB109F5A13c6c90FC26AFb23bEB3Fb04a",
-    "clip": "0xa93b98e57dDe14A3E301f20933d59DC19BF8212E",
-    "pip": "0x6A858592fC4cBdf432Fc9A1Bc8A0422B99330bdF",
     "isLP": false
   },
   {

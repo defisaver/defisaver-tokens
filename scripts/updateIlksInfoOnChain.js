@@ -1,4 +1,4 @@
-const {utils: {bytesToString}} = require('../umd');
+const { ilkToAsset, utils: {bytesToString} } = require('../umd');
 const fs = require('fs').promises;
 
 const Web3 = require('web3');
@@ -15,19 +15,21 @@ const ilkContract = new web3.eth.Contract(ilkContractAbi, ilkContractAddress);
   const info = await Promise.all(ilks.map(ilk => (ilkContract.methods.info(ilk).call())));
   const ilkInfo = info
     .map((info, i) => ({...info, ilkBytes: ilks[i]}))
-    .filter(ilk => ilk.symbol.substr(0,3) !== 'RWA' && ilk.symbol.substr(0,5) !== 'G-UNI')
-    .filter(ilk => bytesToString(ilk.ilkBytes).replace(/-.*/, '') !== 'PSM')
-    .map(ilk => {
-      return {
-        asset: bytesToString(ilk.ilkBytes).replace(/-.*/, '').replace(/^KNC$/, 'KNCL').replace(/^PAXUSD$/, 'USDP'),
+    .map(ilk => ({
+        asset: ilkToAsset(ilk.ilkBytes),
         ilkLabel: bytesToString(ilk.ilkBytes),
         ilkBytes: ilk.ilkBytes,
         join: ilk.join,
         clip: ilk.xlip,
         pip: ilk.pip,
-        isLP: ilk.symbol === 'UNI-V2',
-      }
-    })
+        isLP: ilk.symbol === 'UNI-V2' || ilk.symbol === 'G-UNI',
+    }))
+    .filter(ilk => (
+      !ilk.ilkLabel.startsWith('RWA') &&
+      !ilk.ilkLabel.startsWith('PSM') &&
+      !ilk.ilkLabel.startsWith('GUNI') &&
+      !ilk.ilkLabel.startsWith('DIRECT')
+    ));
 
   let fileData = '/** AUTOMATICALLY GENERATED FILE **/\n\n';
   fileData += 'import { IlkData } from \'./types\';\n\nexport const ilks:IlkData[] = ';

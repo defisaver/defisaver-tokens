@@ -68,10 +68,12 @@ export const getAssetInfoByAddress = (address: string = ''):AssetData => assets.
 
 export const ilkToAsset = (ilk: string = ''):string => {
   let ilkLabel = ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : ilk;
-  if (ilkLabel === 'KNC-A') return 'KNCL';
-  if (ilkLabel === 'PAXUSD-A') return 'USDP';
-  if (ilkLabel === 'WSTETH-A') return 'wstETH';
-  return ilkLabel.replace(/-.*/, '');
+  let asset = ilkLabel.replace(/-.*/, '');
+  if (ilkLabel.startsWith('PSM')) asset = ilkLabel.match(/^[A-Z]*-(.*)-[A-Z]*/)?.[1] || asset;
+  if (asset === 'KNC') return 'KNCL';
+  if (asset === 'PAXUSD' || asset === 'PAX') return 'USDP';
+  if (asset === 'WSTETH') return 'wstETH';
+  return asset;
 }
 
 /** @private **/
