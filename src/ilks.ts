@@ -317,5 +317,14 @@ export const ilks:IlkData[] = [
     "clip": "0xe30663C6f83A06eDeE6273d72274AE24f1084a22",
     "pip": "0xf185d0682d50819263941e5f4EacC763CC5C6C42",
     "isLP": false
+  },
+  {
+    "asset": "WBTC",
+    "ilkLabel": "WBTC-C",
+    "ilkBytes": "0x574254432d430000000000000000000000000000000000000000000000000000",
+    "join": "0x7f62f9592b823331E012D3c5DdF2A7714CfB9de2",
+    "clip": "0x39F29773Dcb94A32529d0612C6706C49622161D1",
+    "pip": "0xf185d0682d50819263941e5f4EacC763CC5C6C42",
+    "isLP": false
   }
 ];
