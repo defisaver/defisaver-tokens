@@ -7,9 +7,13 @@ import {reflexerCollTypes} from './reflexerCollTypes';
 export {reflexerCollTypes}
 import {aaveV2Markets} from './aaveV2Markets';
 export {aaveV2Markets}
+
 import type {AaveMarketData, AssetData, ExtendedIlkData, IlkData} from './types';
 export type {AssetData, ExtendedIlkData, IlkData};
+
 import {stringToBytes, bytesToString, compare} from './utils';
+import BlankIcon from './TokenIcons/BlankIcon';
+
 export const utils = {stringToBytes, bytesToString, compare};
 
 export const MAXUINT:string = '115792089237316195423570985008687907853269984665640564039457584007913129639935';
@@ -34,7 +38,7 @@ const handleWBTCLegacy = (symbol:string = ''):string => (symbol === 'WBTC Legacy
  * @param symbol {string}
  * @return {AssetData}
  */
-export const getAssetInfo = (symbol:string = ''):AssetData => assets.find(t => compare(t.symbol, handleWBTCLegacy(symbol))) || console.error(`Asset "${symbol}" not found `) || {...assetProto};
+export const getAssetInfo = (symbol:string = ''):AssetData => assets.find(t => compare(t.symbol, handleWBTCLegacy(symbol))) || { ...assetProto, icon: BlankIcon({ symbol: symbol?.substr(0, 3) || '' }) };
 
 /**
  * Returns Maker or Reflexer ilk info, and asset info as `assetData` attribute.
@@ -64,7 +68,7 @@ export const getIlkInfo = (ilk:string = ''):ExtendedIlkData => {
   }
 };
 
-export const getAssetInfoByAddress = (address: string = ''):AssetData => assets.find(t => t.address.toLowerCase() === address.toLowerCase()) || console.error(`Asset with addess "${address}" not found `) || {...assetProto};
+export const getAssetInfoByAddress = (address: string = ''):AssetData => assets.find(t => t.address.toLowerCase() === address.toLowerCase()) || {...assetProto};
 
 export const ilkToAsset = (ilk: string = ''):string => {
   let ilkLabel = ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : ilk;
