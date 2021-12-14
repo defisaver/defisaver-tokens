@@ -10,7 +10,7 @@ export default (props) => () => {
         <style>
           {`
             .blank-token__symbol {
-              font-size: 50px;
+              font-size: 64px;
               fill: white;
               font-family: 'Montserrat', sans-serif;
             }
