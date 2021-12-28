@@ -28,6 +28,7 @@ type IlkData = {
   clipCalc?: (string);
   ilkBytes: (string);
   isLP: (boolean);
+  assetAddress?: (string);
 };
 
 type AaveMarketData = {

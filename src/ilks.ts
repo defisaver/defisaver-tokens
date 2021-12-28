@@ -5,6 +5,7 @@ import { IlkData } from './types';
 export const ilks:IlkData[] = [
   {
     "asset": "ETH",
+    "assetAddress": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
     "ilkLabel": "ETH-A",
     "ilkBytes": "0x4554482d41000000000000000000000000000000000000000000000000000000",
     "join": "0x2F0b23f53734252Bda2277357e97e1517d6B042A",
@@ -14,6 +15,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "ETH",
+    "assetAddress": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
     "ilkLabel": "ETH-B",
     "ilkBytes": "0x4554482d42000000000000000000000000000000000000000000000000000000",
     "join": "0x08638eF1A205bE6762A8b935F5da9b700Cf7322c",
@@ -23,6 +25,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "ETH",
+    "assetAddress": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
     "ilkLabel": "ETH-C",
     "ilkBytes": "0x4554482d43000000000000000000000000000000000000000000000000000000",
     "join": "0xF04a5cC80B1E94C69B48f5ee68a08CD2F09A7c3E",
@@ -32,6 +35,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "BAT",
+    "assetAddress": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
     "ilkLabel": "BAT-A",
     "ilkBytes": "0x4241542d41000000000000000000000000000000000000000000000000000000",
     "join": "0x3D0B1912B66114d4096F48A8CEe3A56C231772cA",
@@ -41,6 +45,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "USDC",
+    "assetAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
     "ilkLabel": "USDC-A",
     "ilkBytes": "0x555344432d410000000000000000000000000000000000000000000000000000",
     "join": "0xA191e578a6736167326d05c119CE0c90849E84B7",
@@ -50,6 +55,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "USDC",
+    "assetAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
     "ilkLabel": "USDC-B",
     "ilkBytes": "0x555344432d420000000000000000000000000000000000000000000000000000",
     "join": "0x2600004fd1585f7270756DDc88aD9cfA10dD0428",
@@ -59,6 +65,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "WBTC",
+    "assetAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
     "ilkLabel": "WBTC-A",
     "ilkBytes": "0x574254432d410000000000000000000000000000000000000000000000000000",
     "join": "0xBF72Da2Bd84c5170618Fbe5914B0ECA9638d5eb5",
@@ -68,6 +75,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "TUSD",
+    "assetAddress": "0x0000000000085d4780B73119b644AE5ecd22b376",
     "ilkLabel": "TUSD-A",
     "ilkBytes": "0x545553442d410000000000000000000000000000000000000000000000000000",
     "join": "0x4454aF7C8bb9463203b66C816220D41ED7837f44",
@@ -77,6 +85,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "ZRX",
+    "assetAddress": "0xE41d2489571d322189246DaFA5ebDe1F4699F498",
     "ilkLabel": "ZRX-A",
     "ilkBytes": "0x5a52582d41000000000000000000000000000000000000000000000000000000",
     "join": "0xc7e8Cd72BDEe38865b4F5615956eF47ce1a7e5D0",
@@ -86,6 +95,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "KNCL",
+    "assetAddress": "0xdd974D5C2e2928deA5F71b9825b8b646686BD200",
     "ilkLabel": "KNC-A",
     "ilkBytes": "0x4b4e432d41000000000000000000000000000000000000000000000000000000",
     "join": "0x475F1a89C1ED844A08E8f6C50A00228b5E59E4A9",
@@ -95,6 +105,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "MANA",
+    "assetAddress": "0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
     "ilkLabel": "MANA-A",
     "ilkBytes": "0x4d414e412d410000000000000000000000000000000000000000000000000000",
     "join": "0xA6EA3b9C04b8a38Ff5e224E7c3D6937ca44C0ef9",
@@ -104,6 +115,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "USDT",
+    "assetAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "ilkLabel": "USDT-A",
     "ilkBytes": "0x555344542d410000000000000000000000000000000000000000000000000000",
     "join": "0x0Ac6A1D74E84C2dF9063bDDc31699FF2a2BB22A2",
@@ -113,6 +125,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "USDP",
+    "assetAddress": "0x8E870D67F660D95d5be530380D0eC0bd388289E1",
     "ilkLabel": "PAXUSD-A",
     "ilkBytes": "0x5041585553442d41000000000000000000000000000000000000000000000000",
     "join": "0x7e62B7E279DFC78DEB656E34D6a435cC08a44666",
@@ -122,6 +135,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "COMP",
+    "assetAddress": "0xc00e94Cb662C3520282E6f5717214004A7f26888",
     "ilkLabel": "COMP-A",
     "ilkBytes": "0x434f4d502d410000000000000000000000000000000000000000000000000000",
     "join": "0xBEa7cDfB4b49EC154Ae1c0D731E4DC773A3265aA",
@@ -131,6 +145,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "LRC",
+    "assetAddress": "0xBBbbCA6A901c926F240b89EacB641d8Aec7AEafD",
     "ilkLabel": "LRC-A",
     "ilkBytes": "0x4c52432d41000000000000000000000000000000000000000000000000000000",
     "join": "0x6C186404A7A238D3d6027C0299D1822c1cf5d8f1",
@@ -140,6 +155,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "LINK",
+    "assetAddress": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
     "ilkLabel": "LINK-A",
     "ilkBytes": "0x4c494e4b2d410000000000000000000000000000000000000000000000000000",
     "join": "0xdFccAf8fDbD2F4805C174f856a317765B49E4a50",
@@ -149,6 +165,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "BAL",
+    "assetAddress": "0xba100000625a3754423978a60c9317c58a424e3D",
     "ilkLabel": "BAL-A",
     "ilkBytes": "0x42414c2d41000000000000000000000000000000000000000000000000000000",
     "join": "0x4a03Aa7fb3973d8f0221B466EefB53D0aC195f55",
@@ -158,6 +175,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "YFI",
+    "assetAddress": "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
     "ilkLabel": "YFI-A",
     "ilkBytes": "0x5946492d41000000000000000000000000000000000000000000000000000000",
     "join": "0x3ff33d9162aD47660083D7DC4bC02Fb231c81677",
@@ -167,6 +185,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "GUSD",
+    "assetAddress": "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd",
     "ilkLabel": "GUSD-A",
     "ilkBytes": "0x475553442d410000000000000000000000000000000000000000000000000000",
     "join": "0xe29A14bcDeA40d83675aa43B72dF07f649738C8b",
@@ -176,6 +195,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "UNI",
+    "assetAddress": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
     "ilkLabel": "UNI-A",
     "ilkBytes": "0x554e492d41000000000000000000000000000000000000000000000000000000",
     "join": "0x3BC3A58b4FC1CbE7e98bB4aB7c99535e8bA9b8F1",
@@ -185,6 +205,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "RENBTC",
+    "assetAddress": "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D",
     "ilkLabel": "RENBTC-A",
     "ilkBytes": "0x52454e4254432d41000000000000000000000000000000000000000000000000",
     "join": "0xFD5608515A47C37afbA68960c1916b79af9491D0",
@@ -194,6 +215,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "AAVE",
+    "assetAddress": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
     "ilkLabel": "AAVE-A",
     "ilkBytes": "0x414156452d410000000000000000000000000000000000000000000000000000",
     "join": "0x24e459F61cEAa7b1cE70Dbaea938940A7c5aD46e",
@@ -203,6 +225,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "UNIV2DAIETH",
+    "assetAddress": "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11",
     "ilkLabel": "UNIV2DAIETH-A",
     "ilkBytes": "0x554e4956324441494554482d4100000000000000000000000000000000000000",
     "join": "0x2502F65D77cA13f183850b5f9272270454094A08",
@@ -212,6 +235,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "UNIV2WBTCETH",
+    "assetAddress": "0xBb2b8038a1640196FbE3e38816F3e67Cba72D940",
     "ilkLabel": "UNIV2WBTCETH-A",
     "ilkBytes": "0x554e495632574254434554482d41000000000000000000000000000000000000",
     "join": "0xDc26C9b7a8fe4F5dF648E314eC3E6Dc3694e6Dd2",
@@ -221,6 +245,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "UNIV2USDCETH",
+    "assetAddress": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
     "ilkLabel": "UNIV2USDCETH-A",
     "ilkBytes": "0x554e495632555344434554482d41000000000000000000000000000000000000",
     "join": "0x03Ae53B33FeeAc1222C3f372f32D37Ba95f0F099",
@@ -230,6 +255,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "UNIV2DAIUSDC",
+    "assetAddress": "0xAE461cA67B15dc8dc81CE7615e0320dA1A9aB8D5",
     "ilkLabel": "UNIV2DAIUSDC-A",
     "ilkBytes": "0x554e495632444149555344432d41000000000000000000000000000000000000",
     "join": "0xA81598667AC561986b70ae11bBE2dd5348ed4327",
@@ -239,6 +265,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "UNIV2ETHUSDT",
+    "assetAddress": "0x0d4a11d5EEaaC28EC3F61d100daF4d40471f1852",
     "ilkLabel": "UNIV2ETHUSDT-A",
     "ilkBytes": "0x554e495632455448555344542d41000000000000000000000000000000000000",
     "join": "0x4aAD139a88D2dd5e7410b408593208523a3a891d",
@@ -248,6 +275,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "UNIV2LINKETH",
+    "assetAddress": "0xa2107FA5B38d9bbd2C461D6EDf11B11A50F6b974",
     "ilkLabel": "UNIV2LINKETH-A",
     "ilkBytes": "0x554e4956324c494e4b4554482d41000000000000000000000000000000000000",
     "join": "0xDae88bDe1FB38cF39B6A02b595930A3449e593A6",
@@ -257,6 +285,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "UNIV2UNIETH",
+    "assetAddress": "0xd3d2E2692501A5c9Ca623199D38826e513033a17",
     "ilkLabel": "UNIV2UNIETH-A",
     "ilkBytes": "0x554e495632554e494554482d4100000000000000000000000000000000000000",
     "join": "0xf11a98339FE1CdE648e8D1463310CE3ccC3d7cC1",
@@ -266,6 +295,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "UNIV2WBTCDAI",
+    "assetAddress": "0x231B7589426Ffe1b75405526fC32aC09D44364c4",
     "ilkLabel": "UNIV2WBTCDAI-A",
     "ilkBytes": "0x554e495632574254434441492d41000000000000000000000000000000000000",
     "join": "0xD40798267795Cbf3aeEA8E9F8DCbdBA9b5281fcC",
@@ -275,6 +305,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "UNIV2AAVEETH",
+    "assetAddress": "0xDFC14d2Af169B0D36C4EFF567Ada9b2E0CAE044f",
     "ilkLabel": "UNIV2AAVEETH-A",
     "ilkBytes": "0x554e495632414156454554482d41000000000000000000000000000000000000",
     "join": "0x42AFd448Df7d96291551f1eFE1A590101afB1DfF",
@@ -284,6 +315,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "UNIV2DAIUSDT",
+    "assetAddress": "0xB20bd5D04BE54f870D5C0d3cA85d82b34B836405",
     "ilkLabel": "UNIV2DAIUSDT-A",
     "ilkBytes": "0x554e495632444149555344542d41000000000000000000000000000000000000",
     "join": "0xAf034D882169328CAf43b823a4083dABC7EEE0F4",
@@ -293,6 +325,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "MATIC",
+    "assetAddress": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
     "ilkLabel": "MATIC-A",
     "ilkBytes": "0x4d415449432d4100000000000000000000000000000000000000000000000000",
     "join": "0x885f16e177d45fC9e7C87e1DA9fd47A9cfcE8E13",
@@ -301,7 +334,18 @@ export const ilks:IlkData[] = [
     "isLP": false
   },
   {
+    "asset": "GUNIV3DAIUSDC1",
+    "assetAddress": "0xAbDDAfB225e10B90D798bB8A886238Fb835e2053",
+    "ilkLabel": "GUNIV3DAIUSDC1-A",
+    "ilkBytes": "0x47554e49563344414955534443312d4100000000000000000000000000000000",
+    "join": "0xbFD445A97e7459b0eBb34cfbd3245750Dba4d7a4",
+    "clip": "0x5048c5Cd3102026472f8914557A1FD35c8Dc6c9e",
+    "pip": "0x7F6d78CC0040c87943a0e0c140De3F77a273bd58",
+    "isLP": true
+  },
+  {
     "asset": "wstETH",
+    "assetAddress": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
     "ilkLabel": "WSTETH-A",
     "ilkBytes": "0x5753544554482d41000000000000000000000000000000000000000000000000",
     "join": "0x10CD5fbe1b404B7E19Ef964B63939907bdaf42E2",
@@ -311,6 +355,7 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "WBTC",
+    "assetAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
     "ilkLabel": "WBTC-B",
     "ilkBytes": "0x574254432d420000000000000000000000000000000000000000000000000000",
     "join": "0xfA8c996e158B80D77FbD0082BB437556A65B96E0",
@@ -320,11 +365,22 @@ export const ilks:IlkData[] = [
   },
   {
     "asset": "WBTC",
+    "assetAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
     "ilkLabel": "WBTC-C",
     "ilkBytes": "0x574254432d430000000000000000000000000000000000000000000000000000",
     "join": "0x7f62f9592b823331E012D3c5DdF2A7714CfB9de2",
     "clip": "0x39F29773Dcb94A32529d0612C6706C49622161D1",
     "pip": "0xf185d0682d50819263941e5f4EacC763CC5C6C42",
     "isLP": false
+  },
+  {
+    "asset": "GUNIV3DAIUSDC2",
+    "assetAddress": "0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e",
+    "ilkLabel": "GUNIV3DAIUSDC2-A",
+    "ilkBytes": "0x47554e49563344414955534443322d4100000000000000000000000000000000",
+    "join": "0xA7e4dDde3cBcEf122851A7C8F7A55f23c0Daf335",
+    "clip": "0xB55da3d3100C4eBF9De755b6DdC24BF209f6cc06",
+    "pip": "0xcCBa43231aC6eceBd1278B90c3a44711a00F4e93",
+    "isLP": true
   }
 ];

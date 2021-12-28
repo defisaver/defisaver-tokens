@@ -17,6 +17,7 @@ const ilkContract = new web3.eth.Contract(ilkContractAbi, ilkContractAddress);
     .map((info, i) => ({...info, ilkBytes: ilks[i]}))
     .map(ilk => ({
         asset: ilkToAsset(ilk.ilkBytes),
+        assetAddress: ilk.gem,
         ilkLabel: bytesToString(ilk.ilkBytes),
         ilkBytes: ilk.ilkBytes,
         join: ilk.join,
@@ -27,7 +28,6 @@ const ilkContract = new web3.eth.Contract(ilkContractAbi, ilkContractAddress);
     .filter(ilk => (
       !ilk.ilkLabel.startsWith('RWA') &&
       !ilk.ilkLabel.startsWith('PSM') &&
-      !ilk.ilkLabel.startsWith('GUNI') &&
       !ilk.ilkLabel.startsWith('DIRECT')
     ));
 
