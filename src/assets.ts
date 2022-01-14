@@ -204,7 +204,7 @@ const AlusdAddress = "0xbc6da0fe9ad5f3b0d58160288917aa56653660e9";
 const AlethAddress = "0x0100546f2cd4c9d97f798ffc9755e47865ff7ee6";
 const EnsAddress = "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72";
 const MusdAddress = "0xe2f2a5c287993345a840db3b0845fbc70f5935a5";
-const ImusdAddress = "0xe2f2a5c287993345a840db3b0845fbc70f5935a5";
+const ImusdAddress = "0x30647a72dc82d7fbb1123ea74716ab8a317eac19";
 const cUSDPAddress = "0x041171993284df560249B57358F931D9eB7b925D";
 
 import BlankIcon from './TokenIcons/BlankIcon.js';
