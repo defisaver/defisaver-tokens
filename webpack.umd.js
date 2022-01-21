@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
   mode: "none",
   entry: './src/index.ts',
+  target: 'node',
   output: {
     library: 'defisaver-tokens',
     libraryTarget: 'umd',
@@ -19,7 +20,6 @@ module.exports = {
           loader: "babel-loader",
           options: {
             presets: [
-              '@babel/preset-react',
               '@babel/preset-typescript',
               [
                 "@babel/preset-env",
@@ -35,7 +35,7 @@ module.exports = {
       },
     ]
   },
-  externals: ["react", "decimal.js"],
+  externals: ["decimal.js"],
   resolve: {
     extensions: ['.ts', '.js'],
   },

@@ -12,7 +12,15 @@ import type {AaveMarketData, AssetData, ExtendedIlkData, IlkData} from './types'
 export type {AssetData, ExtendedIlkData, IlkData};
 
 import {stringToBytes, bytesToString, compare} from './utils';
-import BlankIcon from './TokenIcons/BlankIcon';
+
+const config: any = {
+  iconFunc: undefined,
+  network: 1,
+}
+
+export const set = (key: string, value: any):void => {
+  config[key] = value;
+}
 
 export const utils = {stringToBytes, bytesToString, compare};
 
@@ -38,7 +46,12 @@ const handleWBTCLegacy = (symbol:string = ''):string => (symbol === 'WBTC Legacy
  * @param symbol {string}
  * @return {AssetData}
  */
-export const getAssetInfo = (symbol:string = ''):AssetData => assets.find(t => compare(t.symbol, handleWBTCLegacy(symbol))) || { ...assetProto, icon: BlankIcon({ symbol: symbol?.substr(0, 3) || '' }) };
+export const getAssetInfo = (symbol:string = ''):AssetData => {
+  let assetData = assets.find(t => compare(t.symbol, handleWBTCLegacy(symbol)));
+  if (!assetData) assetData = { ...assetProto };
+  if (config.iconFunc) assetData.icon = config.iconFunc({ ...assetData, symbol });
+  return assetData;
+}
 
 /**
  * Returns Maker or Reflexer ilk info, and asset info as `assetData` attribute.

@@ -207,169 +207,15 @@ const MusdAddress = "0xe2f2a5c287993345a840db3b0845fbc70f5935a5";
 const ImusdAddress = "0x30647a72dc82d7fbb1123ea74716ab8a317eac19";
 const cUSDPAddress = "0x041171993284df560249B57358F931D9eB7b925D";
 
-import BlankIcon from './TokenIcons/BlankIcon.js';
-import ZrxIcon from './TokenIcons/ZrxIcon.js';
-import UsdcIcon from './TokenIcons/UsdcIcon.js';
-import BatIcon from './TokenIcons/BatIcon.js';
-import RepIcon from './TokenIcons/RepIcon.js';
-import EthIcon from './TokenIcons/EthIcon.js';
-import WbtcIcon from './TokenIcons/WbtcIcon.js';
-import DaiIcon from './TokenIcons/DaiIcon.js';
-import MkrIcon from './TokenIcons/MkrIcon.js';
-import UsdtIcon from './TokenIcons/UsdtIcon.js';
-import KncIcon from './TokenIcons/KncIcon.js';
-import KnclIcon from './TokenIcons/KnclIcon.js';
-import CompIcon from './TokenIcons/CompIcon.js';
-import SusdIcon from './TokenIcons/SusdIcon.js';
-import TusdIcon from './TokenIcons/TusdIcon.js';
-import BusdIcon from './TokenIcons/BusdIcon.js';
-import LendIcon from './TokenIcons/LendIcon.js';
-import LinkIcon from './TokenIcons/LinkIcon.js';
-import ManaIcon from './TokenIcons/ManaIcon.js';
-import SnxIcon from './TokenIcons/SnxIcon.js';
-import EnjIcon from './TokenIcons/EnjIcon.js';
-import RenIcon from './TokenIcons/RenIcon.js';
-import RepV2Icon from './TokenIcons/RepV2Icon.js';
-import CrvIcon from './TokenIcons/CrvIcon.js';
-import YfiIcon from './TokenIcons/YfiIcon.js';
-import UsdpIcon from './TokenIcons/UsdpIcon.js';
-import DpiIcon from './TokenIcons/DpiIcon.js';
-import UniIcon from './TokenIcons/UniIcon.js';
-import LrcIcon from './TokenIcons/LrcIcon.js';
-import BalIcon from './TokenIcons/BalIcon.js';
-import GusdIcon from './TokenIcons/GusdIcon.js';
-import AaveIcon from './TokenIcons/AaveIcon.js';
-import RenBtcIcon from './TokenIcons/RenBtcIcon.js';
-import StkAaveIcon from './TokenIcons/StkAaveIcon.js';
-import SushiIcon from './TokenIcons/SushiIcon.js';
-import OneInchIcon from './TokenIcons/OneInchIcon';
-import BadgerIcon from './TokenIcons/BadgerIcon';
-import BntIcon from './TokenIcons/BntIcon';
-import CoverIcon from './TokenIcons/CoverIcon';
-import CreamIcon from './TokenIcons/CreamIcon';
-import DiggIcon from './TokenIcons/DiggIcon';
-import MirIcon from './TokenIcons/MirIcon';
-import RplIcon from './TokenIcons/RplIcon';
-import SntIcon from './TokenIcons/SntIcon';
-import TornIcon from './TokenIcons/TornIcon';
-import UmaIcon from './TokenIcons/UmaIcon';
-import RaiIcon from './TokenIcons/RaiIcon';
-import UniV2DaiEthIcon from './TokenIcons/UniV2DaiEthIcon.js';
-import UniV2WbtcEthIcon from './TokenIcons/UniV2WbtcEthIcon.js';
-import UniV2UsdcEthIcon from './TokenIcons/UniV2UsdcEthIcon.js';
-import UniV2DaiUsdcIcon from './TokenIcons/UniV2DaiUsdcIcon';
-import UniV2EthUsdtIcon from './TokenIcons/UniV2EthUsdtIcon';
-import UniV2LinkEthIcon from './TokenIcons/UniV2LinkEthIcon';
-import UniV2UniEthIcon from './TokenIcons/UniV2UniEthIcon';
-import UniV2AaveEthIcon from './TokenIcons/UniV2AaveEthIcon';
-import UniV2WbtcDaiIcon from './TokenIcons/UniV2WbtcDaiIcon';
-import UniV2DaiUsdtIcon from './TokenIcons/UniV2DaiUsdtIcon';
-import EthfliIcon from './TokenIcons/EthfliIcon';
-import LqtyIcon from './TokenIcons/LqtyIcon';
-import LusdIcon from './TokenIcons/LusdIcon';
-import FlxIcon from './TokenIcons/FlxIcon';
-import AlcxIcon from './TokenIcons/AlcxIcon';
-import EursIcon from './TokenIcons/EursIcon';
-import GrtIcon from './TokenIcons/GrtIcon';
-import PoolIcon from './TokenIcons/PoolIcon';
-import LdoIcon from './TokenIcons/LdoIcon';
-import StethIcon from './TokenIcons/StethIcon';
-import AxsIcon from './TokenIcons/AxsIcon';
-import BtcfliIcon from './TokenIcons/BtcfliIcon';
-import FarmIcon from './TokenIcons/FarmIcon';
-import FeiIcon from './TokenIcons/FeiIcon';
-import GtcIcon from './TokenIcons/GtcIcon';
-import InstIcon from './TokenIcons/InstIcon';
-import MtaIcon from './TokenIcons/MtaIcon';
-import RuneIcon from './TokenIcons/RuneIcon';
-import TribeIcon from './TokenIcons/TribeIcon';
-import AmplIcon from './TokenIcons/AmplIcon';
-import Crv3Icon from './TokenIcons/Crv3Icon';
-import CrvAethcIcon from './TokenIcons/Crv3Icon';
-import CrvAaveIcon from './TokenIcons/CrvAaveIcon';
-import CrvAlusdIcon from './TokenIcons/CrvAlusdIcon';
-import CrvBbtcIcon from './TokenIcons/CrvBbtcIcon';
-import CrvCompIcon from './TokenIcons/CrvCompIcon';
-import CrvDusdIcon from './TokenIcons/CrvDusdIcon';
-import CrvEursIcon from './TokenIcons/CrvEursIcon';
-import CrvFraxIcon from './TokenIcons/CrvFraxIcon';
-import CrvGusdIcon from './TokenIcons/CrvGusdIcon';
-import CrvHusdIcon from './TokenIcons/CrvHusdIcon';
-import CrvHbtcIcon from './TokenIcons/CrvHbtcIcon';
-import CrvMusdIcon from './TokenIcons/CrvMusdIcon';
-import CrvPaxIcon from './TokenIcons/CrvPaxIcon';
-import CrvRenbtcIcon from './TokenIcons/CrvRenbtcIcon';
-import CrvRsvIcon from './TokenIcons/CrvRsvIcon';
-import CrvSaaveIcon from './TokenIcons/CrvSaaveIcon';
-import CrvSethIcon from './TokenIcons/CrvSethIcon';
-import CrvStethIcon from './TokenIcons/CrvStethIcon';
-import CrvSusdIcon from './TokenIcons/CrvSusdIcon';
-import CrvTbtcIcon from './TokenIcons/CrvTbtcIcon';
-import CrvTricryptoIcon from './TokenIcons/CrvTricryptoIcon';
-import CrvTusdIcon from './TokenIcons/CrvTusdIcon';
-import CrvUsdnIcon from './TokenIcons/CrvUsdnIcon';
-import CrvUsdpIcon from './TokenIcons/CrvUsdpIcon';
-import CrvYbusdIcon from './TokenIcons/CrvYbusdIcon';
-import YCrvIcon from './TokenIcons/YCrvIcon';
-import CrvRethIcon from './TokenIcons/CrvRethIcon';
-import CrvUstIcon from './TokenIcons/CrvUstIcon';
-import HegicIcon from './TokenIcons/HegicIcon';
-import CrvLinkIcon from './TokenIcons/CrvLinkIcon';
-import CrvUsdtIcon from './TokenIcons/CrvUsdtIcon';
-import CrvLusdIcon from './TokenIcons/CrvLusdIcon';
-import YveCrvIcon from './TokenIcons/YveCrvIcon';
-import CrvIBIcon from './TokenIcons/CrvIBIcon';
-import CrvUsdkIcon from './TokenIcons/CrvUsdkIcon';
-import RenFilIcon from './TokenIcons/RenFilIcon';
-import MaticIcon from './TokenIcons/MaticIcon';
-import DydxIcon from './TokenIcons/DydxIcon';
-import PerpIcon from './TokenIcons/PerpIcon';
-import TcapIcon from './TokenIcons/TcapIcon';
-import CtxIcon from './TokenIcons/CtxIcon';
-import RgtIcon from './TokenIcons/RgtIcon';
-import CrvEurtIcon from './TokenIcons/CrvEurtIcon';
-import CrvMimIcon from './TokenIcons/CrvMimIcon';
-import DataIcon from './TokenIcons/DataIcon';
-import AmpIcon from "./TokenIcons/AmpIcon";
-import FraxIcon from "./TokenIcons/FraxIcon";
-import WstethIcon from "./TokenIcons/WstethIcon";
-import AlethIcon from "./TokenIcons/AlethIcon";
-import AlusdIcon from "./TokenIcons/AlusdIcon";
-import AudioIcon from "./TokenIcons/AudioIcon";
-import BedIcon from "./TokenIcons/BedIcon";
-import CvxIcon from "./TokenIcons/CvxIcon";
-import FoxIcon from "./TokenIcons/FoxIcon";
-import FtmIcon from "./TokenIcons/FtmIcon";
-import FxsIcon from "./TokenIcons/FxsIcon";
-import GelIcon from "./TokenIcons/GelIcon";
-import GnoIcon from "./TokenIcons/GnoIcon";
-import IdleIcon from "./TokenIcons/IdleIcon";
-import MimIcon from "./TokenIcons/MimIcon";
-import OhmIcon from "./TokenIcons/OhmIcon";
-import OmgIcon from "./TokenIcons/OmgIcon";
-import PickleIcon from "./TokenIcons/PickleIcon";
-import RariIcon from "./TokenIcons/RariIcon";
-import RobotIcon from "./TokenIcons/RobotIcon";
-import RookIcon from "./TokenIcons/RookIcon";
-import ShibIcon from "./TokenIcons/ShibIcon";
-import SpankIcon from "./TokenIcons/SpankIcon";
-import SpellIcon from "./TokenIcons/SpellIcon";
-import TendIcon from "./TokenIcons/TendIcon";
-import ThalesIcon from "./TokenIcons/ThalesIcon";
-import TracIcon from "./TokenIcons/TracIcon";
-import TrbIcon from "./TokenIcons/TrbIcon";
-import YamIcon from "./TokenIcons/YamIcon";
-import YfiiIcon from "./TokenIcons/YfiiIcon";
-import EnsIcon from "./TokenIcons/EnsIcon";
-import MusdIcon from "./TokenIcons/MusdIcon";
-import ImusdIcon from "./TokenIcons/ImusdIcon";
-
 export const assetProto: AssetData = {
   symbol: '?',
   name: 'Unknown',
   address: '0x0',
   decimals: 18,
-  icon: BlankIcon,
+  icon: () => {
+    console.warn('Token icon function not present');
+    return '';
+  },
   underlyingAsset: '',
   exchange: false,
   compoundCollateral: false,
@@ -387,7 +233,6 @@ export const assets: AssetData[] = [
     exchange: true,
     compoundCollateral: false,
     address: ETHAddress,
-    icon: EthIcon,
   },
   {
     ...assetProto,
@@ -396,7 +241,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     address: WETHAddress,
     yearnCollateral: true,
-    icon: EthIcon,
   },
   {
     ...assetProto,
@@ -407,7 +251,6 @@ export const assets: AssetData[] = [
     exchange: false,
     compoundCollateral: true,
     address: cETHAddress,
-    icon: EthIcon,
   },
   {
     ...assetProto,
@@ -419,7 +262,6 @@ export const assets: AssetData[] = [
     yearnCollateral: true,
     address: DAIAddress,
     isStable: true,
-    icon: DaiIcon,
   },
   {
     ...assetProto,
@@ -430,7 +272,6 @@ export const assets: AssetData[] = [
     exchange: false,
     compoundCollateral: true,
     address: cDAIAddress,
-    icon: DaiIcon,
   },
   {
     ...assetProto,
@@ -439,7 +280,6 @@ export const assets: AssetData[] = [
     name: 'Dai',
     decimals: 18,
     address: iDAIAddress,
-    icon: DaiIcon,
   },
   {
     ...assetProto,
@@ -449,7 +289,6 @@ export const assets: AssetData[] = [
     exchange: true,
     compoundCollateral: false,
     address: MKRAddress,
-    icon: MkrIcon,
   },
   {
     ...assetProto,
@@ -459,7 +298,6 @@ export const assets: AssetData[] = [
     exchange: true,
     compoundCollateral: false,
     address: BATAddress,
-    icon: BatIcon,
   },
   {
     ...assetProto,
@@ -470,7 +308,6 @@ export const assets: AssetData[] = [
     exchange: false,
     compoundCollateral: true,
     address: cBATAddress,
-    icon: BatIcon,
   },
   {
     ...assetProto,
@@ -480,7 +317,6 @@ export const assets: AssetData[] = [
     exchange: true,
     compoundCollateral: false,
     address: ZRXAddress,
-    icon: ZrxIcon,
   },
   {
     ...assetProto,
@@ -490,7 +326,6 @@ export const assets: AssetData[] = [
     exchange: true,
     compoundCollateral: false,
     address: KNCLAddress,
-    icon: KnclIcon,
   },
   {
     ...assetProto,
@@ -500,7 +335,6 @@ export const assets: AssetData[] = [
     exchange: true,
     compoundCollateral: false,
     address: KNCAddress,
-    icon: KncIcon,
   },
   {
     ...assetProto,
@@ -511,7 +345,6 @@ export const assets: AssetData[] = [
     exchange: false,
     compoundCollateral: true,
     address: cZRXAddress,
-    icon: ZrxIcon,
   },
   {
     ...assetProto,
@@ -521,7 +354,6 @@ export const assets: AssetData[] = [
     exchange: true,
     compoundCollateral: false,
     address: REPAddress,
-    icon: RepIcon,
   },
   {
     ...assetProto,
@@ -531,7 +363,6 @@ export const assets: AssetData[] = [
     exchange: false, // not yet available
     compoundCollateral: false,
     address: REPv2Address,
-    icon: RepV2Icon,
   },
   {
     ...assetProto,
@@ -542,7 +373,6 @@ export const assets: AssetData[] = [
     exchange: false,
     compoundCollateral: true,
     address: cREPAddress,
-    icon: RepIcon,
   },
   {
     ...assetProto,
@@ -554,7 +384,6 @@ export const assets: AssetData[] = [
     yearnCollateral: true,
     address: USDCAddress,
     isStable: true,
-    icon: UsdcIcon,
   },
   {
     ...assetProto,
@@ -565,7 +394,6 @@ export const assets: AssetData[] = [
     exchange: false,
     compoundCollateral: true,
     address: cUSDCAddress,
-    icon: UsdcIcon,
   },
   {
     ...assetProto,
@@ -576,7 +404,6 @@ export const assets: AssetData[] = [
     compoundCollateral: false,
     yearnCollateral: true,
     address: WBTCAddress,
-    icon: WbtcIcon,
   },
   {
     ...assetProto,
@@ -587,7 +414,6 @@ export const assets: AssetData[] = [
     exchange: false,
     compoundCollateral: true,
     address: cWBTCAddressLegacy,
-    icon: WbtcIcon,
   },
   {
     ...assetProto,
@@ -598,7 +424,6 @@ export const assets: AssetData[] = [
     exchange: false,
     compoundCollateral: true,
     address: cWBTCAddress,
-    icon: WbtcIcon,
   },
   {
     ...assetProto,
@@ -609,7 +434,6 @@ export const assets: AssetData[] = [
     yearnCollateral: true,
     address: USDTAddress,
     isStable: true,
-    icon: UsdtIcon,
   },
   {
     ...assetProto,
@@ -619,7 +443,6 @@ export const assets: AssetData[] = [
     decimals: 8,
     compoundCollateral: true,
     address: cUSDTAddress,
-    icon: UsdtIcon,
   },
   {
     ...assetProto,
@@ -627,7 +450,6 @@ export const assets: AssetData[] = [
     name: 'Sai',
     decimals: 18,
     address: SAIAddress,
-    icon: DaiIcon,
   },
   {
     ...assetProto,
@@ -636,7 +458,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     address: COMPAddress,
     exchange: true,
-    icon: CompIcon,
   },
   {
     ...assetProto,
@@ -646,7 +467,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aETHAddress,
-    icon: EthIcon,
   },
   {
     ...assetProto,
@@ -656,7 +476,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aDAIAddress,
-    icon: DaiIcon,
   },
   {
     ...assetProto,
@@ -666,7 +485,6 @@ export const assets: AssetData[] = [
     decimals: 6,
     aaveCollateral: true,
     address: aUSDCAddress,
-    icon: UsdcIcon,
   },
   {
     ...assetProto,
@@ -676,7 +494,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aSUSDAddress,
-    icon: SusdIcon,
   },
   {
     ...assetProto,
@@ -687,7 +504,6 @@ export const assets: AssetData[] = [
     yearnCollateral: true,
     address: SUSDAddress,
     isStable: true,
-    icon: SusdIcon,
   },
   {
     ...assetProto,
@@ -697,7 +513,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aTUSDAddress,
-    icon: TusdIcon,
   },
   {
     ...assetProto,
@@ -707,7 +522,6 @@ export const assets: AssetData[] = [
     exchange: true,
     address: TUSDAddress,
     isStable: true,
-    icon: TusdIcon,
   },
   {
     ...assetProto,
@@ -718,7 +532,6 @@ export const assets: AssetData[] = [
     exchange: false,
     compoundCollateral: true,
     address: cTUSDAddress,
-    icon: TusdIcon,
   },
   {
     ...assetProto,
@@ -728,7 +541,6 @@ export const assets: AssetData[] = [
     decimals: 6,
     aaveCollateral: true,
     address: aUSDTAddress,
-    icon: UsdtIcon,
   },
   {
     ...assetProto,
@@ -738,7 +550,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aBUSDAddress,
-    icon: BusdIcon,
   },
   {
     ...assetProto,
@@ -748,7 +559,6 @@ export const assets: AssetData[] = [
     exchange: true,
     address: BUSDAddress,
     isStable: true,
-    icon: BusdIcon,
   },
   {
     ...assetProto,
@@ -758,7 +568,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aBATAddress,
-    icon: BatIcon,
   },
   {
     ...assetProto,
@@ -768,7 +577,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aKNCLAddress,
-    icon: KncIcon,
   },
   {
     ...assetProto,
@@ -778,7 +586,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aLENDAddress,
-    icon: LendIcon,
   },
   {
     ...assetProto,
@@ -786,7 +593,6 @@ export const assets: AssetData[] = [
     name: 'Aave ETHLend',
     decimals: 18,
     address: LENDAddress,
-    icon: LendIcon,
   },
   {
     ...assetProto,
@@ -796,7 +602,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aLINKAddress,
-    icon: LinkIcon,
   },
   {
     ...assetProto,
@@ -806,7 +611,6 @@ export const assets: AssetData[] = [
     exchange: true,
     yearnCollateral: true,
     address: LINKAddress,
-    icon: LinkIcon,
   },
   {
     ...assetProto,
@@ -817,7 +621,6 @@ export const assets: AssetData[] = [
     exchange: false,
     compoundCollateral: true,
     address: cLINKAddress,
-    icon: LinkIcon,
   },
   {
     ...assetProto,
@@ -827,7 +630,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aMANAAddress,
-    icon: ManaIcon,
   },
   {
     ...assetProto,
@@ -836,7 +638,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: MANAAddress,
-    icon: ManaIcon,
   },
   {
     ...assetProto,
@@ -846,7 +647,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aMKRAddress,
-    icon: MkrIcon,
   },
   {
     ...assetProto,
@@ -856,7 +656,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aREPAddress,
-    icon: RepIcon,
   },
   {
     ...assetProto,
@@ -866,7 +665,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aSNXAddress,
-    icon: SnxIcon,
   },
   {
     ...assetProto,
@@ -876,7 +674,6 @@ export const assets: AssetData[] = [
     exchange: true,
     yearnCollateral: true,
     address: SNXAddress,
-    icon: SnxIcon,
   },
   {
     ...assetProto,
@@ -886,7 +683,6 @@ export const assets: AssetData[] = [
     decimals: 8,
     aaveCollateral: true,
     address: aWBTCAddress,
-    icon: WbtcIcon,
   },
   {
     ...assetProto,
@@ -896,7 +692,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aZRXAddress,
-    icon: ZrxIcon,
   },
   {
     ...assetProto,
@@ -906,7 +701,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aENJAddress,
-    icon: EnjIcon,
   },
   {
     ...assetProto,
@@ -915,7 +709,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: ENJAddress,
-    icon: EnjIcon,
   },
   {
     ...assetProto,
@@ -925,7 +718,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     aaveCollateral: true,
     address: aRENAddress,
-    icon: RenIcon,
   },
   {
     ...assetProto,
@@ -934,7 +726,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: RENAddress,
-    icon: RenIcon,
   },
   {
     ...assetProto,
@@ -943,7 +734,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: CRVAddress,
-    icon: CrvIcon,
   },
   {
     ...assetProto,
@@ -953,7 +743,6 @@ export const assets: AssetData[] = [
     exchange: true,
     yearnCollateral: true,
     address: YFIAddress,
-    icon: YfiIcon,
   },
   {
     ...assetProto,
@@ -962,7 +751,6 @@ export const assets: AssetData[] = [
     address: aYFIAddress,
     aaveCollateral: true,
     underlyingAsset: 'YFI',
-    icon: YfiIcon,
   },
   {
     ...assetProto,
@@ -972,7 +760,6 @@ export const assets: AssetData[] = [
     exchange: true,
     address: USDPAddress,
     isStable: true,
-    icon: UsdpIcon,
   },
   {
     ...assetProto,
@@ -983,7 +770,6 @@ export const assets: AssetData[] = [
     exchange: false,
     compoundCollateral: true,
     address: cUSDPAddress,
-    icon: UsdpIcon,
   },
   {
     ...assetProto,
@@ -992,7 +778,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: DPIAddress,
-    icon: DpiIcon,
   },
   {
     ...assetProto,
@@ -1002,7 +787,6 @@ export const assets: AssetData[] = [
     exchange: true,
     yearnCollateral: true,
     address: UNIAddress,
-    icon: UniIcon,
   },
   {
     ...assetProto,
@@ -1011,7 +795,6 @@ export const assets: AssetData[] = [
     compoundCollateral: true,
     address: cUNIAddress,
     underlyingAsset: 'UNI',
-    icon: UniIcon,
   },
   {
     ...assetProto,
@@ -1020,7 +803,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: LRCAddress,
-    icon: LrcIcon,
   },
   {
     ...assetProto,
@@ -1030,7 +812,6 @@ export const assets: AssetData[] = [
     underlyingAsset: "COMP",
     decimals: 8,
     compoundCollateral: true,
-    icon: CompIcon,
   },
   {
     ...assetProto,
@@ -1040,7 +821,6 @@ export const assets: AssetData[] = [
     underlyingAsset: 'UNI',
     decimals: 18,
     aaveCollateral: true,
-    icon: UniIcon,
   },
   {
     ...assetProto,
@@ -1049,7 +829,6 @@ export const assets: AssetData[] = [
     address: AAVEAddress,
     decimals: 18,
     exchange: true,
-    icon: AaveIcon,
   },
   {
     ...assetProto,
@@ -1059,7 +838,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     underlyingAsset: 'AAVE',
     aaveCollateral: true,
-    icon: AaveIcon,
   },
   {
     ...assetProto,
@@ -1068,7 +846,6 @@ export const assets: AssetData[] = [
     name: 'AAVE',
     decimals: 18,
     address: stkAAVEAddress,
-    icon: StkAaveIcon,
   },
   {
     ...assetProto,
@@ -1077,7 +854,6 @@ export const assets: AssetData[] = [
     address: BALAddress,
     exchange: true,
     decimals: 18,
-    icon: BalIcon,
   },
   {
     ...assetProto,
@@ -1087,7 +863,6 @@ export const assets: AssetData[] = [
     decimals: 2,
     isStable: true,
     exchange: true,
-    icon: GusdIcon,
   },
   {
     ...assetProto,
@@ -1096,7 +871,6 @@ export const assets: AssetData[] = [
     address: RENBTCAddress,
     exchange: true,
     decimals: 8,
-    icon: RenBtcIcon,
   },
   {
     ...assetProto,
@@ -1104,7 +878,6 @@ export const assets: AssetData[] = [
     name: 'Uniswap V2: DAI/ETH ',
     address: UNIV2DAIETHAddress,
     decimals: 18,
-    icon: UniV2DaiEthIcon,
   },
   {
     ...assetProto,
@@ -1113,7 +886,6 @@ export const assets: AssetData[] = [
     name: 'WETH',
     decimals: 18,
     address: aWETHAddress,
-    icon: EthIcon,
   },
   {
     ...assetProto,
@@ -1121,7 +893,6 @@ export const assets: AssetData[] = [
     name: 'Uniswap V2: WBTC/ETH ',
     address: UNIV2WBTCETHAddress,
     decimals: 18,
-    icon: UniV2WbtcEthIcon,
   },
   {
     ...assetProto,
@@ -1129,7 +900,6 @@ export const assets: AssetData[] = [
     name: 'Uniswap V2: USDC/ETH ',
     address: UNIV2USDCETHAddress,
     decimals: 18,
-    icon: UniV2UsdcEthIcon,
   },
   {
     ...assetProto,
@@ -1137,7 +907,6 @@ export const assets: AssetData[] = [
     name: 'Sushi Bar',
     address: xSUSHIAddress,
     decimals: 18,
-    icon: SushiIcon,
   },
   {
     ...assetProto,
@@ -1145,7 +914,6 @@ export const assets: AssetData[] = [
     name: 'Uniswap V2: DAI/USDC',
     address: UNIV2DAIUSDCAddress,
     decimals: 18,
-    icon: UniV2DaiUsdcIcon,
   },
   {
     ...assetProto,
@@ -1153,7 +921,6 @@ export const assets: AssetData[] = [
     name: 'Uniswap V2: ETH/USDT',
     address: UNIV2ETHUSDTAddress,
     decimals: 18,
-    icon: UniV2EthUsdtIcon,
   },
   {
     ...assetProto,
@@ -1161,7 +928,6 @@ export const assets: AssetData[] = [
     name: 'Uniswap V2: LINK/ETH',
     address: UNIV2LINKETHAddress,
     decimals: 18,
-    icon: UniV2LinkEthIcon,
   },
   {
     ...assetProto,
@@ -1169,7 +935,6 @@ export const assets: AssetData[] = [
     name: 'Uniswap V2: UNI/ETH',
     address: UNIV2UNIETHAddress,
     decimals: 18,
-    icon: UniV2UniEthIcon,
   },
   {
     ...assetProto,
@@ -1178,7 +943,6 @@ export const assets: AssetData[] = [
     address: RAIAddress,
     decimals: 18,
     yearnCollateral: true,
-    icon: RaiIcon,
     exchange: true,
   },
   {
@@ -1189,7 +953,6 @@ export const assets: AssetData[] = [
     yearnCollateral: true,
     exchange: true,
     decimals: 18,
-    icon: OneInchIcon,
   },
   {
     ...assetProto,
@@ -1198,7 +961,6 @@ export const assets: AssetData[] = [
     address: BadgerAddress,
     exchange: true,
     decimals: 18,
-    icon: BadgerIcon,
   },
   {
     ...assetProto,
@@ -1207,7 +969,6 @@ export const assets: AssetData[] = [
     address: DiggAddress,
     exchange: true,
     decimals: 9,
-    icon: DiggIcon,
   },
   {
     ...assetProto,
@@ -1216,7 +977,6 @@ export const assets: AssetData[] = [
     address: MirAddress,
     exchange: true,
     decimals: 18,
-    icon: MirIcon,
   },
   {
     ...assetProto,
@@ -1225,7 +985,6 @@ export const assets: AssetData[] = [
     address: SushiAddress,
     exchange: true,
     decimals: 18,
-    icon: SushiIcon,
   },
   {
     ...assetProto,
@@ -1234,7 +993,6 @@ export const assets: AssetData[] = [
     address: CreamAddress,
     exchange: true,
     decimals: 18,
-    icon: CreamIcon,
   },
   {
     ...assetProto,
@@ -1243,7 +1001,6 @@ export const assets: AssetData[] = [
     address: CoverAddress,
     exchange: true,
     decimals: 18,
-    icon: CoverIcon,
   },
   {
     ...assetProto,
@@ -1252,7 +1009,6 @@ export const assets: AssetData[] = [
     address: UmaAddress,
     exchange: true,
     decimals: 18,
-    icon: UmaIcon,
   },
   {
     ...assetProto,
@@ -1261,7 +1017,6 @@ export const assets: AssetData[] = [
     address: SntAddress,
     exchange: true,
     decimals: 18,
-    icon: SntIcon,
   },
   {
     ...assetProto,
@@ -1270,7 +1025,6 @@ export const assets: AssetData[] = [
     address: RplAddress,
     exchange: true,
     decimals: 18,
-    icon: RplIcon,
   },
   {
     ...assetProto,
@@ -1279,7 +1033,6 @@ export const assets: AssetData[] = [
     address: TornAddress,
     exchange: true,
     decimals: 18,
-    icon: TornIcon,
   },
   {
     ...assetProto,
@@ -1288,7 +1041,6 @@ export const assets: AssetData[] = [
     address: BntAddress,
     exchange: true,
     decimals: 18,
-    icon: BntIcon,
   },
   {
     ...assetProto,
@@ -1296,7 +1048,6 @@ export const assets: AssetData[] = [
     name: 'Uniswap V2: AAVE/ETH',
     address: UNIV2AAVEETHAddress,
     decimals: 18,
-    icon: UniV2AaveEthIcon,
   },
   {
     ...assetProto,
@@ -1304,7 +1055,6 @@ export const assets: AssetData[] = [
     name: 'Uniswap V2: WBTC/DAI',
     address: UNIV2WBTCDAIAddress,
     decimals: 18,
-    icon: UniV2WbtcDaiIcon,
   },
   {
     ...assetProto,
@@ -1312,7 +1062,6 @@ export const assets: AssetData[] = [
     name: 'Uniswap V2: DAI/USDT',
     address: UNIV2DAIUSDTAddress,
     decimals: 18,
-    icon: UniV2DaiUsdtIcon,
   },
   {
     ...assetProto,
@@ -1321,7 +1070,6 @@ export const assets: AssetData[] = [
     address: EthfliAddress,
     exchange: true,
     decimals: 18,
-    icon: EthfliIcon,
   },
   {
     ...assetProto,
@@ -1330,7 +1078,6 @@ export const assets: AssetData[] = [
     address: LqtyAddress,
     exchange: true,
     decimals: 18,
-    icon: LqtyIcon,
   },
   {
     ...assetProto,
@@ -1339,7 +1086,6 @@ export const assets: AssetData[] = [
     address: LusdAddress,
     exchange: true,
     decimals: 18,
-    icon: LusdIcon,
   },
   {
     ...assetProto,
@@ -1348,7 +1094,6 @@ export const assets: AssetData[] = [
     address: FlxAddress,
     exchange: true,
     decimals: 18,
-    icon: FlxIcon,
   },
   {
     ...assetProto,
@@ -1357,7 +1102,6 @@ export const assets: AssetData[] = [
     address: AlcxAddress,
     exchange: true,
     decimals: 18,
-    icon: AlcxIcon,
   },
   {
     ...assetProto,
@@ -1366,7 +1110,6 @@ export const assets: AssetData[] = [
     address: EursAddress,
     exchange: true,
     decimals: 2,
-    icon: EursIcon,
   },
   {
     ...assetProto,
@@ -1375,7 +1118,6 @@ export const assets: AssetData[] = [
     address: GrtAddress,
     exchange: true,
     decimals: 18,
-    icon: GrtIcon,
   },
   {
     ...assetProto,
@@ -1384,7 +1126,6 @@ export const assets: AssetData[] = [
     address: PoolAddress,
     exchange: true,
     decimals: 18,
-    icon: PoolIcon,
   },
   {
     ...assetProto,
@@ -1393,7 +1134,6 @@ export const assets: AssetData[] = [
     address: LdoAddress,
     exchange: true,
     decimals: 18,
-    icon: LdoIcon,
   },
   {
     ...assetProto,
@@ -1402,7 +1142,6 @@ export const assets: AssetData[] = [
     address: StethAddress,
     exchange: true,
     decimals: 18,
-    icon: StethIcon,
   },
   {
     ...assetProto,
@@ -1411,7 +1150,6 @@ export const assets: AssetData[] = [
     address: AxsAddress,
     exchange: true,
     decimals: 18,
-    icon: AxsIcon,
   },
   {
     ...assetProto,
@@ -1420,7 +1158,6 @@ export const assets: AssetData[] = [
     address: BtcfliAddress,
     exchange: true,
     decimals: 18,
-    icon: BtcfliIcon,
   },
   {
     ...assetProto,
@@ -1429,7 +1166,6 @@ export const assets: AssetData[] = [
     address: FarmAddress,
     exchange: true,
     decimals: 18,
-    icon: FarmIcon,
   },
   {
     ...assetProto,
@@ -1438,7 +1174,6 @@ export const assets: AssetData[] = [
     address: FeiAddress,
     exchange: true,
     decimals: 18,
-    icon: FeiIcon,
   },
   {
     ...assetProto,
@@ -1447,7 +1182,6 @@ export const assets: AssetData[] = [
     address: GtcAddress,
     exchange: true,
     decimals: 18,
-    icon: GtcIcon,
   },
   {
     ...assetProto,
@@ -1456,7 +1190,6 @@ export const assets: AssetData[] = [
     address: InstAddress,
     exchange: true,
     decimals: 18,
-    icon: InstIcon,
   },
   {
     ...assetProto,
@@ -1465,7 +1198,6 @@ export const assets: AssetData[] = [
     address: MtaAddress,
     exchange: true,
     decimals: 18,
-    icon: MtaIcon,
   },
   {
     ...assetProto,
@@ -1474,7 +1206,6 @@ export const assets: AssetData[] = [
     address: RuneAddress,
     exchange: true,
     decimals: 18,
-    icon: RuneIcon,
   },
   {
     ...assetProto,
@@ -1483,7 +1214,6 @@ export const assets: AssetData[] = [
     address: TribeAddress,
     exchange: true,
     decimals: 18,
-    icon: TribeIcon,
   },
   {
     ...assetProto,
@@ -1491,7 +1221,6 @@ export const assets: AssetData[] = [
     name: 'Ampleforth',
     decimals: 9,
     address: AmplAddress,
-    icon: AmplIcon,
   },
   {
     ...assetProto,
@@ -1500,7 +1229,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: SteCrvAddress,
-    icon: CrvStethIcon,
   },
   {
     ...assetProto,
@@ -1509,7 +1237,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: ECrvAddress,
-    icon: CrvSethIcon,
   },
   {
     ...assetProto,
@@ -1518,7 +1245,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: HegicAddress,
-    icon: HegicIcon,
   },
   {
     ...assetProto,
@@ -1527,7 +1253,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: Ib3CRVAddress,
-    icon: CrvIBIcon,
   },
   {
     ...assetProto,
@@ -1536,7 +1261,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: HCRVAddress,
-    icon: CrvHbtcIcon,
   },
   {
     ...assetProto,
@@ -1545,7 +1269,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: YveCRVDAOAddress,
-    icon: YveCrvIcon,
   },
   {
     ...assetProto,
@@ -1554,7 +1277,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: CrvRenWSBTCAddress,
-    icon: CrvBbtcIcon,
   },
   {
     ...assetProto,
@@ -1563,7 +1285,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: CrvRenWBTCAddress,
-    icon: CrvRenbtcIcon,
   },
   {
     ...assetProto,
@@ -1572,7 +1293,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: SaCRVAddress,
-    icon: CrvSaaveIcon,
   },
   {
     ...assetProto,
@@ -1581,7 +1301,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: OBTCsbtcCRVAddress,
-    icon: CrvBbtcIcon,
   },
   {
     ...assetProto,
@@ -1590,7 +1309,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: PBTCsbtcCRVAddress,
-    icon: CrvBbtcIcon,
   },
   {
     ...assetProto,
@@ -1599,7 +1317,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: LUSD3CRVfAddress,
-    icon: CrvLusdIcon,
   },
   {
     ...assetProto,
@@ -1608,7 +1325,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: BBTCsbtcCRVAddress,
-    icon: CrvBbtcIcon,
   },
   {
     ...assetProto,
@@ -1617,7 +1333,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: TBTCsbtcCRVAddress,
-    icon: CrvTbtcIcon,
   },
   {
     ...assetProto,
@@ -1626,7 +1341,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: FRAX3CRVfAddress,
-    icon: CrvFraxIcon,
   },
   {
     ...assetProto,
@@ -1635,7 +1349,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: YDAIyUSDCyUSDTyBUSDAddress,
-    icon: CrvYbusdIcon,
   },
   {
     ...assetProto,
@@ -1644,7 +1357,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: CDAIcUSDCAddress,
-    icon: CrvCompIcon,
   },
   {
     ...assetProto,
@@ -1653,7 +1365,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: Gusd3CRVAddress,
-    icon: CrvGusdIcon,
   },
   {
     ...assetProto,
@@ -1662,7 +1373,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: YDAIyUSDCyUSDTyTUSDAddress,
-    icon: YCrvIcon,
   },
   {
     ...assetProto,
@@ -1671,7 +1381,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: CRV3Address,
-    icon: Crv3Icon,
   },
   {
     ...assetProto,
@@ -1680,7 +1389,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: TUSD3CRVfAddress,
-    icon: CrvTusdIcon,
   },
   {
     ...assetProto,
@@ -1689,7 +1397,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: BUSD3CRVfAddress,
-    icon: CrvYbusdIcon,
   },
   {
     ...assetProto,
@@ -1698,7 +1405,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: Dusd3CRVAddress,
-    icon: CrvDusdIcon,
   },
   {
     ...assetProto,
@@ -1707,7 +1413,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: Ust3CRVAddress,
-    icon: CrvUstIcon,
   },
   {
     ...assetProto,
@@ -1716,7 +1421,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: Musd3CRVAddress,
-    icon: CrvMusdIcon,
   },
   {
     ...assetProto,
@@ -1725,7 +1429,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: CrvPlain3andSUSDAddress,
-    icon: CrvSusdIcon,
   },
   {
     ...assetProto,
@@ -1734,7 +1437,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: LinkCRVAddress,
-    icon: CrvLinkIcon,
   },
   {
     ...assetProto,
@@ -1743,7 +1445,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: Usdn3CRVAddress,
-    icon: CrvUsdnIcon,
   },
   {
     ...assetProto,
@@ -1752,7 +1453,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: Usdp3CRVAddress,
-    icon: CrvUsdpIcon,
   },
   {
     ...assetProto,
@@ -1761,7 +1461,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: AlUSD3CRVfAddress,
-    icon: CrvAlusdIcon,
   },
   {
     ...assetProto,
@@ -1770,7 +1469,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: RCRVAddress,
-    icon: CrvRethIcon,
   },
   {
     ...assetProto,
@@ -1779,7 +1477,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: AnkrCRVAddress,
-    icon: CrvAethcIcon,
   },
   {
     ...assetProto,
@@ -1788,7 +1485,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: A3CRVAddress,
-    icon: CrvAaveIcon,
   },
   {
     ...assetProto,
@@ -1797,7 +1493,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: Husd3CRVAddress,
-    icon: CrvHusdIcon,
   },
   {
     ...assetProto,
@@ -1806,7 +1501,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: EursCRVAddress,
-    icon: CrvEursIcon,
   },
   {
     ...assetProto,
@@ -1815,7 +1509,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: CrvTricryptoAddress,
-    icon: CrvTricryptoIcon,
   },
   {
     ...assetProto,
@@ -1824,7 +1517,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: YpaxCrvAddress,
-    icon: CrvPaxIcon,
   },
   {
     ...assetProto,
@@ -1833,7 +1525,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: CDAIcUSDCUSDTAddress,
-    icon: CrvUsdtIcon,
   },
   {
     ...assetProto,
@@ -1842,7 +1533,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: Usdk3CRVAddress,
-    icon: CrvUsdkIcon,
   },
   {
     ...assetProto,
@@ -1851,7 +1541,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: Rsv3CRVAddress,
-    icon: CrvRsvIcon,
   },
   {
     ...assetProto,
@@ -1860,7 +1549,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: Crv3cryptoAddress,
-    icon: CrvTricryptoIcon,
   },
   {
     ...assetProto,
@@ -1869,7 +1557,6 @@ export const assets: AssetData[] = [
     compoundCollateral: true,
     address: cMKRAddress,
     underlyingAsset: 'MKR',
-    icon: MkrIcon,
   },
   {
     ...assetProto,
@@ -1878,7 +1565,6 @@ export const assets: AssetData[] = [
     compoundCollateral: true,
     address: cSUSHIAddress,
     underlyingAsset: 'SUSHI',
-    icon: SushiIcon,
   },
   {
     ...assetProto,
@@ -1887,7 +1573,6 @@ export const assets: AssetData[] = [
     compoundCollateral: true,
     address: cAAVEAddress,
     underlyingAsset: 'AAVE',
-    icon: AaveIcon,
   },
   {
     ...assetProto,
@@ -1896,7 +1581,6 @@ export const assets: AssetData[] = [
     compoundCollateral: true,
     address: cYFIAddress,
     underlyingAsset: 'YFI',
-    icon: YfiIcon,
   },
   {
     ...assetProto,
@@ -1905,7 +1589,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: RENFILAddress,
-    icon: RenFilIcon,
   },
   {
     ...assetProto,
@@ -1914,7 +1597,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: MATICAddress,
-    icon: MaticIcon,
   },
   {
     ...assetProto,
@@ -1923,7 +1605,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: crvEURTAddress,
-    icon: CrvEurtIcon,
   },
   {
     ...assetProto,
@@ -1932,7 +1613,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     yearnCollateral: true,
     address: crvMIMAddress,
-    icon: CrvMimIcon,
   },
   {
     ...assetProto,
@@ -1941,7 +1621,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: DydxAddress,
-    icon: DydxIcon,
   },
   {
     ...assetProto,
@@ -1950,7 +1629,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: PerpAddress,
-    icon: PerpIcon,
   },
   {
     ...assetProto,
@@ -1959,7 +1637,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: TcapAddress,
-    icon: TcapIcon,
   },
   {
     ...assetProto,
@@ -1968,7 +1645,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: CtxAddress,
-    icon: CtxIcon,
   },
   {
     ...assetProto,
@@ -1977,7 +1653,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: RgtAddress,
-    icon: RgtIcon,
   },
   {
     ...assetProto,
@@ -1986,7 +1661,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: DataAddress,
-    icon: DataIcon,
   },
   {
     ...assetProto,
@@ -1995,7 +1669,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: AmpAddress,
-    icon: AmpIcon,
   },
   {
     ...assetProto,
@@ -2004,7 +1677,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: FraxAddress,
-    icon: FraxIcon,
   },
   {
     ...assetProto,
@@ -2013,7 +1685,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: wstETHAddress,
-    icon: WstethIcon,
   },
   {
     ...assetProto,
@@ -2022,7 +1693,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: YfiiAddress,
-    icon: YfiiIcon,
   },
   {
     ...assetProto,
@@ -2031,7 +1701,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: TendAddress,
-    icon: TendIcon,
   },
   {
     ...assetProto,
@@ -2040,7 +1709,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: OmgAddress,
-    icon: OmgIcon,
   },
   {
     ...assetProto,
@@ -2049,7 +1717,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: PickleAddress,
-    icon: PickleIcon,
   },
   {
     ...assetProto,
@@ -2058,7 +1725,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: RookAddress,
-    icon: RookIcon,
   },
   {
     ...assetProto,
@@ -2067,7 +1733,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: IdleAddress,
-    icon: IdleIcon,
   },
   {
     ...assetProto,
@@ -2076,7 +1741,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: TrbAddress,
-    icon: TrbIcon,
   },
   {
     ...assetProto,
@@ -2085,7 +1749,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: YamAddress,
-    icon: YamIcon,
   },
   {
     ...assetProto,
@@ -2094,7 +1757,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: SpankAddress,
-    icon: SpankIcon,
   },
   {
     ...assetProto,
@@ -2103,7 +1765,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: CvxAddress,
-    icon: CvxIcon,
   },
   {
     ...assetProto,
@@ -2112,7 +1773,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: ShibAddress,
-    icon: ShibIcon,
   },
   {
     ...assetProto,
@@ -2121,7 +1781,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: MimAddress,
-    icon: MimIcon,
   },
   {
     ...assetProto,
@@ -2130,7 +1789,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: SpellAddress,
-    icon: SpellIcon,
   },
   {
     ...assetProto,
@@ -2139,7 +1797,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: RobotAddress,
-    icon: RobotIcon,
   },
   {
     ...assetProto,
@@ -2148,7 +1805,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: GelAddress,
-    icon: GelIcon,
   },
   {
     ...assetProto,
@@ -2157,7 +1813,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: GnoAddress,
-    icon: GnoIcon,
   },
   {
     ...assetProto,
@@ -2166,7 +1821,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: TracAddress,
-    icon: TracIcon,
   },
   {
     ...assetProto,
@@ -2175,7 +1829,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: FtmAddress,
-    icon: FtmIcon,
   },
   {
     ...assetProto,
@@ -2184,7 +1837,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: AudioAddress,
-    icon: AudioIcon,
   },
   {
     ...assetProto,
@@ -2193,7 +1845,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: ThalesAddress,
-    icon: ThalesIcon,
   },
   {
     ...assetProto,
@@ -2202,7 +1853,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: RariAddress,
-    icon: RariIcon,
   },
   {
     ...assetProto,
@@ -2211,7 +1861,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: FxsAddress,
-    icon: FxsIcon,
   },
   {
     ...assetProto,
@@ -2220,7 +1869,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: BedAddress,
-    icon: BedIcon,
   },
   {
     ...assetProto,
@@ -2229,7 +1877,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: FoxAddress,
-    icon: FoxIcon,
   },
   {
     ...assetProto,
@@ -2238,7 +1885,6 @@ export const assets: AssetData[] = [
     decimals: 9,
     exchange: true,
     address: OhmAddress,
-    icon: OhmIcon,
   },
   {
     ...assetProto,
@@ -2246,7 +1892,6 @@ export const assets: AssetData[] = [
     name: 'Staked Olympus',
     decimals: 9,
     address: SohmAddress,
-    icon: OhmIcon,
   },
   {
     ...assetProto,
@@ -2255,7 +1900,6 @@ export const assets: AssetData[] = [
     decimals: 18,
     exchange: true,
     address: AlusdAddress,
-    icon: AlusdIcon,
   },
   {
     ...assetProto,
@@ -2263,7 +1907,6 @@ export const assets: AssetData[] = [
     name: 'Alchemix ETH',
     decimals: 18,
     address: AlethAddress,
-    icon: AlethIcon,
   },
   {
     ...assetProto,
@@ -2272,7 +1915,6 @@ export const assets: AssetData[] = [
     exchange: true,
     decimals: 18,
     address: EnsAddress,
-    icon: EnsIcon,
   },
   {
     ...assetProto,
@@ -2281,7 +1923,6 @@ export const assets: AssetData[] = [
     exchange: true,
     decimals: 18,
     address: MusdAddress,
-    icon: MusdIcon,
   },
   {
     ...assetProto,
@@ -2289,6 +1930,5 @@ export const assets: AssetData[] = [
     name: 'Interest bearing mUSD',
     decimals: 18,
     address: ImusdAddress,
-    icon: ImusdIcon,
   },
 ];
