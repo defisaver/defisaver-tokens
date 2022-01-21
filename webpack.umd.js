@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
   mode: "none",
   entry: './src/index.ts',
+  target: 'node',
   output: {
     library: 'defisaver-tokens',
     libraryTarget: 'umd',

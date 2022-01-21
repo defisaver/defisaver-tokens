@@ -1,7 +1,7 @@
 {
   "name": "@defisaver/tokens",
-  "version": "1.3.73",
-  "description": "Centralized asset data & utility functions\n",
+  "version": "1.3.74",
+  "description": "Centralized asset data & utility functions",
   "main": "umd/index.js",
   "module": "esm/index.js",
   "types": "esm/index.d.ts",
