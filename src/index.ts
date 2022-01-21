@@ -8,18 +8,18 @@ export {reflexerCollTypes}
 import {aaveV2Markets} from './aaveV2Markets';
 export {aaveV2Markets}
 
-import type {AaveMarketData, AssetData, ExtendedIlkData, IlkData} from './types';
+import type {AaveMarketData, AssetData, ExtendedIlkData, IlkData, Config} from './types';
 export type {AssetData, ExtendedIlkData, IlkData};
 
 import {stringToBytes, bytesToString, compare} from './utils';
 
-const config: any = {
+const config: Config = {
   iconFunc: undefined,
   network: 1,
 }
 
 export const set = (key: string, value: any):void => {
-  config[key] = value;
+  (config as any)[key] = value;
 }
 
 export const utils = {stringToBytes, bytesToString, compare};
@@ -50,6 +50,7 @@ export const getAssetInfo = (symbol:string = ''):AssetData => {
   let assetData = assets.find(t => compare(t.symbol, handleWBTCLegacy(symbol)));
   if (!assetData) assetData = { ...assetProto };
   if (config.iconFunc) assetData.icon = config.iconFunc({ ...assetData, symbol });
+  assetData.address = assetData.addresses[config.network] || '0x0000000000000000000000000000000000000000';
   return assetData;
 }
 

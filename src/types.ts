@@ -1,3 +1,12 @@
+type Config = {
+  network: number,
+  iconFunc: ((props: object) => () => string) | undefined,
+}
+
+type AddressMapping = {
+  [key: number]: string
+}
+
 /**
  * Asset info type
  */
@@ -5,6 +14,7 @@ type AssetData = {
   symbol: string;
   name: string;
   address: string;
+  addresses: AddressMapping,
   decimals: number;
   icon: Function;
   underlyingAsset: string;
@@ -45,4 +55,5 @@ export {
   IlkData,
   ExtendedIlkData,
   AaveMarketData,
+  Config,
 }
