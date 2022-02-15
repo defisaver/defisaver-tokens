@@ -206,6 +206,8 @@ const EnsAddress = "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72";
 const MusdAddress = "0xe2f2a5c287993345a840db3b0845fbc70f5935a5";
 const ImusdAddress = "0x30647a72dc82d7fbb1123ea74716ab8a317eac19";
 const cUSDPAddress = "0x041171993284df560249B57358F931D9eB7b925D";
+const GuniDaiUsdc1Address = "0xAbDDAfB225e10B90D798bB8A886238Fb835e2053";
+const GuniDaiUsdc2Address = "0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e";
 
 export const assetProto: AssetData = {
   symbol: '?',
@@ -2350,6 +2352,24 @@ export const assets: AssetData[] = [
     decimals: 18,
     addresses: {
       1: ImusdAddress,
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'GUNIV3DAIUSDC1',
+    name: 'Gelato Uniswap DAI/USDC LP 1%',
+    decimals: 18,
+    addresses: {
+      1: GuniDaiUsdc1Address,
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'GUNIV3DAIUSDC2',
+    name: 'Gelato Uniswap DAI/USDC LP 0.01%',
+    decimals: 18,
+    addresses: {
+      1: GuniDaiUsdc2Address,
     },
   },
 ];

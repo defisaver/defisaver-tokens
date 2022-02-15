@@ -58,7 +58,7 @@ Asset info type
 
 #### Defined in
 
-[types.ts:13](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/types.ts#L13)
+[types.ts:13](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/types.ts#L13)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[types.ts:51](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/types.ts#L51)
+[types.ts:51](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/types.ts#L51)
 
 ___
 
@@ -95,7 +95,7 @@ Maker ilk info type
 
 #### Defined in
 
-[types.ts:31](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/types.ts#L31)
+[types.ts:31](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/types.ts#L31)
 
 ## Variables
 
@@ -105,7 +105,7 @@ Maker ilk info type
 
 #### Defined in
 
-[index.ts:27](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/index.ts#L27)
+[index.ts:27](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/index.ts#L27)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[aaveV2Markets.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/aaveV2Markets.ts#L3)
+[aaveV2Markets.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/aaveV2Markets.ts#L3)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[assets.ts:228](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/assets.ts#L228)
+[assets.ts:230](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/assets.ts#L230)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[ilks.ts:5](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/ilks.ts#L5)
+[ilks.ts:5](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/ilks.ts#L5)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[reflexerCollTypes.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/reflexerCollTypes.ts#L3)
+[reflexerCollTypes.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/reflexerCollTypes.ts#L3)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[index.ts:25](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/index.ts#L25)
+[index.ts:25](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/index.ts#L25)
 
 ## Functions
 
@@ -184,7 +184,7 @@ ___
 
 #### Defined in
 
-[index.ts:142](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/index.ts#L142)
+[index.ts:142](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/index.ts#L142)
 
 ___
 
@@ -205,7 +205,7 @@ ___
 
 #### Defined in
 
-[index.ts:163](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/index.ts#L163)
+[index.ts:163](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/index.ts#L163)
 
 ___
 
@@ -225,7 +225,7 @@ ___
 
 #### Defined in
 
-[index.ts:135](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/index.ts#L135)
+[index.ts:135](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/index.ts#L135)
 
 ___
 
@@ -248,7 +248,7 @@ Warning: will not throw if asset not found. Instead, will return a placeholder o
 
 #### Defined in
 
-[index.ts:49](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/index.ts#L49)
+[index.ts:49](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/index.ts#L49)
 
 ___
 
@@ -268,7 +268,7 @@ ___
 
 #### Defined in
 
-[index.ts:85](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/index.ts#L85)
+[index.ts:85](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/index.ts#L85)
 
 ___
 
@@ -291,7 +291,7 @@ Warning: will not throw if ilk not found. Instead, will return a placeholder obj
 
 #### Defined in
 
-[index.ts:64](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/index.ts#L64)
+[index.ts:64](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/index.ts#L64)
 
 ___
 
@@ -311,7 +311,7 @@ ___
 
 #### Defined in
 
-[index.ts:87](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/index.ts#L87)
+[index.ts:87](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/index.ts#L87)
 
 ___
 
@@ -332,7 +332,7 @@ ___
 
 #### Defined in
 
-[index.ts:21](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/index.ts#L21)
+[index.ts:21](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/index.ts#L21)
 
 ___
 
@@ -355,7 +355,7 @@ Token symbol
 
 #### Defined in
 
-[index.ts:115](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/index.ts#L115)
+[index.ts:115](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/index.ts#L115)
 
 ___
 
@@ -377,7 +377,7 @@ Token symbol
 
 #### Defined in
 
-[index.ts:127](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/index.ts#L127)
+[index.ts:127](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/index.ts#L127)
 
 ___
 
@@ -399,4 +399,4 @@ Token symbol
 
 #### Defined in
 
-[index.ts:133](https://github.com/DecenterApps/defisaver-tokens/blob/a9810ab/src/index.ts#L133)
+[index.ts:133](https://github.com/DecenterApps/defisaver-tokens/blob/10803cb/src/index.ts#L133)
