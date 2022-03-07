@@ -8,11 +8,19 @@ export {reflexerCollTypes}
 import {aaveV2Markets} from './aaveV2Markets';
 export {aaveV2Markets}
 
-import type {AaveMarketData, AssetData, ExtendedIlkData, IlkData} from './types';
-export type {AssetData, ExtendedIlkData, IlkData};
+import type {AaveMarketData, AssetDataBase, AssetData, ExtendedIlkData, IlkData, AddressMapping, Config} from './types';
+export type {AaveMarketData, AssetDataBase, AssetData, ExtendedIlkData, IlkData, AddressMapping};
 
 import {stringToBytes, bytesToString, compare} from './utils';
-import BlankIcon from './TokenIcons/BlankIcon';
+
+const config: Config = {
+  iconFunc: undefined,
+  network: 1,
+}
+
+export const set = (key: string, value: any):void => {
+  (config as any)[key] = value;
+}
 
 export const utils = {stringToBytes, bytesToString, compare};
 
@@ -31,6 +39,15 @@ Dec.set({
  */
 const handleWBTCLegacy = (symbol:string = ''):string => (symbol === 'WBTC Legacy' ? 'WBTC' : symbol);
 
+const _addChainSpecificData = (assetDataBase:AssetDataBase):AssetData => {
+  const assetData = {
+    ...assetDataBase,
+    address: assetDataBase.addresses[config.network] || '0x0000000000000000000000000000000000000000'
+  };
+  if (config.iconFunc) assetData.icon = config.iconFunc({ ...assetData });
+  return assetData;
+}
+
 /**
  * Returns asset info.
  * Warning: will not throw if asset not found. Instead, will return a placeholder object.
@@ -38,7 +55,11 @@ const handleWBTCLegacy = (symbol:string = ''):string => (symbol === 'WBTC Legacy
  * @param symbol {string}
  * @return {AssetData}
  */
-export const getAssetInfo = (symbol:string = ''):AssetData => assets.find(t => compare(t.symbol, handleWBTCLegacy(symbol))) || { ...assetProto, icon: BlankIcon({ symbol: symbol?.substr(0, 3) || '' }) };
+export const getAssetInfo = (symbol:string = ''):AssetData => {
+  let assetData = assets.find(t => compare(t.symbol, handleWBTCLegacy(symbol)));
+  if (!assetData) assetData = { ...assetProto };
+  return _addChainSpecificData(assetData);
+}
 
 /**
  * Returns Maker or Reflexer ilk info, and asset info as `assetData` attribute.
@@ -68,7 +89,10 @@ export const getIlkInfo = (ilk:string = ''):ExtendedIlkData => {
   }
 };
 
-export const getAssetInfoByAddress = (address: string = ''):AssetData => assets.find(t => t.address.toLowerCase() === address.toLowerCase()) || {...assetProto};
+export const getAssetInfoByAddress = (address: string = ''):AssetData => {
+  const assetDataBase = assets.find(t => t.addresses[config.network].toLowerCase() === address.toLowerCase());
+  return _addChainSpecificData(assetDataBase || {...assetProto});
+}
 
 export const ilkToAsset = (ilk: string = ''):string => {
   let ilkLabel = ilk.substr(0, 2) === '0x' ? bytesToString(ilk) : ilk;
@@ -80,14 +104,6 @@ export const ilkToAsset = (ilk: string = ''):string => {
   return asset;
 }
 
-/** @private **/
-export const compoundCollateralAssets:AssetData[] = assets.filter(t => t.compoundCollateral);
-/** @private **/
-export const aaveCollateralAssets:AssetData[] = assets.filter(t => t.aaveCollateral);
-/** @private **/
-export const yearnCollateralAssets:AssetData[] = assets.filter(t => t.yearnCollateral);
-/** @private **/
-export const exchangeAssets:AssetData[] = assets.filter(t => t.exchange);
 /** @private **/
 export const compoundAsset = (underlyingAsset: string):string => `c${underlyingAsset.toUpperCase()}`;
 /** @private **/

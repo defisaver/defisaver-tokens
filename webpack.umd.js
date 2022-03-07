@@ -20,7 +20,6 @@ module.exports = {
           loader: "babel-loader",
           options: {
             presets: [
-              '@babel/preset-react',
               '@babel/preset-typescript',
               [
                 "@babel/preset-env",
@@ -36,7 +35,7 @@ module.exports = {
       },
     ]
   },
-  externals: ["react", "decimal.js"],
+  externals: ["decimal.js"],
   resolve: {
     extensions: ['.ts', '.js'],
   },
