@@ -8,7 +8,24 @@ type AddressMapping = {
 }
 
 /**
- * Asset info type
+ * Chain-agnostic asset info type
+ */
+type AssetDataBase = {
+  symbol: string;
+  name: string;
+  addresses: AddressMapping,
+  decimals: number;
+  icon: Function;
+  underlyingAsset: string;
+  exchange: boolean;
+  compoundCollateral: boolean;
+  aaveCollateral: boolean;
+  yearnCollateral: boolean;
+  isStable: boolean;
+};
+
+/**
+ * Chain-specific asset info type
  */
 type AssetData = {
   symbol: string;
@@ -51,6 +68,8 @@ type AaveMarketData = {
 type ExtendedIlkData = IlkData | { assetData: AssetData }
 
 export {
+  AddressMapping,
+  AssetDataBase,
   AssetData,
   IlkData,
   ExtendedIlkData,

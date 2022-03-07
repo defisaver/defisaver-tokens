@@ -1,4 +1,4 @@
-import { AssetData } from './types';
+import { AssetDataBase } from './types';
 
 const ETHAddress = "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
 const DAIAddress = "0x6b175474e89094c44da98b954eedeac495271d0f";
@@ -209,10 +209,9 @@ const cUSDPAddress = "0x041171993284df560249B57358F931D9eB7b925D";
 const GuniDaiUsdc1Address = "0xAbDDAfB225e10B90D798bB8A886238Fb835e2053";
 const GuniDaiUsdc2Address = "0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e";
 
-export const assetProto: AssetData = {
+export const assetProto: AssetDataBase = {
   symbol: '?',
   name: 'Unknown',
-  address: '0x0000000000000000000000000000000000000000',
   addresses: {},
   decimals: 18,
   icon: () => {
@@ -227,7 +226,7 @@ export const assetProto: AssetData = {
   isStable: false,
 };
 
-export const assets: AssetData[] = [
+export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'ETH',
