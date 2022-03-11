@@ -154,7 +154,7 @@ export const assetAmountInEth = (amount: number | string | object, asset: string
 
   else decimals = getAssetInfo(asset).decimals;
 
-  return new Dec(amount && amount.toString() || 0).div(10 ** decimals).toPrecision(decimals);
+  return new Dec(amount && amount.toString() || 0).div(10 ** decimals).toDP(decimals).toString();
 };
 
 /**
