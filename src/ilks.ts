@@ -422,7 +422,7 @@ export const ilks:IlkData[] = [
     "isCrop": false
   },
   {
-    "asset": "crvSTETH",
+    "asset": "steCRV",
     "assetAddress": "0x06325440D014e39736583c165C2963BA99fAf14E",
     "ilkLabel": "CRVV1ETHSTETH-A",
     "ilkBytes": "0x435256563145544853544554482d410000000000000000000000000000000000",

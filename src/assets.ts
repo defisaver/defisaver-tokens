@@ -1468,7 +1468,7 @@ export const assets: AssetDataBase[] = [
   },
   {
     ...assetProto,
-    symbol: 'crvSTETH',
+    symbol: 'steCRV',
     name: 'Curve.fi ETH/stETH',
     decimals: 18,
     yearnCollateral: true,

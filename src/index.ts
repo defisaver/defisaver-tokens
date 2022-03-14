@@ -102,7 +102,7 @@ export const ilkToAsset = (ilk: string = ''):string => {
   if (asset === 'KNC') return 'KNCL';
   if (asset === 'PAXUSD' || asset === 'PAX') return 'USDP';
   if (asset === 'WSTETH') return 'wstETH';
-  if (asset === 'CRVV1ETHSTETH') return 'crvSTETH';
+  if (asset === 'CRVV1ETHSTETH') return 'steCRV';
   return asset;
 }
 
