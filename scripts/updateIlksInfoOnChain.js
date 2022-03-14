@@ -24,6 +24,7 @@ const ilkContract = new web3.eth.Contract(ilkContractAbi, ilkContractAddress);
         clip: ilk.xlip,
         pip: ilk.pip,
         isLP: ilk.symbol === 'UNI-V2' || ilk.symbol === 'G-UNI',
+        isCrop: false,
     }))
     .filter(ilk => (
       !ilk.ilkLabel.startsWith('RWA') &&

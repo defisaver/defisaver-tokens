@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[types.ts:61](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/types.ts#L61)
+[types.ts:62](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/types.ts#L62)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[types.ts:6](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/types.ts#L6)
+[types.ts:6](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/types.ts#L6)
 
 ___
 
@@ -94,7 +94,7 @@ Chain-specific asset info type
 
 #### Defined in
 
-[types.ts:30](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/types.ts#L30)
+[types.ts:30](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/types.ts#L30)
 
 ___
 
@@ -122,7 +122,7 @@ Chain-agnostic asset info type
 
 #### Defined in
 
-[types.ts:13](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/types.ts#L13)
+[types.ts:13](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/types.ts#L13)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[types.ts:68](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/types.ts#L68)
+[types.ts:69](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/types.ts#L69)
 
 ___
 
@@ -153,13 +153,14 @@ Maker ilk info type
 | `flip?` | `string` |
 | `ilkBytes` | `string` |
 | `ilkLabel` | `string` |
+| `isCrop` | `boolean` |
 | `isLP` | `boolean` |
 | `join` | `string` |
 | `pip` | `string` |
 
 #### Defined in
 
-[types.ts:48](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/types.ts#L48)
+[types.ts:48](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/types.ts#L48)
 
 ## Variables
 
@@ -169,7 +170,7 @@ Maker ilk info type
 
 #### Defined in
 
-[index.ts:27](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/index.ts#L27)
+[index.ts:27](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/index.ts#L27)
 
 ___
 
@@ -179,7 +180,7 @@ ___
 
 #### Defined in
 
-[aaveV2Markets.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/aaveV2Markets.ts#L3)
+[aaveV2Markets.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/aaveV2Markets.ts#L3)
 
 ___
 
@@ -189,7 +190,7 @@ ___
 
 #### Defined in
 
-[assets.ts:229](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/assets.ts#L229)
+[assets.ts:229](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/assets.ts#L229)
 
 ___
 
@@ -199,7 +200,7 @@ ___
 
 #### Defined in
 
-[ilks.ts:5](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/ilks.ts#L5)
+[ilks.ts:5](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/ilks.ts#L5)
 
 ___
 
@@ -209,7 +210,7 @@ ___
 
 #### Defined in
 
-[reflexerCollTypes.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/reflexerCollTypes.ts#L3)
+[reflexerCollTypes.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/reflexerCollTypes.ts#L3)
 
 ___
 
@@ -227,7 +228,7 @@ ___
 
 #### Defined in
 
-[index.ts:25](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/index.ts#L25)
+[index.ts:25](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/index.ts#L25)
 
 ## Functions
 
@@ -248,7 +249,7 @@ ___
 
 #### Defined in
 
-[index.ts:144](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/index.ts#L144)
+[index.ts:146](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/index.ts#L146)
 
 ___
 
@@ -269,7 +270,7 @@ ___
 
 #### Defined in
 
-[index.ts:165](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/index.ts#L165)
+[index.ts:167](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/index.ts#L167)
 
 ___
 
@@ -289,7 +290,7 @@ ___
 
 #### Defined in
 
-[index.ts:137](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/index.ts#L137)
+[index.ts:139](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/index.ts#L139)
 
 ___
 
@@ -312,7 +313,7 @@ Warning: will not throw if asset not found. Instead, will return a placeholder o
 
 #### Defined in
 
-[index.ts:58](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/index.ts#L58)
+[index.ts:58](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/index.ts#L58)
 
 ___
 
@@ -332,7 +333,7 @@ ___
 
 #### Defined in
 
-[index.ts:92](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/index.ts#L92)
+[index.ts:93](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/index.ts#L93)
 
 ___
 
@@ -355,7 +356,7 @@ Warning: will not throw if ilk not found. Instead, will return a placeholder obj
 
 #### Defined in
 
-[index.ts:71](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/index.ts#L71)
+[index.ts:71](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/index.ts#L71)
 
 ___
 
@@ -375,7 +376,7 @@ ___
 
 #### Defined in
 
-[index.ts:97](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/index.ts#L97)
+[index.ts:98](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/index.ts#L98)
 
 ___
 
@@ -396,7 +397,7 @@ ___
 
 #### Defined in
 
-[index.ts:21](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/index.ts#L21)
+[index.ts:21](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/index.ts#L21)
 
 ___
 
@@ -419,7 +420,7 @@ Token symbol
 
 #### Defined in
 
-[index.ts:117](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/index.ts#L117)
+[index.ts:119](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/index.ts#L119)
 
 ___
 
@@ -441,7 +442,7 @@ Token symbol
 
 #### Defined in
 
-[index.ts:129](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/index.ts#L129)
+[index.ts:131](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/index.ts#L131)
 
 ___
 
@@ -463,4 +464,4 @@ Token symbol
 
 #### Defined in
 
-[index.ts:135](https://github.com/DecenterApps/defisaver-tokens/blob/de5eef3/src/index.ts#L135)
+[index.ts:137](https://github.com/DecenterApps/defisaver-tokens/blob/3562141/src/index.ts#L137)

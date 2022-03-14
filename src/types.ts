@@ -55,6 +55,7 @@ type IlkData = {
   clipCalc?: (string);
   ilkBytes: (string);
   isLP: (boolean);
+  isCrop: (boolean);
   assetAddress?: (string);
 };
 

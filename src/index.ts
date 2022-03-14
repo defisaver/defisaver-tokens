@@ -80,6 +80,7 @@ export const getIlkInfo = (ilk:string = ''):ExtendedIlkData => {
       pip: '',
       join: '',
       isLP: false,
+      isCrop: false,
     };
   }
   const assetData = getAssetInfo(ilkData.asset);
@@ -101,6 +102,7 @@ export const ilkToAsset = (ilk: string = ''):string => {
   if (asset === 'KNC') return 'KNCL';
   if (asset === 'PAXUSD' || asset === 'PAX') return 'USDP';
   if (asset === 'WSTETH') return 'wstETH';
+  if (asset === 'CRVV1ETHSTETH') return 'crvSTETH';
   return asset;
 }
 

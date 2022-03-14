@@ -11,7 +11,8 @@ export const ilks:IlkData[] = [
     "join": "0x2F0b23f53734252Bda2277357e97e1517d6B042A",
     "clip": "0xc67963a226eddd77B91aD8c421630A1b0AdFF270",
     "pip": "0x81FE72B5A8d1A857d176C3E7d5Bd2679A9B85763",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "ETH",
@@ -21,7 +22,8 @@ export const ilks:IlkData[] = [
     "join": "0x08638eF1A205bE6762A8b935F5da9b700Cf7322c",
     "clip": "0x71eb894330e8a4b96b8d6056962e7F116F50e06F",
     "pip": "0x81FE72B5A8d1A857d176C3E7d5Bd2679A9B85763",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "ETH",
@@ -31,7 +33,8 @@ export const ilks:IlkData[] = [
     "join": "0xF04a5cC80B1E94C69B48f5ee68a08CD2F09A7c3E",
     "clip": "0xc2b12567523e3f3CBd9931492b91fe65b240bc47",
     "pip": "0x81FE72B5A8d1A857d176C3E7d5Bd2679A9B85763",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "BAT",
@@ -41,7 +44,8 @@ export const ilks:IlkData[] = [
     "join": "0x3D0B1912B66114d4096F48A8CEe3A56C231772cA",
     "clip": "0x3D22e6f643e2F4c563fD9db22b229Cbb0Cd570fb",
     "pip": "0xB4eb54AF9Cc7882DF0121d26c5b97E802915ABe6",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "USDC",
@@ -51,7 +55,8 @@ export const ilks:IlkData[] = [
     "join": "0xA191e578a6736167326d05c119CE0c90849E84B7",
     "clip": "0x046b1A5718da6A226D912cFd306BA19980772908",
     "pip": "0x77b68899b99b686F415d074278a9a16b336085A0",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "USDC",
@@ -61,7 +66,8 @@ export const ilks:IlkData[] = [
     "join": "0x2600004fd1585f7270756DDc88aD9cfA10dD0428",
     "clip": "0x5590F23358Fe17361d7E4E4f91219145D8cCfCb3",
     "pip": "0x77b68899b99b686F415d074278a9a16b336085A0",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "WBTC",
@@ -71,7 +77,8 @@ export const ilks:IlkData[] = [
     "join": "0xBF72Da2Bd84c5170618Fbe5914B0ECA9638d5eb5",
     "clip": "0x0227b54AdbFAEec5f1eD1dFa11f54dcff9076e2C",
     "pip": "0xf185d0682d50819263941e5f4EacC763CC5C6C42",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "TUSD",
@@ -81,7 +88,8 @@ export const ilks:IlkData[] = [
     "join": "0x4454aF7C8bb9463203b66C816220D41ED7837f44",
     "clip": "0x0F6f88f8A4b918584E3539182793a0C276097f44",
     "pip": "0xeE13831ca96d191B688A670D47173694ba98f1e5",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "ZRX",
@@ -91,7 +99,8 @@ export const ilks:IlkData[] = [
     "join": "0xc7e8Cd72BDEe38865b4F5615956eF47ce1a7e5D0",
     "clip": "0xdc90d461E148552387f3aB3EBEE0Bdc58Aa16375",
     "pip": "0x7382c066801E7Acb2299aC8562847B9883f5CD3c",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "KNCL",
@@ -101,7 +110,8 @@ export const ilks:IlkData[] = [
     "join": "0x475F1a89C1ED844A08E8f6C50A00228b5E59E4A9",
     "clip": "0x006Aa3eB5E666D8E006aa647D4afAB212555Ddea",
     "pip": "0xf36B79BD4C0904A5F350F1e4f776B81208c13069",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "MANA",
@@ -111,7 +121,8 @@ export const ilks:IlkData[] = [
     "join": "0xA6EA3b9C04b8a38Ff5e224E7c3D6937ca44C0ef9",
     "clip": "0xF5C8176E1eB0915359E46DEd16E52C071Bb435c0",
     "pip": "0x8067259EA630601f319FccE477977E55C6078C13",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "USDT",
@@ -121,7 +132,8 @@ export const ilks:IlkData[] = [
     "join": "0x0Ac6A1D74E84C2dF9063bDDc31699FF2a2BB22A2",
     "clip": "0xFC9D6Dd08BEE324A5A8B557d2854B9c36c2AeC5d",
     "pip": "0x7a5918670B0C390aD25f7beE908c1ACc2d314A3C",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "USDP",
@@ -131,7 +143,8 @@ export const ilks:IlkData[] = [
     "join": "0x7e62B7E279DFC78DEB656E34D6a435cC08a44666",
     "clip": "0xBCb396Cd139D1116BD89562B49b9D1d6c25378B0",
     "pip": "0x043B963E1B2214eC90046167Ea29C2c8bDD7c0eC",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "COMP",
@@ -141,7 +154,8 @@ export const ilks:IlkData[] = [
     "join": "0xBEa7cDfB4b49EC154Ae1c0D731E4DC773A3265aA",
     "clip": "0x2Bb690931407DCA7ecE84753EA931ffd304f0F38",
     "pip": "0xBED0879953E633135a48a157718Aa791AC0108E4",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "LRC",
@@ -151,7 +165,8 @@ export const ilks:IlkData[] = [
     "join": "0x6C186404A7A238D3d6027C0299D1822c1cf5d8f1",
     "clip": "0x81C5CDf4817DBf75C7F08B8A1cdaB05c9B3f70F7",
     "pip": "0x9eb923339c24c40Bef2f4AF4961742AA7C23EF3a",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "LINK",
@@ -161,7 +176,8 @@ export const ilks:IlkData[] = [
     "join": "0xdFccAf8fDbD2F4805C174f856a317765B49E4a50",
     "clip": "0x832Dd5f17B30078a5E46Fdb8130A68cBc4a74dC0",
     "pip": "0x9B0C694C6939b5EA9584e9b61C7815E8d97D9cC7",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "BAL",
@@ -171,7 +187,8 @@ export const ilks:IlkData[] = [
     "join": "0x4a03Aa7fb3973d8f0221B466EefB53D0aC195f55",
     "clip": "0x6AAc067bb903E633A422dE7BE9355E62B3CE0378",
     "pip": "0x3ff860c0F28D69F392543A16A397D0dAe85D16dE",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "YFI",
@@ -181,7 +198,8 @@ export const ilks:IlkData[] = [
     "join": "0x3ff33d9162aD47660083D7DC4bC02Fb231c81677",
     "clip": "0x9daCc11dcD0aa13386D295eAeeBBd38130897E6f",
     "pip": "0x5F122465bCf86F45922036970Be6DD7F58820214",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "GUSD",
@@ -191,7 +209,8 @@ export const ilks:IlkData[] = [
     "join": "0xe29A14bcDeA40d83675aa43B72dF07f649738C8b",
     "clip": "0xa47D68b9dB0A0361284fA04BA40623fcBd1a263E",
     "pip": "0xf45Ae69CcA1b9B043dAE2C83A5B65Bc605BEc5F5",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "UNI",
@@ -201,7 +220,8 @@ export const ilks:IlkData[] = [
     "join": "0x3BC3A58b4FC1CbE7e98bB4aB7c99535e8bA9b8F1",
     "clip": "0x3713F83Ee6D138Ce191294C131148176015bC29a",
     "pip": "0xf363c7e351C96b910b92b45d34190650df4aE8e7",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "RENBTC",
@@ -211,7 +231,8 @@ export const ilks:IlkData[] = [
     "join": "0xFD5608515A47C37afbA68960c1916b79af9491D0",
     "clip": "0x834719BEa8da68c46484E001143bDDe29370a6A3",
     "pip": "0xf185d0682d50819263941e5f4EacC763CC5C6C42",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "AAVE",
@@ -221,7 +242,8 @@ export const ilks:IlkData[] = [
     "join": "0x24e459F61cEAa7b1cE70Dbaea938940A7c5aD46e",
     "clip": "0x8723b74F598DE2ea49747de5896f9034CC09349e",
     "pip": "0x8Df8f06DC2dE0434db40dcBb32a82A104218754c",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "UNIV2DAIETH",
@@ -231,7 +253,8 @@ export const ilks:IlkData[] = [
     "join": "0x2502F65D77cA13f183850b5f9272270454094A08",
     "clip": "0x9F6981bA5c77211A34B76c6385c0f6FA10414035",
     "pip": "0xFc8137E1a45BAF0030563EC4F0F851bd36a85b7D",
-    "isLP": true
+    "isLP": true,
+    "isCrop": false
   },
   {
     "asset": "UNIV2WBTCETH",
@@ -241,7 +264,8 @@ export const ilks:IlkData[] = [
     "join": "0xDc26C9b7a8fe4F5dF648E314eC3E6Dc3694e6Dd2",
     "clip": "0xb15afaB996904170f87a64Fe42db0b64a6F75d24",
     "pip": "0x8400D2EDb8B97f780356Ef602b1BdBc082c2aD07",
-    "isLP": true
+    "isLP": true,
+    "isCrop": false
   },
   {
     "asset": "UNIV2USDCETH",
@@ -251,7 +275,8 @@ export const ilks:IlkData[] = [
     "join": "0x03Ae53B33FeeAc1222C3f372f32D37Ba95f0F099",
     "clip": "0x93AE03815BAF1F19d7F18D9116E4b637cc32A131",
     "pip": "0xf751f24DD9cfAd885984D1bA68860F558D21E52A",
-    "isLP": true
+    "isLP": true,
+    "isCrop": false
   },
   {
     "asset": "UNIV2DAIUSDC",
@@ -261,7 +286,8 @@ export const ilks:IlkData[] = [
     "join": "0xA81598667AC561986b70ae11bBE2dd5348ed4327",
     "clip": "0x9B3310708af333f6F379FA42a5d09CBAA10ab309",
     "pip": "0x25D03C2C928ADE19ff9f4FFECc07d991d0df054B",
-    "isLP": true
+    "isLP": true,
+    "isCrop": false
   },
   {
     "asset": "UNIV2ETHUSDT",
@@ -271,7 +297,8 @@ export const ilks:IlkData[] = [
     "join": "0x4aAD139a88D2dd5e7410b408593208523a3a891d",
     "clip": "0x2aC4C9b49051275AcB4C43Ec973082388D015D48",
     "pip": "0x5f6dD5B421B8d92c59dC6D907C9271b1DBFE3016",
-    "isLP": true
+    "isLP": true,
+    "isCrop": false
   },
   {
     "asset": "UNIV2LINKETH",
@@ -281,7 +308,8 @@ export const ilks:IlkData[] = [
     "join": "0xDae88bDe1FB38cF39B6A02b595930A3449e593A6",
     "clip": "0x6aa0520354d1b84e1C6ABFE64a708939529b619e",
     "pip": "0xd7d31e62AE5bfC3bfaa24Eda33e8c32D31a1746F",
-    "isLP": true
+    "isLP": true,
+    "isCrop": false
   },
   {
     "asset": "UNIV2UNIETH",
@@ -291,7 +319,8 @@ export const ilks:IlkData[] = [
     "join": "0xf11a98339FE1CdE648e8D1463310CE3ccC3d7cC1",
     "clip": "0xb0ece6F5542A4577E2f1Be491A937Ccbbec8479e",
     "pip": "0x8462A88f50122782Cc96108F476deDB12248f931",
-    "isLP": true
+    "isLP": true,
+    "isCrop": false
   },
   {
     "asset": "UNIV2WBTCDAI",
@@ -301,7 +330,8 @@ export const ilks:IlkData[] = [
     "join": "0xD40798267795Cbf3aeEA8E9F8DCbdBA9b5281fcC",
     "clip": "0x4fC53a57262B87ABDa61d6d0DB2bE7E9BE68F6b8",
     "pip": "0x5bB72127a196392cf4aC00Cf57aB278394d24e55",
-    "isLP": true
+    "isLP": true,
+    "isCrop": false
   },
   {
     "asset": "UNIV2AAVEETH",
@@ -311,7 +341,8 @@ export const ilks:IlkData[] = [
     "join": "0x42AFd448Df7d96291551f1eFE1A590101afB1DfF",
     "clip": "0x854b252BA15eaFA4d1609D3B98e00cc10084Ec55",
     "pip": "0x32d8416e8538Ac36272c44b0cd962cD7E0198489",
-    "isLP": true
+    "isLP": true,
+    "isCrop": false
   },
   {
     "asset": "UNIV2DAIUSDT",
@@ -321,7 +352,8 @@ export const ilks:IlkData[] = [
     "join": "0xAf034D882169328CAf43b823a4083dABC7EEE0F4",
     "clip": "0xe4B82Be84391b9e7c56a1fC821f47569B364dd4a",
     "pip": "0x9A1CD705dc7ac64B50777BcEcA3529E58B1292F1",
-    "isLP": true
+    "isLP": true,
+    "isCrop": false
   },
   {
     "asset": "MATIC",
@@ -331,7 +363,8 @@ export const ilks:IlkData[] = [
     "join": "0x885f16e177d45fC9e7C87e1DA9fd47A9cfcE8E13",
     "clip": "0x29342F530ed6120BDB219D602DaFD584676293d1",
     "pip": "0x8874964279302e6d4e523Fb1789981C39a1034Ba",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "GUNIV3DAIUSDC1",
@@ -341,7 +374,8 @@ export const ilks:IlkData[] = [
     "join": "0xbFD445A97e7459b0eBb34cfbd3245750Dba4d7a4",
     "clip": "0x5048c5Cd3102026472f8914557A1FD35c8Dc6c9e",
     "pip": "0x7F6d78CC0040c87943a0e0c140De3F77a273bd58",
-    "isLP": true
+    "isLP": true,
+    "isCrop": false
   },
   {
     "asset": "wstETH",
@@ -351,7 +385,8 @@ export const ilks:IlkData[] = [
     "join": "0x10CD5fbe1b404B7E19Ef964B63939907bdaf42E2",
     "clip": "0x49A33A28C4C7D9576ab28898F4C9ac7e52EA457A",
     "pip": "0xFe7a2aC0B945f12089aEEB6eCebf4F384D9f043F",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "WBTC",
@@ -361,7 +396,8 @@ export const ilks:IlkData[] = [
     "join": "0xfA8c996e158B80D77FbD0082BB437556A65B96E0",
     "clip": "0xe30663C6f83A06eDeE6273d72274AE24f1084a22",
     "pip": "0xf185d0682d50819263941e5f4EacC763CC5C6C42",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "WBTC",
@@ -371,7 +407,8 @@ export const ilks:IlkData[] = [
     "join": "0x7f62f9592b823331E012D3c5DdF2A7714CfB9de2",
     "clip": "0x39F29773Dcb94A32529d0612C6706C49622161D1",
     "pip": "0xf185d0682d50819263941e5f4EacC763CC5C6C42",
-    "isLP": false
+    "isLP": false,
+    "isCrop": false
   },
   {
     "asset": "GUNIV3DAIUSDC2",
@@ -381,6 +418,18 @@ export const ilks:IlkData[] = [
     "join": "0xA7e4dDde3cBcEf122851A7C8F7A55f23c0Daf335",
     "clip": "0xB55da3d3100C4eBF9De755b6DdC24BF209f6cc06",
     "pip": "0xcCBa43231aC6eceBd1278B90c3a44711a00F4e93",
-    "isLP": true
+    "isLP": true,
+    "isCrop": false
+  },
+  {
+    "asset": "crvSTETH",
+    "assetAddress": "0x06325440D014e39736583c165C2963BA99fAf14E",
+    "ilkLabel": "CRVV1ETHSTETH-A",
+    "ilkBytes": "0x435256563145544853544554482d410000000000000000000000000000000000",
+    "join": "0x82D8bfDB61404C796385f251654F6d7e92092b5D",
+    "clip": "0x1926862F899410BfC19FeFb8A3C69C7Aed22463a",
+    "pip": "0x0A7DA4e31582a2fB4FD4067943e88f127F70ab39",
+    "isLP": true,
+    "isCrop": true
   }
 ];
