@@ -236,6 +236,8 @@ export const assets: AssetDataBase[] = [
     compoundCollateral: false,
     addresses: {
       1: ETHAddress,
+      10: '0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000',
+      42161: ETHAddress,
     },
   },
   {
@@ -245,6 +247,8 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     addresses: {
       1: WETHAddress,
+      10: '0x4200000000000000000000000000000000000006',
+      42161: '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
     },
     yearnCollateral: true,
   },
