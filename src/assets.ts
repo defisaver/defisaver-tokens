@@ -208,6 +208,7 @@ const ImusdAddress = "0x30647a72dc82d7fbb1123ea74716ab8a317eac19";
 const cUSDPAddress = "0x041171993284df560249B57358F931D9eB7b925D";
 const GuniDaiUsdc1Address = "0xAbDDAfB225e10B90D798bB8A886238Fb835e2053";
 const GuniDaiUsdc2Address = "0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e";
+const USTAddress = "0xa693B19d2931d498c5B318dF961919BB4aee87a5"
 
 export const assetProto: AssetDataBase = {
   symbol: '?',
@@ -2373,6 +2374,15 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     addresses: {
       1: GuniDaiUsdc2Address,
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'UST',
+    name: 'UST (Wormhole)',
+    decimals: 6,
+    addresses: {
+      1: USTAddress,
     },
   },
 ];
