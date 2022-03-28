@@ -13,7 +13,7 @@ type AddressMapping = {
 type AssetDataBase = {
   symbol: string;
   name: string;
-  addresses: AddressMapping,
+  addresses: AddressMapping;
   decimals: number;
   icon: Function;
   underlyingAsset: string;
@@ -31,7 +31,7 @@ type AssetData = {
   symbol: string;
   name: string;
   address: string;
-  addresses: AddressMapping,
+  addresses: AddressMapping;
   decimals: number;
   icon: Function;
   underlyingAsset: string;
