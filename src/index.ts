@@ -42,7 +42,7 @@ const handleWBTCLegacy = (symbol:string = ''):string => (symbol === 'WBTC Legacy
 const _addChainSpecificData = (assetDataBase:AssetDataBase):AssetData => {
   const assetData = {
     ...assetDataBase,
-    address: assetDataBase.addresses[config.network] || '0x0000000000000000000000000000000000000000'
+    address: assetDataBase.addresses[config.network] || ''
   };
   if (config.iconFunc) assetData.icon = config.iconFunc({ ...assetData });
   return assetData;
