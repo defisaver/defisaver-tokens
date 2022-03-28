@@ -91,7 +91,7 @@ export const getIlkInfo = (ilk:string = ''):ExtendedIlkData => {
 };
 
 export const getAssetInfoByAddress = (address: string = ''):AssetData => {
-  const assetDataBase = assets.find(t => t.addresses[config.network].toLowerCase() === address.toLowerCase());
+  const assetDataBase = assets.find(t => t.addresses[config.network]?.toLowerCase() === address.toLowerCase());
   return _addChainSpecificData(assetDataBase || {...assetProto});
 }
 
