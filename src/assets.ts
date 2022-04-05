@@ -311,6 +311,7 @@ export const assets: AssetDataBase[] = [
     compoundCollateral: false,
     addresses: {
       1: MKRAddress,
+      10: '0xab7badef82e9fe11f6f33f87bc9bc2aa27f2fcb5',
     },
   },
   {
@@ -577,6 +578,7 @@ export const assets: AssetDataBase[] = [
     yearnCollateral: true,
     addresses: {
       1: SUSDAddress,
+      10: '0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9',
     },
     isStable: true,
   },
@@ -709,6 +711,7 @@ export const assets: AssetDataBase[] = [
     yearnCollateral: true,
     addresses: {
       1: LINKAddress,
+      10: '0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6',
     },
   },
   {
@@ -786,6 +789,7 @@ export const assets: AssetDataBase[] = [
     yearnCollateral: true,
     addresses: {
       1: SNXAddress,
+      10: '0x8700daec35af8ff88c16bdf0418774cb3d7599b4',
     },
   },
   {
@@ -860,6 +864,7 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     addresses: {
       1: CRVAddress,
+      10: '0x0994206dfe8de6ec6920ff4d779b0d950605fb53',
     },
   },
   {
@@ -925,6 +930,7 @@ export const assets: AssetDataBase[] = [
     yearnCollateral: true,
     addresses: {
       1: UNIAddress,
+      10: '0x6fd9d7ad17242c41f7131d257212c54a0e816691',
     },
   },
   {
@@ -945,6 +951,7 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     addresses: {
       1: LRCAddress,
+      10: '0xFEaA9194F9F8c1B65429E31341a103071464907E',
     },
   },
   {
@@ -975,6 +982,7 @@ export const assets: AssetDataBase[] = [
     name: 'Aave',
     addresses: {
       1: AAVEAddress,
+      10: '0x76FB31fb4af56892A25e32cFC43De717950c9278',
     },
     decimals: 18,
     exchange: true,
@@ -1119,6 +1127,7 @@ export const assets: AssetDataBase[] = [
     name: 'Rai Reflex Index',
     addresses: {
       1: RAIAddress,
+      10: '0x7FB688CCf682d58f86D7e38e03f9D22e7705448B',
     },
     decimals: 18,
     yearnCollateral: true,
@@ -1201,6 +1210,7 @@ export const assets: AssetDataBase[] = [
     name: 'UMA Voting Token V1',
     addresses: {
       1: UmaAddress,
+      10: '0xE7798f023fC62146e8Aa1b36Da45fb70855a77Ea',
     },
     exchange: true,
     decimals: 18,
@@ -1298,6 +1308,7 @@ export const assets: AssetDataBase[] = [
     name: 'Liquity USD',
     addresses: {
       1: LusdAddress,
+      10: '0xc40f949f8a4e094d1b49a23ea9241d289b7b2819',
     },
     exchange: true,
     decimals: 18,
@@ -1979,6 +1990,7 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     addresses: {
       1: PerpAddress,
+      10: '0x9e1028F5F1D5eDE59748FFceE5532509976840E0',
     },
   },
   {
@@ -2009,6 +2021,7 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     addresses: {
       1: RgtAddress,
+      10: '0xb548f63d4405466b36c0c0ac3318a22fdcec711a',
     },
   },
   {
@@ -2139,6 +2152,7 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     addresses: {
       1: SpankAddress,
+      10: '0xcfD1D50ce23C46D3Cf6407487B2F8934e96DC8f9',
     },
   },
   {
@@ -2249,6 +2263,7 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     addresses: {
       1: ThalesAddress,
+      10: '0x217D47011b23BB961eB6D93cA9945B7501a5BB11',
     },
   },
   {
@@ -2337,6 +2352,7 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     addresses: {
       1: EnsAddress,
+      10: '0x65559aA14915a70190438eF90104769e5E890A00',
     },
   },
   {
@@ -2383,6 +2399,7 @@ export const assets: AssetDataBase[] = [
     decimals: 6,
     addresses: {
       1: USTAddress,
+      10: '0xBA28feb4b6A6b81e3F26F08b83a19E715C4294fd',
     },
   },
 ];
