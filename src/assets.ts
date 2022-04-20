@@ -2377,7 +2377,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'GUNIV3DAIUSDC1',
-    name: 'Gelato Uniswap DAI/USDC LP 1%',
+    name: 'Gelato Uniswap DAI/USDC LP 0.05%',
     decimals: 18,
     addresses: {
       1: GuniDaiUsdc1Address,
