@@ -2407,6 +2407,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'cFEI',
+    underlyingAsset:'FEI',
     name: 'Fei Protocol',
     addresses: {
       1: cFeiAddress,
