@@ -431,5 +431,16 @@ export const ilks:IlkData[] = [
     "pip": "0x0A7DA4e31582a2fB4FD4067943e88f127F70ab39",
     "isLP": true,
     "isCrop": true
+  },
+  {
+    "asset": "wstETH",
+    "assetAddress": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
+    "ilkLabel": "WSTETH-B",
+    "ilkBytes": "0x5753544554482d42000000000000000000000000000000000000000000000000",
+    "join": "0x248cCBf4864221fC0E840F29BB042ad5bFC89B5c",
+    "clip": "0x3ea60191b7d5990a3544B6Ef79983fD67e85494A",
+    "pip": "0xFe7a2aC0B945f12089aEEB6eCebf4F384D9f043F",
+    "isLP": false,
+    "isCrop": false
   }
 ];
