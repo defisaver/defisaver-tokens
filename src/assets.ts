@@ -209,6 +209,7 @@ const cUSDPAddress = "0x041171993284df560249B57358F931D9eB7b925D";
 const GuniDaiUsdc1Address = "0xAbDDAfB225e10B90D798bB8A886238Fb835e2053";
 const GuniDaiUsdc2Address = "0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e";
 const USTAddress = "0xa693B19d2931d498c5B318dF961919BB4aee87a5"
+const cFeiAddress = "0x7713DD9Ca933848F6819F38B8352D9A15EA73F67";
 
 export const assetProto: AssetDataBase = {
   symbol: '?',
@@ -2402,5 +2403,16 @@ export const assets: AssetDataBase[] = [
       1: USTAddress,
       10: '0xBA28feb4b6A6b81e3F26F08b83a19E715C4294fd',
     },
+  },
+  {
+    ...assetProto,
+    symbol: 'cFEI',
+    name: 'Fei Protocol',
+    addresses: {
+      1: cFeiAddress,
+    },
+    exchange: false,
+    compoundCollateral: true,
+    decimals: 8,
   },
 ];

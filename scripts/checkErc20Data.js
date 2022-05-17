@@ -11,7 +11,7 @@ const web3 = new Web3(process.env.RPC);
       if (asset.symbol === 'ETH') continue;
       if (asset.symbol === 'MKR') continue; // MKR returns bytes for symbol
       if (asset.symbol === 'SAI') continue; // SAI returns bytes for symbol
-      const contract = new web3.eth.Contract(erc20abi, asset.address);
+      const contract = new web3.eth.Contract(erc20abi, asset.addresses[1]);
       const symbol = await contract.methods.symbol().call();
       const decimals = await contract.methods.decimals().call();
       if (asset.symbol !== symbol) {
