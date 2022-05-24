@@ -238,7 +238,7 @@ export const assets: AssetDataBase[] = [
     compoundCollateral: false,
     addresses: {
       1: ETHAddress,
-      10: '0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000',
+      10: ETHAddress,
       42161: ETHAddress,
     },
   },
@@ -713,6 +713,7 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: LINKAddress,
       10: '0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6',
+      42161: '0xf97f4df75117a78c1A5a0DBb814Af92458539FB4',
     },
   },
   {
@@ -984,6 +985,7 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: AAVEAddress,
       10: '0x76FB31fb4af56892A25e32cFC43De717950c9278',
+      42161: '0xba5ddd1f9d7f570dc94a51479a000e3bce967196',
     },
     decimals: 18,
     exchange: true,
@@ -1341,6 +1343,7 @@ export const assets: AssetDataBase[] = [
     name: 'Stasis Euro',
     addresses: {
       1: EursAddress,
+      42161: '0xd22a58f79e9481d1a88e00c343885a588b34b68b',
     },
     exchange: true,
     decimals: 2,
