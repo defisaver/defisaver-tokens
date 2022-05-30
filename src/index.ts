@@ -40,10 +40,10 @@ Dec.set({
  */
 const handleWBTCLegacy = (symbol:string = ''):string => (symbol === 'WBTC Legacy' ? 'WBTC' : symbol);
 
-const _addChainSpecificData = (assetDataBase:AssetDataBase):AssetData => {
+const _addChainSpecificData = (assetDataBase:AssetDataBase, chainId?: number):AssetData => {
   const assetData = {
     ...assetDataBase,
-    address: assetDataBase.addresses[config.network] || ''
+    address: assetDataBase.addresses[chainId || config.network] || ''
   };
   if (config.iconFunc) assetData.icon = config.iconFunc({ ...assetData });
   return assetData;
@@ -54,12 +54,13 @@ const _addChainSpecificData = (assetDataBase:AssetDataBase):AssetData => {
  * Warning: will not throw if asset not found. Instead, will return a placeholder object.
  *
  * @param symbol {string}
+ * @param chainId {number}
  * @return {AssetData}
  */
-export const getAssetInfo = (symbol:string = ''):AssetData => {
+export const getAssetInfo = (symbol:string = '', chainId?:number):AssetData => {
   let assetData = assets.find(t => compare(t.symbol, handleWBTCLegacy(symbol)));
   if (!assetData) assetData = { ...assetProto };
-  return _addChainSpecificData(assetData);
+  return _addChainSpecificData(assetData, chainId);
 }
 
 /**
@@ -91,9 +92,9 @@ export const getIlkInfo = (ilk:string = ''):ExtendedIlkData => {
   }
 };
 
-export const getAssetInfoByAddress = (address: string = ''):AssetData => {
-  const assetDataBase = assets.find(t => t.addresses[config.network]?.toLowerCase() === address.toLowerCase());
-  return _addChainSpecificData(assetDataBase || {...assetProto});
+export const getAssetInfoByAddress = (address: string = '', chainId?:number):AssetData => {
+  const assetDataBase = assets.find(t => t.addresses[chainId || config.network]?.toLowerCase() === address.toLowerCase());
+  return _addChainSpecificData(assetDataBase || {...assetProto}, chainId);
 }
 
 export const ilkToAsset = (ilk: string = ''):string => {
