@@ -2419,4 +2419,14 @@ export const assets: AssetDataBase[] = [
     compoundCollateral: true,
     decimals: 8,
   },
+  {
+    ...assetProto,
+    symbol: 'rETH',
+    name: 'Rocket Pool ETH',
+    addresses: {
+      1: '0xae78736cd615f374d3085123a210448e74fc6393',
+    },
+    exchange: true,
+    decimals: 18,
+  },
 ];
