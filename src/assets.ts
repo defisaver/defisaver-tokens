@@ -2429,4 +2429,14 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     decimals: 18,
   },
+  {
+    ...assetProto,
+    symbol: 'OP',
+    name: 'Optimism',
+    addresses: {
+      10: '0x4200000000000000000000000000000000000042',
+    },
+    exchange: true,
+    decimals: 18,
+  },
 ];
