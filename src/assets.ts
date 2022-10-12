@@ -210,6 +210,7 @@ const GuniDaiUsdc1Address = "0xAbDDAfB225e10B90D798bB8A886238Fb835e2053";
 const GuniDaiUsdc2Address = "0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e";
 const USTAddress = "0xa693B19d2931d498c5B318dF961919BB4aee87a5"
 const cFeiAddress = "0x7713DD9Ca933848F6819F38B8352D9A15EA73F67";
+const bLUSDAddress = "0xB9D7DdDca9a4AC480991865EfEf82E01273F79C3";
 
 export const assetProto: AssetDataBase = {
   symbol: '?',
@@ -2410,7 +2411,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'cFEI',
-    underlyingAsset:'FEI',
+    underlyingAsset: 'FEI',
     name: 'Fei Protocol',
     addresses: {
       1: cFeiAddress,
@@ -2439,4 +2440,14 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     decimals: 18,
   },
+  {
+    ...assetProto,
+    symbol: 'bLUSD',
+    name: 'Boosted LUSD',
+    addresses: {
+      1: bLUSDAddress,
+    },
+    exchange: true,
+    decimals: 18,
+  }
 ];

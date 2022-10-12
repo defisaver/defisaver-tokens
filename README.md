@@ -2,7 +2,7 @@
 
 ## Table of contents
 
-### Type aliases
+### Type Aliases
 
 - [AaveMarketData](README.md#aavemarketdata)
 - [AddressMapping](README.md#addressmapping)
@@ -34,364 +34,418 @@
 - [tokenFromMakerJoin](README.md#tokenfrommakerjoin)
 - [tokenFromReflexerJoin](README.md#tokenfromreflexerjoin)
 
-## Type aliases
+## Type Aliases
 
 ### AaveMarketData
 
-Ƭ **AaveMarketData**: { `dataProvider`: *string* ; `lendingPool`: *string* ; `lendingPoolAddressProvider`: *string* ; `name`: *string*  }
+Ƭ **AaveMarketData**: `Object`
 
-#### Type declaration:
+#### Type declaration
 
-Name | Type |
------- | ------ |
-`dataProvider` | *string* |
-`lendingPool` | *string* |
-`lendingPoolAddressProvider` | *string* |
-`name` | *string* |
+| Name | Type |
+| :------ | :------ |
+| `dataProvider` | `string` |
+| `lendingPool` | `string` |
+| `lendingPoolAddressProvider` | `string` |
+| `name` | `string` |
 
-Defined in: [types.ts:62](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/types.ts#L62)
+#### Defined in
+
+[types.ts:62](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/types.ts#L62)
 
 ___
 
 ### AddressMapping
 
-Ƭ **AddressMapping**: { [key: number]: *string*;  }
+Ƭ **AddressMapping**: `Object`
 
-Defined in: [types.ts:6](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/types.ts#L6)
+#### Index signature
+
+▪ [key: `number`]: `string`
+
+#### Defined in
+
+[types.ts:6](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/types.ts#L6)
 
 ___
 
 ### AssetData
 
-Ƭ **AssetData**: { `aaveCollateral`: *boolean* ; `address`: *string* ; `addresses`: [*AddressMapping*](README.md#addressmapping) ; `compoundCollateral`: *boolean* ; `decimals`: *number* ; `exchange`: *boolean* ; `icon`: Function ; `isStable`: *boolean* ; `name`: *string* ; `symbol`: *string* ; `underlyingAsset`: *string* ; `yearnCollateral`: *boolean*  }
+Ƭ **AssetData**: `Object`
 
-Chain-specific asset info type
+#### Type declaration
 
-#### Type declaration:
+| Name | Type |
+| :------ | :------ |
+| `aaveCollateral` | `boolean` |
+| `address` | `string` |
+| `addresses` | [`AddressMapping`](README.md#addressmapping) |
+| `compoundCollateral` | `boolean` |
+| `decimals` | `number` |
+| `exchange` | `boolean` |
+| `icon` | `Function` |
+| `isStable` | `boolean` |
+| `name` | `string` |
+| `symbol` | `string` |
+| `underlyingAsset` | `string` |
+| `yearnCollateral` | `boolean` |
 
-Name | Type |
------- | ------ |
-`aaveCollateral` | *boolean* |
-`address` | *string* |
-`addresses` | [*AddressMapping*](README.md#addressmapping) |
-`compoundCollateral` | *boolean* |
-`decimals` | *number* |
-`exchange` | *boolean* |
-`icon` | Function |
-`isStable` | *boolean* |
-`name` | *string* |
-`symbol` | *string* |
-`underlyingAsset` | *string* |
-`yearnCollateral` | *boolean* |
+#### Defined in
 
-Defined in: [types.ts:30](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/types.ts#L30)
+[types.ts:30](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/types.ts#L30)
 
 ___
 
 ### AssetDataBase
 
-Ƭ **AssetDataBase**: { `aaveCollateral`: *boolean* ; `addresses`: [*AddressMapping*](README.md#addressmapping) ; `compoundCollateral`: *boolean* ; `decimals`: *number* ; `exchange`: *boolean* ; `icon`: Function ; `isStable`: *boolean* ; `name`: *string* ; `symbol`: *string* ; `underlyingAsset`: *string* ; `yearnCollateral`: *boolean*  }
+Ƭ **AssetDataBase**: `Object`
 
-Chain-agnostic asset info type
+#### Type declaration
 
-#### Type declaration:
+| Name | Type |
+| :------ | :------ |
+| `aaveCollateral` | `boolean` |
+| `addresses` | [`AddressMapping`](README.md#addressmapping) |
+| `compoundCollateral` | `boolean` |
+| `decimals` | `number` |
+| `exchange` | `boolean` |
+| `icon` | `Function` |
+| `isStable` | `boolean` |
+| `name` | `string` |
+| `symbol` | `string` |
+| `underlyingAsset` | `string` |
+| `yearnCollateral` | `boolean` |
 
-Name | Type |
------- | ------ |
-`aaveCollateral` | *boolean* |
-`addresses` | [*AddressMapping*](README.md#addressmapping) |
-`compoundCollateral` | *boolean* |
-`decimals` | *number* |
-`exchange` | *boolean* |
-`icon` | Function |
-`isStable` | *boolean* |
-`name` | *string* |
-`symbol` | *string* |
-`underlyingAsset` | *string* |
-`yearnCollateral` | *boolean* |
+#### Defined in
 
-Defined in: [types.ts:13](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/types.ts#L13)
+[types.ts:13](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/types.ts#L13)
 
 ___
 
 ### ExtendedIlkData
 
-Ƭ **ExtendedIlkData**: [*IlkData*](README.md#ilkdata) \| { `assetData`: [*AssetData*](README.md#assetdata)  }
+Ƭ **ExtendedIlkData**: [`IlkData`](README.md#ilkdata) \| { `assetData`: [`AssetData`](README.md#assetdata)  }
 
-Defined in: [types.ts:69](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/types.ts#L69)
+#### Defined in
+
+[types.ts:69](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/types.ts#L69)
 
 ___
 
 ### IlkData
 
-Ƭ **IlkData**: { `asset`: *string* ; `assetAddress?`: *string* ; `clip?`: *string* ; `clipCalc?`: *string* ; `flip?`: *string* ; `ilkBytes`: *string* ; `ilkLabel`: *string* ; `isCrop`: *boolean* ; `isLP`: *boolean* ; `join`: *string* ; `pip`: *string*  }
+Ƭ **IlkData**: `Object`
 
-Maker ilk info type
+#### Type declaration
 
-#### Type declaration:
+| Name | Type |
+| :------ | :------ |
+| `asset` | `string` |
+| `assetAddress?` | `string` |
+| `clip?` | `string` |
+| `clipCalc?` | `string` |
+| `flip?` | `string` |
+| `ilkBytes` | `string` |
+| `ilkLabel` | `string` |
+| `isCrop` | `boolean` |
+| `isLP` | `boolean` |
+| `join` | `string` |
+| `pip` | `string` |
 
-Name | Type |
------- | ------ |
-`asset` | *string* |
-`assetAddress?` | *string* |
-`clip?` | *string* |
-`clipCalc?` | *string* |
-`flip?` | *string* |
-`ilkBytes` | *string* |
-`ilkLabel` | *string* |
-`isCrop` | *boolean* |
-`isLP` | *boolean* |
-`join` | *string* |
-`pip` | *string* |
+#### Defined in
 
-Defined in: [types.ts:48](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/types.ts#L48)
+[types.ts:48](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/types.ts#L48)
 
 ## Variables
 
 ### MAXUINT
 
-• `Const` **MAXUINT**: *string*= '115792089237316195423570985008687907853269984665640564039457584007913129639935'
+• `Const` **MAXUINT**: `string` = `'115792089237316195423570985008687907853269984665640564039457584007913129639935'`
 
-Defined in: [index.ts:27](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/index.ts#L27)
+#### Defined in
+
+[index.ts:27](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/index.ts#L27)
 
 ___
 
 ### aaveV2Markets
 
-• `Const` **aaveV2Markets**: [*AaveMarketData*](README.md#aavemarketdata)[]
+• `Const` **aaveV2Markets**: [`AaveMarketData`](README.md#aavemarketdata)[]
 
-Defined in: [aaveV2Markets.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/aaveV2Markets.ts#L3)
+#### Defined in
+
+[aaveV2Markets.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/aaveV2Markets.ts#L3)
 
 ___
 
 ### assets
 
-• `Const` **assets**: [*AssetDataBase*](README.md#assetdatabase)[]
+• `Const` **assets**: [`AssetDataBase`](README.md#assetdatabase)[]
 
-Defined in: [assets.ts:231](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/assets.ts#L231)
+#### Defined in
+
+[assets.ts:232](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/assets.ts#L232)
 
 ___
 
 ### ilks
 
-• `Const` **ilks**: [*IlkData*](README.md#ilkdata)[]
+• `Const` **ilks**: [`IlkData`](README.md#ilkdata)[]
 
-Defined in: [ilks.ts:5](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/ilks.ts#L5)
+#### Defined in
+
+[ilks.ts:5](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/ilks.ts#L5)
 
 ___
 
 ### reflexerCollTypes
 
-• `Const` **reflexerCollTypes**: [*IlkData*](README.md#ilkdata)[]
+• `Const` **reflexerCollTypes**: [`IlkData`](README.md#ilkdata)[]
 
-Defined in: [reflexerCollTypes.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/reflexerCollTypes.ts#L3)
+#### Defined in
+
+[reflexerCollTypes.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/reflexerCollTypes.ts#L3)
 
 ___
 
 ### utils
 
-• `Const` **utils**: *object*
+• `Const` **utils**: `Object`
 
-#### Type declaration:
+#### Type declaration
 
-Name | Type |
------- | ------ |
-`bytesToString` | (`hex`: *string*) => *string* |
-`compare` | (`a`: *string*, `b`: *string*) => *boolean* |
-`stringToBytes` | (`str`: *string*) => *string* |
+| Name | Type |
+| :------ | :------ |
+| `bytesToString` | (`hex`: `string`) => `string` |
+| `compare` | (`a`: `string`, `b`: `string`) => `boolean` |
+| `stringToBytes` | (`str`: `string`) => `string` |
 
-Defined in: [index.ts:25](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/index.ts#L25)
+#### Defined in
+
+[index.ts:25](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/index.ts#L25)
 
 ## Functions
 
 ### assetAmountInEth
 
-▸ `Const`**assetAmountInEth**(`amount`: *string* \| *number* \| *object*, `asset?`: *string*): *string*
+▸ **assetAmountInEth**(`amount`, `asset?`): `string`
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Default value | Description |
------- | ------ | ------ | ------ |
-`amount` | *string* \| *number* \| *object* | - | Amount in wei   |
-`asset` | *string* | 'ETH' | Asset symbol (or `MCD-${symbol}` for maker asset - always 18dec)   |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `amount` | `string` \| `number` \| `object` | `undefined` |  |
+| `asset` | `string` | `'ETH'` |  |
 
-**Returns:** *string*
+#### Returns
 
-Defined in: [index.ts:148](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/index.ts#L148)
+`string`
+
+#### Defined in
+
+[index.ts:148](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/index.ts#L148)
 
 ___
 
 ### assetAmountInWei
 
-▸ `Const`**assetAmountInWei**(`amount`: *string* \| *number* \| *object*, `asset`: *string*): *string*
+▸ **assetAmountInWei**(`amount`, `asset`): `string`
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Description |
------- | ------ | ------ |
-`amount` | *string* \| *number* \| *object* | Amount in eth   |
-`asset` | *string* | Asset symbol   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `amount` | `string` \| `number` \| `object` |  |
+| `asset` | `string` |  |
 
-**Returns:** *string*
+#### Returns
 
-Defined in: [index.ts:169](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/index.ts#L169)
+`string`
+
+#### Defined in
+
+[index.ts:169](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/index.ts#L169)
 
 ___
 
 ### getAaveV2MarketInfo
 
-▸ `Const`**getAaveV2MarketInfo**(`name?`: *string*): *void* \| [*AaveMarketData*](README.md#aavemarketdata)
+▸ **getAaveV2MarketInfo**(`name?`): `void` \| [`AaveMarketData`](README.md#aavemarketdata)
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Default value |
------- | ------ | ------ |
-`name` | *string* | '' |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `name` | `string` | `''` |
 
-**Returns:** *void* \| [*AaveMarketData*](README.md#aavemarketdata)
+#### Returns
 
-Defined in: [index.ts:141](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/index.ts#L141)
+`void` \| [`AaveMarketData`](README.md#aavemarketdata)
+
+#### Defined in
+
+[index.ts:141](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/index.ts#L141)
 
 ___
 
 ### getAssetInfo
 
-▸ `Const`**getAssetInfo**(`symbol?`: *string*, `chainId?`: *number*): [*AssetData*](README.md#assetdata)
+▸ **getAssetInfo**(`symbol?`, `chainId?`): [`AssetData`](README.md#assetdata)
 
-Returns asset info.
-Warning: will not throw if asset not found. Instead, will return a placeholder object.
+#### Parameters
 
-#### Parameters:
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `symbol` | `string` | `''` |
+| `chainId?` | `number` | `undefined` |
 
-Name | Type | Default value |
------- | ------ | ------ |
-`symbol` | *string* | '' |
-`chainId?` | *number* | - |
+#### Returns
 
-**Returns:** [*AssetData*](README.md#assetdata)
+[`AssetData`](README.md#assetdata)
 
-Defined in: [index.ts:60](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/index.ts#L60)
+#### Defined in
+
+[index.ts:60](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/index.ts#L60)
 
 ___
 
 ### getAssetInfoByAddress
 
-▸ `Const`**getAssetInfoByAddress**(`address?`: *string*, `chainId?`: *number*): [*AssetData*](README.md#assetdata)
+▸ **getAssetInfoByAddress**(`address?`, `chainId?`): [`AssetData`](README.md#assetdata)
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Default value |
------- | ------ | ------ |
-`address` | *string* | '' |
-`chainId?` | *number* | - |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `address` | `string` | `''` |
+| `chainId?` | `number` | `undefined` |
 
-**Returns:** [*AssetData*](README.md#assetdata)
+#### Returns
 
-Defined in: [index.ts:95](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/index.ts#L95)
+[`AssetData`](README.md#assetdata)
+
+#### Defined in
+
+[index.ts:95](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/index.ts#L95)
 
 ___
 
 ### getIlkInfo
 
-▸ `Const`**getIlkInfo**(`ilk?`: *string*): [*ExtendedIlkData*](README.md#extendedilkdata)
+▸ **getIlkInfo**(`ilk?`): [`ExtendedIlkData`](README.md#extendedilkdata)
 
-Returns Maker or Reflexer ilk info, and asset info as `assetData` attribute.
-Warning: will not throw if ilk not found. Instead, will return a placeholder object.
+#### Parameters
 
-#### Parameters:
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `ilk` | `string` | `''` |  |
 
-Name | Type | Default value | Description |
------- | ------ | ------ | ------ |
-`ilk` | *string* | '' | Ilk encoded as string or as hex   |
+#### Returns
 
-**Returns:** [*ExtendedIlkData*](README.md#extendedilkdata)
+[`ExtendedIlkData`](README.md#extendedilkdata)
 
-Defined in: [index.ts:73](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/index.ts#L73)
+#### Defined in
+
+[index.ts:73](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/index.ts#L73)
 
 ___
 
 ### ilkToAsset
 
-▸ `Const`**ilkToAsset**(`ilk?`: *string*): *string*
+▸ **ilkToAsset**(`ilk?`): `string`
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Default value |
------- | ------ | ------ |
-`ilk` | *string* | '' |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `ilk` | `string` | `''` |
 
-**Returns:** *string*
+#### Returns
 
-Defined in: [index.ts:100](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/index.ts#L100)
+`string`
+
+#### Defined in
+
+[index.ts:100](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/index.ts#L100)
 
 ___
 
 ### set
 
-▸ `Const`**set**(`key`: *string*, `value`: *any*): *void*
+▸ **set**(`key`, `value`): `void`
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
------- | ------ |
-`key` | *string* |
-`value` | *any* |
+| Name | Type |
+| :------ | :------ |
+| `key` | `string` |
+| `value` | `any` |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: [index.ts:21](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/index.ts#L21)
+`void`
+
+#### Defined in
+
+[index.ts:21](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/index.ts#L21)
 
 ___
 
 ### tokenFromJoin
 
-▸ `Const`**tokenFromJoin**(`join`: *string*, `fromIlks?`: [*IlkData*](README.md#ilkdata)[]): *string*
+▸ **tokenFromJoin**(`join`, `fromIlks?`): `string`
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Default value | Description |
------- | ------ | ------ | ------ |
-`join` | *string* | - | Maker or Reflexer ilk join   |
-`fromIlks` | [*IlkData*](README.md#ilkdata)[] | ... |  |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `join` | `string` | `undefined` |  |
+| `fromIlks` | [`IlkData`](README.md#ilkdata)[] | `ilks` |  |
 
-**Returns:** *string*
+#### Returns
 
-Token symbol
+`string`
 
-Defined in: [index.ts:121](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/index.ts#L121)
+#### Defined in
+
+[index.ts:121](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/index.ts#L121)
 
 ___
 
 ### tokenFromMakerJoin
 
-▸ `Const`**tokenFromMakerJoin**(`join`: *string*): *string*
+▸ **tokenFromMakerJoin**(`join`): `string`
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Description |
------- | ------ | ------ |
-`join` | *string* | Maker ilk join   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `join` | `string` |  |
 
-**Returns:** *string*
+#### Returns
 
-Token symbol
+`string`
 
-Defined in: [index.ts:133](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/index.ts#L133)
+#### Defined in
+
+[index.ts:133](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/index.ts#L133)
 
 ___
 
 ### tokenFromReflexerJoin
 
-▸ `Const`**tokenFromReflexerJoin**(`join`: *string*): *string*
+▸ **tokenFromReflexerJoin**(`join`): `string`
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Description |
------- | ------ | ------ |
-`join` | *string* | Reflexer ilk join   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `join` | `string` |  |
 
-**Returns:** *string*
+#### Returns
 
-Token symbol
+`string`
 
-Defined in: [index.ts:139](https://github.com/DecenterApps/defisaver-tokens/blob/105ffd6/src/index.ts#L139)
+#### Defined in
+
+[index.ts:139](https://github.com/DecenterApps/defisaver-tokens/blob/117ec02/src/index.ts#L139)
