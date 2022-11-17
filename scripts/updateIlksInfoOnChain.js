@@ -23,10 +23,11 @@ const ilkContract = new web3.eth.Contract(ilkContractAbi, ilkContractAddress);
         join: ilk.join,
         clip: ilk.xlip,
         pip: ilk.pip,
-        isLP: ilk.symbol === 'UNI-V2' || ilk.symbol === 'G-UNI',
-        isCrop: false,
+        isLP: ilk.symbol === 'UNI-V2' || ilk.symbol === 'G-UNI' || ilk.symbol === 'steCRV',
+        isCrop: ilk.symbol === 'steCRV',
     }))
     .filter(ilk => (
+      !ilk.ilkLabel.startsWith('TELEPORT') &&
       !ilk.ilkLabel.startsWith('RWA') &&
       !ilk.ilkLabel.startsWith('PSM') &&
       !ilk.ilkLabel.startsWith('DIRECT')

@@ -428,7 +428,7 @@ export const ilks:IlkData[] = [
     "ilkBytes": "0x435256563145544853544554482d410000000000000000000000000000000000",
     "join": "0x82D8bfDB61404C796385f251654F6d7e92092b5D",
     "clip": "0x1926862F899410BfC19FeFb8A3C69C7Aed22463a",
-    "pip": "0x0A7DA4e31582a2fB4FD4067943e88f127F70ab39",
+    "pip": "0xEa508F82728927454bd3ce853171b0e2705880D4",
     "isLP": true,
     "isCrop": true
   },
@@ -440,6 +440,17 @@ export const ilks:IlkData[] = [
     "join": "0x248cCBf4864221fC0E840F29BB042ad5bFC89B5c",
     "clip": "0x3ea60191b7d5990a3544B6Ef79983fD67e85494A",
     "pip": "0xFe7a2aC0B945f12089aEEB6eCebf4F384D9f043F",
+    "isLP": false,
+    "isCrop": false
+  },
+  {
+    "asset": "rETH",
+    "assetAddress": "0xae78736Cd615f374D3085123A210448E74Fc6393",
+    "ilkLabel": "RETH-A",
+    "ilkBytes": "0x524554482d410000000000000000000000000000000000000000000000000000",
+    "join": "0xC6424e862f1462281B0a5FAc078e4b63006bDEBF",
+    "clip": "0x27CA5E525ea473eD52Ea9423CD08cCc081d96a98",
+    "pip": "0xeE7F0b350aA119b3d05DC733a4621a81972f7D47",
     "isLP": false,
     "isCrop": false
   }
