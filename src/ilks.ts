@@ -442,5 +442,16 @@ export const ilks:IlkData[] = [
     "pip": "0xFe7a2aC0B945f12089aEEB6eCebf4F384D9f043F",
     "isLP": false,
     "isCrop": false
+  },
+  {
+    "asset": "GNO",
+    "assetAddress": "0x6810e776880C02933D47DB1b9fc05908e5386b96",
+    "ilkLabel": "GNO-A",
+    "ilkBytes": "0x474e4f2d41000000000000000000000000000000000000000000000000000000",
+    "join": "0x7bD3f01e24E0f0838788bC8f573CEA43A80CaBB5",
+    "clip": "0xd9e758bd239e5d568f44D0A748633f6a8d52CBbb",
+    "pip": "0xd800ca44fFABecd159c7889c3bf64a217361AEc8",
+    "isLP": false,
+    "isCrop": false
   }
 ];
