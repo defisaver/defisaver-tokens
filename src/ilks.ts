@@ -428,7 +428,7 @@ export const ilks:IlkData[] = [
     "ilkBytes": "0x435256563145544853544554482d410000000000000000000000000000000000",
     "join": "0x82D8bfDB61404C796385f251654F6d7e92092b5D",
     "clip": "0x1926862F899410BfC19FeFb8A3C69C7Aed22463a",
-    "pip": "0x0A7DA4e31582a2fB4FD4067943e88f127F70ab39",
+    "pip": "0xEa508F82728927454bd3ce853171b0e2705880D4",
     "isLP": true,
     "isCrop": true
   },
@@ -444,6 +444,17 @@ export const ilks:IlkData[] = [
     "isCrop": false
   },
   {
+    "asset": "rETH",
+    "assetAddress": "0xae78736Cd615f374D3085123A210448E74Fc6393",
+    "ilkLabel": "RETH-A",
+    "ilkBytes": "0x524554482d410000000000000000000000000000000000000000000000000000",
+    "join": "0xC6424e862f1462281B0a5FAc078e4b63006bDEBF",
+    "clip": "0x27CA5E525ea473eD52Ea9423CD08cCc081d96a98",
+    "pip": "0xeE7F0b350aA119b3d05DC733a4621a81972f7D47",
+    "isLP": false,
+    "isCrop": false
+  },
+  {
     "asset": "GNO",
     "assetAddress": "0x6810e776880C02933D47DB1b9fc05908e5386b96",
     "ilkLabel": "GNO-A",
@@ -453,5 +464,5 @@ export const ilks:IlkData[] = [
     "pip": "0xd800ca44fFABecd159c7889c3bf64a217361AEc8",
     "isLP": false,
     "isCrop": false
-  }
+  },
 ];

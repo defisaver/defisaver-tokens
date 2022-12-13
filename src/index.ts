@@ -105,6 +105,7 @@ export const ilkToAsset = (ilk: string = ''):string => {
   if (asset === 'PAXUSD' || asset === 'PAX') return 'USDP';
   if (asset === 'WSTETH') return 'wstETH';
   if (asset === 'CRVV1ETHSTETH') return 'steCRV';
+  if (asset === 'RETH') return 'rETH';
   return asset;
 }
 
