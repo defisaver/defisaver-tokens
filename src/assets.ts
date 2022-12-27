@@ -211,6 +211,7 @@ const GuniDaiUsdc2Address = "0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e";
 const USTAddress = "0xa693B19d2931d498c5B318dF961919BB4aee87a5"
 const cFeiAddress = "0x7713DD9Ca933848F6819F38B8352D9A15EA73F67";
 const bLUSDAddress = "0xB9D7DdDca9a4AC480991865EfEf82E01273F79C3";
+const cbETHAddress = "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704";
 
 export const assetProto: AssetDataBase = {
   symbol: '?',
@@ -2446,6 +2447,16 @@ export const assets: AssetDataBase[] = [
     name: 'Boosted LUSD',
     addresses: {
       1: bLUSDAddress,
+    },
+    exchange: true,
+    decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: 'cbETH',
+    name: 'Coinbase Wrapped Staked ETH',
+    addresses: {
+      1: cbETHAddress,
     },
     exchange: true,
     decimals: 18,
