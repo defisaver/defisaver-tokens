@@ -212,6 +212,7 @@ const USTAddress = "0xa693B19d2931d498c5B318dF961919BB4aee87a5"
 const cFeiAddress = "0x7713DD9Ca933848F6819F38B8352D9A15EA73F67";
 const bLUSDAddress = "0xB9D7DdDca9a4AC480991865EfEf82E01273F79C3";
 const cbETHAddress = "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704";
+const MORPHOAddress = "0x9994e35db50125e0df82e4c2dde62496ce330999";
 
 export const assetProto: AssetDataBase = {
   symbol: '?',
@@ -2459,6 +2460,16 @@ export const assets: AssetDataBase[] = [
       1: cbETHAddress,
     },
     exchange: true,
+    decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: 'MORPHO',
+    name: 'Morpho Token',
+    addresses: {
+      1: MORPHOAddress,
+    },
+    exchange: false,
     decimals: 18,
   }
 ];
