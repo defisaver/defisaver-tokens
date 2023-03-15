@@ -2430,6 +2430,8 @@ export const assets: AssetDataBase[] = [
     name: 'Rocket Pool ETH',
     addresses: {
       1: '0xae78736cd615f374d3085123a210448e74fc6393',
+      10: '0x9bcef72be871e61ed4fbbc7630889bee758eb81d',
+      42161: '0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8',
     },
     exchange: true,
     decimals: 18,
