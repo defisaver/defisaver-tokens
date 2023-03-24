@@ -1316,6 +1316,7 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: LusdAddress,
       10: '0xc40f949f8a4e094d1b49a23ea9241d289b7b2819',
+      42161: '0x93b346b6bc2548da6a1e7d98e9a421b42541425b',
     },
     exchange: true,
     decimals: 18,
