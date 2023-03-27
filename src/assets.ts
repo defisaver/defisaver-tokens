@@ -2482,7 +2482,6 @@ export const assets: AssetDataBase[] = [
     symbol: 'ARB',
     name: 'Arbitrum',
     addresses: {
-      1: '0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1',
       42161: '0x912CE59144191C1204E64559FE8253a0e49E6548',
     },
     exchange: true,
