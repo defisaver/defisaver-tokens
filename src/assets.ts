@@ -236,7 +236,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'ETH',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Ether',
     decimals: 18,
     exchange: true,
@@ -250,7 +250,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'WETH',
-    feedAvailability: {1:true,10:true,42161:true},
+    feedAvailability: { 1: true, 10: true, 42161: true },
     name: 'WrappedEther',
     decimals: 18,
     addresses: {
@@ -275,7 +275,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'DAI',
-    feedAvailability: {1:true,10:true,42161:true},
+    feedAvailability: { 1: true, 10: true, 42161: true },
     name: 'Dai',
     decimals: 18,
     exchange: true,
@@ -313,7 +313,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'MKR',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Maker',
     decimals: 18,
     exchange: true,
@@ -326,7 +326,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'BAT',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Basic Attention Token',
     decimals: 18,
     exchange: true,
@@ -350,7 +350,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'ZRX',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: '0x',
     decimals: 18,
     exchange: true,
@@ -362,7 +362,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'KNCL',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Kyber Network Crystal Legacy',
     decimals: 18,
     exchange: true,
@@ -431,7 +431,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDC',
-    feedAvailability: {1:true,10:true,42161:true},
+    feedAvailability: { 1: true, 10: true, 42161: true },
     name: 'USD Coin',
     decimals: 6,
     exchange: true,
@@ -459,7 +459,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'WBTC',
-    feedAvailability: {1:true,10:true,42161:true},
+    feedAvailability: { 1: true, 10: true, 42161: true },
     name: 'Wrapped Bitcoin',
     decimals: 8,
     exchange: true,
@@ -498,7 +498,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDT',
-    feedAvailability: {1:true,10:true,42161:true},
+    feedAvailability: { 1: true, 10: true, 42161: true },
     name: 'Tether',
     decimals: 6,
     exchange: true,
@@ -533,7 +533,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'COMP',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Compound Token',
     decimals: 18,
     addresses: {
@@ -588,7 +588,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'SUSD',
-    feedAvailability: {1:true,10:true},
+    feedAvailability: { 1: true, 10: true },
     name: 'Synth sUSD',
     decimals: 18,
     exchange: true,
@@ -613,7 +613,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'TUSD',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'True USD',
     decimals: 18,
     exchange: true,
@@ -659,7 +659,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'BUSD',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Binance USD',
     decimals: 18,
     exchange: true,
@@ -724,7 +724,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'LINK',
-    feedAvailability: {1:true,10:true,42161:true},
+    feedAvailability: { 1: true, 10: true, 42161: true },
     name: 'ChainLink',
     decimals: 18,
     exchange: true,
@@ -761,7 +761,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'MANA',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Decentraland',
     decimals: 18,
     exchange: true,
@@ -805,7 +805,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'SNX',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Synthetix Network',
     decimals: 18,
     exchange: true,
@@ -851,7 +851,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'ENJ',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Enjin',
     decimals: 18,
     exchange: true,
@@ -873,7 +873,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'REN',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Ren',
     decimals: 18,
     exchange: true,
@@ -884,7 +884,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'CRV',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Curve DAO',
     decimals: 18,
     exchange: true,
@@ -896,7 +896,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'YFI',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Yearn Finance',
     decimals: 18,
     exchange: true,
@@ -918,7 +918,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDP',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Pax Dollar',
     decimals: 18,
     exchange: true,
@@ -942,7 +942,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'DPI',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'DefiPulse Index',
     decimals: 18,
     exchange: true,
@@ -953,7 +953,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'UNI',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Uniswap',
     decimals: 18,
     exchange: true,
@@ -1009,7 +1009,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'AAVE',
-    feedAvailability: {1:true,10:true,42161:true},
+    feedAvailability: { 1: true, 10: true, 42161: true },
     name: 'Aave',
     addresses: {
       1: AAVEAddress,
@@ -1043,7 +1043,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'BAL',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Balancer',
     addresses: {
       1: BALAddress,
@@ -1054,7 +1054,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'GUSD',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Gemini Dollar',
     addresses: {
       1: GUSDAddress,
@@ -1076,7 +1076,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'UNIV2DAIETH',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Uniswap V2: DAI/ETH ',
     addresses: {
       1: UNIV2DAIETHAddress,
@@ -1097,7 +1097,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'UNIV2WBTCETH',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Uniswap V2: WBTC/ETH ',
     addresses: {
       1: UNIV2WBTCETHAddress,
@@ -1107,7 +1107,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'UNIV2USDCETH',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Uniswap V2: USDC/ETH ',
     addresses: {
       1: UNIV2USDCETHAddress,
@@ -1117,7 +1117,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'xSUSHI',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Sushi Bar',
     addresses: {
       1: xSUSHIAddress,
@@ -1127,7 +1127,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'UNIV2DAIUSDC',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Uniswap V2: DAI/USDC',
     addresses: {
       1: UNIV2DAIUSDCAddress,
@@ -1146,7 +1146,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'UNIV2LINKETH',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Uniswap V2: LINK/ETH',
     addresses: {
       1: UNIV2LINKETHAddress,
@@ -1156,7 +1156,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'UNIV2UNIETH',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Uniswap V2: UNI/ETH',
     addresses: {
       1: UNIV2UNIETHAddress,
@@ -1166,7 +1166,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'RAI',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Rai Reflex Index',
     addresses: {
       1: RAIAddress,
@@ -1179,7 +1179,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: '1INCH',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: '1INCH Token',
     addresses: {
       1: ONEINCHAddress,
@@ -1191,7 +1191,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'BADGER',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'BadgerDAO',
     addresses: {
       1: BadgerAddress,
@@ -1222,7 +1222,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'SUSHI',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Sushi Token',
     addresses: {
       1: SushiAddress,
@@ -1294,7 +1294,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'BNT',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Bancor Network Token',
     addresses: {
       1: BntAddress,
@@ -1305,7 +1305,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'UNIV2AAVEETH',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Uniswap V2: AAVE/ETH',
     addresses: {
       1: UNIV2AAVEETHAddress,
@@ -1353,7 +1353,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'LUSD',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Liquity USD',
     addresses: {
       1: LusdAddress,
@@ -1376,7 +1376,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'ALCX',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Alchemix',
     addresses: {
       1: AlcxAddress,
@@ -1387,7 +1387,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'EURS',
-    feedAvailability: {42161:true},
     name: 'Stasis Euro',
     addresses: {
       1: EursAddress,
@@ -1399,7 +1398,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'GRT',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'The Graph',
     addresses: {
       1: GrtAddress,
@@ -1430,7 +1429,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'stETH',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Lido Staked Ether',
     addresses: {
       1: StethAddress,
@@ -1471,7 +1470,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'FEI',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Fei Protocol',
     addresses: {
       1: FeiAddress,
@@ -1532,7 +1531,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'AMPL',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Ampleforth',
     decimals: 9,
     addresses: {
@@ -1992,7 +1991,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'RENFIL',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'renFIL',
     decimals: 18,
     exchange: true,
@@ -2003,7 +2002,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'MATIC',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Polygon (Matic)',
     decimals: 18,
     exchange: true,
@@ -2034,7 +2033,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'DYDX',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'dYdX',
     decimals: 18,
     exchange: true,
@@ -2045,7 +2044,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'PERP',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Perpetual Protocol',
     decimals: 18,
     exchange: true,
@@ -2108,7 +2107,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'FRAX',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Frax',
     decimals: 18,
     exchange: true,
@@ -2119,7 +2118,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'wstETH',
-    feedAvailability: {1:true,10:true,42161:true},
+    feedAvailability: { 1: true, 10: true, 42161: true },
     name: 'Wrapped stETH',
     decimals: 18,
     exchange: true,
@@ -2152,7 +2151,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'OMG',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'OMG Network',
     decimals: 18,
     exchange: true,
@@ -2224,7 +2223,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'CVX',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Convex Finance',
     decimals: 18,
     exchange: true,
@@ -2245,7 +2244,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'MIM',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Magic Internet Money',
     decimals: 18,
     exchange: true,
@@ -2256,7 +2255,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'SPELL',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Spell Token',
     decimals: 18,
     exchange: true,
@@ -2317,7 +2316,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'AUDIO',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Audius',
     decimals: 18,
     exchange: true,
@@ -2349,7 +2348,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'FXS',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Frax Share',
     decimals: 18,
     exchange: true,
@@ -2370,7 +2369,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'FOX',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'ShapeShift',
     decimals: 18,
     exchange: true,
@@ -2400,7 +2399,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'ALUSD',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Alchemix USD',
     decimals: 18,
     exchange: true,
@@ -2420,7 +2419,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'ENS',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Ethereum Name Service',
     exchange: true,
     decimals: 18,
@@ -2460,7 +2459,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'GUNIV3DAIUSDC2',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Gelato Uniswap DAI/USDC LP 0.01%',
     decimals: 18,
     addresses: {
@@ -2470,7 +2469,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'UST',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'UST (Wormhole)',
     decimals: 6,
     addresses: {
@@ -2505,7 +2504,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'OP',
-    feedAvailability: {10:true},
     name: 'Optimism',
     addresses: {
       10: '0x4200000000000000000000000000000000000042',
@@ -2526,7 +2524,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'cbETH',
-    feedAvailability: {1:true},
+    feedAvailability: { 1: true },
     name: 'Coinbase Wrapped Staked ETH',
     addresses: {
       1: cbETHAddress,
