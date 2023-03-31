@@ -252,7 +252,7 @@ export const assets: AssetDataBase[] = [
     ...assetProto,
     symbol: 'WETH',
     feedAvailability: { 1: true, 10: true, 42161: true },
-    name: 'WrappedEther',
+    name: 'Wrapped Ether',
     decimals: 18,
     addresses: {
       1: WETHAddress,
