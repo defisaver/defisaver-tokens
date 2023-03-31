@@ -7,6 +7,10 @@ type AddressMapping = {
   [key: number]: string
 }
 
+type BoolMapping = {
+  [key: number]: boolean
+}
+
 /**
  * Chain-agnostic asset info type
  */
@@ -14,6 +18,7 @@ type AssetDataBase = {
   symbol: string;
   name: string;
   addresses: AddressMapping;
+  feedAvailability: BoolMapping;
   decimals: number;
   icon: Function;
   underlyingAsset: string;
