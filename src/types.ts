@@ -38,6 +38,7 @@ type AssetData = {
   name: string;
   address: string;
   addresses: AddressMapping;
+  feedAvailability: BoolMapping;
   decimals: number;
   icon: Function;
   underlyingAsset: string;
@@ -46,6 +47,7 @@ type AssetData = {
   aaveCollateral: boolean;
   yearnCollateral: boolean;
   isStable: boolean;
+  nativeChainId: number;
 };
 
 /**
