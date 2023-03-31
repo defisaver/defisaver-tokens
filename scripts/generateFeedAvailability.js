@@ -67,7 +67,7 @@ function formatFeedAvailability(symbol, priceAvailabilityMap) {
     const filePath = path.join(__dirname, '/../src/assets.ts');
     const assetsFile = await fs.readFile(filePath, 'utf-8');
 
-    const updatedAssetsFile  = assetsFile.replace(/symbol: '(\w*)',\s+(feedAvailability: \{[\d\s:truefalse,]*\})?,/g,
+    const updatedAssetsFile  = assetsFile.replace(/symbol: '(\w*)',(\s+feedAvailability: \{[\d\s:truefalse,]*\},)?/g,
     (_, symbol) => formatFeedAvailability(symbol, priceAvailabilityMap));
 
     await fs.writeFile(filePath, updatedAssetsFile, 'utf-8');

@@ -1388,6 +1388,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'EURS',
+    feedAvailability: { 42161: true },
     name: 'Stasis Euro',
     addresses: {
       1: EursAddress,
@@ -2505,6 +2506,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'OP',
+    feedAvailability: { 10: true },
     name: 'Optimism',
     nativeChainId: 10,
     addresses: {
