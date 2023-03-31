@@ -27,6 +27,7 @@ type AssetDataBase = {
   aaveCollateral: boolean;
   yearnCollateral: boolean;
   isStable: boolean;
+  nativeChainId: number;
 };
 
 /**

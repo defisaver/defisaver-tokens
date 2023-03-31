@@ -218,6 +218,7 @@ export const assetProto: AssetDataBase = {
   symbol: '?',
   feedAvailability: {},
   name: 'Unknown',
+  nativeChainId: 1,
   addresses: {},
   decimals: 18,
   icon: () => {
@@ -2505,6 +2506,7 @@ export const assets: AssetDataBase[] = [
     ...assetProto,
     symbol: 'OP',
     name: 'Optimism',
+    nativeChainId: 10,
     addresses: {
       10: '0x4200000000000000000000000000000000000042',
     },
@@ -2546,6 +2548,7 @@ export const assets: AssetDataBase[] = [
     ...assetProto,
     symbol: 'ARB',
     name: 'Arbitrum',
+    nativeChainId: 42161,
     addresses: {
       42161: '0x912CE59144191C1204E64559FE8253a0e49E6548',
     },
