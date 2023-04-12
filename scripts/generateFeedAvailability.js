@@ -11,7 +11,7 @@ const web3Arbitrum = new Web3(process.env.ARBITRUM_RPC);
 const tokenPriceHelperAbi = [{"inputs":[{"internalType":"address","name":"_inputTokenAddr","type":"address"}],"name":"getPriceInETH","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"}];
 const gasFeeHelperL2Abi = [{"inputs":[{"internalType":"address","name":"_tokenAddr","type":"address"}],"name":"getTokenPrice","outputs":[{"internalType":"uint256","name":"price","type":"uint256"}],"stateMutability":"view","type":"function"}];
 
-const gasFeeTakerL1Address = '0x80536cb79341972a5Ef679dF5B70bB4A40a53d96';
+const gasFeeTakerL1Address = '0xBa2e5E56A92e93Cc0Cd84626cf762E6B2b30349b';
 const gasFeeTakerOptimismAddress = '0xB3dB299622A9DB0E944ccda2Ef899d6fF365B082';
 const gasFeeTakerArbitrumAddress = '0x2F64f73B222B4978CAfd0295c0fa106cE5f34996';
 
