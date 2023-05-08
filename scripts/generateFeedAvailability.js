@@ -1,7 +1,6 @@
 const Web3 = require('web3');
 const fs = require('fs').promises;
 const path = require('path');
-require('dotenv').config();
 
 const { assets } = require('../umd/index');
 
