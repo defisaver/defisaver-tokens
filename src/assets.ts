@@ -2578,6 +2578,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'GMX',
+    feedAvailability: { 42161: true },
     name: 'GMX',
     nativeChainId: 42161,
     addresses: {
