@@ -237,7 +237,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'ETH',
-    feedAvailability: { 1: true },
+    feedAvailability: { 1: true, 10: true, 42161: true },
     name: 'Ether',
     decimals: 18,
     exchange: true,
@@ -807,7 +807,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'SNX',
-    feedAvailability: { 1: true },
+    feedAvailability: { 1: true, 10: true },
     name: 'Synthetix Network',
     decimals: 18,
     exchange: true,
@@ -886,7 +886,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'CRV',
-    feedAvailability: { 1: true },
+    feedAvailability: { 1: true, 10: true },
     name: 'Curve DAO',
     decimals: 18,
     exchange: true,
@@ -955,7 +955,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'UNI',
-    feedAvailability: { 1: true },
+    feedAvailability: { 1: true, 10: true },
     name: 'Uniswap',
     decimals: 18,
     exchange: true,
@@ -1358,7 +1358,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'LUSD',
-    feedAvailability: { 1: true, 10: true },
+    feedAvailability: { 1: true, 10: true, 42161: true },
     name: 'Liquity USD',
     addresses: {
       1: LusdAddress,
@@ -2510,7 +2510,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'rETH',
-    feedAvailability: { 1: true },
+    feedAvailability: { 1: true, 42161: true },
     name: 'Rocket Pool ETH',
     addresses: {
       1: '0xae78736cd615f374d3085123a210448e74fc6393',
@@ -2566,6 +2566,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'ARB',
+    feedAvailability: { 42161: true },
     name: 'Arbitrum',
     nativeChainId: 42161,
     addresses: {
