@@ -2574,4 +2574,70 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     decimals: 18,
   },
+  {
+    ...assetProto,
+    symbol: 'GMX',
+    name: 'GMX',
+    nativeChainId: 42161,
+    addresses: {
+      42161: '0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a',
+    },
+    exchange: true,
+    decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: 'wOUSD',
+    name: 'Wrapped Origin Dollar',
+    nativeChainId: 1,
+    addresses: {
+      1: '0xD2af830E8CBdFed6CC11Bab697bB25496ed6FA62',
+    },
+    exchange: true,
+    decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: 'OETH',
+    name: 'Origin Ether',
+    nativeChainId: 1,
+    addresses: {
+      1: '0x856c4Efb76C1D1AE02e20CEB03A2A6a08b0b8dC3',
+    },
+    exchange: true,
+    decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: 'wOETH',
+    name: 'Wrapped Origin Ether',
+    nativeChainId: 1,
+    addresses: {
+      1: '0xDcEe70654261AF21C44c093C300eD3Bb97b78192',
+    },
+    exchange: true,
+    decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: 'OUSD',
+    name: 'Origin Dollar',
+    nativeChainId: 1,
+    addresses: {
+      1: '0x2A8e1E676Ec238d8A992307B495b45B3fEAa5e86',
+    },
+    exchange: true,
+    decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: 'OGV',
+    name: 'Origin Dollar Governance',
+    nativeChainId: 1,
+    addresses: {
+      1: '0x9c354503C38481a7A7a51629142963F98eCC12D0',
+    },
+    exchange: true,
+    decimals: 18,
+  },
 ];
