@@ -2654,5 +2654,6 @@ export const assets: AssetDataBase[] = [
     },
     exchange: true,
     decimals: 18,
+    isStable: true,
   },
 ];
