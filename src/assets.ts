@@ -2642,4 +2642,17 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     decimals: 18,
   },
+  {
+    ...assetProto,
+    symbol: 'MAI',
+    name: 'Mai Finance',
+    nativeChainId: 10,
+    addresses: {
+      1: '0x8d6cebd76f18e1558d4db88138e2defb3909fad6',
+      10: '0xdfa46478f9e5ea86d57387849598dbfb2e964b02',
+      42161: '0x3f56e0c36d275367b8c502090edf38289b3dea0d',
+    },
+    exchange: true,
+    decimals: 18,
+  },
 ];
