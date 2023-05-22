@@ -7,6 +7,10 @@ type AddressMapping = {
   [key: number]: string
 }
 
+type BoolMapping = {
+  [key: number]: boolean
+}
+
 /**
  * Chain-agnostic asset info type
  */
@@ -14,6 +18,7 @@ type AssetDataBase = {
   symbol: string;
   name: string;
   addresses: AddressMapping;
+  feedAvailability: BoolMapping;
   decimals: number;
   icon: Function;
   underlyingAsset: string;
@@ -22,6 +27,7 @@ type AssetDataBase = {
   aaveCollateral: boolean;
   yearnCollateral: boolean;
   isStable: boolean;
+  nativeChainId: number;
 };
 
 /**
@@ -32,6 +38,7 @@ type AssetData = {
   name: string;
   address: string;
   addresses: AddressMapping;
+  feedAvailability: BoolMapping;
   decimals: number;
   icon: Function;
   underlyingAsset: string;
@@ -40,6 +47,7 @@ type AssetData = {
   aaveCollateral: boolean;
   yearnCollateral: boolean;
   isStable: boolean;
+  nativeChainId: number;
 };
 
 /**

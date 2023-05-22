@@ -9,7 +9,8 @@ module.exports = {
     libraryTarget: 'umd',
     path: path.resolve(__dirname, 'umd'),
     filename: 'index.js',
-    globalObject: 'this'
+    globalObject: 'this',
+    hashFunction: "sha256"
   },
   module: {
     rules: [
