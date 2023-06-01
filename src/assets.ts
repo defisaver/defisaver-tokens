@@ -1094,7 +1094,6 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     addresses: {
       1: aWETHAddress,
-      10: '0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8',
     },
   },
   {
