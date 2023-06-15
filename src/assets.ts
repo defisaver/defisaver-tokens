@@ -215,6 +215,8 @@ const cbETHAddress = "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704";
 const MORPHOAddress = "0x9994e35db50125e0df82e4c2dde62496ce330999";
 const rETHCrvAddress = "0x6c38ce8984a890f5e46e6df6117c26b3f1ecfc9c";
 const cbETHCrvAddress = "0x5b6c539b224014a09b3388e51caaa8e354c959c8";
+const sfrxETH = "0xac3E018457B222d93114458476f3E3416Abbe38F";
+const crvUSD = "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E";
 
 export const assetProto: AssetDataBase = {
   symbol: '?',
@@ -2670,6 +2672,22 @@ export const assets: AssetDataBase[] = [
     name: 'Curve.fi ETH/cbETH',
     addresses: {
       1: cbETHCrvAddress,
+    },
+    decimals: 18,
+  },
+  {...assetProto,
+    symbol: 'sfrxETH',
+    name: 'Staked Frax Ether',
+    addresses: {
+      1: sfrxETH,
+    },
+    decimals: 18,
+  },
+  {...assetProto,
+    symbol: 'crvUSD',
+    name: 'Curve.Fi USD Stablecoin',
+    addresses: {
+      1: crvUSD,
     },
     decimals: 18,
   },
