@@ -464,5 +464,5 @@ export const ilks:IlkData[] = [
     "pip": "0xd800ca44fFABecd159c7889c3bf64a217361AEc8",
     "isLP": false,
     "isCrop": false
-  },
+  }
 ];
