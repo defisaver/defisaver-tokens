@@ -217,6 +217,7 @@ const rETHCrvAddress = "0x6c38ce8984a890f5e46e6df6117c26b3f1ecfc9c";
 const cbETHCrvAddress = "0x5b6c539b224014a09b3388e51caaa8e354c959c8";
 const sfrxETH = "0xac3E018457B222d93114458476f3E3416Abbe38F";
 const crvUSD = "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E";
+const sDAIAddress = "0x83F20F44975D03b1b09e64809B757c47f942BEeA";
 
 export const assetProto: AssetDataBase = {
   symbol: '?',
@@ -2648,6 +2649,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'MAI',
+    feedAvailability: { 10: true, 42161: true },
     name: 'Mai Finance',
     nativeChainId: 10,
     addresses: {
@@ -2688,6 +2690,15 @@ export const assets: AssetDataBase[] = [
     name: 'Curve.Fi USD Stablecoin',
     addresses: {
       1: crvUSD,
+    },
+    decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: 'sDAI',
+    name: 'Savings DAI',
+    addresses: {
+      1: sDAIAddress,
     },
     decimals: 18,
   },
