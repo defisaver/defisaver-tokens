@@ -447,6 +447,18 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: USDCAddress,
       10: '0x7f5c764cbc14f9669b88837ca1490cca17c31607',
+      42161: '0xaf88d065e77c8cC2239327C5EDb3A432268e5831',
+    },
+    isStable: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'USDC.e',
+    feedAvailability: { 42161: true },
+    name: 'USD Coin (Legacy Bridged)',
+    decimals: 6,
+    exchange: true,
+    addresses: {
       42161: '0xff970a61a04b1ca14834a43f5de4533ebddb5cc8',
     },
     isStable: true,
@@ -2421,7 +2433,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'ALUSD',
-    feedAvailability: { 1: true },
     name: 'Alchemix USD',
     decimals: 18,
     exchange: true,
