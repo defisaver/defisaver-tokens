@@ -457,6 +457,7 @@ export const assets: AssetDataBase[] = [
     feedAvailability: { 42161: true },
     name: 'USD Coin (Legacy Bridged)',
     decimals: 6,
+    nativeChainId: 42161,
     exchange: true,
     addresses: {
       42161: '0xff970a61a04b1ca14834a43f5de4533ebddb5cc8',
