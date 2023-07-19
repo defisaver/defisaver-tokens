@@ -89,7 +89,8 @@ const CreamAddress = "0x2ba592F78dB6436527729929AAf6c908497cB200";
 const SushiAddress = "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2";
 const DiggAddress = "0x798d1be841a82a273720ce31c822c61a67a601c3";
 const MirAddress = "0x09a3ecafa817268f77be1283176b946c4ff2e608";
-const RplAddress = "0xb4efd85c19999d84251304bda99e90b92300bd93";
+const RplOldAddress = "0xb4efd85c19999d84251304bda99e90b92300bd93";
+const RplAddress = "0xD33526068D116cE69F19A9ee46F0bd304F21A51f";
 const SntAddress = "0x744d70fdbe2ba4cf95131626614a1763df805b9e";
 const TornAddress = "0x77777feddddffc19ff86db637967013e6c6a116c";
 const UmaAddress = "0x04fa0d235c4abf4bcf4787af4cf447de572ef828";
@@ -1289,6 +1290,16 @@ export const assets: AssetDataBase[] = [
     name: 'Status Network',
     addresses: {
       1: SntAddress,
+    },
+    exchange: true,
+    decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: 'RPL Legacy',
+    name: 'Rocket Pool Legacy',
+    addresses: {
+      1: RplOldAddress,
     },
     exchange: true,
     decimals: 18,
