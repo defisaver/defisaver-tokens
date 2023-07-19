@@ -1307,6 +1307,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'RPL',
+    feedAvailability: { 1: true },
     name: 'Rocket Pool',
     addresses: {
       1: RplAddress,
