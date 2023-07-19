@@ -2153,6 +2153,7 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     addresses: {
       1: FraxAddress,
+      42161: '0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F',
     },
   },
   {
