@@ -2722,6 +2722,7 @@ export const assets: AssetDataBase[] = [
     ...assetProto,
     symbol: 'sDAI',
     name: 'Savings DAI',
+    nativeChainId: 1,
     addresses: {
       1: sDAIAddress,
     },
