@@ -447,7 +447,7 @@ export const assets: AssetDataBase[] = [
     yearnCollateral: true,
     addresses: {
       1: USDCAddress,
-      10: '0x7f5c764cbc14f9669b88837ca1490cca17c31607',
+      10: '0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85',
       42161: '0xaf88d065e77c8cC2239327C5EDb3A432268e5831',
     },
     isStable: true,
@@ -461,6 +461,7 @@ export const assets: AssetDataBase[] = [
     nativeChainId: 42161,
     exchange: true,
     addresses: {
+      10: '0x7f5c764cbc14f9669b88837ca1490cca17c31607',
       42161: '0xff970a61a04b1ca14834a43f5de4533ebddb5cc8',
     },
     isStable: true,
@@ -2148,7 +2149,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'FRAX',
-    feedAvailability: { 1: true },
+    feedAvailability: { 1: true, 42161: true },
     name: 'Frax',
     decimals: 18,
     exchange: true,
@@ -2539,7 +2540,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'rETH',
-    feedAvailability: { 1: true, 42161: true },
+    feedAvailability: { 1: true, 10: true, 42161: true },
     name: 'Rocket Pool ETH',
     addresses: {
       1: '0xae78736cd615f374d3085123a210448e74fc6393',
@@ -2712,6 +2713,7 @@ export const assets: AssetDataBase[] = [
   },
   {...assetProto,
     symbol: 'crvUSD',
+    feedAvailability: { 1: true },
     name: 'Curve.Fi USD Stablecoin',
     addresses: {
       1: crvUSD,
@@ -2731,6 +2733,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'GHO',
+    feedAvailability: { 1: true },
     name: 'GHO',
     addresses: {
       1: '0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f',
