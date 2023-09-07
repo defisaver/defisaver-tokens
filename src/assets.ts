@@ -226,7 +226,7 @@ export const assetProto: AssetDataBase = {
   name: 'Unknown',
   nativeChainId: 1,
   addresses: {},
-  decimals: 18,
+  decimals: NaN,
   icon: () => {
     console.warn('Token icon function not present');
     return '';
