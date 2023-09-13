@@ -251,6 +251,7 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: ETHAddress,
       10: ETHAddress,
+      8453: ETHAddress,
       42161: ETHAddress,
     },
   },
@@ -263,6 +264,7 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: WETHAddress,
       10: '0x4200000000000000000000000000000000000006',
+      8453: '0x4200000000000000000000000000000000000006',
       42161: '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
     },
     yearnCollateral: true,
@@ -291,6 +293,7 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: DAIAddress,
       10: '0xda10009cbd5d07dd0cecc66161fc93d7c9000da1',
+      8453: '0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb',
       42161: '0xda10009cbd5d07dd0cecc66161fc93d7c9000da1',
     },
     isStable: true,
@@ -439,7 +442,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDC',
-    feedAvailability: { 1: true, 10: true, 42161: true },
+    feedAvailability: { 1: true, 42161: true },
     name: 'USD Coin',
     decimals: 6,
     exchange: true,
@@ -448,6 +451,7 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: USDCAddress,
       10: '0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85',
+      8453: '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA',
       42161: '0xaf88d065e77c8cC2239327C5EDb3A432268e5831',
     },
     isStable: true,
@@ -560,6 +564,7 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     addresses: {
       1: COMPAddress,
+      8453: '0x9e1028F5F1D5eDE59748FFceE5532509976840E0',
     },
     exchange: true,
   },
@@ -913,6 +918,7 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: CRVAddress,
       10: '0x0994206dfe8de6ec6920ff4d779b0d950605fb53',
+      8453: '0x8Ee73c484A26e0A5df2Ee2a4960B789967dd0415',
     },
   },
   {
@@ -1070,6 +1076,7 @@ export const assets: AssetDataBase[] = [
     name: 'Balancer',
     addresses: {
       1: BALAddress,
+      8453: '0x4158734D47Fc9692176B5085E0F52ee0Da5d47F1',
     },
     exchange: true,
     decimals: 18,
@@ -1205,6 +1212,7 @@ export const assets: AssetDataBase[] = [
     name: '1INCH Token',
     addresses: {
       1: ONEINCHAddress,
+      8453: '0xc5fecC3a29Fb57B5024eEc8a2239d4621e111CBE',
     },
     yearnCollateral: true,
     exchange: true,
@@ -2174,7 +2182,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'YFII',
-    feedAvailability: { 1: true },
     name: 'YFII.finance',
     decimals: 18,
     exchange: true,
@@ -2579,6 +2586,7 @@ export const assets: AssetDataBase[] = [
     name: 'Coinbase Wrapped Staked ETH',
     addresses: {
       1: cbETHAddress,
+      8453: '0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22',
     },
     exchange: true,
     decimals: 18,
