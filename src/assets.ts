@@ -451,7 +451,7 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: USDCAddress,
       10: '0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85',
-      8453: '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA',
+      8453: '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913',
       42161: '0xaf88d065e77c8cC2239327C5EDb3A432268e5831',
     },
     isStable: true,
@@ -467,6 +467,18 @@ export const assets: AssetDataBase[] = [
     addresses: {
       10: '0x7f5c764cbc14f9669b88837ca1490cca17c31607',
       42161: '0xff970a61a04b1ca14834a43f5de4533ebddb5cc8',
+    },
+    isStable: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'USDbC',
+    name: 'USD Base Coin',
+    decimals: 6,
+    nativeChainId: 8453,
+    exchange: true,
+    addresses: {
+      8453: '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA',
     },
     isStable: true,
   },
