@@ -439,7 +439,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDC',
-    feedAvailability: { 1: true, 10: true, 42161: true },
+    feedAvailability: { 1: true, 42161: true },
     name: 'USD Coin',
     decimals: 6,
     exchange: true,
@@ -455,7 +455,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDC.e',
-    feedAvailability: { 42161: true },
+    feedAvailability: { 10: true, 42161: true },
     name: 'USD Coin (Legacy Bridged)',
     decimals: 6,
     nativeChainId: 42161,
@@ -2174,7 +2174,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'YFII',
-    feedAvailability: { 1: true },
     name: 'YFII.finance',
     decimals: 18,
     exchange: true,
