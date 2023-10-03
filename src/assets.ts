@@ -226,7 +226,7 @@ export const assetProto: AssetDataBase = {
   name: 'Unknown',
   nativeChainId: 1,
   addresses: {},
-  decimals: 18,
+  decimals: NaN,
   icon: () => {
     console.warn('Token icon function not present');
     return '';
@@ -459,7 +459,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDC.e',
-    feedAvailability: { 42161: true },
+    feedAvailability: { 10: true, 42161: true },
     name: 'USD Coin (Legacy Bridged)',
     decimals: 6,
     nativeChainId: 42161,
