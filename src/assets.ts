@@ -1275,7 +1275,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'CREAM',
-    feedAvailability: { 1: true },
     name: 'C.R.E.A.M.',
     addresses: {
       1: CreamAddress,
@@ -2404,7 +2403,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'RARI',
-    feedAvailability: { 1: true },
     name: 'Rarible',
     decimals: 18,
     exchange: true,
@@ -2743,6 +2741,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'sDAI',
+    feedAvailability: { 1: true },
     name: 'Savings DAI',
     nativeChainId: 1,
     addresses: {
