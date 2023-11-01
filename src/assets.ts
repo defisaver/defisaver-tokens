@@ -219,6 +219,7 @@ const cbETHCrvAddress = "0x5b6c539b224014a09b3388e51caaa8e354c959c8";
 const sfrxETH = "0xac3E018457B222d93114458476f3E3416Abbe38F";
 const crvUSD = "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E";
 const sDAIAddress = "0x83F20F44975D03b1b09e64809B757c47f942BEeA";
+const tBTCAddress = "0x18084fbA666a33d37592fA2633fD49a74DD93a88";
 
 export const assetProto: AssetDataBase = {
   symbol: '?',
@@ -2759,5 +2760,15 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
     isStable: true,
+  },
+
+  {
+    ...assetProto,
+    symbol: 'tBTC',
+    name: 'tBTC',
+    addresses: {
+      1: tBTCAddress,
+    },
+    decimals: 18,
   },
 ];
