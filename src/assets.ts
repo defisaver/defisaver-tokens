@@ -2761,7 +2761,6 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     isStable: true,
   },
-
   {
     ...assetProto,
     symbol: 'tBTC',
@@ -2770,5 +2769,17 @@ export const assets: AssetDataBase[] = [
       1: tBTCAddress,
     },
     decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: 'STG',
+    name: 'STG',
+    addresses: {
+      1: '0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6',
+      10: '0x296f55f8fb28e498b858d0bcda06d955b2cb3f97',
+      42161: '0x6694340fc020c5e6b96567843da2df01b2ce1eb6'
+    },
+    decimals: 18,
+    exchange: true,
   },
 ];
