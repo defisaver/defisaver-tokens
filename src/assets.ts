@@ -2727,6 +2727,8 @@ export const assets: AssetDataBase[] = [
     name: 'Staked Frax Ether',
     addresses: {
       1: sfrxETH,
+      10: '0x484c2D6e3cDd945a8B2DF735e079178C1036578c',
+      42161: '0x95aB45875cFFdba1E5f451B950bC2E42c0053f39'
     },
     decimals: 18,
   },
@@ -2778,6 +2780,28 @@ export const assets: AssetDataBase[] = [
       1: '0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6',
       10: '0x296f55f8fb28e498b858d0bcda06d955b2cb3f97',
       42161: '0x6694340fc020c5e6b96567843da2df01b2ce1eb6'
+    },
+    decimals: 18,
+    exchange: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'frxETH',
+    name: 'Frax Ether',
+    addresses: {
+      1: '0x5E8422345238F34275888049021821E8E08CAa1f',
+      10: '0x6806411765Af15Bddd26f8f544A34cC40cb9838B',
+      42161: '0x178412e79c25968a32e89b11f63B33F733770c2A',
+    },
+    decimals: 18,
+    exchange: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'sETH',
+    name: 'Synth sETH',
+    addresses: {
+      1: "0x5e74c9036fb86bd7ecdcb084a0673efc32ea31cb",
     },
     decimals: 18,
     exchange: true,
