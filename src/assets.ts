@@ -578,6 +578,7 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: COMPAddress,
       8453: '0x9e1028F5F1D5eDE59748FFceE5532509976840E0',
+      42161: '0x354A6dA3fcde098F8389cad84b0182725c6C91dE',
     },
     exchange: true,
   },
