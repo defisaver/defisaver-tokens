@@ -5,3 +5,5 @@ yarn.lock
 esm/
 umd/
 .env
+.yarnrc.yml
+.yarn/releases

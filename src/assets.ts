@@ -2190,6 +2190,7 @@ export const assets: AssetDataBase[] = [
       1: wstETHAddress,
       10: '0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb',
       42161: '0x5979D7b546E38E414F7E9822514be443A4800529',
+      8453:'0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452'
     },
   },
   {

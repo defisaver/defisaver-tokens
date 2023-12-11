@@ -1,6 +1,6 @@
 {
   "name": "@defisaver/tokens",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "description": "Centralized asset data & utility functions",
   "main": "umd/index.js",
   "module": "esm/index.js",
@@ -39,5 +39,6 @@
   "bugs": {
     "url": "https://github.com/DecenterApps/defisaver-tokens/issues"
   },
-  "homepage": "https://github.com/DecenterApps/defisaver-tokens#readme"
+  "homepage": "https://github.com/DecenterApps/defisaver-tokens#readme",
+  "packageManager": "yarn@1.22.1"
 }
