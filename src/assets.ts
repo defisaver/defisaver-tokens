@@ -1418,6 +1418,7 @@ export const assets: AssetDataBase[] = [
     },
     exchange: true,
     decimals: 18,
+    isStable: true,
   },
   {
     ...assetProto,
@@ -2742,6 +2743,7 @@ export const assets: AssetDataBase[] = [
       1: crvUSD,
     },
     decimals: 18,
+    isStable: true,
   },
   {
     ...assetProto,
