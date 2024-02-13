@@ -2810,4 +2810,14 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     exchange: true,
   },
+  {
+    ...assetProto,
+    symbol: 'PYUSD',
+    name: 'PayPal USD',
+    addresses: {
+      1: "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
+    },
+    decimals: 6,
+    exchange: true,
+  },
 ];
