@@ -2755,6 +2755,7 @@ export const assets: AssetDataBase[] = [
       1: sDAIAddress,
     },
     decimals: 18,
+    isStable: true,
   },
   {
     ...assetProto,
@@ -2829,6 +2830,7 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
     exchange: true,
+    isStable: true,
   },
   {
     ...assetProto,
@@ -2839,5 +2841,6 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
     exchange: true,
+    isStable: true,
   }
 ];
