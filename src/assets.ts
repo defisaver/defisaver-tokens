@@ -2842,5 +2842,16 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     exchange: true,
     isStable: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'ENA',
+    name: 'Ethena',
+    addresses: {
+      1: "0x57e114B691Db790C35207b2e685D4A43181e6061",
+    },
+    decimals: 18,
+    exchange: false,
+    isStable: false,
   }
 ];
