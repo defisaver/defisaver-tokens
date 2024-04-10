@@ -1420,6 +1420,7 @@ export const assets: AssetDataBase[] = [
     },
     exchange: true,
     decimals: 18,
+    isStable: true,
   },
   {
     ...assetProto,
@@ -2744,6 +2745,7 @@ export const assets: AssetDataBase[] = [
       1: crvUSD,
     },
     decimals: 18,
+    isStable: true,
   },
   {
     ...assetProto,
@@ -2755,6 +2757,7 @@ export const assets: AssetDataBase[] = [
       1: sDAIAddress,
     },
     decimals: 18,
+    isStable: true,
   },
   {
     ...assetProto,
@@ -2809,6 +2812,49 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
     exchange: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'PYUSD',
+    name: 'PayPal USD',
+    addresses: {
+      1: "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
+    },
+    decimals: 6,
+    exchange: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'sUSDe',
+    name: 'Staked USDe',
+    addresses: {
+      1: "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497",
+    },
+    decimals: 18,
+    exchange: true,
+    isStable: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'USDe',
+    name: 'USDe',
+    addresses: {
+      1: "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
+    },
+    decimals: 18,
+    exchange: true,
+    isStable: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'ENA',
+    name: 'Ethena',
+    addresses: {
+      1: "0x57e114B691Db790C35207b2e685D4A43181e6061",
+    },
+    decimals: 18,
+    exchange: false,
+    isStable: false,
   },
   {
     ...assetProto,
