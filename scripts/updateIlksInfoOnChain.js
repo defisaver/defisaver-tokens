@@ -1,3 +1,4 @@
+require('dotenv').config()
 const { ilkToAsset, utils: {bytesToString} } = require('../umd');
 const fs = require('fs').promises;
 

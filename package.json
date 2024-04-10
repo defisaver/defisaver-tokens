@@ -11,7 +11,8 @@
     "document": "typedoc --plugin typedoc-plugin-markdown src/index.ts --readme none --hideBreadcrumbs --excludePrivate && mv docs/README.md . && rm -r docs",
     "build:umd": "rm -rf umd && webpack --config=webpack.umd.js",
     "build:esm": "rm -rf esm && tsc -b",
-    "build": "npm run build:umd && npm run build:esm && npm run document"
+    "build": "npm run build:umd && npm run build:esm && npm run document",
+    "check-assets": "node scripts/checkErc20Data.js"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +25,7 @@
     "@babel/preset-typescript": "^7.12.7",
     "axios": "^0.21.1",
     "babel-loader": "^8.2.2",
+    "dotenv": "^16.4.5",
     "jsdoc-to-markdown": "^6.0.1",
     "typedoc": "^0.22.11",
     "typedoc-plugin-markdown": "^3.11.12",

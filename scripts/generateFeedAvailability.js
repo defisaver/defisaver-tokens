@@ -1,3 +1,4 @@
+require('dotenv').config()
 const Web3 = require('web3');
 const fs = require('fs').promises;
 const path = require('path');
@@ -19,6 +20,8 @@ const tokenPriceOptimism = new web3Optimism.eth.Contract(tokenPriceHelperAbi, ga
 const tokenPriceArbitrum = new web3Arbitrum.eth.Contract(tokenPriceHelperAbi, gasFeeTakerArbitrumAddress);
 
 async function getPrice(asset) {
+  try{
+
     const feedAvailability = {};
 
     if (asset.addresses[1]) {
@@ -44,6 +47,9 @@ async function getPrice(asset) {
     } catch (err) {}
 
     return feedAvailability;
+  }catch (e){
+    console.log(`FAILED FOR ASSET ${asset.symbol}`)
+  }
 
 }
 
@@ -61,12 +67,11 @@ function formatFeedAvailability(symbol, priceAvailabilityMap) {
     // map price availability to assets
     const priceAvailabilityMap = {};
     res.map((r, i) => priceAvailabilityMap[assets[i].symbol] = r);
-
     // update assets.ts
     const filePath = path.join(__dirname, '/../src/assets.ts');
     const assetsFile = await fs.readFile(filePath, 'utf-8');
 
-    const updatedAssetsFile  = assetsFile.replace(/symbol: '(\w*)',(\s+feedAvailability: \{[\d\s:truefalse,]*\},)?/g,
+    const updatedAssetsFile  = assetsFile.replace(/symbol: '(\w*)',(\s+feedAvailability: \{ [\d\s:truefalse,]*\ },)?/g,
     (_, symbol) => formatFeedAvailability(symbol, priceAvailabilityMap));
 
     await fs.writeFile(filePath, updatedAssetsFile, 'utf-8');
