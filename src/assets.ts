@@ -2866,5 +2866,16 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
     exchange: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'weETH',
+    name: 'Wrapped eETH',
+    addresses: {
+      1: "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+    },
+    feedAvailability: { 1: true },
+    decimals: 18,
+    exchange: true,
   }
 ];
