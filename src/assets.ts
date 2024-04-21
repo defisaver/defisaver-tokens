@@ -2877,8 +2877,9 @@ export const assets: AssetDataBase[] = [
     name: 'Wrapped eETH',
     addresses: {
       1: "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      42161: "0x35751007a407ca6feffe80b3cb397736d2cf4dbe",
     },
-    feedAvailability: { 1: true },
+    feedAvailability: { 1: true, 42161: true },
     decimals: 18,
     exchange: true,
   }
