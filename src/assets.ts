@@ -423,7 +423,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'REPv2',
-    feedAvailability: { 1: true },
     name: 'Augur',
     decimals: 18,
     exchange: false, // not yet available
@@ -447,7 +446,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDC',
-    feedAvailability: { 1: true, 42161: true },
+    feedAvailability: { 1: true, 10: true, 42161: true },
     name: 'USD Coin',
     decimals: 6,
     exchange: true,
@@ -581,6 +580,7 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     addresses: {
       1: COMPAddress,
+      10: '0x7e7d4467112689329f7E06571eD0E8CbAd4910eE',
       8453: '0x9e1028F5F1D5eDE59748FFceE5532509976840E0',
       42161: '0x354A6dA3fcde098F8389cad84b0182725c6C91dE',
     },
@@ -929,7 +929,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'CRV',
-    feedAvailability: { 1: true, 10: true },
+    feedAvailability: { 1: true, 10: true, 42161: true },
     name: 'Curve DAO',
     decimals: 18,
     exchange: true,
@@ -2874,12 +2874,12 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'weETH',
+    feedAvailability: { 1: true, 42161: true },
     name: 'Wrapped eETH',
     addresses: {
       1: "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
       42161: "0x35751007a407ca6feffe80b3cb397736d2cf4dbe",
     },
-    feedAvailability: { 1: true, 42161: true },
     decimals: 18,
     exchange: true,
   }
