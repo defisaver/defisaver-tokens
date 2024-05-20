@@ -2888,9 +2888,9 @@ export const assets: AssetDataBase[] = [
     symbol: 'USDA',
     name: 'USDA',
     addresses: {
-      1: '0x3C7b464376DB7C9927930cf50EEfDEA2EFF3A66A',
+      1: '0x0000206329b97DB379d5E1Bf586BbDB969C63274',
     },
-    decimals: 8,
+    decimals: 18,
     exchange: true,
     isStable: true,
   },
