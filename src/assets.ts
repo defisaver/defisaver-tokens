@@ -2892,6 +2892,7 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 8,
     exchange: true,
+    isStable: true,
   },
   {
     ...assetProto,
