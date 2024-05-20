@@ -2882,5 +2882,35 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
     exchange: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'USDA',
+    name: 'USDA',
+    addresses: {
+      1: '0x3C7b464376DB7C9927930cf50EEfDEA2EFF3A66A',
+    },
+    decimals: 8,
+    exchange: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'ezETH',
+    name: 'Renzo Restaked ETH',
+    addresses: {
+      1: "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
+    },
+    decimals: 18,
+    exchange: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'osETH',
+    name: 'StakeWise Staked ETH',
+    addresses: {
+      1: "0xf1C9acDc66974dFB6dEcB12aA385b9cD01190E38",
+    },
+    decimals: 18,
+    exchange: true,
   }
 ];
