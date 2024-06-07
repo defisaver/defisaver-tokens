@@ -2874,11 +2874,12 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'weETH',
-    feedAvailability: { 1: true, 42161: true },
+    feedAvailability: { 1: true, 42161: true, 8453: true },
     name: 'Wrapped eETH',
     addresses: {
       1: "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
       42161: "0x35751007a407ca6feffe80b3cb397736d2cf4dbe",
+      8453: "0x04c0599ae5a44757c0af6f9ec3b93da8976c150a",
     },
     decimals: 18,
     exchange: true,
