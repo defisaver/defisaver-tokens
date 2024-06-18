@@ -2572,6 +2572,7 @@ export const assets: AssetDataBase[] = [
       1: '0xae78736cd615f374d3085123a210448e74fc6393',
       10: '0x9bcef72be871e61ed4fbbc7630889bee758eb81d',
       42161: '0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8',
+      8453: '0xB6fe221Fe9EeF5aBa221c348bA20A1Bf5e73624c',
     },
     exchange: true,
     decimals: 18,
