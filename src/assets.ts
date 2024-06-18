@@ -2566,7 +2566,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'rETH',
-    feedAvailability: { 1: true, 10: true, 42161: true },
+    feedAvailability: { 1: true, 10: true, 42161: true, 8453: true },
     name: 'Rocket Pool ETH',
     addresses: {
       1: '0xae78736cd615f374d3085123a210448e74fc6393',
