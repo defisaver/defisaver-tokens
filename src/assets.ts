@@ -248,7 +248,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'ETH',
-    feedAvailability: { 1: true, 10: true, 42161: true },
+    feedAvailability: { 1: true, 10: true, 8453: true, 42161: true },
     name: 'Ether',
     decimals: 18,
     exchange: true,
@@ -263,7 +263,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'WETH',
-    feedAvailability: { 1: true, 10: true, 42161: true },
+    feedAvailability: { 1: true, 10: true, 8453: true, 42161: true },
     name: 'Wrapped Ether',
     decimals: 18,
     addresses: {
@@ -289,7 +289,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'DAI',
-    feedAvailability: { 1: true, 10: true, 42161: true },
+    feedAvailability: { 1: true, 10: true, 8453: true, 42161: true },
     name: 'Dai',
     decimals: 18,
     exchange: true,
@@ -389,6 +389,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'KNC',
+    feedAvailability: { 1: true },
     name: 'Kyber Network Crystal',
     decimals: 18,
     exchange: true,
@@ -446,7 +447,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDC',
-    feedAvailability: { 1: true, 10: true, 42161: true },
+    feedAvailability: { 1: true, 10: true, 8453: true, 42161: true },
     name: 'USD Coin',
     decimals: 6,
     exchange: true,
@@ -477,6 +478,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDbC',
+    feedAvailability: { 8453: true },
     name: 'USD Base Coin',
     decimals: 6,
     nativeChainId: 8453,
@@ -575,7 +577,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'COMP',
-    feedAvailability: { 1: true },
+    feedAvailability: { 1: true, 8453: true },
     name: 'Compound Token',
     decimals: 18,
     addresses: {
@@ -1302,7 +1304,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'UMA',
-    feedAvailability: { 1: true },
     name: 'UMA Voting Token V1',
     addresses: {
       1: UmaAddress,
@@ -1355,7 +1356,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'BNT',
-    feedAvailability: { 1: true },
     name: 'Bancor Network Token',
     addresses: {
       1: BntAddress,
@@ -1504,7 +1504,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'AXS',
-    feedAvailability: { 1: true },
     name: 'Axie Infinity',
     addresses: {
       1: AxsAddress,
@@ -1525,7 +1524,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'FARM',
-    feedAvailability: { 1: true },
     name: 'Harvest Finance',
     addresses: {
       1: FarmAddress,
@@ -1547,7 +1545,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'GTC',
-    feedAvailability: { 1: true },
     name: 'Gitcoin',
     addresses: {
       1: GtcAddress,
@@ -1578,7 +1575,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'RUNE',
-    feedAvailability: { 1: true },
     name: 'THORChain ERC20',
     addresses: {
       1: RuneAddress,
@@ -1589,7 +1585,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'TRIBE',
-    feedAvailability: { 1: true },
     name: 'Tribe',
     addresses: {
       1: TribeAddress,
@@ -2102,7 +2097,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'DYDX',
-    feedAvailability: { 1: true },
     name: 'dYdX',
     decimals: 18,
     exchange: true,
@@ -2188,7 +2182,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'wstETH',
-    feedAvailability: { 1: true, 10: true, 42161: true },
+    feedAvailability: { 1: true, 10: true, 8453: true, 42161: true },
     name: 'Wrapped stETH',
     decimals: 18,
     exchange: true,
@@ -2454,7 +2448,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'OHM',
-    feedAvailability: { 1: true },
     name: 'Olympus',
     decimals: 9,
     exchange: true,
@@ -2566,7 +2559,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'rETH',
-    feedAvailability: { 1: true, 10: true, 42161: true, 8453: true },
+    feedAvailability: { 1: true, 10: true, 8453: true, 42161: true },
     name: 'Rocket Pool ETH',
     addresses: {
       1: '0xae78736cd615f374d3085123a210448e74fc6393',
@@ -2602,7 +2595,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'cbETH',
-    feedAvailability: { 1: true },
+    feedAvailability: { 1: true, 8453: true },
     name: 'Coinbase Wrapped Staked ETH',
     addresses: {
       1: cbETHAddress,
@@ -2659,6 +2652,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'OETH',
+    feedAvailability: { 1: true },
     name: 'Origin Ether',
     nativeChainId: 1,
     addresses: {
@@ -2787,6 +2781,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'STG',
+    feedAvailability: { 1: true },
     name: 'STG',
     addresses: {
       1: '0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6',
@@ -2821,6 +2816,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'PYUSD',
+    feedAvailability: { 1: true },
     name: 'PayPal USD',
     addresses: {
       1: "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
@@ -2831,6 +2827,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'sUSDe',
+    feedAvailability: { 1: true },
     name: 'Staked USDe',
     addresses: {
       1: "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497",
@@ -2842,6 +2839,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDe',
+    feedAvailability: { 1: true },
     name: 'USDe',
     addresses: {
       1: "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
@@ -2875,7 +2873,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'weETH',
-    feedAvailability: { 1: true, 42161: true, 8453: true },
+    feedAvailability: { 1: true, 8453: true, 42161: true },
     name: 'Wrapped eETH',
     addresses: {
       1: "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
@@ -2899,6 +2897,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'ezETH',
+    feedAvailability: { 1: true },
     name: 'Renzo Restaked ETH',
     addresses: {
       1: "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
@@ -2909,9 +2908,21 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'osETH',
+    feedAvailability: { 1: true },
     name: 'StakeWise Staked ETH',
     addresses: {
       1: "0xf1C9acDc66974dFB6dEcB12aA385b9cD01190E38",
+    },
+    decimals: 18,
+    exchange: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'ETHx',
+    feedAvailability: { 1: true },
+    name: 'Stader ETHx',
+    addresses: {
+      1: "0xA35b1B31Ce002FBF2058D22F30f95D405200A15b",
     },
     decimals: 18,
     exchange: true,
