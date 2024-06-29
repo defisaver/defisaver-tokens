@@ -2926,5 +2926,16 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
     exchange: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'rsETH',
+    feedAvailability: { 1: true },
+    name: 'Kelp DAO Restaked ETH',
+    addresses: {
+      1: "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
+    },
+    decimals: 18,
+    exchange: true,
   }
 ];
