@@ -2761,11 +2761,13 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'GHO',
-    feedAvailability: { 1: true },
+    feedAvailability: { 1: true, 42161: true },
     name: 'GHO',
     addresses: {
       1: '0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f',
+      42161: '0x7dff72693f6a4149b17e7c6314655f6a9f7c8b33'
     },
+    nativeChainId: 1,
     decimals: 18,
     isStable: true,
   },
