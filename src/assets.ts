@@ -2939,5 +2939,16 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
     exchange: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'pufETH',
+    feedAvailability: { 1: true },
+    name: 'Puffer Finanace ETH',
+    addresses: {
+      1: "0xD9A442856C234a39a81a089C06451EBAa4306a72",
+    },
+    decimals: 18,
+    exchange: true,
   }
 ];
