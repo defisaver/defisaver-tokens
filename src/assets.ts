@@ -2903,6 +2903,7 @@ export const assets: AssetDataBase[] = [
     name: 'Renzo Restaked ETH',
     addresses: {
       1: "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
+      8453: "0x2416092f143378750bb29b79eD961ab195CcEea5",
     },
     decimals: 18,
     exchange: true,
