@@ -2945,9 +2945,20 @@ export const assets: AssetDataBase[] = [
     ...assetProto,
     symbol: 'pufETH',
     feedAvailability: { 1: true },
-    name: 'Puffer Finanace ETH',
+    name: 'Puffer Finance ETH',
     addresses: {
       1: "0xD9A442856C234a39a81a089C06451EBAa4306a72",
+    },
+    decimals: 18,
+    exchange: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'rsETH',
+    name: 'Kelp DAO Restaked ETH',
+    addresses: {
+      1: "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      42161: "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
     },
     decimals: 18,
     exchange: true,
