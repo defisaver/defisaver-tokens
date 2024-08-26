@@ -1,7 +1,7 @@
 "use strict";
 const fs = require('fs');
 const path = require('path');
-const a = require("../src/assets");
+const a = require("src/assets");
 
 // Function to map chainID to chain_name
 function getChainName(chainID) {
