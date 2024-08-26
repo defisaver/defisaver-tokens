@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - feature/go-token-files
-    paths:
-      - 'src/assets.ts'
   workflow_dispatch:
 
 jobs:
