@@ -28,7 +28,7 @@ jobs:
         with:
           repository: ${{ secrets.TARGET_REPO }}
           path: target-repo
-          ssh-key: ${{ secrets.PRIVATEREPO_DEPLOY_KEY }}
+          ssh-key: ${{ secrets.UPDATE_TOKENS_KEY }}
           persist-credentials: false
           ref: staging
 
