@@ -88,6 +88,7 @@ jobs:
 
       - name: Create Pull Request
         env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SSH_PRIVATE_KEY: ${{ secrets.UPDATE_TOKENS_KEY }}
         run: |
           eval "$(ssh-agent -s)"
