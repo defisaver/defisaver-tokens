@@ -84,7 +84,7 @@ jobs:
             exit 0
           fi
           git commit -m "Update tokens files"
-          git push origin ci/update-supported-tokens --force
+          git push -u origin ci/update-supported-tokens --force
 
       - name: Create Pull Request
         env:
