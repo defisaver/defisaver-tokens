@@ -80,3 +80,9 @@ jobs:
           git add $GO_FILE_PATH/*.go
           git commit -m "Update tokens files"
           git push -u origin ci/update-supported-tokens --force
+
+      - name: Debug - Show commits and differences
+        run: |
+          cd target-repo
+          git log --oneline --graph --decorate --all
+          git diff staging...ci/update-supported-tokens
