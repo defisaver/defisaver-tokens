@@ -2,9 +2,8 @@ name: Update Tokens
 
 on:
   push:
-    branches:
-      - feature/go-token-files
-  workflow_dispatch:
+    paths:
+      - 'src/assets.ts'
 
 jobs:
   update-tokens:
