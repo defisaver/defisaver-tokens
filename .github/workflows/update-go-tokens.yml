@@ -23,6 +23,13 @@ jobs:
       - name: Run script
         run: npm run generate-go-files
 
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.UPDATE_TOKENS_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
       - name: Checkout target repository
         uses: actions/checkout@v4
         with:
@@ -63,6 +70,8 @@ jobs:
 
       - name: Commit and push changes
         if: steps.check-path.outputs.path-exists == 'true'
+        env:
+          GO_FILE_PATH: ${{ secrets.GO_FILE_PATH }}
         run: |
           cd target-repo
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -75,7 +84,9 @@ jobs:
           fi
           git commit -m "Update tokens files"
           git push origin ci/update-supported-tokens --force
-          gh pr create --title "Update tokens files" --body "This PR updates the tokens files." --base staging --head ci/update-supported-tokens
+
+      - name: Create Pull Request
         env:
           GH_TOKEN: ${{ secrets.UPDATE_TOKENS_KEY }}
-          GO_FILE_PATH: ${{ secrets.GO_FILE_PATH }}
+        run: |
+          gh pr create --title "Update tokens files" --body "This PR updates the tokens files." --base staging --head ci/update-supported-tokens
