@@ -87,6 +87,6 @@ jobs:
 
       - name: Create Pull Request
         env:
-          GH_TOKEN: ${{ secrets.UPDATE_TOKENS_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh pr create --title "Update tokens files" --body "This PR updates the tokens files." --base staging --head ci/update-supported-tokens
