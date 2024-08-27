@@ -23,13 +23,14 @@ jobs:
       - name: Run script
         run: npm run generate-go-files
 
-      - name: Checkout privaterepo
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.UPDATE_TOKENS_KEY }}" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git clone git@github.com:${{ secrets.TARGET_REPO }}.git
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ secrets.TARGET_REPO }}
+          path: target-repo
+          ssh-key: ${{ secrets.PRIVATEREPO_DEPLOY_KEY }}
+          persist-credentials: false
+          ref: staging
 
       - name: Check if GO_FILE_PATH exists
         id: check-path
