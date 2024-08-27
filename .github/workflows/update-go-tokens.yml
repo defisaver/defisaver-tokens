@@ -92,7 +92,5 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           repository: ${{ secrets.TARGET_REPO }}
-          base: staging
-          head: ci/update-supported-tokens
           title: "Update tokens files"
           body: "This PR updates the tokens files."
