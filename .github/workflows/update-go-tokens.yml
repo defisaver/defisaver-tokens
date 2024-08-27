@@ -80,19 +80,19 @@ jobs:
           git add $GO_FILE_PATH/*.go
           git commit -m "Update tokens files"
           git push -u origin ci/update-supported-tokens --force
-          sleep 5  # Small delay to ensure push is processed
 
-      - name: Create Pull Request
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SSH_PRIVATE_KEY: ${{ secrets.UPDATE_TOKENS_KEY }}
+      - name: Debug - Show branch and commit info
         run: |
-          # Set up SSH agent and add the SSH private key
-          eval "$(ssh-agent -s)"
-          echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          cd target-repo
+          git branch -a
+          git log --oneline --decorate
+          git diff origin/staging...origin/ci/update-supported-tokens
 
-          git config --global url."ssh://git@github.com/".insteadOf "https://github.com/"
-
-          gh pr create --title "Update tokens files" --body "This PR updates the tokens files." --base staging --head ci/update-supported-tokens
-
+      - name: Create Pull Request in Another Repository
+        uses: peter-evans/create-pull-request@v5
+        with:
+          repository: ${{ secrets.TARGET_REPO }}
+          base: staging
+          head: ci/update-supported-tokens
+          title: "Update tokens files"
+          body: "This PR updates the tokens files."
