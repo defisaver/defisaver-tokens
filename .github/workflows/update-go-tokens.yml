@@ -80,17 +80,3 @@ jobs:
           git add $GO_FILE_PATH/*.go
           git commit -m "Update tokens files"
           git push -u origin ci/update-supported-tokens --force
-
-      - name: Debug - Show branch and commit info
-        run: |
-          cd target-repo
-          git branch -a
-          git log --oneline --decorate
-          git diff origin/staging...origin/ci/update-supported-tokens
-
-      - name: Create Pull Request in Another Repository
-        uses: peter-evans/create-pull-request@v5
-        with:
-          repository: ${{ secrets.TARGET_REPO }}
-          title: "Update tokens files"
-          body: "This PR updates the tokens files."
