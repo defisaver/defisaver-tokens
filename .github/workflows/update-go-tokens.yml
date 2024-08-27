@@ -78,6 +78,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git checkout -b ci/update-supported-tokens || git checkout ci/update-supported-tokens
           git add $GO_FILE_PATH/*.go
+          git status
           if git diff-index --quiet HEAD --; then
             echo "No changes to commit"
             exit 0
