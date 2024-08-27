@@ -78,21 +78,18 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git checkout -b ci/update-supported-tokens || git checkout ci/update-supported-tokens
           git add $GO_FILE_PATH/*.go
-          git status
-          if git diff-index --quiet HEAD --; then
-            echo "No changes to commit"
-            exit 0
-          fi
           git commit -m "Update tokens files"
           git push -u origin ci/update-supported-tokens --force
+          sleep 5  # Small delay to ensure push is processed
 
       - name: Create Pull Request
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SSH_PRIVATE_KEY: ${{ secrets.UPDATE_TOKENS_KEY }}
         run: |
+          # Set up SSH agent and add the SSH private key
           eval "$(ssh-agent -s)"
-          echo "$SSH_PRIVATE_KEY" | ssh-add -
+          echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
           git config --global url."ssh://git@github.com/".insteadOf "https://github.com/"
