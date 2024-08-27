@@ -28,7 +28,7 @@ jobs:
         with:
           repository: ${{ secrets.TARGET_REPO }}
           path: target-repo
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.UPDATE_TOKENS_KEY }}
           ref: staging
 
       - name: Check if GO_FILE_PATH exists
@@ -76,5 +76,5 @@ jobs:
           git push origin ci/update-supported-tokens --force
           gh pr create --title "Update tokens files" --body "This PR updates the tokens files." --base staging --head ci/update-supported-tokens
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.UPDATE_TOKENS_KEY }}
           GO_FILE_PATH: ${{ secrets.GO_FILE_PATH }}
