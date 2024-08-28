@@ -1,13 +1,14 @@
 name: Update Tokens
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'src/assets.ts'
 
 jobs:
   update-tokens:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, be]
 
     steps:
       - name: Checkout defisaver-tokens
@@ -17,7 +18,7 @@ jobs:
         run: npm ci
 
       - name: Build package
-        run: npm run build:umd
+        run: npm run build
 
       - name: Run script
         run: npm run generate-go-files
