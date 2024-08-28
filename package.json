@@ -12,7 +12,8 @@
     "build:umd": "rm -rf umd && webpack --config=webpack.umd.js",
     "build:esm": "rm -rf esm && tsc -b",
     "build": "npm run build:umd && npm run build:esm && npm run document",
-    "check-assets": "node scripts/checkErc20Data.js"
+    "check-assets": "node scripts/checkErc20Data.js",
+    "generate-go-files": "node scripts/generateGoTokensFile.js"
   },
   "author": "",
   "license": "ISC",

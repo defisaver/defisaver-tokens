@@ -1,0 +1,82 @@
+name: Update Tokens
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'src/assets.ts'
+
+jobs:
+  update-tokens:
+    runs-on: [self-hosted, be]
+
+    steps:
+      - name: Checkout defisaver-tokens
+        uses: actions/checkout@v4
+
+      - name: Setup
+        run: npm ci
+
+      - name: Build package
+        run: npm run build
+
+      - name: Run script
+        run: npm run generate-go-files
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.UPDATE_TOKENS_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ secrets.TARGET_REPO }}
+          path: target-repo
+          ssh-key: ${{ secrets.UPDATE_TOKENS_KEY }}
+          persist-credentials: false
+          ref: staging
+
+      - name: Check if GO_FILE_PATH exists
+        id: check-path
+        env:
+          GO_FILE_PATH: ${{ secrets.GO_FILE_PATH }}
+        run: |
+          if [ -d "target-repo/${{ secrets.GO_FILE_PATH }}" ]; then
+            echo "path-exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "path-exists=false" >> $GITHUB_OUTPUT
+            echo "GO_FILE_PATH does not exist, ending workflow."
+            exit 0
+          fi
+
+      - name: Copy generated files
+        if: steps.check-path.outputs.path-exists == 'true'
+        env:
+          GO_FILE_PATH: ${{ secrets.GO_FILE_PATH }}
+        run: |
+          mkdir -p target-repo/$GO_FILE_PATH
+          cp generated/*.go target-repo/$GO_FILE_PATH
+
+      - name: Run go fmt on specific files
+        if: steps.check-path.outputs.path-exists == 'true'
+        env:
+          GO_FILE_PATH: ${{ secrets.GO_FILE_PATH }}
+        run: |
+          cd target-repo
+          go fmt $GO_FILE_PATH/*.go
+
+      - name: Commit and push changes
+        if: steps.check-path.outputs.path-exists == 'true'
+        env:
+          GO_FILE_PATH: ${{ secrets.GO_FILE_PATH }}
+        run: |
+          cd target-repo
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git checkout -b ci/update-supported-tokens || git checkout ci/update-supported-tokens
+          git add $GO_FILE_PATH/*.go
+          git commit -m "Update tokens files"
+          git push -u origin ci/update-supported-tokens --force
