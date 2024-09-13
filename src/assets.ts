@@ -2953,4 +2953,16 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     exchange: true,
   },
+  {
+    ...assetProto,
+    symbol: 'cbBTC',
+    feedAvailability: { 1: true, 8453: true },
+    name: 'Coinbase Wrapped BTC',
+    addresses: {
+      1: "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+      8453: "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+    },
+    decimals: 8,
+    exchange: true,
+  }
 ];
