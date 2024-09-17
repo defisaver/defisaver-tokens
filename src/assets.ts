@@ -2875,10 +2875,11 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'weETH',
-    feedAvailability: { 1: true, 8453: true, 42161: true },
+    feedAvailability: { 1: true, 8453: true, 42161: true, 10: true },
     name: 'Wrapped eETH',
     addresses: {
       1: "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      10: "0x346e03f8cce9fe01dcb3d0da3e9d00dc2c0e08f0",
       42161: "0x35751007a407ca6feffe80b3cb397736d2cf4dbe",
       8453: "0x04c0599ae5a44757c0af6f9ec3b93da8976c150a",
     },
@@ -2899,11 +2900,13 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'ezETH',
-    feedAvailability: { 1: true },
+    feedAvailability: { 1: true, 10: true, 42161: true, 8453: true },
     name: 'Renzo Restaked ETH',
     addresses: {
       1: "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
+      10: "0x2416092f143378750bb29b79eD961ab195CcEea5",
       8453: "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      42161: "0x2416092f143378750bb29b79ed961ab195cceea5",
     },
     decimals: 18,
     exchange: true,
@@ -2933,11 +2936,26 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'rsETH',
-    feedAvailability: { 1: true },
+    feedAvailability: { 1: true, 10: true, 42161: true, 8453: true },
     name: 'Kelp DAO Restaked ETH',
     addresses: {
       1: "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
-      42161: "0x4186BFC76E2E237523CBC30FD220FE055156b41F"
+      10: "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
+      42161: "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
+      8453: "0x1Bc71130A0e39942a7658878169764Bbd8A45993"
+    },
+    decimals: 18,
+    exchange: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'wrsETH',
+    feedAvailability: { 10: true, 42161: true, 8453: true },
+    name: 'Wrapped Kelp DAO Restaked ETH',
+    addresses: {
+      10: "0x87eEE96D50Fb761AD85B1c982d28A042169d61b1",
+      42161: "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
+      8453: "0xEDfa23602D0EC14714057867A78d01e94176BEA0"
     },
     decimals: 18,
     exchange: true,
