@@ -224,6 +224,9 @@ const sDAIAddress = "0x83F20F44975D03b1b09e64809B757c47f942BEeA";
 const tBTCAddress = "0x18084fbA666a33d37592fA2633fD49a74DD93a88";
 const fxnAddress = "0x365accfca291e7d3914637abf1f7635db165bb09";
 const fxnAddressArb = '0x179F38f78346F5942E95C5C59CB1da7F55Cf7CAd';
+const USDSAddress = "0xdC035D45d973E3EC169d2276DDab16f1e407384F";
+const SKYAddress = "0x56072C95FAA701256059aa122697B133aDEd9279";
+const sUSDSAddress = "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD";
 
 export const assetProto: AssetDataBase = {
   symbol: '?',
@@ -2982,5 +2985,39 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 8,
     exchange: true,
-  }
+  },
+  {
+    ...assetProto,
+    symbol: 'USDS',
+    feedAvailability: { 1: true },
+    name: 'USDS Stablecoin',
+    decimals: 18,
+    exchange: true,
+    addresses: {
+      1: USDSAddress,
+    },
+    isStable: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'SKY',
+    feedAvailability: { 1: true },
+    name: 'SKY Governance Token',
+    decimals: 18,
+    exchange: true,
+    addresses: {
+      1: SKYAddress,
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'sUSDS',
+    feedAvailability: { 1: true },
+    name: 'Savings USDS',
+    addresses: {
+      1: sUSDSAddress,
+    },
+    decimals: 18,
+    isStable: true,
+  },
 ];
