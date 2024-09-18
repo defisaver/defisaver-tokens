@@ -464,5 +464,16 @@ export const ilks:IlkData[] = [
     "pip": "0xd800ca44fFABecd159c7889c3bf64a217361AEc8",
     "isLP": false,
     "isCrop": false
+  },
+  {
+    "asset": "LITE",
+    "assetAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "ilkLabel": "LITE-PSM-USDC-A",
+    "ilkBytes": "0x4c4954452d50534d2d555344432d410000000000000000000000000000000000",
+    "join": "0x0000000000000000000000000000000000000000",
+    "clip": "0x0000000000000000000000000000000000000000",
+    "pip": "0x77b68899b99b686F415d074278a9a16b336085A0",
+    "isLP": false,
+    "isCrop": false
   }
 ];
