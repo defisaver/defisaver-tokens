@@ -1,8 +1,6 @@
 name: Fetch latest ilk data
 on:
   workflow_dispatch:
-  schedule:
-    - cron: 0 12 * * *
 jobs:
   buidl:
     runs-on: ubuntu-latest
