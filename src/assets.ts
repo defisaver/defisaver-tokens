@@ -3029,6 +3029,7 @@ export const assets: AssetDataBase[] = [
     ...assetProto,
     symbol: 'rswETH',
     name: 'Swell Liquid Restaking Token (ETH)',
+    feedAvailability: { 1: true },
     decimals: 18,
     addresses: {
       1: rswETHAddress,
