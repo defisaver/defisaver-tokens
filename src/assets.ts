@@ -2958,11 +2958,11 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'wrsETH',
-    feedAvailability: { 10: true, 42161: true, 8453: true },
+    feedAvailability: { 10: true, 8453: true },
+    nativeChainId: 8453,
     name: 'Wrapped Kelp DAO Restaked ETH',
     addresses: {
       10: "0x87eEE96D50Fb761AD85B1c982d28A042169d61b1",
-      42161: "0x4186BFC76E2E237523CBC30FD220FE055156b41F",
       8453: "0xEDfa23602D0EC14714057867A78d01e94176BEA0"
     },
     decimals: 18,
