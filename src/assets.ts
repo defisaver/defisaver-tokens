@@ -227,6 +227,7 @@ const fxnAddressArb = '0x179F38f78346F5942E95C5C59CB1da7F55Cf7CAd';
 const USDSAddress = "0xdC035D45d973E3EC169d2276DDab16f1e407384F";
 const SKYAddress = "0x56072C95FAA701256059aa122697B133aDEd9279";
 const sUSDSAddress = "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD";
+const rswETHAddress = "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0";
 
 export const assetProto: AssetDataBase = {
   symbol: '?',
@@ -942,7 +943,7 @@ export const assets: AssetDataBase[] = [
       1: CRVAddress,
       10: '0x0994206dfe8de6ec6920ff4d779b0d950605fb53',
       8453: '0x8Ee73c484A26e0A5df2Ee2a4960B789967dd0415',
-      42161:CRVAddressArb,
+      42161: CRVAddressArb,
     },
   },
   {
@@ -2193,7 +2194,7 @@ export const assets: AssetDataBase[] = [
       1: wstETHAddress,
       10: '0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb',
       42161: '0x5979D7b546E38E414F7E9822514be443A4800529',
-      8453:'0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452'
+      8453: '0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452'
     },
   },
   {
@@ -2712,7 +2713,8 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     isStable: true,
   },
-  {...assetProto,
+  {
+    ...assetProto,
     symbol: 'reCRV',
     name: 'Curve.fi ETH/rETH',
     addresses: {
@@ -2720,7 +2722,8 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
   },
-  {...assetProto,
+  {
+    ...assetProto,
     symbol: 'cbeCRV',
     name: 'Curve.fi ETH/cbETH',
     addresses: {
@@ -2728,7 +2731,8 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
   },
-  {...assetProto,
+  {
+    ...assetProto,
     symbol: 'sfrxETH',
     name: 'Staked Frax Ether',
     addresses: {
@@ -2738,13 +2742,14 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
   },
-  {...assetProto,
+  {
+    ...assetProto,
     symbol: 'crvUSD',
     feedAvailability: { 1: true },
     name: 'Curve.Fi USD Stablecoin',
     addresses: {
       1: crvUSD,
-      42161:crvUSDArb
+      42161: crvUSDArb
     },
     decimals: 18,
     isStable: true,
@@ -3020,4 +3025,13 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     isStable: true,
   },
+  {
+    ...assetProto,
+    symbol: 'rswETH',
+    name: 'Swell Liquid Restaking Token (ETH)',
+    decimals: 18,
+    addresses: {
+      1: rswETHAddress,
+    },
+  }
 ];
