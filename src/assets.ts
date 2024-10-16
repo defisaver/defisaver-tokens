@@ -3043,7 +3043,7 @@ export const assets: AssetDataBase[] = [
     feedAvailability: { 1: true },
     decimals: 18,
     addresses: {
-      1: superOETHbAddress,
+      8453: superOETHbAddress,
     },
   }
 ];
