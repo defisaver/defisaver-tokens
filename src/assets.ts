@@ -3040,7 +3040,6 @@ export const assets: AssetDataBase[] = [
     ...assetProto,
     symbol: 'superOETHb',
     name: "Super OETH",
-    feedAvailability: { 1: true },
     decimals: 18,
     addresses: {
       8453: superOETHbAddress,
