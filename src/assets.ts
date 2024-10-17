@@ -228,7 +228,8 @@ const USDSAddress = "0xdC035D45d973E3EC169d2276DDab16f1e407384F";
 const SKYAddress = "0x56072C95FAA701256059aa122697B133aDEd9279";
 const sUSDSAddress = "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD";
 const rswETHAddress = "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0";
-const wsuperOETHbAddress = "0xDBFeFD2e8460a6Ee4955A68582F85708BAEA60A3";
+const wsuperOETHbAddress = "0x7FcD174E80f264448ebeE8c88a7C4476AAF58Ea6";
+
 
 export const assetProto: AssetDataBase = {
   symbol: '?',
