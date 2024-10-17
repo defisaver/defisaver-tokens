@@ -3041,6 +3041,7 @@ export const assets: AssetDataBase[] = [
     symbol: 'superOETHb',
     name: "Super OETH",
     decimals: 18,
+    nativeChainId: 8453,
     addresses: {
       8453: superOETHbAddress,
     },
