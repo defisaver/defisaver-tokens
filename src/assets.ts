@@ -3046,5 +3046,35 @@ export const assets: AssetDataBase[] = [
     addresses: {
       8453: wsuperOETHbAddress,
     },
-  }
+  },
+  {
+    ...assetProto,
+    symbol: 'wM',
+    name: "WrappedM by M^0",
+    decimals: 6,
+    nativeChainId: 1,
+    addresses: {
+      1: '0x437cc33344a0B27A429f795ff6B469C72698B291',
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'mTBILL',
+    name: "Midas US Treasury Bill Token",
+    decimals: 18,
+    nativeChainId: 1,
+    addresses: {
+      1: '0xDD629E5241CbC5919847783e6C96B2De4754e438',
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'LBTC',
+    name: "Lombard Staked Bitcoin",
+    decimals: 8,
+    nativeChainId: 1,
+    addresses: {
+      1: '0x8236a87084f8B84306f72007F36F2618A5634494',
+    },
+  },
 ];
