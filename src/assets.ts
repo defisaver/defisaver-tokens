@@ -229,7 +229,7 @@ const SKYAddress = "0x56072C95FAA701256059aa122697B133aDEd9279";
 const sUSDSAddress = "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD";
 const rswETHAddress = "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0";
 const wsuperOETHbAddress = "0x7FcD174E80f264448ebeE8c88a7C4476AAF58Ea6";
-const boldAddress = "0xbb57f8ad4baf3970270e78f55ebeeb1e0bef3ccb";
+const boldAddress = "0x4167ec9e6676876bcbcd1849d04220113bfbaa98";
 
 
 export const assetProto: AssetDataBase = {
