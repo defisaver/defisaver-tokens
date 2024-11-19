@@ -214,7 +214,7 @@ const USTAddress = "0xa693B19d2931d498c5B318dF961919BB4aee87a5"
 const cFeiAddress = "0x7713DD9Ca933848F6819F38B8352D9A15EA73F67";
 const bLUSDAddress = "0xB9D7DdDca9a4AC480991865EfEf82E01273F79C3";
 const cbETHAddress = "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704";
-const MORPHOAddress = "0x9994e35db50125e0df82e4c2dde62496ce330999";
+const MORPHOLegacyAddress = "0x9994e35db50125e0df82e4c2dde62496ce330999";
 const rETHCrvAddress = "0x6c38ce8984a890f5e46e6df6117c26b3f1ecfc9c";
 const cbETHCrvAddress = "0x5b6c539b224014a09b3388e51caaa8e354c959c8";
 const sfrxETH = "0xac3E018457B222d93114458476f3E3416Abbe38F";
@@ -2612,10 +2612,21 @@ export const assets: AssetDataBase[] = [
   },
   {
     ...assetProto,
+    symbol: 'MORPHO Legacy',
+    name: 'Morpho Lebacy Token',
+    addresses: {
+      1: MORPHOLegacyAddress,
+    },
+    exchange: false,
+    decimals: 18,
+  },
+  {
+    ...assetProto,
     symbol: 'MORPHO',
     name: 'Morpho Token',
     addresses: {
-      1: MORPHOAddress,
+      1: '0x58D97B57BB95320F9a05dC918Aef65434969c2B2',
+      8453: '0xBAa5CC21fd487B8Fcc2F632f3F4E8D37262a0842',
     },
     exchange: false,
     decimals: 18,
