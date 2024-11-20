@@ -2624,11 +2624,12 @@ export const assets: AssetDataBase[] = [
     ...assetProto,
     symbol: 'MORPHO',
     name: 'Morpho Token',
+    feedAvailability: { 1: true, 8453: true },
     addresses: {
       1: '0x58D97B57BB95320F9a05dC918Aef65434969c2B2',
       8453: '0xBAa5CC21fd487B8Fcc2F632f3F4E8D37262a0842',
     },
-    exchange: false,
+    exchange: true,
     decimals: 18,
   },
   {
