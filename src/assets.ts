@@ -69,6 +69,7 @@ const AAVEAddress = "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9";
 const aUNIAddress = "0xb124541127a0a657f056d9dd06188c4f1b0e5aab";
 const aAaveAddress = "0xba3D9687Cf50fE253cd2e1cFeEdE1d6787344Ed5";
 const stkAAVEAddress = "0x4da27a545c0c5B758a6BA100e3a049001de870f5";
+const stkGHOAddress = "0x1a88Df1cFe15Af22B3c4c783D4e6F7F9e0C1885d";
 const BALAddress = "0xba100000625a3754423978a60c9317c58a424e3D";
 const GUSDAddress = "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd";
 const RENBTCAddress = "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D";
@@ -3089,4 +3090,14 @@ export const assets: AssetDataBase[] = [
       1: '0x8236a87084f8B84306f72007F36F2618A5634494',
     },
   },
+  {
+    ...assetProto,
+    symbol: 'stkGHO',
+    name: 'Staked GHO',
+    decimals: 18,
+    nativeChainId: 1,
+    addresses: {
+      1: stkGHOAddress,
+    },
+  }
 ];
