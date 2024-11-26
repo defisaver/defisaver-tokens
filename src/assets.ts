@@ -2784,7 +2784,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'GHO',
-    feedAvailability: { 1: true, 42161: true },
+    feedAvailability: { 1: true },
     name: 'GHO',
     addresses: {
       1: '0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f',
@@ -2797,6 +2797,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'tBTC',
+    feedAvailability: { 1: true },
     name: 'tBTC',
     addresses: {
       1: tBTCAddress,
@@ -2898,7 +2899,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'weETH',
-    feedAvailability: { 1: true, 8453: true, 42161: true, 10: true },
+    feedAvailability: { 1: true, 8453: true, 42161: true },
     name: 'Wrapped eETH',
     addresses: {
       1: "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
@@ -2923,7 +2924,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'ezETH',
-    feedAvailability: { 1: true, 10: true, 42161: true, 8453: true },
+    feedAvailability: { 1: true },
     name: 'Renzo Restaked ETH',
     addresses: {
       1: "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
@@ -2959,7 +2960,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'rsETH',
-    feedAvailability: { 1: true, 10: true, 42161: true, 8453: true },
     name: 'Kelp DAO Restaked ETH',
     addresses: {
       1: "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
@@ -2973,7 +2973,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'wrsETH',
-    feedAvailability: { 10: true, 8453: true },
     nativeChainId: 8453,
     name: 'Wrapped Kelp DAO Restaked ETH',
     addresses: {
@@ -2986,7 +2985,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'pufETH',
-    feedAvailability: { 1: true },
     name: 'Puffer Finance ETH',
     addresses: {
       1: "0xD9A442856C234a39a81a089C06451EBAa4306a72",
@@ -2997,7 +2995,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'cbBTC',
-    feedAvailability: { 1: true, 8453: true },
     name: 'Coinbase Wrapped BTC',
     addresses: {
       1: "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
@@ -3009,7 +3006,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDS',
-    feedAvailability: { 1: true },
     name: 'USDS Stablecoin',
     decimals: 18,
     exchange: true,
@@ -3021,7 +3017,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'SKY',
-    feedAvailability: { 1: true },
     name: 'SKY Protocol',
     decimals: 18,
     exchange: true,
@@ -3032,7 +3027,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'sUSDS',
-    feedAvailability: { 1: true },
     name: 'Savings USDS',
     addresses: {
       1: sUSDSAddress,
@@ -3098,6 +3092,26 @@ export const assets: AssetDataBase[] = [
     nativeChainId: 1,
     addresses: {
       1: stkGHOAddress,
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'wUSDM',
+    name: 'Wrapped Mountain Protocol USD',
+    decimals: 18,
+    nativeChainId: 1,
+    addresses: {
+      1: '0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812',
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'sFRAX',
+    name: 'Staked FRAX',
+    decimals: 18,
+    nativeChainId: 1,
+    addresses: {
+      1: '0xA663B02CF0a4b149d2aD41910CB81e23e1c41c32',
     },
   }
 ];
