@@ -230,6 +230,7 @@ const SKYAddress = "0x56072C95FAA701256059aa122697B133aDEd9279";
 const sUSDSAddress = "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD";
 const rswETHAddress = "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0";
 const wsuperOETHbAddress = "0x7FcD174E80f264448ebeE8c88a7C4476AAF58Ea6";
+const aEthUSDSAddress = "0x32a6268f9Ba3642Dda7892aDd74f1D34469A4259"
 
 
 export const assetProto: AssetDataBase = {
@@ -3112,6 +3113,16 @@ export const assets: AssetDataBase[] = [
     nativeChainId: 1,
     addresses: {
       1: '0xA663B02CF0a4b149d2aD41910CB81e23e1c41c32',
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'aEthUSDS',
+    name: 'Aave Ethereum USDS',
+    decimals: 18,
+    nativeChainId: 1,
+    addresses: {
+      1: aEthUSDSAddress,
     },
   }
 ];
