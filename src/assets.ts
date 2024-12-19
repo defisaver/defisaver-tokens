@@ -3082,6 +3082,7 @@ export const assets: AssetDataBase[] = [
     nativeChainId: 1,
     addresses: {
       1: '0x8236a87084f8B84306f72007F36F2618A5634494',
+      8453: '0xecAc9C5F704e954931349Da37F60E39f515c11c1',
     },
   },
   {
@@ -3102,6 +3103,7 @@ export const assets: AssetDataBase[] = [
     nativeChainId: 1,
     addresses: {
       1: '0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812',
+      42161: '0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812',
     },
   },
   {
@@ -3112,6 +3114,27 @@ export const assets: AssetDataBase[] = [
     nativeChainId: 1,
     addresses: {
       1: '0xA663B02CF0a4b149d2aD41910CB81e23e1c41c32',
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'mETH',
+    name: 'Mantle Staked Ether',
+    decimals: 18,
+    nativeChainId: 1,
+    addresses: {
+      1: '0xd5F7838F5C461fefF7FE49ea5ebaF7728bB0ADfa',
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'EURC',
+    name: 'Euro Coin',
+    decimals: 6,
+    nativeChainId: 1,
+    addresses: {
+      1: '0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c',
+      8453: '0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42',
     },
   }
 ];
