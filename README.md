@@ -42,18 +42,18 @@
 
 #### Type declaration
 
-| Name | Type |
-| :------ | :------ |
-| `dataProvider` | `string` |
-| `lendingPool` | `string` |
+| Name                         | Type     |
+| :--------------------------- | :------- |
+| `dataProvider`               | `string` |
+| `lendingPool`                | `string` |
 | `lendingPoolAddressProvider` | `string` |
-| `name` | `string` |
+| `name`                       | `string` |
 
 #### Defined in
 
-[types.ts:70](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/types.ts#L70)
+[types.ts:70](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/types.ts#L70)
 
-___
+---
 
 ### AddressMapping
 
@@ -65,9 +65,9 @@ ___
 
 #### Defined in
 
-[types.ts:6](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/types.ts#L6)
+[types.ts:6](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/types.ts#L6)
 
-___
+---
 
 ### AssetData
 
@@ -77,28 +77,28 @@ Chain-specific asset info type
 
 #### Type declaration
 
-| Name | Type |
-| :------ | :------ |
-| `aaveCollateral` | `boolean` |
-| `address` | `string` |
-| `addresses` | [`AddressMapping`](README.md#addressmapping) |
-| `compoundCollateral` | `boolean` |
-| `decimals` | `number` |
-| `exchange` | `boolean` |
-| `feedAvailability` | `BoolMapping` |
-| `icon` | `Function` |
-| `isStable` | `boolean` |
-| `name` | `string` |
-| `nativeChainId` | `number` |
-| `symbol` | `string` |
-| `underlyingAsset` | `string` |
-| `yearnCollateral` | `boolean` |
+| Name                 | Type                                         |
+| :------------------- | :------------------------------------------- |
+| `aaveCollateral`     | `boolean`                                    |
+| `address`            | `string`                                     |
+| `addresses`          | [`AddressMapping`](README.md#addressmapping) |
+| `compoundCollateral` | `boolean`                                    |
+| `decimals`           | `number`                                     |
+| `exchange`           | `boolean`                                    |
+| `feedAvailability`   | `BoolMapping`                                |
+| `icon`               | `Function`                                   |
+| `isStable`           | `boolean`                                    |
+| `name`               | `string`                                     |
+| `nativeChainId`      | `number`                                     |
+| `symbol`             | `string`                                     |
+| `underlyingAsset`    | `string`                                     |
+| `yearnCollateral`    | `boolean`                                    |
 
 #### Defined in
 
-[types.ts:36](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/types.ts#L36)
+[types.ts:36](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/types.ts#L36)
 
-___
+---
 
 ### AssetDataBase
 
@@ -108,37 +108,37 @@ Chain-agnostic asset info type
 
 #### Type declaration
 
-| Name | Type |
-| :------ | :------ |
-| `aaveCollateral` | `boolean` |
-| `addresses` | [`AddressMapping`](README.md#addressmapping) |
-| `compoundCollateral` | `boolean` |
-| `decimals` | `number` |
-| `exchange` | `boolean` |
-| `feedAvailability` | `BoolMapping` |
-| `icon` | `Function` |
-| `isStable` | `boolean` |
-| `name` | `string` |
-| `nativeChainId` | `number` |
-| `symbol` | `string` |
-| `underlyingAsset` | `string` |
-| `yearnCollateral` | `boolean` |
+| Name                 | Type                                         |
+| :------------------- | :------------------------------------------- |
+| `aaveCollateral`     | `boolean`                                    |
+| `addresses`          | [`AddressMapping`](README.md#addressmapping) |
+| `compoundCollateral` | `boolean`                                    |
+| `decimals`           | `number`                                     |
+| `exchange`           | `boolean`                                    |
+| `feedAvailability`   | `BoolMapping`                                |
+| `icon`               | `Function`                                   |
+| `isStable`           | `boolean`                                    |
+| `name`               | `string`                                     |
+| `nativeChainId`      | `number`                                     |
+| `symbol`             | `string`                                     |
+| `underlyingAsset`    | `string`                                     |
+| `yearnCollateral`    | `boolean`                                    |
 
 #### Defined in
 
-[types.ts:17](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/types.ts#L17)
+[types.ts:17](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/types.ts#L17)
 
-___
+---
 
 ### ExtendedIlkData
 
-Ƭ **ExtendedIlkData**: [`IlkData`](README.md#ilkdata) \| { `assetData`: [`AssetData`](README.md#assetdata)  }
+Ƭ **ExtendedIlkData**: [`IlkData`](README.md#ilkdata) \| { `assetData`: [`AssetData`](README.md#assetdata) }
 
 #### Defined in
 
-[types.ts:77](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/types.ts#L77)
+[types.ts:77](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/types.ts#L77)
 
-___
+---
 
 ### IlkData
 
@@ -148,35 +148,35 @@ Maker ilk info type
 
 #### Type declaration
 
-| Name | Type |
-| :------ | :------ |
-| `asset` | `string` |
-| `assetAddress?` | `string` |
-| `clip?` | `string` |
-| `clipCalc?` | `string` |
-| `flip?` | `string` |
-| `ilkBytes` | `string` |
-| `ilkLabel` | `string` |
-| `isCrop` | `boolean` |
-| `isLP` | `boolean` |
-| `join` | `string` |
-| `pip` | `string` |
+| Name            | Type      |
+| :-------------- | :-------- |
+| `asset`         | `string`  |
+| `assetAddress?` | `string`  |
+| `clip?`         | `string`  |
+| `clipCalc?`     | `string`  |
+| `flip?`         | `string`  |
+| `ilkBytes`      | `string`  |
+| `ilkLabel`      | `string`  |
+| `isCrop`        | `boolean` |
+| `isLP`          | `boolean` |
+| `join`          | `string`  |
+| `pip`           | `string`  |
 
 #### Defined in
 
-[types.ts:56](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/types.ts#L56)
+[types.ts:56](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/types.ts#L56)
 
 ## Variables
 
 ### MAXUINT
 
-• **MAXUINT**: `string` = `'115792089237316195423570985008687907853269984665640564039457584007913129639935'`
+• **MAXUINT**: `string` = `"115792089237316195423570985008687907853269984665640564039457584007913129639935"`
 
 #### Defined in
 
-[index.ts:27](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/index.ts#L27)
+[index.ts:42](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/index.ts#L42)
 
-___
+---
 
 ### aaveV2Markets
 
@@ -184,9 +184,9 @@ ___
 
 #### Defined in
 
-[aaveV2Markets.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/aaveV2Markets.ts#L3)
+[aaveV2Markets.ts:3](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/aaveV2Markets.ts#L3)
 
-___
+---
 
 ### assets
 
@@ -194,9 +194,9 @@ ___
 
 #### Defined in
 
-[assets.ts:254](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/assets.ts#L254)
+[assets.ts:254](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/assets.ts#L254)
 
-___
+---
 
 ### ilks
 
@@ -204,9 +204,9 @@ ___
 
 #### Defined in
 
-[ilks.ts:5](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/ilks.ts#L5)
+[ilks.ts:5](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/ilks.ts#L5)
 
-___
+---
 
 ### reflexerCollTypes
 
@@ -214,9 +214,9 @@ ___
 
 #### Defined in
 
-[reflexerCollTypes.ts:3](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/reflexerCollTypes.ts#L3)
+[reflexerCollTypes.ts:3](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/reflexerCollTypes.ts#L3)
 
-___
+---
 
 ### utils
 
@@ -224,15 +224,15 @@ ___
 
 #### Type declaration
 
-| Name | Type |
-| :------ | :------ |
-| `bytesToString` | (`hex`: `string`) => `string` |
-| `compare` | (`a`: `string`, `b`: `string`) => `boolean` |
-| `stringToBytes` | (`str`: `string`) => `string` |
+| Name            | Type                                        |
+| :-------------- | :------------------------------------------ |
+| `bytesToString` | (`hex`: `string`) => `string`               |
+| `compare`       | (`a`: `string`, `b`: `string`) => `boolean` |
+| `stringToBytes` | (`str`: `string`) => `string`               |
 
 #### Defined in
 
-[index.ts:25](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/index.ts#L25)
+[index.ts:40](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/index.ts#L40)
 
 ## Functions
 
@@ -242,10 +242,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `amount` | `string` \| `number` \| `object` | `undefined` | Amount in wei |
-| `asset` | `string` | `'ETH'` | Asset symbol (or `MCD-${symbol}` for maker asset - always 18dec) |
+| Name     | Type                             | Default value | Description                                                      |
+| :------- | :------------------------------- | :------------ | :--------------------------------------------------------------- |
+| `amount` | `string` \| `number` \| `object` | `undefined`   | Amount in wei                                                    |
+| `asset`  | `string`                         | `"ETH"`       | Asset symbol (or `MCD-${symbol}` for maker asset - always 18dec) |
 
 #### Returns
 
@@ -253,9 +253,9 @@ ___
 
 #### Defined in
 
-[index.ts:149](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/index.ts#L149)
+[index.ts:194](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/index.ts#L194)
 
-___
+---
 
 ### assetAmountInWei
 
@@ -263,10 +263,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                             | Description   |
+| :------- | :------------------------------- | :------------ |
 | `amount` | `string` \| `number` \| `object` | Amount in eth |
-| `asset` | `string` | Asset symbol |
+| `asset`  | `string`                         | Asset symbol  |
 
 #### Returns
 
@@ -274,9 +274,9 @@ ___
 
 #### Defined in
 
-[index.ts:170](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/index.ts#L170)
+[index.ts:219](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/index.ts#L219)
 
-___
+---
 
 ### getAaveV2MarketInfo
 
@@ -284,9 +284,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `name` | `string` | `''` |
+| Name   | Type     | Default value |
+| :----- | :------- | :------------ |
+| `name` | `string` | `""`          |
 
 #### Returns
 
@@ -294,9 +294,9 @@ ___
 
 #### Defined in
 
-[index.ts:142](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/index.ts#L142)
+[index.ts:186](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/index.ts#L186)
 
-___
+---
 
 ### getAssetInfo
 
@@ -307,10 +307,10 @@ Warning: will not throw if asset not found. Instead, will return a placeholder o
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `symbol` | `string` | `''` |
-| `chainId?` | `number` | `undefined` |
+| Name       | Type     | Default value |
+| :--------- | :------- | :------------ |
+| `symbol`   | `string` | `""`          |
+| `chainId?` | `number` | `undefined`   |
 
 #### Returns
 
@@ -318,9 +318,9 @@ Warning: will not throw if asset not found. Instead, will return a placeholder o
 
 #### Defined in
 
-[index.ts:60](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/index.ts#L60)
+[index.ts:80](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/index.ts#L80)
 
-___
+---
 
 ### getAssetInfoByAddress
 
@@ -328,10 +328,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `address` | `string` | `''` |
-| `chainId?` | `number` | `undefined` |
+| Name       | Type     | Default value |
+| :--------- | :------- | :------------ |
+| `address`  | `string` | `""`          |
+| `chainId?` | `number` | `undefined`   |
 
 #### Returns
 
@@ -339,9 +339,9 @@ ___
 
 #### Defined in
 
-[index.ts:95](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/index.ts#L95)
+[index.ts:124](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/index.ts#L124)
 
-___
+---
 
 ### getIlkInfo
 
@@ -352,9 +352,9 @@ Warning: will not throw if ilk not found. Instead, will return a placeholder obj
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `ilk` | `string` | `''` | Ilk encoded as string or as hex |
+| Name  | Type     | Default value | Description                     |
+| :---- | :------- | :------------ | :------------------------------ |
+| `ilk` | `string` | `""`          | Ilk encoded as string or as hex |
 
 #### Returns
 
@@ -362,9 +362,9 @@ Warning: will not throw if ilk not found. Instead, will return a placeholder obj
 
 #### Defined in
 
-[index.ts:73](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/index.ts#L73)
+[index.ts:98](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/index.ts#L98)
 
-___
+---
 
 ### ilkToAsset
 
@@ -372,9 +372,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `ilk` | `string` | `''` |
+| Name  | Type     | Default value |
+| :---- | :------- | :------------ |
+| `ilk` | `string` | `""`          |
 
 #### Returns
 
@@ -382,9 +382,9 @@ ___
 
 #### Defined in
 
-[index.ts:100](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/index.ts#L100)
+[index.ts:136](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/index.ts#L136)
 
-___
+---
 
 ### set
 
@@ -392,10 +392,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `key` | `string` |
-| `value` | `any` |
+| Name    | Type     |
+| :------ | :------- |
+| `key`   | `string` |
+| `value` | `any`    |
 
 #### Returns
 
@@ -403,9 +403,9 @@ ___
 
 #### Defined in
 
-[index.ts:21](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/index.ts#L21)
+[index.ts:36](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/index.ts#L36)
 
-___
+---
 
 ### tokenFromJoin
 
@@ -413,10 +413,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `join` | `string` | `undefined` | Maker or Reflexer ilk join |
-| `fromIlks` | [`IlkData`](README.md#ilkdata)[] | `ilks` |  |
+| Name       | Type                             | Default value | Description                |
+| :--------- | :------------------------------- | :------------ | :------------------------- |
+| `join`     | `string`                         | `undefined`   | Maker or Reflexer ilk join |
+| `fromIlks` | [`IlkData`](README.md#ilkdata)[] | `ilks`        |                            |
 
 #### Returns
 
@@ -426,9 +426,9 @@ Token symbol
 
 #### Defined in
 
-[index.ts:122](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/index.ts#L122)
+[index.ts:161](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/index.ts#L161)
 
-___
+---
 
 ### tokenFromMakerJoin
 
@@ -436,8 +436,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description    |
+| :----- | :------- | :------------- |
 | `join` | `string` | Maker ilk join |
 
 #### Returns
@@ -448,9 +448,9 @@ Token symbol
 
 #### Defined in
 
-[index.ts:134](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/index.ts#L134)
+[index.ts:176](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/index.ts#L176)
 
-___
+---
 
 ### tokenFromReflexerJoin
 
@@ -458,8 +458,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description       |
+| :----- | :------- | :---------------- |
 | `join` | `string` | Reflexer ilk join |
 
 #### Returns
@@ -470,4 +470,4 @@ Token symbol
 
 #### Defined in
 
-[index.ts:140](https://github.com/DecenterApps/defisaver-tokens/blob/e4927c4/src/index.ts#L140)
+[index.ts:183](https://github.com/defisaver/defisaver-tokens/blob/e4927c4/src/index.ts#L183)
