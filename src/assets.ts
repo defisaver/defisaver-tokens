@@ -3132,6 +3132,7 @@ export const assets: AssetDataBase[] = [
     name: 'Euro Coin',
     decimals: 6,
     nativeChainId: 1,
+    isStable: true,
     addresses: {
       1: '0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c',
       8453: '0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42',
