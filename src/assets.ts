@@ -69,6 +69,7 @@ const AAVEAddress = "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9";
 const aUNIAddress = "0xb124541127a0a657f056d9dd06188c4f1b0e5aab";
 const aAaveAddress = "0xba3D9687Cf50fE253cd2e1cFeEdE1d6787344Ed5";
 const stkAAVEAddress = "0x4da27a545c0c5B758a6BA100e3a049001de870f5";
+const stkGHOAddress = "0x1a88Df1cFe15Af22B3c4c783D4e6F7F9e0C1885d";
 const BALAddress = "0xba100000625a3754423978a60c9317c58a424e3D";
 const GUSDAddress = "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd";
 const RENBTCAddress = "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D";
@@ -214,7 +215,7 @@ const USTAddress = "0xa693B19d2931d498c5B318dF961919BB4aee87a5"
 const cFeiAddress = "0x7713DD9Ca933848F6819F38B8352D9A15EA73F67";
 const bLUSDAddress = "0xB9D7DdDca9a4AC480991865EfEf82E01273F79C3";
 const cbETHAddress = "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704";
-const MORPHOAddress = "0x9994e35db50125e0df82e4c2dde62496ce330999";
+const MORPHOLegacyAddress = "0x9994e35db50125e0df82e4c2dde62496ce330999";
 const rETHCrvAddress = "0x6c38ce8984a890f5e46e6df6117c26b3f1ecfc9c";
 const cbETHCrvAddress = "0x5b6c539b224014a09b3388e51caaa8e354c959c8";
 const sfrxETH = "0xac3E018457B222d93114458476f3E3416Abbe38F";
@@ -2613,12 +2614,24 @@ export const assets: AssetDataBase[] = [
   },
   {
     ...assetProto,
-    symbol: 'MORPHO',
-    name: 'Morpho Token',
+    symbol: 'MORPHO Legacy',
+    name: 'Morpho Lebacy Token',
     addresses: {
-      1: MORPHOAddress,
+      1: MORPHOLegacyAddress,
     },
     exchange: false,
+    decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: 'MORPHO',
+    name: 'Morpho Token',
+    feedAvailability: { 1: true, 8453: true },
+    addresses: {
+      1: '0x58D97B57BB95320F9a05dC918Aef65434969c2B2',
+      8453: '0xBAa5CC21fd487B8Fcc2F632f3F4E8D37262a0842',
+    },
+    exchange: true,
     decimals: 18,
   },
   {
@@ -2772,7 +2785,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'GHO',
-    feedAvailability: { 1: true, 42161: true },
+    feedAvailability: { 1: true },
     name: 'GHO',
     addresses: {
       1: '0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f',
@@ -2785,6 +2798,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'tBTC',
+    feedAvailability: { 1: true },
     name: 'tBTC',
     addresses: {
       1: tBTCAddress,
@@ -2886,7 +2900,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'weETH',
-    feedAvailability: { 1: true, 8453: true, 42161: true, 10: true },
+    feedAvailability: { 1: true, 8453: true, 42161: true },
     name: 'Wrapped eETH',
     addresses: {
       1: "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
@@ -2911,7 +2925,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'ezETH',
-    feedAvailability: { 1: true, 10: true, 42161: true, 8453: true },
+    feedAvailability: { 1: true },
     name: 'Renzo Restaked ETH',
     addresses: {
       1: "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
@@ -2947,7 +2961,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'rsETH',
-    feedAvailability: { 1: true, 10: true, 42161: true, 8453: true },
     name: 'Kelp DAO Restaked ETH',
     addresses: {
       1: "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
@@ -2961,7 +2974,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'wrsETH',
-    feedAvailability: { 10: true, 8453: true },
     nativeChainId: 8453,
     name: 'Wrapped Kelp DAO Restaked ETH',
     addresses: {
@@ -2974,7 +2986,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'pufETH',
-    feedAvailability: { 1: true },
     name: 'Puffer Finance ETH',
     addresses: {
       1: "0xD9A442856C234a39a81a089C06451EBAa4306a72",
@@ -2985,7 +2996,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'cbBTC',
-    feedAvailability: { 1: true, 8453: true },
     name: 'Coinbase Wrapped BTC',
     addresses: {
       1: "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
@@ -2997,7 +3007,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDS',
-    feedAvailability: { 1: true },
     name: 'USDS Stablecoin',
     decimals: 18,
     exchange: true,
@@ -3009,7 +3018,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'SKY',
-    feedAvailability: { 1: true },
     name: 'SKY Protocol',
     decimals: 18,
     exchange: true,
@@ -3020,7 +3028,6 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'sUSDS',
-    feedAvailability: { 1: true },
     name: 'Savings USDS',
     addresses: {
       1: sUSDSAddress,
@@ -3058,5 +3065,89 @@ export const assets: AssetDataBase[] = [
       1: boldAddress,
     },
     isStable: true,
+  },
+  {
+  ...assetProto,
+    symbol: 'wM',
+    name: "WrappedM by M^0",
+    decimals: 6,
+    nativeChainId: 1,
+    addresses: {
+      1: '0x437cc33344a0B27A429f795ff6B469C72698B291',
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'mTBILL',
+    name: "Midas US Treasury Bill Token",
+    decimals: 18,
+    nativeChainId: 1,
+    addresses: {
+      1: '0xDD629E5241CbC5919847783e6C96B2De4754e438',
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'LBTC',
+    name: "Lombard Staked Bitcoin",
+    decimals: 8,
+    nativeChainId: 1,
+    addresses: {
+      1: '0x8236a87084f8B84306f72007F36F2618A5634494',
+      8453: '0xecAc9C5F704e954931349Da37F60E39f515c11c1',
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'stkGHO',
+    name: 'Staked GHO',
+    decimals: 18,
+    nativeChainId: 1,
+    addresses: {
+      1: stkGHOAddress,
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'wUSDM',
+    name: 'Wrapped Mountain Protocol USD',
+    decimals: 18,
+    nativeChainId: 1,
+    addresses: {
+      1: '0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812',
+      42161: '0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812',
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'sFRAX',
+    name: 'Staked FRAX',
+    decimals: 18,
+    nativeChainId: 1,
+    addresses: {
+      1: '0xA663B02CF0a4b149d2aD41910CB81e23e1c41c32',
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'mETH',
+    name: 'Mantle Staked Ether',
+    decimals: 18,
+    nativeChainId: 1,
+    addresses: {
+      1: '0xd5F7838F5C461fefF7FE49ea5ebaF7728bB0ADfa',
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'EURC',
+    name: 'Euro Coin',
+    decimals: 6,
+    nativeChainId: 1,
+    isStable: true,
+    addresses: {
+      1: '0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c',
+      8453: '0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42',
+    },
   }
 ];
