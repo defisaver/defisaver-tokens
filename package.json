@@ -1,6 +1,6 @@
 {
   "name": "@defisaver/tokens",
-  "version": "1.5.52-dev-3",
+  "version": "1.5.52-dev-4",
   "description": "Centralized asset data & utility functions",
   "main": "umd/index.js",
   "module": "esm/index.js",
