@@ -3149,5 +3149,26 @@ export const assets: AssetDataBase[] = [
       1: '0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c',
       8453: '0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42',
     },
+  },
+  {
+    ...assetProto,
+    symbol: 'RLP',
+    name: 'Resolv Liquidity Provider Token',
+    decimals: 18,
+    nativeChainId: 1,
+    addresses: {
+      1: '0x4956b52aE2fF65D74CA2d61207523288e4528f96',
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'USR',
+    name: 'Resolv USD',
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    addresses: {
+      1: '0x66a1E37c9b0eAddca17d3662D6c05F4DECf3e110',
+    }
   }
 ];
