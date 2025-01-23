@@ -230,6 +230,7 @@ const SKYAddress = "0x56072C95FAA701256059aa122697B133aDEd9279";
 const sUSDSAddress = "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD";
 const rswETHAddress = "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0";
 const wsuperOETHbAddress = "0x7FcD174E80f264448ebeE8c88a7C4476AAF58Ea6";
+const boldAddress = "0x9203da67668514e2390d7217223c4b4396fc76f3";
 
 
 export const assetProto: AssetDataBase = {
@@ -3056,6 +3057,17 @@ export const assets: AssetDataBase[] = [
   },
   {
     ...assetProto,
+    symbol: 'BOLD',
+    name: "BOLD",
+    decimals: 18,
+    feedAvailability: { 1: true },
+    addresses: {
+      1: boldAddress,
+    },
+    isStable: true,
+  },
+  {
+  ...assetProto,
     symbol: 'wM',
     name: "WrappedM by M^0",
     decimals: 6,
