@@ -3170,5 +3170,16 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: '0x66a1E37c9b0eAddca17d3662D6c05F4DECf3e110',
     }
+  },
+  {
+    ...assetProto,
+    symbol: 'weETHs',
+    name: 'Super Symbiotic LRT',
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    addresses: {
+      1: '0x917cee801a67f933f2e6b33fc0cd1ed2d5909d88',
+    }
   }
 ];
