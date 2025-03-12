@@ -114,7 +114,7 @@ const BtcfliAddress = "0x0b498ff89709d3838a063f1dfa463091f9801c2b";
 const FarmAddress = "0xa0246c9032bc3a600820415ae600c6388619a14d";
 const FeiAddress = "0x956f47f50a910163d8bf957cf5846d573e7f87ca";
 const GtcAddress = "0xde30da39c46104798bb5aa3fe8b9e0e1f348163f";
-const InstAddress = "0x6f40d4a6237c257fff2db00fa0510deeecd303eb";
+const FluidAddress = "0x6f40d4a6237c257fff2db00fa0510deeecd303eb";
 const MtaAddress = "0xa3bed4e1c75d00fa6f4e5e6922db7261b5e9acd2";
 const RuneAddress = "0x3155ba85d5f96b2d030a4966af206230e46849cb";
 const TribeAddress = "0xc7283b66eb1eb5fb86327f08e1b5816b0720212b";
@@ -1562,10 +1562,10 @@ export const assets: AssetDataBase[] = [
   },
   {
     ...assetProto,
-    symbol: 'INST',
-    name: 'InstaDapp',
+    symbol: 'FLUID',
+    name: 'InstaDapp Fluid',
     addresses: {
-      1: InstAddress,
+      1: FluidAddress,
     },
     exchange: true,
     decimals: 18,
@@ -3174,6 +3174,17 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'weETHs',
+    name: 'Super Symbiotic LRT',
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    addresses: {
+      1: '0x917cee801a67f933f2e6b33fc0cd1ed2d5909d88',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'FLUID',
     name: 'Super Symbiotic LRT',
     decimals: 18,
     nativeChainId: 1,
