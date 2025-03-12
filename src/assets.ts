@@ -231,6 +231,7 @@ const sUSDSAddress = "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD";
 const rswETHAddress = "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0";
 const wsuperOETHbAddress = "0x7FcD174E80f264448ebeE8c88a7C4476AAF58Ea6";
 const boldAddress = "0xb01dd87b29d187f3e3a4bf6cdaebfb97f3d9ab98";
+const kingAddress = "0x8F08B70456eb22f6109F57b8fafE862ED28E6040";
 
 
 export const assetProto: AssetDataBase = {
@@ -2789,7 +2790,8 @@ export const assets: AssetDataBase[] = [
     name: 'GHO',
     addresses: {
       1: '0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f',
-      42161: '0x7dff72693f6a4149b17e7c6314655f6a9f7c8b33'
+      42161: '0x7dff72693f6a4149b17e7c6314655f6a9f7c8b33',
+      8453: '0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee',
     },
     nativeChainId: 1,
     decimals: 18,
@@ -3191,6 +3193,17 @@ export const assets: AssetDataBase[] = [
     isStable: true,
     addresses: {
       1: '0x917cee801a67f933f2e6b33fc0cd1ed2d5909d88',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'KING',
+    name: 'King',
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: false,
+    addresses: {
+      1: kingAddress,
     }
   }
 ];

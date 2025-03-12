@@ -23,11 +23,14 @@ function generateTokenFile(chainID, assets) {
 
 import (
         "github.com/ethereum/go-ethereum/common"
+
+	      "github.com/DecenterApps/defisaver-backend/src/dto/tokensdto"
 )
 
-// List updated as of ${date} from https://github.com/defisaver/defisaver-tokens/blob/master/src/assets.ts
+// List auto-generated on ${date} from https://github.com/defisaver/defisaver-tokens/blob/master/src/assets.ts
 
-var ${chainName}Tokens = make(map[common.Address]struct{})
+var ${chainName}Tokens = make(map[common.Address]tokensdto.Token)
+var ${chainName}TokensSymbols = make(map[string]common.Address)
 
 func init() {
 `;
@@ -35,7 +38,15 @@ func init() {
     assets.forEach(function (asset) {
         const address = asset.addresses[chainID];
         if (address) {
-            output += `        ${chainName}Tokens[common.HexToAddress("${address}")] = struct{}{} // ${asset.symbol}\n`;
+            output += `        ${chainName}TokensSymbols["${asset.symbol.toUpperCase()}"] = common.HexToAddress("${address}")\n`
+            output += `        ${chainName}Tokens[common.HexToAddress("${address}")] = tokensdto.Token{
+                Address:  common.HexToAddress("${address}"),
+                ChainID:  ${chainID},
+                Symbol:   "${asset.symbol.toUpperCase()}",
+                Name:     "${asset.name}",
+                Decimals: ${asset.decimals},
+                IsStable: ${asset.isStable === true},
+            }\n\n`;
         }
     });
 
