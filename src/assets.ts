@@ -3186,17 +3186,6 @@ export const assets: AssetDataBase[] = [
   },
   {
     ...assetProto,
-    symbol: 'FLUID',
-    name: 'Super Symbiotic LRT',
-    decimals: 18,
-    nativeChainId: 1,
-    isStable: true,
-    addresses: {
-      1: '0x917cee801a67f933f2e6b33fc0cd1ed2d5909d88',
-    }
-  },
-  {
-    ...assetProto,
     symbol: 'KING',
     name: 'King',
     decimals: 18,
