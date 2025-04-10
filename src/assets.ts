@@ -3194,5 +3194,25 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: kingAddress,
     }
+  },
+  {
+    ...assetProto,
+    symbol: 'eBTC',
+    name: 'ether.fi Staked BTC',
+    decimals: 8,
+    nativeChainId: 1,
+    addresses: {
+      1: '0x657e8C867D8B37dCC18fA4Caead9C45EB088C642',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'tETH',
+    name: 'Treehouse ETH',
+    decimals: 18,
+    nativeChainId: 1,
+    addresses: {
+      1: '0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8',
+    }
   }
 ];
