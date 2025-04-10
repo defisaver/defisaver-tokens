@@ -1,6 +1,6 @@
 {
   "name": "@defisaver/tokens",
-  "version": "1.5.59",
+  "version": "1.5.60",
   "description": "Centralized asset data & utility functions",
   "main": "umd/index.js",
   "module": "esm/index.js",
@@ -11,7 +11,7 @@
     "document": "typedoc --plugin typedoc-plugin-markdown src/index.ts --readme none --hideBreadcrumbs --excludePrivate && mv docs/README.md . && rm -r docs",
     "build:umd": "rm -rf umd && webpack --config=webpack.umd.js",
     "build:esm": "rm -rf esm && tsc -b",
-    "build": "npm run build:umd && npm run build:esm && npm run document",
+    "build": "npm run build:umd && npm run build:esm",
     "check-assets": "node scripts/checkErc20Data.js",
     "generate-go-files": "node scripts/generateGoTokensFile.js"
   },
