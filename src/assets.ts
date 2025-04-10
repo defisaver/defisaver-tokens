@@ -2847,6 +2847,7 @@ export const assets: AssetDataBase[] = [
     symbol: 'PYUSD',
     feedAvailability: { 1: true },
     name: 'PayPal USD',
+    isStable: true,
     addresses: {
       1: "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
     },
