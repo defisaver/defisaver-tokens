@@ -1,5 +1,5 @@
 const axios = require('axios');
-const {getAssetInfo, utils: {compare}} = require('../umd');
+const {getAssetInfo, utils: {compare}} = require('../cjs');
 
 (async () => {
   const {data} = await axios('https://api.compound.finance/api/v2/ctoken');

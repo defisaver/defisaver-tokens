@@ -1,4 +1,4 @@
-import { AaveMarketData } from './types';
+import { AaveMarketData } from './types.js';
 
 export const aaveV2Markets:AaveMarketData[] = [
   {

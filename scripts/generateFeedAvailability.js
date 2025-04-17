@@ -3,7 +3,7 @@ const Web3 = require('web3');
 const fs = require('fs').promises;
 const path = require('path');
 
-const { assets } = require('../umd/index');
+const { assets } = require('../cjs');
 
 const web3Mainnet = new Web3(process.env.MAINNET_RPC);
 const web3Optimism = new Web3(process.env.OPTIMISM_RPC);

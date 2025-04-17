@@ -1,4 +1,4 @@
-import { AssetDataBase } from './types';
+import { AssetDataBase } from './types.js';
 
 const ETHAddress = "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
 const DAIAddress = "0x6b175474e89094c44da98b954eedeac495271d0f";

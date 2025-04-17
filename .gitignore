@@ -3,7 +3,7 @@ node_modules/
 .DS_Store
 yarn.lock
 esm/
-umd/
+cjs/
 .env
 .yarnrc.yml
 .yarn/releases

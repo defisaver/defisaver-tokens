@@ -1,17 +1,18 @@
-import Dec from 'decimal.js';
-import {assetProto, assets} from './assets';
+import {Decimal as Dec} from 'decimal.js';
+import {assetProto, assets} from './assets.js';
 export {assets}
-import {ilks} from './ilks';
+import {ilks} from './ilks.js';
 export {ilks}
-import {reflexerCollTypes} from './reflexerCollTypes';
+import {reflexerCollTypes} from './reflexerCollTypes.js';
 export {reflexerCollTypes}
-import {aaveV2Markets} from './aaveV2Markets';
+import {aaveV2Markets} from './aaveV2Markets.js';
 export {aaveV2Markets}
 
-import type {AaveMarketData, AssetDataBase, AssetData, ExtendedIlkData, IlkData, AddressMapping, Config} from './types';
+import type {AaveMarketData, AssetDataBase, AssetData, ExtendedIlkData, IlkData, AddressMapping, Config} from './types.js';
 export type {AaveMarketData, AssetDataBase, AssetData, ExtendedIlkData, IlkData, AddressMapping};
 
-import {stringToBytes, bytesToString, compare} from './utils';
+import {stringToBytes, bytesToString, compare} from './utils.js';
+export {stringToBytes, bytesToString, compare};
 
 const config: Config = {
   iconFunc: undefined,
@@ -21,8 +22,6 @@ const config: Config = {
 export const set = (key: string, value: any):void => {
   (config as any)[key] = value;
 }
-
-export const utils = {stringToBytes, bytesToString, compare};
 
 export const MAXUINT:string = '115792089237316195423570985008687907853269984665640564039457584007913129639935';
 

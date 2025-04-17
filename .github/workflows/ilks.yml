@@ -10,7 +10,7 @@ jobs:
     - name: Setup
       run: npm ci
     - name: Build package
-      run: npm run build:umd
+      run: npm run build:cjs
     - name: Fetch latest data
       run: npm run update-ilks
       env:

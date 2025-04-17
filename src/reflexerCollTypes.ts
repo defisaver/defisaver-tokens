@@ -1,4 +1,4 @@
-import { IlkData } from './types';
+import { IlkData } from './types.js';
 
 export const reflexerCollTypes:IlkData[] = [
   {

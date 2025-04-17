@@ -1,5 +1,5 @@
 require('dotenv').config()
-const { ilkToAsset, utils: {bytesToString} } = require('../umd');
+const { ilkToAsset, utils: {bytesToString} } = require('../cjs');
 const fs = require('fs').promises;
 
 const Web3 = require('web3');

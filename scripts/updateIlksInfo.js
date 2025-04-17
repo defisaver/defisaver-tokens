@@ -1,6 +1,6 @@
 const axios = require('axios');
 const fs = require('fs').promises;
-const {utils: {stringToBytes}} = require('../umd');
+const {utils: {stringToBytes}} = require('../cjs');
 
 (async () => {
   const {data} = await axios('https://changelog.makerdao.com/releases/mainnet/active/contracts.json');

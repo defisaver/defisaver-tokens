@@ -1,6 +1,6 @@
 /** AUTOMATICALLY GENERATED FILE **/
 
-import { IlkData } from './types';
+import { IlkData } from './types.js';
 
 export const ilks:IlkData[] = [
   {
