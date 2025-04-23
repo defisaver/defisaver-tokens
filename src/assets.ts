@@ -3227,5 +3227,17 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: '0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8',
     }
-  }
+  },
+  {
+    ...assetProto,
+    symbol: 'RLUSD',
+    name: 'Ripple USD',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    addresses: {
+      1: '0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD',
+    }
+  },
 ];
