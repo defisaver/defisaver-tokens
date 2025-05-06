@@ -251,6 +251,7 @@ export const assetProto: AssetDataBase = {
   aaveCollateral: false,
   yearnCollateral: false,
   isStable: false,
+  isPendle: false,
 };
 
 export const assets: AssetDataBase[] = [
@@ -3238,6 +3239,34 @@ export const assets: AssetDataBase[] = [
     isStable: true,
     addresses: {
       1: '0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'PT eUSDe May',
+    name: 'PT Ethereal eUSDe May',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    isPendle: true,
+    exchange: true,
+    addresses: {
+      1: '0x50D2C7992b802Eef16c04FeADAB310f31866a545',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'PT sUSDe July',
+    name: 'PT Ethena sUSDe July',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    isPendle: true,
+    exchange: true,
+    addresses: {
+      1: '0x3b3fB9C57858EF816833dC91565EFcd85D96f634',
     }
   },
 ];
