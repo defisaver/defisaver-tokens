@@ -3271,4 +3271,19 @@ export const assets: AssetDataBase[] = [
       1: '0x3b3fB9C57858EF816833dC91565EFcd85D96f634',
     }
   },
+  {
+    ...assetProto,
+    symbol: 'USDtb',
+    name: 'USDtb',
+    feedAvailability: { 1: true, 8453: true, 42161: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    exchange: true,
+    addresses: {
+      1: '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
+      8453: '0xc708B6887DB46005dA033501f8aeBee72d191a5d',
+      42161: '0xc708B6887DB46005dA033501f8aeBee72d191a5d',
+    }
+  },
 ];
