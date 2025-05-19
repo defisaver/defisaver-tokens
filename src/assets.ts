@@ -230,7 +230,8 @@ const SKYAddress = "0x56072C95FAA701256059aa122697B133aDEd9279";
 const sUSDSAddress = "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD";
 const rswETHAddress = "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0";
 const wsuperOETHbAddress = "0x7FcD174E80f264448ebeE8c88a7C4476AAF58Ea6";
-const boldAddress = "0xb01dd87b29d187f3e3a4bf6cdaebfb97f3d9ab98";
+const boldLegacyAddress = "0xb01dd87b29d187f3e3a4bf6cdaebfb97f3d9ab98";
+const boldAddress = "0x6440f144b7e50d6a8439336510312d2f54beb01d";
 const kingAddress = "0x8F08B70456eb22f6109F57b8fafE862ED28E6040";
 
 
@@ -3065,6 +3066,17 @@ export const assets: AssetDataBase[] = [
     addresses: {
       8453: wsuperOETHbAddress,
     },
+  },
+  {
+    ...assetProto,
+    symbol: 'BOLD Legacy',
+    name: "BOLD Legacy",
+    decimals: 18,
+    feedAvailability: { 1: true },
+    addresses: {
+      1: boldLegacyAddress,
+    },
+    isStable: true,
   },
   {
     ...assetProto,
