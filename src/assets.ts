@@ -3043,6 +3043,8 @@ export const assets: AssetDataBase[] = [
     name: 'Savings USDS',
     addresses: {
       1: sUSDSAddress,
+      42161: "0xddb46999f8891663a8f2828d25298f70416d7610",
+      8453: "0x5875eee11cf8398102fdad704c9e96607675467a"
     },
     decimals: 18,
     isStable: true,
