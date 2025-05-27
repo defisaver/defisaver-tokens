@@ -3300,4 +3300,47 @@ export const assets: AssetDataBase[] = [
       42161: '0xc708B6887DB46005dA033501f8aeBee72d191a5d',
     }
   },
+  {
+    ...assetProto,
+    symbol: 'eUSDe',
+    name: 'Ethereal eUSDe',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    exchange: true,
+    addresses: {
+      1: '0x90D2af7d622ca3141efA4d8f1F24d86E5974Cc8F',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'PT USDe July',
+    name: 'PT Ethena USDe July',
+    underlyingAsset: 'USDe',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    isPendle: true,
+    exchange: true,
+    addresses: {
+      1: '0x917459337CaAC939D41d7493B3999f571D20D667',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'PT eUSDe Aug',
+    name: 'PT Ethereal eUSDe August',
+    underlyingAsset: 'eUSDe',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    isPendle: true,
+    exchange: true,
+    addresses: {
+      1: '0x14Bdc3A3AE09f5518b923b69489CBcAfB238e617',
+    }
+  },
 ];
