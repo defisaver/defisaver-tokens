@@ -37,7 +37,7 @@ jobs:
           path: target-repo
           ssh-key: ${{ secrets.UPDATE_TOKENS_KEY }}
           persist-credentials: false
-          ref: staging
+          ref: main
 
       - name: Check if GO_FILE_PATH exists
         id: check-path
