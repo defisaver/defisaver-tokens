@@ -1,7 +1,12 @@
 "use strict";
-const fs = require('fs');
-const path = require('path');
-const a = require("../cjs");
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { assets } from "../cjs/index.js";
+
+// Get directory name in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Function to map chainID to chain_name
 function getChainName(chainID) {
@@ -63,7 +68,7 @@ func init() {
     fs.writeFileSync(filePath, output, 'utf8');
 }
 
-generateTokenFile(1, a.assets);
-generateTokenFile(10, a.assets);
-generateTokenFile(42161, a.assets);
-generateTokenFile(8453, a.assets);
+generateTokenFile(1, assets);
+generateTokenFile(10, assets);
+generateTokenFile(42161, assets);
+generateTokenFile(8453, assets);
