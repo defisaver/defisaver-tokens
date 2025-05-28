@@ -29,6 +29,7 @@ type AssetDataBase = {
   isStable: boolean;
   isPendle: boolean;
   nativeChainId: number;
+  expiryTimestamp: number;
 };
 
 /**
@@ -50,6 +51,7 @@ type AssetData = {
   isStable: boolean;
   isPendle: boolean;
   nativeChainId: number;
+  expiryTimestamp: number;
 };
 
 /**

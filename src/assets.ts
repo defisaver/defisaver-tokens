@@ -253,6 +253,7 @@ export const assetProto: AssetDataBase = {
   yearnCollateral: false,
   isStable: false,
   isPendle: false,
+  expiryTimestamp: 0,
 };
 
 export const assets: AssetDataBase[] = [
@@ -3266,6 +3267,7 @@ export const assets: AssetDataBase[] = [
     isStable: true,
     isPendle: true,
     exchange: true,
+    expiryTimestamp: 1748476800,
     addresses: {
       1: '0x50D2C7992b802Eef16c04FeADAB310f31866a545',
     }
@@ -3281,6 +3283,7 @@ export const assets: AssetDataBase[] = [
     isStable: true,
     isPendle: true,
     exchange: true,
+    expiryTimestamp: 1753920000,
     addresses: {
       1: '0x3b3fB9C57858EF816833dC91565EFcd85D96f634',
     }
@@ -3324,6 +3327,7 @@ export const assets: AssetDataBase[] = [
     isStable: true,
     isPendle: true,
     exchange: true,
+    expiryTimestamp: 1753920000,
     addresses: {
       1: '0x917459337CaAC939D41d7493B3999f571D20D667',
     }
@@ -3339,6 +3343,7 @@ export const assets: AssetDataBase[] = [
     isStable: true,
     isPendle: true,
     exchange: true,
+    expiryTimestamp: 1755129600,
     addresses: {
       1: '0x14Bdc3A3AE09f5518b923b69489CBcAfB238e617',
     }
