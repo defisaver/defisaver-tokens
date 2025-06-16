@@ -3348,4 +3348,15 @@ export const assets: AssetDataBase[] = [
       1: '0x14Bdc3A3AE09f5518b923b69489CBcAfB238e617',
     }
   },
+  {
+    ...assetProto,
+    symbol: 'SPK',
+    name: 'Spark',
+    decimals: 18,
+    nativeChainId: 1,
+    exchange: true,
+    addresses: {
+      1: '0xc20059e0317DE91738d13af027DfC4a50781b066'
+    }
+  }
 ];
