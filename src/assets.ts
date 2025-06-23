@@ -3358,5 +3358,33 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: '0xc20059e0317DE91738d13af027DfC4a50781b066'
     }
-  }
+  },
+  {
+    ...assetProto,
+    symbol: 'syrupUSDC',
+    name: 'Syrup USDC',
+    decimals: 18,
+    nativeChainId: 1,
+    exchange: true,
+    isStable: true,
+    addresses: {
+      1: '0x80ac24aA929eaF5013f6436cdA2a7ba190f5Cc0b'
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'PT syrupUSDC Aug',
+    name: 'PT Syrup USDC August',
+    underlyingAsset: 'syrupUSDC',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    isPendle: true,
+    exchange: true,
+    expiryTimestamp: 1756339200,
+    addresses: {
+      1: '0xCcE7D12f683c6dAe700154f0BAdf779C0bA1F89A',
+    }
+  },
 ];
