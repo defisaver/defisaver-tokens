@@ -3358,5 +3358,41 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: '0xc20059e0317DE91738d13af027DfC4a50781b066'
     }
-  }
+  },
+  {
+    ...assetProto,
+    symbol: 'aEthWETH',
+    name: 'Aave Ethereum WETH',
+    underlyingAsset: 'WETH',
+    decimals: 18,
+    nativeChainId: 1,
+    exchange: false,
+    addresses: {
+      1: '0x4d5F47FA6A74757f35C14fD3a6Ef8E3C9BC514E8'
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'aEthUSDC',
+    name: 'Aave Ethereum USDC',
+    underlyingAsset: 'USDC',
+    decimals: 18,
+    nativeChainId: 1,
+    exchange: false,
+    addresses: {
+      1: '0x98C23E9d8f34FEFb1B7BD6a91B7FF122F4e16F5c'
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'aEthUSDT',
+    name: 'Aave Ethereum USDT',
+    underlyingAsset: 'USDT',
+    decimals: 18,
+    nativeChainId: 1,
+    exchange: false,
+    addresses: {
+      1: '0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a'
+    }
+  },
 ];
