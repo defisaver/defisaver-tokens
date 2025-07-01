@@ -3423,4 +3423,15 @@ export const assets: AssetDataBase[] = [
       1: '0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a'
     }
   },
+  {
+    ...assetProto,
+    symbol: 'FBTC',
+    name: 'Fire Bitcoin',
+    decimals: 8,
+    nativeChainId: 1,
+    exchange: true,
+    addresses: {
+      1: '0xC96dE26018A54D51c097160568752c4E3BD6C364'
+    }
+  },
 ];
