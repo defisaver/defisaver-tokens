@@ -3404,7 +3404,7 @@ export const assets: AssetDataBase[] = [
     symbol: 'aEthUSDC',
     name: 'Aave Ethereum USDC',
     underlyingAsset: 'USDC',
-    decimals: 18,
+    decimals: 6,
     nativeChainId: 1,
     exchange: false,
     addresses: {
@@ -3416,7 +3416,7 @@ export const assets: AssetDataBase[] = [
     symbol: 'aEthUSDT',
     name: 'Aave Ethereum USDT',
     underlyingAsset: 'USDT',
-    decimals: 18,
+    decimals: 6,
     nativeChainId: 1,
     exchange: false,
     addresses: {
