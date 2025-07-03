@@ -3434,4 +3434,16 @@ export const assets: AssetDataBase[] = [
       1: '0xC96dE26018A54D51c097160568752c4E3BD6C364'
     }
   },
+  {
+    ...assetProto,
+    symbol: 'FUSDC',
+    name: 'Fluid USDC',
+    underlyingAsset: 'USDC',
+    decimals: 6,
+    nativeChainId: 1,
+    isStable: true,
+    addresses: {
+      1: '0x9Fb7b4477576Fe5B32be4C1843aFB1e55F251B33'
+    }
+  }
 ];
