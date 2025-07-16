@@ -233,6 +233,8 @@ const wsuperOETHbAddress = "0x7FcD174E80f264448ebeE8c88a7C4476AAF58Ea6";
 const boldLegacyAddress = "0xb01dd87b29d187f3e3a4bf6cdaebfb97f3d9ab98";
 const boldAddress = "0x6440f144b7e50d6a8439336510312d2f54beb01d";
 const kingAddress = "0x8F08B70456eb22f6109F57b8fafE862ED28E6040";
+const sBOLD = "0x50Bd66D59911F5e086Ec87aE43C811e0D059DD11";
+const yBOLD = "0x9F4330700a36B29952869fac9b33f45EEdd8A3d8";
 
 
 export const assetProto: AssetDataBase = {
@@ -3448,6 +3450,32 @@ export const assets: AssetDataBase[] = [
     expiryTimestamp: 1758758400,
     addresses: {
       1: '0x9f56094c450763769ba0ea9fe2876070c0fd5f77',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'sBOLD',
+    name: 'sBOLD',
+    underlyingAsset: 'BOLD',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    exchange: true,
+    addresses: {
+      1: sBOLD
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'yBOLD',
+    name: 'Yearn BOLD',
+    underlyingAsset: 'BOLD',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    exchange: true,
+    addresses: {
+      1: yBOLD
     }
   },
 ];
