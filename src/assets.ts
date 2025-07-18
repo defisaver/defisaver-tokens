@@ -235,7 +235,7 @@ const boldAddress = "0x6440f144b7e50d6a8439336510312d2f54beb01d";
 const kingAddress = "0x8F08B70456eb22f6109F57b8fafE862ED28E6040";
 const sBOLD = "0x50Bd66D59911F5e086Ec87aE43C811e0D059DD11";
 const yBOLD = "0x9F4330700a36B29952869fac9b33f45EEdd8A3d8";
-const stYBOLD = "0x23346B04a7f55b8760E5860AA5A77383D63491cD";
+const ysyYBOLD = "0x23346B04a7f55b8760E5860AA5A77383D63491cD";
 
 
 export const assetProto: AssetDataBase = {
@@ -3481,7 +3481,7 @@ export const assets: AssetDataBase[] = [
   },
    {
     ...assetProto,
-    symbol: 'st-yBOLD',
+    symbol: 'ysyBOLD',
     name: 'staked yBOLD',
     underlyingAsset: 'yBOLD',
     feedAvailability: { 1: true },
@@ -3489,7 +3489,7 @@ export const assets: AssetDataBase[] = [
     nativeChainId: 1,
     exchange: true,
     addresses: {
-      1: stYBOLD
+      1: ysyYBOLD
     }
   },
 ];
