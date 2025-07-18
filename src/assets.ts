@@ -3482,7 +3482,7 @@ export const assets: AssetDataBase[] = [
    {
     ...assetProto,
     symbol: 'ysyBOLD',
-    name: 'staked yBOLD',
+    name: 'Staked yBOLD',
     underlyingAsset: 'yBOLD',
     feedAvailability: { 1: true },
     decimals: 18,
