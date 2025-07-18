@@ -3458,10 +3458,9 @@ export const assets: AssetDataBase[] = [
     symbol: 'sBOLD',
     name: 'sBOLD',
     underlyingAsset: 'BOLD',
-    feedAvailability: { 1: true },
     decimals: 18,
     nativeChainId: 1,
-    exchange: true,
+    exchange: false,
     addresses: {
       1: sBOLD
     }
@@ -3471,10 +3470,9 @@ export const assets: AssetDataBase[] = [
     symbol: 'yBOLD',
     name: 'Yearn BOLD',
     underlyingAsset: 'BOLD',
-    feedAvailability: { 1: true },
     decimals: 18,
     nativeChainId: 1,
-    exchange: true,
+    exchange: false,
     addresses: {
       1: yBOLD
     }
@@ -3484,10 +3482,9 @@ export const assets: AssetDataBase[] = [
     symbol: 'ysyBOLD',
     name: 'Staked yBOLD',
     underlyingAsset: 'yBOLD',
-    feedAvailability: { 1: true },
     decimals: 18,
     nativeChainId: 1,
-    exchange: true,
+    exchange: false,
     addresses: {
       1: ysyYBOLD
     }
