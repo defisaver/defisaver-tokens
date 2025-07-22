@@ -3028,6 +3028,7 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     addresses: {
       1: USDSAddress,
+      8453: "0x820C137fa70C8691f0e44Dc420a5e53c168921Dc",
     },
     isStable: true,
   },
