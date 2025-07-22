@@ -1074,7 +1074,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'AAVE',
-    feedAvailability: { 1: true, 10: true, 42161: true },
+    feedAvailability: { 1: true, 10: true, 8453: true, 42161: true },
     name: 'Aave',
     addresses: {
       1: AAVEAddress,
@@ -3174,7 +3174,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'EURC',
-    feedAvailability: { 8453: true },
+    feedAvailability: { 1: true, 8453: true },
     name: 'Euro Coin',
     decimals: 6,
     nativeChainId: 1,
@@ -3252,8 +3252,8 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'RLUSD',
-    name: 'Ripple USD',
     feedAvailability: { 1: true },
+    name: 'Ripple USD',
     decimals: 18,
     nativeChainId: 1,
     isStable: true,
@@ -3296,8 +3296,8 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDtb',
+    feedAvailability: { 1: true },
     name: 'USDtb',
-    feedAvailability: { 1: true, 8453: true, 42161: true },
     decimals: 18,
     nativeChainId: 1,
     isStable: true,
@@ -3311,8 +3311,8 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'eUSDe',
-    name: 'Ethereal eUSDe',
     feedAvailability: { 1: true },
+    name: 'Ethereal eUSDe',
     decimals: 18,
     nativeChainId: 1,
     isStable: true,
@@ -3431,6 +3431,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'FBTC',
+    feedAvailability: { 1: true },
     name: 'Fire Bitcoin',
     decimals: 8,
     nativeChainId: 1,
@@ -3494,6 +3495,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'deUSD',
+    feedAvailability: { 1: true },
     name: 'Elixir deUSD',
     decimals: 18,
     nativeChainId: 1,

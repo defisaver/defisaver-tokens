@@ -1,9 +1,10 @@
-require('dotenv').config()
-const Web3 = require('web3');
-const fs = require('fs').promises;
-const path = require('path');
+import 'dotenv/config'
+import Web3 from 'web3';
+import fs from 'fs/promises';
+import { fileURLToPath } from 'url';
+import path from 'path';
 
-const { assets } = require('../cjs');
+import { assets } from '../esm/index.js';
 
 const web3Mainnet = new Web3(process.env.MAINNET_RPC);
 const web3Optimism = new Web3(process.env.OPTIMISM_RPC);
@@ -70,6 +71,8 @@ function formatFeedAvailability(symbol, priceAvailabilityMap) {
     const priceAvailabilityMap = {};
     res.map((r, i) => priceAvailabilityMap[assets[i].symbol] = r);
     // update assets.ts
+    const __filename = fileURLToPath(import.meta.url);
+    const __dirname = path.dirname(__filename);
     const filePath = path.join(__dirname, '/../src/assets.ts');
     const assetsFile = await fs.readFile(filePath, 'utf-8');
 
