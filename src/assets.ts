@@ -1079,6 +1079,7 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: AAVEAddress,
       10: '0x76FB31fb4af56892A25e32cFC43De717950c9278',
+      8453: '0x63706e401c06ac8513145b7687A14804d17f814b',
       42161: '0xba5ddd1f9d7f570dc94a51479a000e3bce967196',
     },
     decimals: 18,
@@ -2810,6 +2811,7 @@ export const assets: AssetDataBase[] = [
     name: 'tBTC',
     addresses: {
       1: tBTCAddress,
+      8453: '0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b',
     },
     decimals: 18,
   },
@@ -3477,7 +3479,7 @@ export const assets: AssetDataBase[] = [
       1: yBOLD
     }
   },
-   {
+  {
     ...assetProto,
     symbol: 'ysyBOLD',
     name: 'Staked yBOLD',
@@ -3487,6 +3489,29 @@ export const assets: AssetDataBase[] = [
     exchange: false,
     addresses: {
       1: ysyYBOLD
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'deUSD',
+    name: 'Elixir deUSD',
+    decimals: 18,
+    nativeChainId: 1,
+    exchange: false,
+    addresses: {
+      1: '0x15700B564Ca08D9439C58cA5053166E8317aa138'
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'sdeUSD',
+    name: 'Elixir Staked deUSD',
+    underlyingAsset: 'deUSD',
+    decimals: 18,
+    nativeChainId: 1,
+    exchange: false,
+    addresses: {
+      1: '0x5C5b196aBE0d54485975D1Ec29617D42D9198326'
     }
   },
 ];
