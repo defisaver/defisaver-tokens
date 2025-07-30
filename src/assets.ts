@@ -257,6 +257,7 @@ export const assetProto: AssetDataBase = {
   isStable: false,
   isPendle: false,
   expiryTimestamp: 0,
+  is4626: false,
 };
 
 export const assets: AssetDataBase[] = [
@@ -2789,6 +2790,7 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
     isStable: true,
+    is4626: true,
   },
   {
     ...assetProto,
@@ -2873,6 +2875,7 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     exchange: true,
     isStable: true,
+    is4626: true,
   },
   {
     ...assetProto,
@@ -3055,6 +3058,7 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
     isStable: true,
+    is4626: true,
   },
   {
     ...assetProto,
@@ -3318,6 +3322,7 @@ export const assets: AssetDataBase[] = [
     nativeChainId: 1,
     isStable: true,
     exchange: true,
+    is4626: true,
     addresses: {
       1: '0x90D2af7d622ca3141efA4d8f1F24d86E5974Cc8F',
     }
@@ -3465,6 +3470,7 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     nativeChainId: 1,
     exchange: false,
+    is4626: true,
     addresses: {
       1: sBOLD
     }
@@ -3477,6 +3483,7 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     nativeChainId: 1,
     exchange: false,
+    is4626: true,
     addresses: {
       1: yBOLD
     }
@@ -3489,6 +3496,7 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     nativeChainId: 1,
     exchange: false,
+    is4626: true,
     addresses: {
       1: ysyYBOLD
     }
@@ -3513,6 +3521,7 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     nativeChainId: 1,
     exchange: false,
+    is4626: true,
     addresses: {
       1: '0x5C5b196aBE0d54485975D1Ec29617D42D9198326'
     }
