@@ -1424,6 +1424,7 @@ export const assets: AssetDataBase[] = [
     name: 'Liquity',
     addresses: {
       1: LqtyAddress,
+      42161: '0xfb9E5D956D889D91a82737B9bFCDaC1DCE3e1449'
     },
     exchange: true,
     decimals: 18,
