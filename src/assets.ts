@@ -2800,8 +2800,8 @@ export const assets: AssetDataBase[] = [
     name: 'GHO',
     addresses: {
       1: '0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f',
-      42161: '0x7dff72693f6a4149b17e7c6314655f6a9f7c8b33',
       8453: '0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee',
+      42161: '0x7dff72693f6a4149b17e7c6314655f6a9f7c8b33',
     },
     nativeChainId: 1,
     decimals: 18,
@@ -2814,6 +2814,7 @@ export const assets: AssetDataBase[] = [
     name: 'tBTC',
     addresses: {
       1: tBTCAddress,
+      10: '0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b',
       8453: '0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b',
       42161: '0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40',
     },
