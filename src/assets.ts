@@ -2814,7 +2814,6 @@ export const assets: AssetDataBase[] = [
     name: 'tBTC',
     addresses: {
       1: tBTCAddress,
-      10: '0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b',
       8453: '0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b',
       42161: '0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40',
     },
