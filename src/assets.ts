@@ -3568,5 +3568,21 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: '0x808507121B80c02388fAd14726482e061B8da827',
     }
-  }
+  },
+  {
+    ...assetProto,
+    symbol: 'PT sUSDe Nov',
+    name: 'PT Ethena sUSDe November',
+    underlyingAsset: 'sUSDe',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    isPendle: true,
+    exchange: true,
+    expiryTimestamp: 1764201600,
+    addresses: {
+      1: '0xe6A934089BBEe34F832060CE98848359883749B3',
+    }
+  },
 ];
