@@ -6,6 +6,10 @@ import path from 'path';
 
 import { assets } from '../esm/index.js';
 
+if (!process.env.MAINNET_RPC || !process.env.OPTIMISM_RPC || !process.env.ARBITRUM_RPC || !process.env.BASE_RPC) {
+    throw new Error('Please set MAINNET_RPC, OPTIMISM_RPC, ARBITRUM_RPC and BASE_RPC in your .env file');
+}
+
 const web3Mainnet = new Web3(process.env.MAINNET_RPC);
 const web3Optimism = new Web3(process.env.OPTIMISM_RPC);
 const web3Arbitrum = new Web3(process.env.ARBITRUM_RPC);
