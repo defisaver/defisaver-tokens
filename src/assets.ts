@@ -2810,7 +2810,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'tBTC',
-    feedAvailability: { 1: true },
+    feedAvailability: { 1: true, 8453: true, 42161: true },
     name: 'tBTC',
     addresses: {
       1: tBTCAddress,
@@ -3249,6 +3249,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'tETH',
+    feedAvailability: { 1: true },
     name: 'Treehouse ETH',
     decimals: 18,
     nativeChainId: 1,
@@ -3547,6 +3548,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'XAUt',
+    feedAvailability: { 1: true },
     name: 'Tether Gold',
     decimals: 6,
     nativeChainId: 1,
