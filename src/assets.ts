@@ -3580,10 +3580,9 @@ export const assets: AssetDataBase[] = [
     isStable: true,
     isPendle: true,
     exchange: true,
-    // TODO JK@JK Add correct timestamp and address
-    expiryTimestamp: 1758758400,
+    expiryTimestamp: 1764201600,
     addresses: {
-      1: '',
+      1: '0xe6A934089BBEe34F832060CE98848359883749B3',
     }
   },
 ];
