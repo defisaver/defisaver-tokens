@@ -3554,5 +3554,17 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: '0x68749665FF8D2d112Fa859AA293F07A622782F38',
     }
+  },
+  {
+    ...assetProto,
+    symbol: 'PENDLE',
+    name: 'Pendle',
+    decimals: 18,
+    nativeChainId: 1,
+    isPendle: true,
+    exchange: true,
+    addresses: {
+      1: '0x808507121B80c02388fAd14726482e061B8da827',
+    }
   }
 ];
