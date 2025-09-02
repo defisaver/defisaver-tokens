@@ -3554,5 +3554,22 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: '0x68749665FF8D2d112Fa859AA293F07A622782F38',
     }
-  }
+  },
+  {
+    ...assetProto,
+    symbol: 'PT sUSDe Nov',
+    name: 'PT Ethena sUSDe November',
+    underlyingAsset: 'sUSDe',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    isPendle: true,
+    exchange: true,
+    // TODO JK@JK Add correct timestamp and address
+    expiryTimestamp: 1758758400,
+    addresses: {
+      1: '',
+    }
+  },
 ];
