@@ -274,6 +274,7 @@ export const assets: AssetDataBase[] = [
       10: ETHAddress,
       8453: ETHAddress,
       42161: ETHAddress,
+      59144: ETHAddress,
     },
   },
   {
@@ -287,6 +288,7 @@ export const assets: AssetDataBase[] = [
       10: '0x4200000000000000000000000000000000000006',
       8453: '0x4200000000000000000000000000000000000006',
       42161: '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
+      59144: '0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f',
     },
     yearnCollateral: true,
   },
@@ -474,6 +476,7 @@ export const assets: AssetDataBase[] = [
       10: '0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85',
       8453: '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913',
       42161: '0xaf88d065e77c8cC2239327C5EDb3A432268e5831',
+      59144: '0x176211869cA2b568f2A7D4EE941E073a821EE1ff',
     },
     isStable: true,
   },
@@ -529,6 +532,7 @@ export const assets: AssetDataBase[] = [
       1: WBTCAddress,
       10: '0x68f180fcce6836688e9084f035309e29bf0a2095',
       42161: '0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f',
+      59144: '0x3aAB2285ddcDdaD8edf438C1bAB47e1a9D05a9b4',
     },
   },
   {
@@ -567,6 +571,7 @@ export const assets: AssetDataBase[] = [
       1: USDTAddress,
       10: '0x94b008aa00579c1307b0ef2c499ad98a8ce58e58',
       42161: '0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9',
+      59144: '0xA219439258ca9da29E9Cc4cE5596924745e12B93',
     },
     isStable: true,
   },
@@ -2208,7 +2213,8 @@ export const assets: AssetDataBase[] = [
       1: wstETHAddress,
       10: '0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb',
       42161: '0x5979D7b546E38E414F7E9822514be443A4800529',
-      8453: '0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452'
+      8453: '0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452',
+      59144: '0xB5beDd42000b71FddE22D3eE8a79Bd49A568fC8F',
     },
   },
   {
@@ -2923,6 +2929,7 @@ export const assets: AssetDataBase[] = [
       10: "0x346e03f8cce9fe01dcb3d0da3e9d00dc2c0e08f0",
       42161: "0x35751007a407ca6feffe80b3cb397736d2cf4dbe",
       8453: "0x04c0599ae5a44757c0af6f9ec3b93da8976c150a",
+      59144: "0x1Bf74C010E6320bab11e2e5A532b5AC15e0b8aA6",
     },
     decimals: 18,
     exchange: true,
@@ -2948,6 +2955,7 @@ export const assets: AssetDataBase[] = [
       10: "0x2416092f143378750bb29b79eD961ab195CcEea5",
       8453: "0x2416092f143378750bb29b79eD961ab195CcEea5",
       42161: "0x2416092f143378750bb29b79ed961ab195cceea5",
+      59144: "0x2416092f143378750bb29b79eD961ab195CcEea5",
     },
     decimals: 18,
     exchange: true,
@@ -2996,7 +3004,8 @@ export const assets: AssetDataBase[] = [
     name: 'Wrapped Kelp DAO Restaked ETH',
     addresses: {
       10: "0x87eEE96D50Fb761AD85B1c982d28A042169d61b1",
-      8453: "0xEDfa23602D0EC14714057867A78d01e94176BEA0"
+      8453: "0xEDfa23602D0EC14714057867A78d01e94176BEA0",
+      59144: '0xD2671165570f41BBB3B0097893300b6EB6101E6C',
     },
     decimals: 18,
     exchange: true,
