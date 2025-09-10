@@ -3610,4 +3610,18 @@ export const assets: AssetDataBase[] = [
       1: '0x62C6E813b9589C3631Ba0Cdb013acdB8544038B7',
     }
   },
+  {
+    ...assetProto,
+    symbol: 'LINEA',
+    name: 'Linea',
+    feedAvailability: { 1: true, 59144: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: false,
+    exchange: true,
+    addresses: {
+      1: '0x1789e0043623282D5DCc7F213d703C6D8BAfBB04',
+      59144: '0x1789e0043623282d5dcc7f213d703c6d8bafbb04',
+    }
+  },
 ];
