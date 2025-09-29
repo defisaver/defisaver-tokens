@@ -289,6 +289,7 @@ export const assets: AssetDataBase[] = [
       8453: '0x4200000000000000000000000000000000000006',
       42161: '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
       59144: '0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f',
+      9745: '0x9895d81bb462a195b4922ed7de0e3acd007c32cb',
     },
     yearnCollateral: true,
   },
@@ -572,6 +573,7 @@ export const assets: AssetDataBase[] = [
       10: '0x94b008aa00579c1307b0ef2c499ad98a8ce58e58',
       42161: '0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9',
       59144: '0xA219439258ca9da29E9Cc4cE5596924745e12B93',
+      9745: '0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb',
     },
     isStable: true,
   },
@@ -2879,6 +2881,7 @@ export const assets: AssetDataBase[] = [
     name: 'Staked USDe',
     addresses: {
       1: "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497",
+      9745: "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
     },
     decimals: 18,
     exchange: true,
@@ -2892,6 +2895,7 @@ export const assets: AssetDataBase[] = [
     name: 'USDe',
     addresses: {
       1: "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
+      9745: "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
     },
     decimals: 18,
     exchange: true,
@@ -2930,6 +2934,7 @@ export const assets: AssetDataBase[] = [
       42161: "0x35751007a407ca6feffe80b3cb397736d2cf4dbe",
       8453: "0x04c0599ae5a44757c0af6f9ec3b93da8976c150a",
       59144: "0x1Bf74C010E6320bab11e2e5A532b5AC15e0b8aA6",
+      9745: "0xa3d68b74bf0528fdd07263c60d6488749044914b",
     },
     decimals: 18,
     exchange: true,
@@ -3564,6 +3569,7 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     addresses: {
       1: '0x68749665FF8D2d112Fa859AA293F07A622782F38',
+      9745: '0x1b64b9025eebb9a6239575df9ea4b9ac46d4d193',
     }
   },
   {
