@@ -3630,4 +3630,28 @@ export const assets: AssetDataBase[] = [
       59144: '0x1789e0043623282d5dcc7f213d703c6d8bafbb04',
     }
   },
+  {
+    ...assetProto,
+    symbol: 'XPL',
+    feedAvailability: { 9745: true },
+    name: 'XPL',
+    decimals: 18,
+    exchange: true,
+    nativeChainId: 9745,
+    addresses: {
+      9745: ETHAddress,
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'WXPL',
+    feedAvailability: { 9745: true },
+    name: 'Wrapped XPL',
+    decimals: 18,
+    exchange: true,
+    nativeChainId: 9745,
+    addresses: {
+      9745: '0x6100E367285b01F48D07953803A2d8dCA5D19873',
+    },
+  },
 ];
