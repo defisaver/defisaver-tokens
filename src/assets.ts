@@ -3654,4 +3654,14 @@ export const assets: AssetDataBase[] = [
       9745: '0x6100E367285b01F48D07953803A2d8dCA5D19873',
     },
   },
+  {
+    ...assetProto,
+    symbol: 'wstUSR',
+    name: 'Wrapped stUSR',
+    decimals: 18,
+    exchange: true,
+    addresses: {
+      1: '0x1202F5C7b4B9E47a1A484E8B270be34dbbC75055',
+    },
+  },
 ];
