@@ -14,7 +14,9 @@ function getChainName(chainID) {
         1: 'mainnet',
         10: 'optimism',
         42161: 'arbitrum',
-        8453: 'base'
+        8453: 'base',
+        59144: 'linea',
+        9745: 'plasma'
     };
     return chainMap[chainID] || 'unknown_chain';
 }
@@ -72,3 +74,5 @@ generateTokenFile(1, assets);
 generateTokenFile(10, assets);
 generateTokenFile(42161, assets);
 generateTokenFile(8453, assets);
+generateTokenFile(59144, assets);
+generateTokenFile(9745, assets);
