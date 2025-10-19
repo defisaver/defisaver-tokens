@@ -3011,6 +3011,7 @@ export const assets: AssetDataBase[] = [
       10: "0x87eEE96D50Fb761AD85B1c982d28A042169d61b1",
       8453: "0xEDfa23602D0EC14714057867A78d01e94176BEA0",
       59144: '0xD2671165570f41BBB3B0097893300b6EB6101E6C',
+      9745: '0xe561FE05C39075312Aa9Bc6af79DdaE981461359',
     },
     decimals: 18,
     exchange: true,
@@ -3662,6 +3663,32 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     addresses: {
       1: '0x1202F5C7b4B9E47a1A484E8B270be34dbbC75055',
+      9745: '0x2a52B289bA68bBd02676640aA9F605700c9e5699',
     },
+  },
+  {
+    ...assetProto,
+    symbol: 'USDai',
+    name: 'USDai',
+    decimals: 18,
+    exchange: true,
+    addresses: {
+      1: '0x0A1a1A107E45b7Ced86833863f482BC5f4ed82EF',
+      42161: '0x0A1a1A107E45b7Ced86833863f482BC5f4ed82EF',
+      9745: '0x0A1a1A107E45b7Ced86833863f482BC5f4ed82EF',
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'syrupUSDT',
+    name: 'Syrup USDT',
+    decimals: 6,
+    nativeChainId: 1,
+    exchange: true,
+    isStable: true,
+    addresses: {
+      1: '0x356B8d89c1e1239Cbbb9dE4815c39A1474d5BA7D',
+      9745: '0xC4374775489CB9C56003BF2C9b12495fC64F0771'
+    }
   },
 ];
