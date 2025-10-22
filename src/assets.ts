@@ -2207,7 +2207,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'wstETH',
-    feedAvailability: { 1: true, 10: true, 8453: true, 42161: true },
+    feedAvailability: { 1: true, 10: true, 8453: true, 42161: true, 9745: true, },
     name: 'Wrapped stETH',
     decimals: 18,
     exchange: true,
@@ -2217,6 +2217,7 @@ export const assets: AssetDataBase[] = [
       42161: '0x5979D7b546E38E414F7E9822514be443A4800529',
       8453: '0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452',
       59144: '0xB5beDd42000b71FddE22D3eE8a79Bd49A568fC8F',
+      9745: '0xe48D935e6C9e735463ccCf29a7F11e32bC09136E',
     },
   },
   {
@@ -3004,7 +3005,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'wrsETH',
-    feedAvailability: { 8453: true },
+    feedAvailability: { 8453: true, 9745: true },
     nativeChainId: 8453,
     name: 'Wrapped Kelp DAO Restaked ETH',
     addresses: {
@@ -3615,6 +3616,38 @@ export const assets: AssetDataBase[] = [
     expiryTimestamp: 1764201600,
     addresses: {
       1: '0x62C6E813b9589C3631Ba0Cdb013acdB8544038B7',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'PT sUSDe Jan',
+    name: 'PT sUSDe January 2026',
+    underlyingAsset: 'USDe',
+    feedAvailability: { 9745: true },
+    decimals: 18,
+    nativeChainId: 9745,
+    isStable: true,
+    isPendle: true,
+    exchange: true,
+    expiryTimestamp: 1768435200,
+    addresses: {
+      9745: '0x02FCC4989B4C9D435b7ceD3fE1Ba4CF77BBb5Dd8',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'PT USDe Jan',
+    name: 'PT USDe January 2026',
+    underlyingAsset: 'USDe',
+    feedAvailability: { 9745: true },
+    decimals: 18,
+    nativeChainId: 9745,
+    isStable: true,
+    isPendle: true,
+    exchange: true,
+    expiryTimestamp: 1768435200,
+    addresses: {
+      9745: '0x93B544c330F60A2aa05ceD87aEEffB8D38FD8c9a',
     }
   },
   {
