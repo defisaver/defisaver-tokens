@@ -3725,4 +3725,17 @@ export const assets: AssetDataBase[] = [
       9745: '0xC4374775489CB9C56003BF2C9b12495fC64F0771'
     }
   },
+  {
+    ...assetProto,
+    symbol: 'EIGEN',
+    name: 'EigenCloud',
+    decimals: 18,
+    nativeChainId: 1,
+    exchange: true,
+    isStable: false,
+    addresses: {
+      1: '0xec53bF9167f50cDEB3Ae105f56099aaaB9061F83',
+      8453: '0x2081ab0d9ec9e4303234ab26d86b20b3367946ee',
+    },
+  }
 ];
