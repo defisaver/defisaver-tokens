@@ -3227,6 +3227,7 @@ export const assets: AssetDataBase[] = [
     isStable: true,
     addresses: {
       1: '0x66a1E37c9b0eAddca17d3662D6c05F4DECf3e110',
+      9745: '0xb1b385542B6E80F77B94393Ba8342c3Af699f15c'
     }
   },
   {
