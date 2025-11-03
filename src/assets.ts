@@ -3399,7 +3399,8 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     isStable: true,
     addresses: {
-      1: '0x80ac24aA929eaF5013f6436cdA2a7ba190f5Cc0b'
+      1: '0x80ac24aA929eaF5013f6436cdA2a7ba190f5Cc0b',
+      42161: '0x41CA7586cC1311807B4605fBB748a3B8862b42b5',
     }
   },
   {
