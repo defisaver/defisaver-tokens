@@ -2915,6 +2915,17 @@ export const assets: AssetDataBase[] = [
   },
   {
     ...assetProto,
+    symbol: 'sENA',
+    name: 'Staked Ethena',
+    addresses: {
+      1: "0x8bE3460A480c80728a8C4D7a5D5303c85ba7B3b9",
+    },
+    decimals: 18,
+    exchange: false,
+    isStable: false,
+  },
+  {
+    ...assetProto,
     symbol: 'FXN',
     name: 'f(x) Protocol',
     addresses: {
