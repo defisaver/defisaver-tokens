@@ -236,6 +236,7 @@ const kingAddress = "0x8F08B70456eb22f6109F57b8fafE862ED28E6040";
 const sBOLD = "0x50Bd66D59911F5e086Ec87aE43C811e0D059DD11";
 const yBOLD = "0x9F4330700a36B29952869fac9b33f45EEdd8A3d8";
 const ysyYBOLD = "0x23346B04a7f55b8760E5860AA5A77383D63491cD";
+const mmUSDAddress = "0xacA92E438df0B2401fF60dA7E4337B687a2435DA";
 
 
 export const assetProto: AssetDataBase = {
@@ -3781,5 +3782,17 @@ export const assets: AssetDataBase[] = [
       1: '0xec53bF9167f50cDEB3Ae105f56099aaaB9061F83',
       8453: '0x2081ab0d9ec9e4303234ab26d86b20b3367946ee',
     },
-  }
+  },
+  {
+    ...assetProto,
+    symbol: 'mmUSD',
+    name: 'MetaMask USD',
+    exchange: true,
+    decimals: 18,
+    addresses: {
+      1: mmUSDAddress,
+      59144: mmUSDAddress,
+    },
+    isStable: true,
+  },
 ];
