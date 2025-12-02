@@ -143,7 +143,7 @@ const TUSD3CRVfAddress = "0xEcd5e75AFb02eFa118AF914515D6521aaBd189F1";
 const BUSD3CRVfAddress = "0x4807862AA8b2bF68830e4C8dc86D0e9A998e085a";
 const Dusd3CRVAddress = "0x3a664Ab939FD8482048609f652f9a0B0677337B9";
 const Ust3CRVAddress = "0x94e131324b6054c0D789b190b2dAC504e4361b53";
-const Musd3CRVAddress = "0x1AEf73d49Dedc4b1778d0706583995958Dc862e6";
+const MStableUSD3CRVAddress = "0x1AEf73d49Dedc4b1778d0706583995958Dc862e6";
 const CrvPlain3andSUSDAddress = "0xC25a3A3b969415c80451098fa907EC722572917F";
 const LinkCRVAddress = "0xcee60cFa923170e4f8204AE08B4fA6A3F5656F3a";
 const Usdn3CRVAddress = "0x4f3E8F405CF5aFC05D68142F3783bDfE13811522";
@@ -206,8 +206,8 @@ const SohmAddress = "0x04f2694c8fcee23e8fd0dfea1d4f5bb8c352111f";
 const AlusdAddress = "0xbc6da0fe9ad5f3b0d58160288917aa56653660e9";
 const AlethAddress = "0x0100546f2cd4c9d97f798ffc9755e47865ff7ee6";
 const EnsAddress = "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72";
-const MusdAddress = "0xe2f2a5c287993345a840db3b0845fbc70f5935a5";
-const ImusdAddress = "0x30647a72dc82d7fbb1123ea74716ab8a317eac19";
+const MstableusdAddress = "0xe2f2a5c287993345a840db3b0845fbc70f5935a5";
+const ImstableusdAddress = "0x30647a72dc82d7fbb1123ea74716ab8a317eac19";
 const cUSDPAddress = "0x041171993284df560249B57358F931D9eB7b925D";
 const GuniDaiUsdc1Address = "0xAbDDAfB225e10B90D798bB8A886238Fb835e2053";
 const GuniDaiUsdc2Address = "0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e";
@@ -236,7 +236,7 @@ const kingAddress = "0x8F08B70456eb22f6109F57b8fafE862ED28E6040";
 const sBOLD = "0x50Bd66D59911F5e086Ec87aE43C811e0D059DD11";
 const yBOLD = "0x9F4330700a36B29952869fac9b33f45EEdd8A3d8";
 const ysyYBOLD = "0x23346B04a7f55b8760E5860AA5A77383D63491cD";
-const mmUSDAddress = "0xacA92E438df0B2401fF60dA7E4337B687a2435DA";
+const mUSDAddress = "0xacA92E438df0B2401fF60dA7E4337B687a2435DA";
 
 
 export const assetProto: AssetDataBase = {
@@ -1870,12 +1870,12 @@ export const assets: AssetDataBase[] = [
   },
   {
     ...assetProto,
-    symbol: 'crvMUSD',
-    name: 'Curve.fi MUSD/3Crv',
+    symbol: 'crvMStableUSD',
+    name: 'Curve.fi mStableUSD/3Crv',
     decimals: 18,
     yearnCollateral: true,
     addresses: {
-      1: Musd3CRVAddress,
+      1: MStableUSD3CRVAddress,
     },
   },
   {
@@ -2525,21 +2525,21 @@ export const assets: AssetDataBase[] = [
   },
   {
     ...assetProto,
-    symbol: 'mUSD',
+    symbol: 'mStableUSD',
     name: 'mStable USD',
     exchange: true,
     decimals: 18,
     addresses: {
-      1: MusdAddress,
+      1: MstableusdAddress,
     },
   },
   {
     ...assetProto,
-    symbol: 'imUSD',
-    name: 'Interest bearing mUSD',
+    symbol: 'imStableUSD',
+    name: 'Interest bearing mStableUSD',
     decimals: 18,
     addresses: {
-      1: ImusdAddress,
+      1: ImstableusdAddress,
     },
   },
   {
@@ -3785,13 +3785,13 @@ export const assets: AssetDataBase[] = [
   },
   {
     ...assetProto,
-    symbol: 'mmUSD',
+    symbol: 'mUSD',
     name: 'MetaMask USD',
     exchange: true,
     decimals: 18,
     addresses: {
-      1: mmUSDAddress,
-      59144: mmUSDAddress,
+      1: mUSDAddress,
+      59144: mUSDAddress,
     },
     isStable: true,
   },
