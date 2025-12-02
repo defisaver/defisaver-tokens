@@ -3788,7 +3788,7 @@ export const assets: AssetDataBase[] = [
     symbol: 'mUSD',
     name: 'MetaMask USD',
     exchange: true,
-    decimals: 18,
+    decimals: 6,
     addresses: {
       1: mUSDAddress,
       59144: mUSDAddress,
