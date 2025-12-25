@@ -237,6 +237,7 @@ const sBOLD = "0x50Bd66D59911F5e086Ec87aE43C811e0D059DD11";
 const yBOLD = "0x9F4330700a36B29952869fac9b33f45EEdd8A3d8";
 const ysyYBOLD = "0x23346B04a7f55b8760E5860AA5A77383D63491cD";
 const mUSDAddress = "0xacA92E438df0B2401fF60dA7E4337B687a2435DA";
+const USDGAddress = "0xe343167631d89B6Ffc58B88d6b7fB0228795491D";
 
 
 export const assetProto: AssetDataBase = {
@@ -3792,6 +3793,17 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: mUSDAddress,
       59144: mUSDAddress,
+    },
+    isStable: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'USDG',
+    name: 'Global Dollar Network USDG',
+    exchange: true,
+    decimals: 6,
+    addresses: {
+      1: USDGAddress,
     },
     isStable: true,
   },
