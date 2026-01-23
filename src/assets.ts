@@ -3637,7 +3637,7 @@ export const assets: AssetDataBase[] = [
     ...assetProto,
     symbol: 'PT sUSDe Jan',
     name: 'PT sUSDe January 2026',
-    underlyingAsset: 'USDe',
+    underlyingAsset: 'sUSDe',
     feedAvailability: { 9745: true },
     decimals: 18,
     nativeChainId: 9745,
