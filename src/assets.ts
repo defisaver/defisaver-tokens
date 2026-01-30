@@ -3840,4 +3840,15 @@ export const assets: AssetDataBase[] = [
     },
     isStable: true,
   },
+  {
+    ...assetProto,
+    symbol: 'AERO',
+    name: 'Aerodrome',
+    exchange: true,
+    decimals: 18,
+    addresses: {
+      8453: '0x940181a94A35A4569E4529A3CDfB74e38FD98631',
+    },
+    isStable: false,
+  },
 ];
