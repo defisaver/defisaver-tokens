@@ -3732,6 +3732,38 @@ export const assets: AssetDataBase[] = [
   },
   {
     ...assetProto,
+    symbol: 'PT sUSDe May',
+    name: 'PT Ethena sUSDE May 2026',
+    underlyingAsset: 'sUSDe',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    isPendle: true,
+    exchange: true,
+    expiryTimestamp: 1778112000,
+    addresses: {
+      1: '0x3de0ff76E8b528C092d47b9DaC775931cef80F49',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'PT USDe May',
+    name: 'PT Ethena USDe May 2026',
+    underlyingAsset: 'USDe',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    isPendle: true,
+    exchange: true,
+    expiryTimestamp: 1778112000,
+    addresses: {
+      1: '0xAeBf0Bb9f57E89260d57f31AF34eB58657d96Ce0',
+    }
+  },
+  {
+    ...assetProto,
     symbol: 'LINEA',
     name: 'Linea',
     feedAvailability: { 1: true, 59144: true },
