@@ -3764,6 +3764,36 @@ export const assets: AssetDataBase[] = [
   },
   {
     ...assetProto,
+    symbol: 'PT srUSDe Apr',
+    name: 'PT Strata srUSDe Apr 2026',
+    underlyingAsset: 'srUSDe',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    isPendle: true,
+    exchange: true,
+    expiryTimestamp: 1775088000,
+    addresses: {
+      1: '0x9Bf45ab47747F4B4dD09B3C2c73953484b4eB375',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'srUSDe',
+    name: 'Strata Senior USDe',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    exchange: true,
+    is4626: true,
+    addresses: {
+      1: '0x3d7d6fdf07EE548B939A80edbc9B2256d0cdc003',
+    }
+  },
+  {
+    ...assetProto,
     symbol: 'LINEA',
     name: 'Linea',
     feedAvailability: { 1: true, 59144: true },
