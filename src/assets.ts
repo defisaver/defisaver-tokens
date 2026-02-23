@@ -3017,6 +3017,28 @@ export const assets: AssetDataBase[] = [
   },
   {
     ...assetProto,
+    symbol: 'bsdETH',
+    feedAvailability: { 8453: true },
+    name: 'Based ETH',
+    addresses: {
+      8453: "0xCb327b99fF831bF8223cCEd12B1338FF3aA322Ff"
+    },
+    decimals: 18,
+    exchange: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'swBTC',
+    feedAvailability: { 1: true },
+    name: 'Swell Restaked BTC',
+    addresses: {
+      1: "0x8db2350d78abc13f5673a411d4700bcf87864dde"
+    },
+    decimals: 8,
+    exchange: true,
+  },
+  {
+    ...assetProto,
     symbol: 'wrsETH',
     feedAvailability: { 8453: true, 9745: true },
     nativeChainId: 8453,
@@ -3297,6 +3319,22 @@ export const assets: AssetDataBase[] = [
     isStable: true,
     addresses: {
       1: '0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD',
+    }
+  },
+   {
+    ...assetProto,
+    symbol: 'PT weETH June',
+    name: 'PT ether.fi weETH 27JUN2024',
+    underlyingAsset: 'weETH',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    isPendle: true,
+    exchange: true,
+    expiryTimestamp: 1719446400,
+    addresses: {
+      1: '0xc69Ad9baB1dEE23F4605a82b3354F8E40d1E5966',
     }
   },
   {
