@@ -238,6 +238,7 @@ const yBOLD = "0x9F4330700a36B29952869fac9b33f45EEdd8A3d8";
 const ysyYBOLD = "0x23346B04a7f55b8760E5860AA5A77383D63491cD";
 const mUSDAddress = "0xacA92E438df0B2401fF60dA7E4337B687a2435DA";
 const USDGAddress = "0xe343167631d89B6Ffc58B88d6b7fB0228795491D";
+const frxUSDAddress = "0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29";
 
 
 export const assetProto: AssetDataBase = {
@@ -3951,5 +3952,16 @@ export const assets: AssetDataBase[] = [
       8453: '0x940181a94A35A4569E4529A3CDfB74e38FD98631',
     },
     isStable: false,
+  },
+  {
+    ...assetProto,
+    symbol: 'frxUSD',
+    name: 'Frax USD',
+    exchange: true,
+    decimals: 18,
+    addresses: {
+      1: frxUSDAddress,
+    },
+    isStable: true,
   },
 ];
