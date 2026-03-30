@@ -1,6 +1,6 @@
 {
   "name": "@defisaver/tokens",
-  "version": "1.7.26-aave-v4",
+  "version": "1.7.26",
   "type": "module",
   "description": "Centralized asset data & utility functions",
   "main": "cjs/index.js",
