@@ -3386,7 +3386,7 @@ export const assets: AssetDataBase[] = [
     addresses: {
       9745: '0x30559e3d35e33ab69399a3fe9f383d32bd3c016e',
     }
-  },
+  }, 
   {
     ...assetProto,
     symbol: 'USDtb',
