@@ -3378,7 +3378,7 @@ export const assets: AssetDataBase[] = [
     underlyingAsset: 'sUSDe',
     feedAvailability: { 9745: true },
     decimals: 18,
-    nativeChainId: 1,
+    nativeChainId: 9745,
     isStable: true,
     isPendle: true,
     exchange: true,
