@@ -3863,7 +3863,7 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     expiryTimestamp: 1782345600,
     addresses: {
-      1: '0x619d75e3b790ebc21c289f2805bb7177a7d732e2',
+      1: '0x619d75e3b790ebc21c289f2805bb7177a7d732e2', 
     }
   },
   {
