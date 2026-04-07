@@ -3387,7 +3387,7 @@ export const assets: AssetDataBase[] = [
       9745: '0x30559e3d35e33ab69399a3fe9f383d32bd3c016e',
     }
   },
-   {
+  {
     ...assetProto,
     symbol: 'PT USDe June',
     name: 'PT Ethena USDe June 2026',
