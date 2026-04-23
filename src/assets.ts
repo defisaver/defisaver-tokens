@@ -3514,7 +3514,32 @@ export const assets: AssetDataBase[] = [
     nativeChainId: 1,
     exchange: false,
     addresses: {
-      1: '0x4d5F47FA6A74757f35C14fD3a6Ef8E3C9BC514E8'
+      1: '0x4d5F47FA6A74757f35C14fD3a6Ef8E3C9BC514E8',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'aBasWETH',
+    name: 'Aave Base WETH',
+    underlyingAsset: 'WETH',
+    decimals: 18,
+    nativeChainId: 1,
+    exchange: false,
+    addresses: {
+      8453: '0xD4a0e0b9149BCee3C920d2E00b5dE09138fd8bb7',
+
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'aArbWETH',
+    name: 'Aave Arbitrum WETH',
+    underlyingAsset: 'WETH',
+    decimals: 18,
+    nativeChainId: 1,
+    exchange: false,
+    addresses: {
+      42161: '0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8',
     }
   },
   {
