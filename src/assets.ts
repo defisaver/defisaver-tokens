@@ -3022,6 +3022,7 @@ export const assets: AssetDataBase[] = [
     symbol: 'bsdETH',
     feedAvailability: { 8453: true },
     name: 'Based ETH',
+    nativeChainId: 8453,
     addresses: {
       8453: "0xCb327b99fF831bF8223cCEd12B1338FF3aA322Ff"
     },
@@ -4037,6 +4038,7 @@ export const assets: AssetDataBase[] = [
     name: 'Aerodrome',
     exchange: true,
     decimals: 18,
+    nativeChainId: 8453,
     addresses: {
       8453: '0x940181a94A35A4569E4529A3CDfB74e38FD98631',
     },
