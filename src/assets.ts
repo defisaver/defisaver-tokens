@@ -3898,7 +3898,7 @@ export const assets: AssetDataBase[] = [
     name: 'PT Global Dollar May 2026',
     underlyingAsset: 'USDG',
     feedAvailability: { 1: true },
-    decimals: 18,
+    decimals: 6,
     nativeChainId: 1,
     isStable: true,
     isPendle: true,
