@@ -228,6 +228,7 @@ const fxnAddressArb = '0x179F38f78346F5942E95C5C59CB1da7F55Cf7CAd';
 const USDSAddress = "0xdC035D45d973E3EC169d2276DDab16f1e407384F";
 const SKYAddress = "0x56072C95FAA701256059aa122697B133aDEd9279";
 const sUSDSAddress = "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD";
+const sGHOAddress = "0xE1753F2e00940cC31213dd92013cF019DFE4ca1d";
 const rswETHAddress = "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0";
 const wsuperOETHbAddress = "0x7FcD174E80f264448ebeE8c88a7C4476AAF58Ea6";
 const boldLegacyAddress = "0xb01dd87b29d187f3e3a4bf6cdaebfb97f3d9ab98";
@@ -3199,6 +3200,18 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: stkGHOAddress,
     },
+  },
+  {
+    ...assetProto,
+    symbol: 'sGHO',
+    name: 'Savings GHO',
+    decimals: 18,
+    nativeChainId: 1,
+    addresses: {
+      1: sGHOAddress,
+    },
+    isStable: true,
+    is4626: true,
   },
   {
     ...assetProto,
