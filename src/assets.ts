@@ -3918,7 +3918,23 @@ export const assets: AssetDataBase[] = [
     exchange: true,
     expiryTimestamp: 1779926400,
     addresses: {
-      1: '0x9db38D74a0D29380899aD354121DfB521aDb0548', 
+      1: '0x9db38D74a0D29380899aD354121DfB521aDb0548',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'PT USDG Sep',
+    name: 'PT Global Dollar Sep 2026',
+    underlyingAsset: 'USDG',
+    feedAvailability: { 1: true },
+    decimals: 6,
+    nativeChainId: 1,
+    isStable: true,
+    isPendle: true,
+    exchange: true,
+    expiryTimestamp: 1790208000,
+    addresses: {
+      1: '0xc1906aeCf868749a2DeE203F59b904c0cf212140',
     }
   },
   {
