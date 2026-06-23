@@ -3923,6 +3923,22 @@ export const assets: AssetDataBase[] = [
   },
   {
     ...assetProto,
+    symbol: 'PT srUSDe Oct',
+    name: 'PT Strata Senior USDe Oct 2026',
+    underlyingAsset: 'srUSDe',
+    feedAvailability: { 1: true },
+    decimals: 18,
+    nativeChainId: 1,
+    isStable: true,
+    isPendle: true,
+    exchange: true,
+    expiryTimestamp: 1792627200,
+    addresses: {
+      1: '0x59bc9fae5d62b19d4f8d07d758047acb9ee19d34',
+    }
+  },
+  {
+    ...assetProto,
     symbol: 'PT USDG May',
     name: 'PT Global Dollar May 2026',
     underlyingAsset: 'USDG',
