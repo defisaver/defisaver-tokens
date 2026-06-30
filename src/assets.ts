@@ -2901,6 +2901,7 @@ export const assets: AssetDataBase[] = [
     name: 'USDe',
     addresses: {
       1: "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
+      8453: "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       9745: "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
     },
     decimals: 18,
@@ -3078,6 +3079,61 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 8,
     exchange: true,
+  },
+  // DEV-13004: tokens for new Morpho markets
+  {
+    ...assetProto,
+    symbol: 'kBTC',
+    name: 'Kraken Wrapped Bitcoin',
+    decimals: 8,
+    exchange: true,
+    addresses: {
+      1: "0x73E0C0d45E048D25Fc26Fa3159b0aA04BfA4Db98",
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'cbXRP',
+    name: 'Coinbase Wrapped XRP',
+    nativeChainId: 8453,
+    decimals: 6,
+    exchange: true,
+    addresses: {
+      8453: "0xcb585250f852C6c6bf90434AB21A00f02833a4af",
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'USD3',
+    name: 'Web 3 Dollar',
+    decimals: 6,
+    exchange: true,
+    isStable: true,
+    addresses: {
+      1: "0x056B269Eb1f75477a8666ae8C7fE01b64dD55eCc",
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'stUSDS',
+    name: 'Staked USDS',
+    decimals: 18,
+    exchange: true,
+    isStable: true,
+    addresses: {
+      1: "0x99CD4Ec3f88A45940936F469E4bB72A2A701EEB9",
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'PRIME',
+    name: 'Hastra PRIME',
+    decimals: 6,
+    exchange: true,
+    isStable: true,
+    addresses: {
+      1: "0x19ebb35279A16207Ec4ba82799CC64715065F7F6",
+    },
   },
   {
     ...assetProto,
