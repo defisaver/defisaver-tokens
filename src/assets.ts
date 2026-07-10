@@ -4187,4 +4187,15 @@ export const assets: AssetDataBase[] = [
       1: "0x19ebb35279A16207Ec4ba82799CC64715065F7F6",
     },
   },
+  {
+    ...assetProto,
+    symbol: 'GROVE',
+    name: 'GROVE',
+    decimals:18,
+    exchange: true,
+    isStable: false,
+    addresses: {
+      1: "0xB30FE1Cf884B48a22a50D22a9282004F2c5E9406",
+    },
+  },
 ];
