@@ -4198,4 +4198,15 @@ export const assets: AssetDataBase[] = [
       1: "0xB30FE1Cf884B48a22a50D22a9282004F2c5E9406",
     },
   },
+  {
+    ...assetProto,
+    symbol: 'COW',
+    name: 'CoW Protocol Token',
+    decimals:18,
+    exchange: true,
+    isStable: false,
+    addresses: {
+      1: "0xdef1ca1fb7fbcdc777520aa7f396b4e015f497ab",
+    },
+  }
 ];
