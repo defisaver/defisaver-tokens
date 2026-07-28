@@ -4202,11 +4202,22 @@ export const assets: AssetDataBase[] = [
     ...assetProto,
     symbol: 'COW',
     name: 'CoW Protocol Token',
-    decimals:18,
+    decimals: 18,
     exchange: true,
     isStable: false,
     addresses: {
       1: "0xdef1ca1fb7fbcdc777520aa7f396b4e015f497ab",
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'SAFE',
+    name: 'Safe Token',
+    decimals: 18,
+    exchange: true,
+    isStable: false,
+    addresses: {
+      1: "0x5afe3855358e112b5647b952709e6165e1c1eeee",
     },
   }
 ];
