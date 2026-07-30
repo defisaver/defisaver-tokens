@@ -4223,7 +4223,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'syrupUSDG',
-    name: 'syrupUSDG',
+    name: 'Syrup USDG',
     exchange: true,
     decimals: 6,
     addresses: {
