@@ -4219,5 +4219,16 @@ export const assets: AssetDataBase[] = [
     addresses: {
       1: "0x5afe3855358e112b5647b952709e6165e1c1eeee",
     },
-  }
+  },
+  {
+    ...assetProto,
+    symbol: 'syrupUSDG',
+    name: 'syrupUSDG',
+    exchange: true,
+    decimals: 6,
+    addresses: {
+      1: "0x87b65C4aAFFA76881f9E96F3e7ED945ddFC3Cd7A",
+    },
+    isStable: true,
+  },
 ];
