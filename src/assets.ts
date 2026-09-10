@@ -4231,4 +4231,16 @@ export const assets: AssetDataBase[] = [
     },
     isStable: true,
   },
+  {
+    ...assetProto,
+    symbol: 'PAXG',
+    feedAvailability: { 1: true },
+    name: 'Paxos Gold',
+    decimals: 18,
+    nativeChainId: 1,
+    exchange: true,
+    addresses: {
+      1: '0x45804880De22913dAFE09f4980848ECE6EcbAf78',
+    }
+  },
 ];
