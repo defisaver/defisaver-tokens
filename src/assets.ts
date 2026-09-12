@@ -4243,4 +4243,39 @@ export const assets: AssetDataBase[] = [
       1: '0x45804880De22913dAFE09f4980848ECE6EcbAf78',
     }
   },
+  {
+    ...assetProto,
+    symbol: 'ftUSD',
+    feedAvailability: { 1: false },
+    name: 'Flying Tulip USD',
+    decimals: 6,
+    exchange: true,
+    addresses: {
+      1: '0xF7D85EC4E7710f71992752eac2111312e73E9C9C',
+    },
+    isStable: true,
+  },
+  {
+    ...assetProto,
+    symbol: 'FT',
+    feedAvailability: { 1: false },
+    name: 'Flying Tulip',
+    decimals: 18,
+    exchange: true,
+    addresses: {
+      1: '0x5DD1A7A369e8273371d2DBf9d83356057088082c',
+    },
+  },
+  {
+    ...assetProto,
+    symbol: 'FDUSD',
+    feedAvailability: { 1: false },
+    name: 'First Digital USD',
+    decimals: 18,
+    exchange: true,
+    addresses: {
+      1: '0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409',
+    },
+    isStable: true,
+  },
 ];
