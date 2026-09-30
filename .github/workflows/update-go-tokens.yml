@@ -8,7 +8,7 @@ on:
 
 jobs:
   update-tokens:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout defisaver-tokens
