@@ -3161,7 +3161,7 @@ export const assets: AssetDataBase[] = [
     isStable: true,
   },
   {
-  ...assetProto,
+    ...assetProto,
     symbol: 'wM',
     name: "WrappedM by M^0",
     decimals: 6,
@@ -3338,7 +3338,7 @@ export const assets: AssetDataBase[] = [
       1: '0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD',
     }
   },
-   {
+  {
     ...assetProto,
     symbol: 'PT weETH June',
     name: 'PT ether.fi weETH 27JUN2024',
@@ -4107,6 +4107,7 @@ export const assets: AssetDataBase[] = [
     decimals: 6,
     addresses: {
       1: USDGAddress,
+      42161: '0x004B506865409877C9fA29bfb1ebA929984B9bbC'
     },
     isStable: true,
   },
@@ -4191,7 +4192,7 @@ export const assets: AssetDataBase[] = [
     ...assetProto,
     symbol: 'GROVE',
     name: 'GROVE',
-    decimals:18,
+    decimals: 18,
     exchange: true,
     isStable: false,
     addresses: {
