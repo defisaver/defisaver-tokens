@@ -38,11 +38,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DecenterApps/defisaver-tokens.git"
+    "url": "git+https://github.com/defisaver/defisaver-tokens.git"
   },
   "bugs": {
-    "url": "https://github.com/DecenterApps/defisaver-tokens/issues"
+    "url": "https://github.com/defisaver/defisaver-tokens/issues"
   },
-  "homepage": "https://github.com/DecenterApps/defisaver-tokens#readme",
+  "homepage": "https://github.com/defisaver/defisaver-tokens#readme",
   "packageManager": "yarn@1.22.1"
 }
