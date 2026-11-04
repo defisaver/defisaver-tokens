@@ -4288,5 +4288,17 @@ export const assets: AssetDataBase[] = [
            addresses: {
              8453: "0xB200000000000000000000451d033a5000cb479e"
            }
+         },
+         {
+           ...assetProto,
+           symbol: "EURCV",
+           name: "EUR CoinVertible",
+           decimals: 18,
+           nativeChainId: 1,
+           exchange: true,
+           isStable: true,
+           addresses: {
+             1: "0x5F7827FDeb7c20b443265Fc2F40845B715385Ff2"
+           }
          }
        ];
