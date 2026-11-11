@@ -4300,5 +4300,16 @@ export const assets: AssetDataBase[] = [
            addresses: {
              1: "0x5F7827FDeb7c20b443265Fc2F40845B715385Ff2"
            }
-         }
+         },
+        {
+          ...assetProto,
+          symbol: "cirBTC",
+          name: "Circle Wrapped Bitcoin",
+          decimals: 8,
+          nativeChainId: 1,
+          exchange: true,
+          addresses: {
+            1: "0x72DFB2E44f59C5AD2bAFE84314E5b99a7cd5075E",
+          },
+        },
        ];
