@@ -3994,6 +3994,34 @@ export const assets: AssetDataBase[] = [
          },
          {
            ...assetProto,
+           symbol: "PT USDat Jan",
+           name: "PT Saturn USDat January 2027",
+           underlyingAsset: "USDat",
+           feedAvailability: { 1: true },
+           decimals: 6,
+           nativeChainId: 1,
+           isStable: true,
+           isPendle: true,
+           exchange: true,
+           expiryTimestamp: 1799884800,
+           addresses: {
+             1: "0xba96292ee7673e3b546cc90db6d97111cd9a314f"
+           }
+         },
+         {
+           ...assetProto,
+           symbol: "USDat",
+           name: "Saturn USDat",
+           decimals: 6,
+           nativeChainId: 1,
+           exchange: true,
+           isStable: true,
+           addresses: {
+             1: "0x23238f20b894f29041f48d88ee91131c395aaa71"
+           }
+         },
+         {
+           ...assetProto,
            symbol: "srUSDe",
            name: "Strata Senior USDe",
            feedAvailability: { 1: true },
